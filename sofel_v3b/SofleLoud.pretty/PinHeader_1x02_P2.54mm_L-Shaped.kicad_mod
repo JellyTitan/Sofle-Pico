@@ -1,0 +1,33 @@
+(footprint "PinHeader_1x02_P2.54mm_L-Shaped" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
+  (tags "Through hole pin header THT 1x02 2.54mm single row")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0.02 -3.02) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 9f449d09-37db-4679-b4e5-533258de06b2)
+  )
+  (fp_text value "PinHeader_1x02_P2.54mm_L-Shaped" (at 0 4.87) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 38fef59b-958b-45b7-8820-2d51d2463f7b)
+  )
+  (fp_text user "${REFERENCE}" (at 0.02 3.04 180) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 37dcc22b-aaa5-40bf-8441-c3e442439a19)
+  )
+  (pad "1" thru_hole rect (at 1.27 -1.27) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp e402cccc-0548-4213-b8fe-37ef3b0f61d8))
+  (pad "2" thru_hole oval (at -1.27 -1.27) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 9dd4288b-cd90-4715-a3a1-47933f1f8864))
+  (pad "2" thru_hole oval (at 1.27 1.27) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp fdd76f1e-c243-4dd3-ad4c-8427512850d2))
+  (group "" (id 21daa1dd-5962-4ad7-9d97-8f9f374606e5)
+    (members
+      9dd4288b-cd90-4715-a3a1-47933f1f8864
+      e402cccc-0548-4213-b8fe-37ef3b0f61d8
+      fdd76f1e-c243-4dd3-ad4c-8427512850d2
+    )
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

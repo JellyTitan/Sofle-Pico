@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SofleKeyboard-rescue")(type "Legacy")(uri "${KIPRJMOD}/sofel_v3b-rescue.lib")(options "")(descr ""))
+  (lib (name "SofleKeyboard")(type "Legacy")(uri "${KIPRJMOD}/sofel_v3b.lib")(options "")(descr ""))
+)

@@ -1,0 +1,71 @@
+(footprint "DIODE Bender for 8mm SOFLE CHOC MX" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at -4.4 -3.06) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 254f7d4b-18f1-499d-9a1e-4a75d407c151)
+  )
+  (fp_text value "DIODE Bender for 8mm SOFLE CHOC MX" (at 0.14 7.93) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 6fe7c6a1-6415-4418-a402-83130f91c20d)
+  )
+  (pad "" np_thru_hole circle (at 0 -4 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 3b496b0f-45b2-413c-92cd-331f1c2a57d6))
+  (pad "" np_thru_hole oval (at 0 0 90) (size 4 2) (drill oval 4 2) (layers "F&B.Cu" "*.Mask") (tstamp 8845b190-f36b-4f5d-989b-0e6655198526))
+  (pad "" np_thru_hole circle (at 0 4 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp c713e765-37da-42f1-8d14-80b9b6afc7f2))
+  (pad "" np_thru_hole circle (at 5 -5.895 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 6d6096ac-d114-4cc9-b41c-a14a5f87fd91))
+  (pad "" np_thru_hole oval (at 5 -1.895 90) (size 4 2) (drill oval 4 2) (layers "F&B.Cu" "*.Mask") (tstamp 66fd9f68-8418-4f65-9d69-02d051d09f96))
+  (pad "" np_thru_hole circle (at 5 2.105 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp b0f7ebc7-927c-4fc8-8eeb-bf47dc9d5341))
+  (pad "" np_thru_hole oval (at 9.42 -9.14 20.9) (size 26 3) (drill oval 26 3) (layers "F&B.Cu" "*.Mask") (tstamp e451b5dc-f9bf-4556-a846-c89ca90fb048))
+  (pad "" np_thru_hole circle (at 10 -7.79 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp fcc51ef4-bc60-4ffe-a987-6d53fd6ce528))
+  (pad "" np_thru_hole oval (at 10 -3.79 90) (size 4 2) (drill oval 4 2) (layers "F&B.Cu" "*.Mask") (tstamp 2ab7f47f-2ed7-49b2-8f8b-5583d538ca20))
+  (pad "" np_thru_hole circle (at 10 0.21 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 7ffda787-0bb7-4a28-ad00-351f59c87ffb))
+  (pad "" np_thru_hole circle (at 15 -9.685 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp c2a007ba-11ec-4d94-ad31-abc4e388f0fd))
+  (pad "" np_thru_hole oval (at 15 -5.685 90) (size 4 2) (drill oval 4 2) (layers "F&B.Cu" "*.Mask") (tstamp 646234e6-dae5-486d-9add-2400d22245c4))
+  (pad "" np_thru_hole circle (at 15 -1.685 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 53774beb-14d7-4dfc-93f4-8142326472bc))
+  (pad "" np_thru_hole circle (at 20.01 -11.58 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 87b9049e-ff16-4471-b0a4-af8799f30851))
+  (pad "" np_thru_hole oval (at 20.01 -7.58 90) (size 4 2) (drill oval 4 2) (layers "F&B.Cu" "*.Mask") (tstamp 0ac4d2e3-70d2-4974-bbab-c2a061067e92))
+  (pad "" np_thru_hole circle (at 20.01 -3.58 90) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp be3ad0d2-61a1-4388-aa96-b9f7ddf8627d))
+  (pad "" np_thru_hole oval (at 23.746818 -5.006952 200.9) (size 4 2) (drill oval 4 2) (layers "F&B.Cu" "*.Mask") (tstamp a33d7d09-0975-4959-832d-95bdd305cccb))
+  (pad "" np_thru_hole circle (at 27.483636 -6.433904 200.9) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 7a098fd5-aeb4-47b2-8b1f-9d4b2c5ae867))
+  (group "" (id 2c689f11-0466-4620-9f8e-4641339a0573)
+    (members
+      7a098fd5-aeb4-47b2-8b1f-9d4b2c5ae867
+      a33d7d09-0975-4959-832d-95bdd305cccb
+    )
+  )
+  (group "" (id 853d71b0-84a0-4c0e-a469-a3cad9bfe1cb)
+    (members
+      53774beb-14d7-4dfc-93f4-8142326472bc
+      646234e6-dae5-486d-9add-2400d22245c4
+      c2a007ba-11ec-4d94-ad31-abc4e388f0fd
+    )
+  )
+  (group "" (id 9678b63a-6daf-4a24-91bd-c4a29a4c9ed3)
+    (members
+      66fd9f68-8418-4f65-9d69-02d051d09f96
+      6d6096ac-d114-4cc9-b41c-a14a5f87fd91
+      b0f7ebc7-927c-4fc8-8eeb-bf47dc9d5341
+    )
+  )
+  (group "" (id d343238e-f38d-4203-8a53-a44baa6506c6)
+    (members
+      0ac4d2e3-70d2-4974-bbab-c2a061067e92
+      87b9049e-ff16-4471-b0a4-af8799f30851
+      be3ad0d2-61a1-4388-aa96-b9f7ddf8627d
+    )
+  )
+  (group "" (id eeaf4dbf-da1f-4c9e-bdfc-6f8bfa58d458)
+    (members
+      2ab7f47f-2ed7-49b2-8f8b-5583d538ca20
+      7ffda787-0bb7-4a28-ad00-351f59c87ffb
+      fcc51ef4-bc60-4ffe-a987-6d53fd6ce528
+    )
+  )
+  (group "" (id fa6fb654-ec28-427e-8b78-9cbaf258985c)
+    (members
+      3b496b0f-45b2-413c-92cd-331f1c2a57d6
+      8845b190-f36b-4f5d-989b-0e6655198526
+      c713e765-37da-42f1-8d14-80b9b6afc7f2
+    )
+  )
+)

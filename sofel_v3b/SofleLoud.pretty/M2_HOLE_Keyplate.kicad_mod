@@ -1,0 +1,13 @@
+(footprint "M2_HOLE_Keyplate" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "TH1" (at 0 2.7) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp c7932af1-29da-4abe-ad15-a48f1ed06c39)
+  )
+  (fp_text value "HOLE" (at 0 -2.6) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 44329ae5-3826-4483-b23f-4b37c8c2807a)
+  )
+  (pad "" thru_hole circle (at 0 0) (size 4 4) (drill 2.2) (layers "*.Cu" "*.Mask" "Dwgs.User") (tstamp 2612c2e6-31bf-4e5b-a15e-def35407b409))
+)
