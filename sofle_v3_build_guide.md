@@ -2,7 +2,7 @@
 layout: default
 title: Sofle Keyboard - build guide (V3)
 ---
-
+![Sofle V3](images/build_guide_v3/sofle_v3b.png)
 The Sofle V3 is based on the key layout of the Sofle V2 split keyboard. The V3 has been refactored to use the rp2040 based Pi Pico mcu. 
 
 - [Sofle V3 vs V2](#design-philosophy-and-quirks)
