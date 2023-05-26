@@ -1,4 +1,4 @@
-23058799676139628
+23058799767499387
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -95344,7 +95344,7 @@ RPi_Pico_SMD_TH - Junco -DS Sofle v3b v2
 Through hole straight pin header, 2x20, 2.54mm pitch, double rows
 Through hole pin header THT 2x20 2.54mm double row
 0
-40
+80
 40
 ergodonk_kicad_library
 RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3
