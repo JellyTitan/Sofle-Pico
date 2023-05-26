@@ -1,4 +1,4 @@
-23055414930459297
+23058799676139628
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -95302,7 +95302,7 @@ OLED SSD1306 128x64 UNVERIFIED
 
 
 0
-4
+8
 4
 ergodonk_kicad_library
 OLED_4Pin_DS_64x128
@@ -95338,6 +95338,20 @@ Through hole straight pin header, 2x20, 2.54mm pitch, double rows
 Through hole pin header THT 2x20 2.54mm double row
 0
 40
+40
+ergodonk_kicad_library
+RPi_Pico_SMD_TH - Junco -DS Sofle v3b v2
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+40
+40
+ergodonk_kicad_library
+RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+80
 40
 ergodonk_kicad_library
 RotaryEncoder_EC11_ergodonk_variant

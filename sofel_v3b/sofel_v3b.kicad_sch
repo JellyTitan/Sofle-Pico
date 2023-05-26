@@ -4523,7 +4523,7 @@
     (property "Value" "OLED" (at 71.12 170.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SofleChocLoud:OLED_4Pin_DS_64x128" (at 71.12 163.83 0)
+    (property "Footprint" "ergodonk_kicad_library:OLED SSD1306 128x64 UNVERIFIED" (at 71.12 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 71.12 163.83 0)
