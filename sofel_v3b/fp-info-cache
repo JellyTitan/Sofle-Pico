@@ -1,4 +1,4 @@
-253854892384691
+255540050584261
 ergodonk_kicad_library
 2.54 gird
 
@@ -650,6 +650,13 @@ Pi5 ChocV1, V2, MX and Gateron low profile
 0
 6
 2
+ergodonk_kicad_library
+Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
 ergodonk_kicad_library
 RPi_Pico_SMD_TH
 Through hole straight pin header, 2x20, 2.54mm pitch, double rows

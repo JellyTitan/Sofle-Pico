@@ -5589,7 +5589,7 @@
     (property "Value" "Pimaroni Trackball" (at 72.39 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SofleChocLoud:pimoroni_trackball" (at 81.28 138.43 0)
+    (property "Footprint" "ergodonk_kicad_library:Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b" (at 81.28 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 81.28 138.43 0)
@@ -6055,6 +6055,30 @@
       (project "Sofle_v3"
         (path "/aae4773e-62e9-4e6e-acb6-89e78a092249"
           (reference "#PWR017") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "SofleKeyboard-rescue:HOLE-Lily58-cache-Lily58_Pro-rescue") (at 36.83 190.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 962b755a-f485-4f75-be8f-541e35c2807f)
+    (property "Reference" "TH8" (at 36.83 190.5 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "HOLE" (at 36.83 193.04 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "SofleChocLoud:Hole from sofle for M2 posts gold rimmer" (at 36.83 190.5 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "" (at 36.83 190.5 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (instances
+      (project "sofel_v3b"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "TH8") (unit 1)
         )
       )
     )
