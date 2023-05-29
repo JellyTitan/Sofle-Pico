@@ -1,16 +1,5 @@
 Ref,Val,Package,PosX,PosY,Rot,Side
 "","","e4819d78-7681-430c-a61d-7ce8f9aac4b4",21.470000,108.700000,180.000000,top
-"J1","Pimaroni Trackball","Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b",16.610000,56.910000,90.000000,top
 "J2","4PIN","MJ-4PP-9",0.640000,60.510000,90.000000,top
-"J3","OLED","OLED SSD1306 128x64 UNVERIFIED",15.462500,96.040000,-90.000000,top
 "REF**","Tenting Puck","Tenting_Puck.kicad_mod_nocenter",68.375000,70.210000,0.000000,top
-"SW25","Rotary_Encoder_Switch","RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified",19.250000,47.080000,180.000000,top
 "TH1","HOLE","Hole from sofle for M2 posts gold rimmer",5.650000,50.580000,0.000000,top
-"TH2","HOLE","Hole from sofle for M2 posts gold rimmer",23.180000,60.990000,0.000000,top
-"TH3","HOLE","Hole from sofle for M2 posts gold rimmer",48.690000,92.070000,0.000000,top
-"TH4","HOLE","Hole from sofle for M2 posts gold rimmer",125.540000,89.670000,0.000000,top
-"TH5","HOLE","Hole from sofle for M2 posts gold rimmer",48.780000,54.120000,0.000000,top
-"TH6","HOLE","Hole from sofle for M2 posts gold rimmer",125.525000,51.555000,0.000000,top
-"TH7","HOLE","Hole from sofle for M2 posts gold rimmer",31.260000,114.330000,0.000000,top
-"TH8","HOLE","Hole from sofle for M2 posts gold rimmer",5.650000,34.580000,0.000000,top
-"U2","SN74AHCT1G125","SN74AHCT1G125 - Junco",45.250000,114.150000,0.000000,top

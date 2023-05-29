@@ -1,4 +1,4 @@
-23084087534905320
+23085772936136336
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96326,6 +96326,13 @@ SOD-123
 0
 10
 2
+sofle_v3b
+Dummy 6812miniE
+Placeholder for the nested SK6812Mini-E/Hotswop socket so the PNP/BOM generates correctly.
+
+0
+0
+0
 sofle_v3b
 Hole from sofle for M2 posts gold rimmer
 

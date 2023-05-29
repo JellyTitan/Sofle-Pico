@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 38,
+    "active_layer": 44,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -65,7 +65,7 @@
       40
     ],
     "visible_layers": "7feffdf_80000001",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "sofel_v3b.kicad_prl",
