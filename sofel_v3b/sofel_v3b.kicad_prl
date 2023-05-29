@@ -15,17 +15,17 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": false,
+      "dimensions": true,
       "footprints": true,
-      "graphics": false,
-      "keepouts": false,
+      "graphics": true,
+      "keepouts": true,
       "lockedItems": true,
-      "otherItems": false,
-      "pads": false,
-      "text": false,
-      "tracks": false,
-      "vias": false,
-      "zones": false
+      "otherItems": true,
+      "pads": true,
+      "text": true,
+      "tracks": true,
+      "vias": true,
+      "zones": true
     },
     "visible_items": [
       0,
@@ -64,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "7fef7ff_80000001",
-    "zone_display_mode": 0
+    "visible_layers": "7feffdf_80000001",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "sofel_v3b.kicad_prl",
