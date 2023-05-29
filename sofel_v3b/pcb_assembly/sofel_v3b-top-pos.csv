@@ -1,38 +1,10 @@
 Ref,Val,Package,PosX,PosY,Rot,Side
+"","","e4819d78-7681-430c-a61d-7ce8f9aac4b4",21.470000,108.700000,180.000000,top
 "J1","Pimaroni Trackball","Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b",16.610000,56.910000,90.000000,top
 "J2","4PIN","MJ-4PP-9",0.640000,60.510000,90.000000,top
 "J3","OLED","OLED SSD1306 128x64 UNVERIFIED",15.462500,96.040000,-90.000000,top
 "REF**","Tenting Puck","Tenting_Puck.kicad_mod_nocenter",68.375000,70.210000,0.000000,top
-"SW1","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",39.800000,101.580000,180.000000,top
-"SW2","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",58.850000,104.080000,180.000000,top
-"SW3","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",77.900000,106.580000,180.000000,top
-"SW4","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",96.950000,104.080000,180.000000,top
-"SW5","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",116.000000,99.180000,180.000000,top
-"SW6","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",135.050000,99.180000,180.000000,top
-"SW7","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",39.800000,82.530000,180.000000,top
-"SW8","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",58.850000,85.030000,180.000000,top
-"SW9","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",77.900000,87.530000,180.000000,top
-"SW10","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",96.950000,85.030000,180.000000,top
-"SW11","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",116.000000,80.130000,180.000000,top
-"SW12","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",135.050000,80.130000,180.000000,top
-"SW13","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",39.800000,63.480000,180.000000,top
-"SW14","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",58.850000,65.980000,180.000000,top
-"SW15","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",77.900000,68.480000,180.000000,top
-"SW16","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",96.950000,65.980000,180.000000,top
-"SW17","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",116.000000,61.080000,180.000000,top
-"SW18","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",135.050000,61.080000,180.000000,top
-"SW19","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",39.800000,44.430000,180.000000,top
-"SW20","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",58.850000,46.930000,180.000000,top
-"SW21","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",77.900000,49.430000,180.000000,top
-"SW22","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",96.950000,46.930000,180.000000,top
-"SW23","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",116.000000,42.030000,180.000000,top
-"SW24","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",135.050000,42.030000,180.000000,top
 "SW25","Rotary_Encoder_Switch","RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified",19.250000,47.080000,180.000000,top
-"SW26","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",16.045746,17.739191,117.000000,top
-"SW27","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",36.850000,23.180000,-165.000000,top
-"SW28","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",58.850000,27.880000,180.000000,top
-"SW29","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",77.900000,30.380000,180.000000,top
-"SW30","SW_PUSH_LED","Cherry_MX_DS_Hotswap_miniE_1U",96.950000,27.880000,180.000000,top
 "TH1","HOLE","Hole from sofle for M2 posts gold rimmer",5.650000,50.580000,0.000000,top
 "TH2","HOLE","Hole from sofle for M2 posts gold rimmer",23.180000,60.990000,0.000000,top
 "TH3","HOLE","Hole from sofle for M2 posts gold rimmer",48.690000,92.070000,0.000000,top

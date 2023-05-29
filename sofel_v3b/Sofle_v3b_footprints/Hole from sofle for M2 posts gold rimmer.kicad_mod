@@ -1,6 +1,6 @@
 (footprint "Hole from sofle for M2 posts gold rimmer" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
-  (attr through_hole)
+  (attr through_hole exclude_from_pos_files exclude_from_bom)
   (fp_text reference "REF**" (at 0 3.556 unlocked) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 214c241e-24fe-4c7f-bed1-075b3173fbe4)

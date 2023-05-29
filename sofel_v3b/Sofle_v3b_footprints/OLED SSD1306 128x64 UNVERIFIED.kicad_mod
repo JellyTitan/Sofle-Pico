@@ -1,6 +1,6 @@
 (footprint "OLED SSD1306 128x64 UNVERIFIED" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
-  (attr through_hole)
+  (attr through_hole exclude_from_pos_files exclude_from_bom)
   (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp e02d1fbe-f95d-49df-a706-7ee9f33208cd)
