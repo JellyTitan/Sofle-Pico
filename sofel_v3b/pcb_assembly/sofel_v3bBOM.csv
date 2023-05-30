@@ -1,0 +1,10 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"J2";"MJ-4PP-9";1;"4PIN";;;
+2;"REF**";"Tenting_Puck.kicad_mod_nocenter";1;"Tenting Puck";;;
+3;",";"e4819d78-7681-430c-a61d-7ce8f9aac4b4";2;"";;;
+4;"TH1";"Hole from sofle for M2 posts gold rimmer";1;"HOLE";;;
+5;"D1,D2,D3,D4,D5,D6,D13,D19,D25,D26,D7,D8,D9,D10,D11,D12,D27,D15,D17,D18,D28,D29,D24,D20,D21,D22,D23,D14,D30,D31,D16";"D_SOD-123_DO-35_Hybrid_DoubleSided_V2";31;"D";;;
+6;"SW1,SW3,SW13,SW14,SW21,SW23,SW26,SW27,SW12,SW18,SW24,SW4,SW5,SW8,SW10,SW9,SW16,SW6,SW7,SW30,SW11,SW22,SW17,SW29,SW15,SW2,SW20,SW28,SW19";"Cherry_MX_DS_Hotswap_miniE_1U";29;"SW_PUSH_LED";;;
+7;"D58,D65,D76,D52,D61,D74,D55,D72,D68,D57,D56,D59,D59,D63,D80,D53,D67,D54,D73,D70,D71,D60,D64,D78,D66,D51,D62,D77,D79";"Dummy 6812miniE";29;"Dummy 6812miniE";;;
+8;"U2";"SN74AHCT1G125 - Junco";1;"SN74AHCT1G125";;;
+9;"U3";"RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3";1;"Pico";;;
