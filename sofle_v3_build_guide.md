@@ -37,7 +37,7 @@ The Sofle V3 is based on the key layout of the Sofle V2 split keyboard. The V3 h
 # Build Notes
 ** 5-29-23 New prototype sent out for production. **
 
-The hotswop sockets and LEDs are in a single combo footprint. This is great for design, but a PITA for automated production. Need to create a placebo to generate proper PNP/BOM files. Or sepertate the symbol/footprint. 
+~~The hotswop sockets and LEDs are in a single combo footprint. This is great for design, but a PITA for automated production. Need to create a placebo to generate proper PNP/BOM files. Or sepertate the symbol/footprint.~~ Fixed - but there is a big upcharge for this part.
 Validate that the first sk6812 acts as a level shifter, then remove the level shifter bypass.
 
 
