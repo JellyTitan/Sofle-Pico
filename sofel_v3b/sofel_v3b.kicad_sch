@@ -4222,7 +4222,7 @@
     (property "Value" "HOLE" (at 19.05 193.04 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "SofleChocLoud:Hole from sofle for M2 posts gold rimmer" (at 19.05 190.5 0)
+    (property "Footprint" "sofle_v3b:Hole from sofle for M2 posts gold rimmer" (at 19.05 190.5 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 19.05 190.5 0)
