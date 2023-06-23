@@ -75,6 +75,8 @@
     (stroke (width 0.12) (type default)) (fill none) (layer "Dwgs.User") (tstamp b8427003-154e-4b68-995c-bdc340071671))
   (fp_circle (center 11.75 11.75) (end 13.25 11.75)
     (stroke (width 0.12) (type default)) (fill none) (layer "Dwgs.User") (tstamp 01ec792e-4297-4771-8b2a-7d0cfa0a5f7f))
+  (fp_rect (start -13.5 8.9) (end 13.5 -8.9)
+    (stroke (width 0.1) (type solid)) (fill none) (layer "User.7") (tstamp b06cd476-637c-409c-8a2e-922355e1deba))
   (dimension (type aligned) (layer "Eco2.User") (tstamp 1a59419d-2004-4216-b3d5-1c305ed2a936)
     (pts (xy 13.65 -13.9) (xy -13.65 -13.9))
     (height -22.32)
