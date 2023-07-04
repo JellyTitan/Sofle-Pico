@@ -1,4 +1,4 @@
-23441096695990173
+23442785202703124
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97340,6 +97340,13 @@ OLED SSD1306 128x64 UNVERIFIED
 
 0
 8
+4
+sofle_v3b
+OLED SSD1306 128x64 UNVERIFIED v2
+
+
+0
+12
 4
 sofle_v3b
 Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b

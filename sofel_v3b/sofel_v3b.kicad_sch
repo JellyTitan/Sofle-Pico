@@ -4390,16 +4390,16 @@
     (property "Value" "OLED" (at 71.12 170.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "sofle_v3b:OLED SSD1306 128x64 UNVERIFIED" (at 71.12 163.83 0)
+    (property "Footprint" "sofle_v3b:OLED SSD1306 128x64 UNVERIFIED v2" (at 71.12 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 71.12 163.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (pin "1" (uuid f72452f5-d549-4bec-bb69-97a969361a5a))
-    (pin "2" (uuid 3310570a-bf9a-48ee-9cd3-be03d7f4d4d0))
-    (pin "3" (uuid 76037650-621a-47f0-98a7-e533042bbbf5))
-    (pin "4" (uuid e5586254-966a-4990-817d-19d9e6986180))
+    (pin "1" (uuid c668f84d-6a03-4f6a-8af4-3e9c2aef441c))
+    (pin "2" (uuid 4a2a7695-377a-4850-af15-e73f51ab7b04))
+    (pin "3" (uuid d8127eb0-24e3-4834-b5a0-2833a5361f2b))
+    (pin "4" (uuid ca5b0eb7-5e59-4500-929c-5ddcf42974e5))
     (instances
       (project "sofel_v3b"
         (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
