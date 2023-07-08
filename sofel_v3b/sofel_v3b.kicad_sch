@@ -5701,7 +5701,7 @@
     (property "Value" "Pico" (at 44.45 17.78 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "sofle_v3b:RPi_Pico_SMD_TH - Junco -DS Sofle v3b v4" (at 44.45 45.72 90)
+    (property "Footprint" "sofle_v3b:RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3 nohole" (at 44.45 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 44.45 45.72 0)
