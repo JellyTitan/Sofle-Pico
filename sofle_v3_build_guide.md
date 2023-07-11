@@ -1,21 +1,20 @@
----
-layout: default
-title: Sofle Keyboard - build guide (V3)
----
-![Sofle V3](images/build_guide_v3/sofle_v3b.png)
-The Sofle V3 is based on the key layout of the Sofle V2 split keyboard. The V3 has been refactored to use the rp2040 based Pi Pico mcu. 
+# Sofle Pico
 
-- [Sofle V3 vs V2](#design-philosophy-and-quirks)
+![Sofle Pico](images/build_guide_v3/sofle_pico_v3.3.png)
+The Sofle Pico is based on the key layout of the Sofle V2 split keyboard. The Sofle Pico has been refactored to exclusively use the rp2040 based Pi Pico mcu. 
+
+- [Sofle Pico vs V2 & V1](#design-philosophy-and-quirks)
  - [Pi Pico vs. ProMicro](#pi-pico-vs.-ProMicro)
  - [Features inherited from V2](#features-inherited-from-v2)
- - [New features in V3](#new-features-in-v3)
+ - [New features](#new-features-in-v3)
  - [Notable changes](#notable-changes)
 - [Build Guide / Assembly](#build-guide--assembly)
  - [Parts](#parts)
  - [Required](#required)
  - [Optional - RGB](#optional---rgb)
  - [Optional - OLED](#optional---oled)
- - [Optional - piezo speaker](#optional---piezo-speaker)
+ - [Optional - MCU Sockets](#optional---mcu-sockets)
+ - [Optional - Solenoid](#optional---solenoid)
  - [Optional - Pimaroni trackball](#optional---pimaroni-trackball)
  - [Soldering](#soldering)
  - [Diodes](#diodes)
@@ -31,20 +30,10 @@ The Sofle V3 is based on the key layout of the Sofle V2 split keyboard. The V3 h
  - [An entire row or column of keys is not working](#an-entire-row-or-column-of-keys-is-not-working)
  - [Random key or keys not working](#random-key-or-keys-not-working)
 
-
-
-
-# Build Notes
-** 5-29-23 New prototype sent out for production. **
-
-~~The hotswop sockets and LEDs are in a single combo footprint. This is great for design, but a PITA for automated production. Need to create a placebo to generate proper PNP/BOM files. Or sepertate the symbol/footprint.~~ Fixed - but there is a big upcharge for this part.
-Validate that the first sk6812 acts as a level shifter, then remove the level shifter bypass.
-
-
-## Sofle V3 vs V2
+## Sofle Pico vs V2 & V1
 
 ### Pi Pico vs. ProMicro
-Whereas Sofle v1 & v2 used the Promicro MCU, V3 uses the Pi Pico which offers larger memory options at a low price point, which allows for more features like screen animations and RGB animation effects.
+Whereas Sofle v1 & v2 used the Promicro MCU, Sofle Pico uses the rp2040 MCU, which offers larger memory options at a low price point, which allows for more features like screen animations and RGB animation effects.
 
 Although there is a QMK option to port the legacy pro-micro config to rp2040 boards that are backwards compatible, the rp2040 pins are not 5v tolerant. Essentially, the per key rgb doesn't work as it should.
 
@@ -56,58 +45,64 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 
 ### Features inherited from V2
  - Hotswap sockets are required. 
- - Per-key RGB remains optional and uses the relatively easy to solder SK6812 MINI-E LEDs. (Note lower current variant required for v3)
+ - Per-key RGB remains optional and uses the relatively easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for v3)
  - Key placement has not changed. (mostly - 3deg thumb key rotation).
 
 ### New features in V3
-* ~~Piezo speaker added.~~ Not viable at this time.
 * Default OLED is now 64x128, as opposed to 32x128.
 * OLED ports are separated and offset, so no jumper soldering is required.
 * Added clearly labeled and easily accessible [Pimoroni trackball](https://shop.pimoroni.com/en-us/products/trackball-breakout) tie in footprint.
 * Drastically simplified the PCB & improved labeling to simplify build troubleshooting. (The addition of a GND & VCC planes specifically).
 * Added through-hole/Surface mount hybrid footprints for the per-switch diodes.
+* Added a 'breakout' section for the unused pico pins to allow for easy tinkering.
+* Added optional solenoid.
+* The default communication is Serial, but the connection for TX/RX Full duplex is available if you would like to enable it. (The Pico supports firmware crossover).
+
+
 
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
 * 3 degree rotation of the innermost thumb key. 
 * Sofle V1 & V2 firmware is not compatible due to the complete rewire for pipico.
-* Removed the I2C bus. (This allowed collapsing & of the TRRS/TRS footprint).
 * Added drill holes above the mini-e hole to allow for easier tweezer placement.
-* Collapsed the double MCU footprint to a single footprint to simplify routing. (One half of the board now has the MCU face up, the other face down.)
+* MCU footprints side-by-side to reduce potential shorts.
 * Removed I2C Bus implementation.
-* Moved _all_ mounting holes, both those between keys and those used for the screen cover.
 * Modified thumb cluster outline to accommodate 1.25u thumb keycap.
 * Rounded board corners with a consistent radius. 
 * Added teardrops to decrease likelihood of acid traps during manufacture.
 * Added a VCC net to simplify routing.
 * Poka-yoke TRRS footprint by removing unnecessary solder masks.
 * Tweaked diode placement & improved labeling for easier troubleshooting.
-* Removed reset button. It is no longer needed, as the Pico has a physical rest button, and modern QMK can put the board into bootloader mode with 'QK_BOOT' key. The hardware reset button would likely only be used once, if at all.
-* Resolved the bulk of KiCad DRC violations. (A few edge clearance violations remain - but nothing electrically relevant).
- - @todo Added rally stripes
- - @todo possible rotary encodor or switch socket?
-
+* Removed reset button. It is no longer needed, as the Pico has a physical rest button.
+* The MCU is now facing upward. There are many PiPico board variants with buttons placed differently. Facing the MCU upward ensures accessability.
+* Optimized for PNP manufacture. The SMD location below the switches allows the diode to be installed on either side.
+* Optimized for hand building - every SMD component has an alternate through hole footprint. (Except for the level-shifter, because 3.3v logic became popular after SMDs became common, so there is no through-hole component available).
+* Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
+Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).
+![Sofle V3](images/build_guide_v3/tenting_puck.webp)
 ## Build Guide / Assembly
 
 ### Parts
 
 #### Required
 
-Where "56-58" is the count, 58 is needed with 2 rotary encoders. subtract from 58 every additional encoder (4 encoders 56, with 3 encoders 57).
+
 
 | Name | Count | Remarks | Potential Storefront |
 | ------------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| PCB | 2 (1 left and 1 right) | PCBs can be ordered from manufacturers such as JLCPCB, LCSC, and Elecrow. | |
-| MX Hot-swap Sockets | 56-58 | | |
-| SMD Diodes | 62 | Surface mount SOD-123 1N4148, or through-hole 1N4148 diode. These are common, any old one should do. Through hole is usually easier to solder. | [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) |
-| Raspberry Pi Picos | 2 | PCB is specifically designed with the official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle V3 is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907).| [AliExpress, YD-2040](https://www.aliexpress.us/item/3256803909832318.html) |
+| PCB | 2 | The PCB should be 1.6mm thick. I used JLCPCB's default settings only customizing the PCB color, and selecting 'lead free'. | Manufacturers such as JLCPCB, LCSC, and Elecrow. [Price comparison tool](https://pcbshopper.com/) | |
+| MX Hot-swap Sockets | 58 | The PCB requires sockets. Switches cannot be soldered directly to the board. | [Aliexpress](https://www.aliexpress.us/item/3256803687338432.html) |
+| Diodes | 62 | Surface mount SOD-123 1N4148, or through-hole 1N4148 diode. These are common, any old one should do. Through hole is usually easier to solder. | SMD: [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) [JLCPCB](https://jlcpcb.com/partdetail/3368026-1N4148SOD123/C2972760) Through-hole: [AliExpress](https://www.aliexpress.us/item/2251832473773777.html) |
+| Raspberry Pi Picos | 2 | PCB is specifically designed with the official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle Pico is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907).| [AliExpress, YD-2040](https://www.aliexpress.us/item/3256803909832318.html) |
 | TRRS Jacks | 2 | PJ-320A | [AliExpress](https://www.aliexpress.us/item/2255800474897706.html) |
 | TRRS or TRS Cable (3.5mm "Headphone" Cable) | 1 | TRRS (4 pole) or TRS (3 pole) will work. | |
 | MX Style Switches | 58 | | |
 | Key Caps | 58 | | |
-| Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common, but this doesn't extend much above tall keycap profiles like SA. 30mm is nice if available. | [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) [AliExpress 30mm]( https://www.aliexpress.us/item/3256804910318088.html) |
-| M3 6mm or 6mm+ Screws and Nuts | 8 | @todo - update? | |
-| Case | 1 Left Set, 1 Right Set | Case files are located in the [case folder](./Case). | @todo - update? |
+| Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
+| M2 8mm FF spacers | 12 | Connects the bottom plate to the key plate, running through the PCB | |
+| M2 12mm FF spacers | 6 | Connects the bottom plate to the OLED plate, running through the PCB and the keyplate. @todo - is it really 12mm? | |
+| M2x4mm screws | 18 | M2 screws. | |
+| Case | 1 Left Set, 1 Right Set | Case files are located in the [case folder](./Case). | @todo - regenerate after v3.3 prototype validated |
 | Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | |
 
 #### Optional - RGB
@@ -116,105 +111,55 @@ These parts are necessary for the RGB lighting.
 
 | Name | Count | Remarks | Potential Storefront |
 | --------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) |
-| RGB SMD LEDs (Prefer SK6803MINI-E) | 74 | The 3MA SK6803MINI-E is highly recommended over the more traditional 12MA SK6812MINI-E due to its smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) |
+| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
+| RGB SMD LEDs (Prefer SK6803MINI-E) | 74 | The 3MA SK6803MINI-E is highly recommended over the more traditional 12MA SK6812MINI-E due to its smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
 #### Optional - OLED
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
-| SSD1306	128x64 | 1-2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). The 128x32 version has been validated thoug. @todo - verify 64 & submit PR? | [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
+| SSD1306	128x64 | 1-2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. ![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
 
-#### Optional - Piezo speaker
+
+#### Optional - MCU Sockets
+This is strictly a quality of life upgrade. The older ProMicro's were notorious for weak jacks that could snap off. This is probably not needed with the PiPico.
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
-| 1109 SMD piezoelectric buzzer| 1-2 | The 1109 refers to the dimensions 11mm x 9mm. When buying from Aliexpress, these are often advertised along with other Piezo's, so be sure to check for 1109 specifically.|[keeb.io](https://keeb.io/products/piezo-speaker)<br>[AliExpress](https://www.aliexpress.us/item/3256804600201669.html)|
+2.54mm Round Female Pin Header | 4 sets of 20 | They commonly come in strips of 40. They don't always snap in half cleanly, so get extra | [Aliexpress](https://www.aliexpress.us/item/2251832729504304.html)
+Needle pin male connectors | 80 | Diode legs would also work, but these little sets of 4 are nice to work with. | [Aliexpress](https://www.aliexpress.us/item/2251832650595759.html?spm=a2g0o.order_list.order_list_main.186.15a91802YueygY&gatewayAdapt=glo2usa)
+#### Optional - Solenoid
+Solenoid components are soldered to the pcb. The Solenoid itself attaches to an alternate set of plates. Technically you could add one on each hand, but i've not tried this. Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/412/solenoid_driver.pdf). 
+[QMK Docs for solenoid.](https://docs.qmk.fm/#/feature_haptic_feedback?id=solenoids)
+| Name | Count | Remarks | Potential Storefront |
+| - | - |-|-|
+| Solenoid | 1 | 4.5v Solenoid - I've only been able to get the Amazon Uxcell solenoid to work. I suspect the voltage is a bit low. | [Amazon](https://www.amazon.com/dp/B013DR655A/ref=cm_sw_em_r_mt_dp_YHJRTZ5YY042HC7522VG?_encoding=UTF8&psc=1)
+ 2.2k Resistor | 1 | The 2.2k resistor works with the 5v ProMicro. @todo do the math here.| |
+ 1N4001 Diode or MUR340 | 1 | Either the through hole IN4001 or the Surface mount MUR340 will work. | [AliExpress](https://www.aliexpress.us/item/3256802685977811.html)
 
 #### Optional - Pimoroni trackball
+Electrically, this should work - but i have not validated it. 
 | Name | Count | Remarks | Potential Storefront |
 |-|-|-|-|
 | Pimoroni trackball | 1 | The default footprint replaces a rotary encoder. Installing flush to the board is a bit too low to be comfortable, so you may want to raise it. @todo elaborate.|[Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout)|
 
 
 Regarding top plates:
- - The top plates from Sofle v1, v2, RGB and Choc versions are not compatible, because the mounting holes have moved to accommodate Choc V2 footprints.
- - The solenoid & the screen are taller than the switch plate, so they have their own separate taller plates.
+ - The top plates from Sofle v1, v2, RGB and Choc versions are not compatible.
+ - The solenoid & the OLED are taller than the switch plate, so they have their own separate taller plates.
  - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and solenoid/oled plates. 
 
 
-The Sofle Click was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The Choc V2 footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). 
+The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The Choc V2 footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). 
 
 ## Updated Build Guide and Kits
 
 @todo - write this.
 
 
-## Bill of materials
-
-The following is needed to build the keyboard:
-
-- **2 PCBs**. Send the zip from `/Gerbers/Choc_mx/choc-mx-gerber-pcb.zip` to a PCB fabrication service. 
-The PCB should be 1.6mm thick. I used JLCPCB's default settings only customizing the PCB color. 
 @todo refresh Gerbers and update path
 @todo: Mention "Lead free" 
 @todo: Mention Jlcpcbpart number placement
 @todo: seperate jlcpcb gerber?
 @todo: revise this -> See [sourcing][sourcing].
-
-- **2 Pro Micro** boards or clones. 5v, 2x12 pins, ATmega32U4 microcontroller. **Don't** buy the Arduino Micro (a different pinout) or Arduino Mini (different microcontroller). You could also use Elite-C which basically Pro Micro with USB-C.
-Although QMK supports conversion to pi2040 boards, they are usually not 5v tolerant and may cause issues with the LED's. 
-@todo verify this.
-
-- **4x 12 pin headers (and optional sockets)** for Pro Micros. There are several ways to mount Pro Micros to the board. The male pin headers you most likely got with the board can be used to solder it directly to the board. This makes it hard to replace the board if it fails. The micro-USB connector is known to tear off. ~~I socketed the Pro Micro using the diode legs approach [described at splitkb.com][promicrosocketing] with two 12-pin female headers. This is the option descibed in the build guide here. Lastly, [these spring pin headers][springpinheader] are used on similar keyboards and should give a compact, non-permanent connection but have been out of stock for a long time.~~
-@todo link to cheap sockets
-
-- **58 Kailh Choc keyboard switches**. Must be [Kailh Choc v1 switches (PG1350)](https://deskthority.net/wiki/Kailh_PG1350_series) of any color, or [Kailh Choc v2](https://deskthority.net/wiki/Kailh_PG1353_series) of any color. The `PG` prefix is often omitted. **Don't** buy , [Kailh Mini Choc](https://deskthority.net/wiki/Kailh_PG1232_series) or [Cherry MX](https://deskthority.net/wiki/Cherry_MX).
-
-- **58 Kailh Choc keyboard switch sockets**. Sockets are specific to the PG1350 switch. The PCB requires sockets. Switches cannot be soldered directly to the board.
-
-- **58 keycaps**. You can use either all in `1u` size but it looks nicer with two `1.5u` for the thumb keys.
-@todo link to choc v1 and choc v2 caps. 
-@todo - I heard that some MX caps dont' work with choc v2?
-
-- **58 diodes**. 
- -- Surface Mount: 1N4148W surface mount diodes in SOD123 package. Pick any common variation. I used `1N4148WTR` (Digi-Key 1655-1360-1-ND).
- 
- Alternately, you can use through hole diodes, which are easier to solder. These will be _mostly_ hidden under mx keycaps. 
- @todo - modify thumb cluster diode placement? What about rotary diode?
- 
- -- Through hole: 1N4148 through hole diode. These are common, any old one should do.
-
-- **2 TRRS connectors**. The same type which is used for Corne, Lily58 etc. Technically even TRS should work if you stick to the default serial communication.
-
-- **1 TRRS cable**. TRS should work if you stick with the default serial communications.
-
-- **8 - 10 silicone bumpers**. Used for feet to keep the keyboard from moving
-
-- **Micro USB Cable** to connect the keyboard to a computer.
-
-
-Optional components:
-
-- **OLED/s**
- - **2 SSD1306 128x32 OLED display module**. 4-pin, I2C, 0.91". Very common.
- @todo - can we upgrade to 128x64?
- - **2x 4 pin header (and optionally socket)** for OLEDs. These came pre-soldered to the OLED unit. You can solder the OLED directly to the board. Ideally use a socket so you can replace and/or get at the ProMicro underneath. I found 4 pin female headers with half height (~4mm) insulation worked well
- - **2 OLED covers** This should be compatible with the Sofle RGB cover but have not verified
- @todo design these
-
-
-- **Rotary encoders**
- - **2 Rotary encoders EC11**. If you are not sure take EC11E. Some other variants (EC11K) may have some additional plastic pins for and require mounting holes for them which are not included on the PCB. 
- The standard shaft height is 20mm. For choc low-profile keycaps, this is great. For the taller profile MX keycaps, you lose most of that shaft height, so i would recomend a taller shaft if you can find it. I prefer the Keebio EC11 basic for 20mm shaft. You can find taller shafts at Mouser or Aliexpress. I've yet to find an encoder i don't like. Recently EC12 low-profile encoders have become widely available. They do not have the push switch like the ec11, but otherwise they fit in the same footprint. 
- - **2 matching knobs** for each encoder. Make sure the knob matches the encoder's shaft diameter, depth and shape.
- - **2 diodes 1N4148W SMD or 1N4148 through-hole** the EC11 encoder shafts are pushable and can be used as configurable keys.
-
-- **LEDs**
- - **58 SK6812 MINI-E RGB LEDs**. The LED body 3.2x2.8x1.7mm and with legs is 5.8x2.8. Avoid the non-MINI-E version without the legs. Purchase extra as they are delicate. If you have the option to use a heat gun and solder paste, this makes the install easier. Alternately, you can pay the pcb manufacturer to add them. 
-
-- **Resistors**
- - **2x 4.7kOhm through hole resistors** These only needed if you want to use the less common I2C communication protocol between halves. They are installed in the R1/R2 spots. I have not tested an I2C setup. The firmware on this page uses serial communication and does not require the resistors.
-
-Components that are common on other Sofle variants but are **not** used on this Sofle Choc MX: bottom plate, top plate, M2 spacers and screws.
 
 @todo - rewrite left off here <<<<<
 ## Tools and materials
@@ -223,7 +168,7 @@ Components that are common on other Sofle variants but are **not** used on this 
 - no-clean flux makes soldering easier
 - solder wick or desoldering pump to correct mistakes
 - good tweezers
-- flush cutters to trim diode legs when socketing the ProMicro
+- flush cutters to trim diode legs
 - masking, kapton or electrical tape
 - isopropyl-alcohol for cleaning
 - screwdriver
