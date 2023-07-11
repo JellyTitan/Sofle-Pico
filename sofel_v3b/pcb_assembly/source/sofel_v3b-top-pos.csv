@@ -1,0 +1,11 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"","","e4819d78-7681-430c-a61d-7ce8f9aac4b4",21.470000,108.700000,180.000000,top
+"D_SOL_1","MUR340S","MUR340S_IN4001_TH_HYBRID",49.490000,14.760000,15.699000,top
+"J2","4PIN","MJ-4PP-9",0.640000,60.510000,90.000000,top
+"J5","Conn_01x05_Socket","PinHeader_1x05_P2.54mm_Vertical",6.170000,43.510000,0.000000,top
+"J6","Conn_01x05_Socket","PinHeader_1x05_P2.54mm_Vertical",9.490000,43.510000,0.000000,top
+"J_SOL_1","Conn_01x02_Female","PinHeader_1x02_P2.54mm_Vertical",29.942500,10.935000,0.000000,top
+"Q1","TIP120","TO-220-3_Horizontal_TabUp",107.710000,24.670000,90.000000,top
+"R1","1k","R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",84.380000,18.720000,180.000000,top
+"REF**","uxcell a14092600ux0438 solenoid","uxcell a14092600ux0438 solenoid",86.470000,11.370135,0.000000,top
+"REF**","Tenting Puck","Tenting_Puck.kicad_mod_nocenter_v2",68.375000,70.210000,0.000000,top
