@@ -1,4 +1,4 @@
-23606918275118394
+23617064731592225
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97321,6 +97321,13 @@ R
 4
 2
 ergodonk_pico
+MUR340S_IN4001_TH_HYBRID
+
+
+0
+6
+2
+ergodonk_pico
 OLED SSD1306 128x64 UNVERIFIED v2
 
 
@@ -97993,6 +98000,13 @@ MJ-4PP-9
 8
 4
 sofle_v3b
+MUR340S_IN4001_TH_HYBRID
+
+
+0
+6
+2
+sofle_v3b
 OLED SSD1306 128x64 UNVERIFIED
 
 
@@ -98008,6 +98022,20 @@ OLED SSD1306 128x64 UNVERIFIED v2
 4
 sofle_v3b
 Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+sofle_v3b
+PinHeader_1x02_P2.54mm_Vertical
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+sofle_v3b
+PinHeader_1x05_P2.54mm_Vertical
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
 Through hole pin header THT 1x05 2.54mm single row
 0
@@ -98056,9 +98084,23 @@ level shifter
 5
 5
 sofle_v3b
+TO-220-3_Horizontal_TabUp
+TO-220-3, Horizontal, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
+TO-220-3 Horizontal RM 2.54mm
+0
+3
+3
+sofle_v3b
 Tenting_Puck.kicad_mod_nocenter_v2
 
 
 0
 4
 1
+sofle_v3b
+uxcell a14092600ux0438 solenoid
+
+
+0
+0
+0
