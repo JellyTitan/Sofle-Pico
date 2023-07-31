@@ -1,4 +1,4 @@
-23617069171859755
+23654387962330239
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -68698,6 +68698,76 @@ LED RGB NeoPixel
 4
 4
 PCM_marbastlib-various
+Molex_Pico-EZmate_78171-0002_1x02-1MP_P1.20mm_Vertical
+Molex Pico-EZmate series connector, 78171-0002 (http://www.molex.com/pdm_docs/sd/781710002_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+14
+3
+PCM_marbastlib-various
+Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical
+Molex Pico-EZmate series connector, 78171-0003 (http://www.molex.com/pdm_docs/sd/781710003_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+15
+4
+PCM_marbastlib-various
+Molex_Pico-EZmate_78171-0004_1x04-1MP_P1.20mm_Vertical
+Molex Pico-EZmate series connector, 78171-0004 (http://www.molex.com/pdm_docs/sd/781710004_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+16
+5
+PCM_marbastlib-various
+Molex_Pico-EZmate_78171-0005_1x05-1MP_P1.20mm_Vertical
+Molex Pico-EZmate series connector, 78171-0005 (http://www.molex.com/pdm_docs/sd/781710005_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+17
+6
+PCM_marbastlib-various
+Molex_Pico-EZmate_78171-5006_1x06-1MP_P1.20mm_Vertical
+Molex Pico-EZmate series connector, 78171-5006 (http://www.molex.com/pdm_docs/sd/781715006_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+18
+7
+PCM_marbastlib-various
+Molex_Pico-EZmate_PLUS_212134-0002_1x02-1MP_P1.00mm_Vertical
+Molex Pico-EZmate series connector, 212134-0002 (http://www.molex.com/pdm_docs/sd/2121340002_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+14
+3
+PCM_marbastlib-various
+Molex_Pico-EZmate_PLUS_212134-0003_1x03-1MP_P1.00mm_Vertical
+Molex Pico-EZmate series connector, 212134-0003 (http://www.molex.com/pdm_docs/sd/2121340003_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+15
+4
+PCM_marbastlib-various
+Molex_Pico-EZmate_PLUS_212134-0004_1x04-1MP_P1.00mm_Vertical
+Molex Pico-EZmate series connector, 212134-0004 (http://www.molex.com/pdm_docs/sd/2121340004_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+16
+5
+PCM_marbastlib-various
+Molex_Pico-EZmate_PLUS_212134-0005_1x05-1MP_P1.00mm_Vertical
+Molex Pico-EZmate series connector, 212134-0005 (http://www.molex.com/pdm_docs/sd/2121340005_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+17
+6
+PCM_marbastlib-various
+Molex_Pico-EZmate_PLUS_212134-0006_1x06-1MP_P1.00mm_Vertical
+Molex Pico-EZmate series connector, 212134-0006 (http://www.molex.com/pdm_docs/sd/2121340006_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+18
+7
+PCM_marbastlib-various
 QFN-60_EP_7x7_Pitch0.4mm
 QFN-60 package accroding to IS31FL3741A datasheets
 
@@ -69734,12 +69804,26 @@ Footprint for 0xCB Helios controllers, USB pointing away from PCB
 34
 33
 PCM_marbastlib-xp-promicroish
+Helios_AC 2
+Footprint for 0xCB Helios controllers, USB pointing away from PCB
+
+0
+34
+34
+PCM_marbastlib-xp-promicroish
 Helios_ACH
 Footprint for 0xCB Helios controllers, USB pointing away from PCB
 
 0
 65
 33
+PCM_marbastlib-xp-promicroish
+Helios_ACH 2
+Footprint for 0xCB Helios controllers, USB pointing away from PCB
+
+0
+65
+34
 PCM_marbastlib-xp-promicroish
 Helios_AH_Reversible
 Footprint for 0xCB Helios controllers, USB pointing away from PCB
@@ -69748,6 +69832,13 @@ Footprint for 0xCB Helios controllers, USB pointing away from PCB
 34
 33
 PCM_marbastlib-xp-promicroish
+Helios_AH_Reversible 2
+Footprint for 0xCB Helios controllers, USB pointing away from PCB
+
+0
+34
+34
+PCM_marbastlib-xp-promicroish
 Helios_AH_USBdn
 Footprint for 0xCB Helios controllers, USB facing PCB
 
@@ -69755,12 +69846,26 @@ Footprint for 0xCB Helios controllers, USB facing PCB
 34
 33
 PCM_marbastlib-xp-promicroish
+Helios_AH_USBdn 2
+Footprint for 0xCB Helios controllers, USB facing PCB
+
+0
+34
+34
+PCM_marbastlib-xp-promicroish
 Helios_AH_USBup
 Footprint for 0xCB Helios controllers, USB pointing away from PCB
 
 0
 34
 33
+PCM_marbastlib-xp-promicroish
+Helios_AH_USBup 2
+Footprint for 0xCB Helios controllers, USB pointing away from PCB
+
+0
+34
+34
 PCM_marbastlib-xp-promicroish
 Liatris_AH_Reversible
 Footprint for Splitkb Liatris controllers, through hole pads only
@@ -69918,6 +70023,13 @@ LED RGB 1206 rear mount reverse
 PCM_marbastlib-xp-various
 LED_WS2812_2020_rearmount
 2020 SMD adressable RGB LED with integrated controller
+LED RGB NeoPixel
+0
+4
+4
+PCM_marbastlib-xp-various
+LED_WS2812_4020
+2040 side-firing SMD adressable RGB LED with integrated controller
 LED RGB NeoPixel
 0
 4
@@ -97293,6 +97405,20 @@ CherryMX_Hotswop_ChocV2_Solder
 7
 2
 ergodonk_pico
+Cherry_MX_DS_Hotswap_1U_oneside
+
+
+0
+2
+2
+ergodonk_pico
+Cherry_MX_DS_Hotswap_1U_sofle3b v2
+
+
+0
+6
+2
+ergodonk_pico
 Cherry_MX_DS_Hotswap_miniE_1U_sofle3b v2
 
 
@@ -97320,6 +97446,20 @@ R
 0
 4
 2
+ergodonk_pico
+Hole from sofle for M2 posts gold rimmer
+
+
+0
+1
+0
+ergodonk_pico
+Hole from sofle for M2 posts gold rimmer 2
+
+
+0
+1
+0
 ergodonk_pico
 MUR340S_IN4001_TH_HYBRID
 
@@ -97390,6 +97530,20 @@ V2_CherryMX_DS_Hotswap_miniE_1U_SEED_RH
 0
 11
 6
+ergodonk_simple
+Hole from sofle for M2 posts gold rimmer
+
+
+0
+1
+0
+ergodonk_simple
+Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
 kailh-pg1425-x-switch
 Kailh-PG1425-X-Switch
 
