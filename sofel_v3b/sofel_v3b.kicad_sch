@@ -2663,12 +2663,7 @@
     (uuid ef1dea49-fa36-4d06-bdb0-df3415ad0e9f)
   )
 
-  (text "I2C Wiring explained\nhttps://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split\nTo enable I2C:\n1) Add 2 4.7k resistors. Both on one side.\n2) Break the data connection between 1/2 (Data/pin3 TRR$) @todo - is this step necessary?\n3) Bridge the SDA jumper\n4) Bridge the SCL jumper\n5) Load I2C firmware (Should this be step 1?)"
-    (at 66.04 99.06 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 0ab8d48e-edd2-4c69-81a8-7ae83dab5d7c)
-  )
-  (text "TRRS jack. Serial config is default using TX only. \nRX is not used in the default config, but electrically \ncan support full duplex with TX RX crossover in config.\n"
+  (text "TRRS jack. full duplex with TX RX crossover in config \nis the default. (SERIAL_USART_FULL_DUPLEX)\nIf you really need an extra pin, \nyou can reconfigure for Serial with TX only."
     (at 66.04 109.22 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0b9f4c1d-7663-4951-8854-1bc2af312d47)
