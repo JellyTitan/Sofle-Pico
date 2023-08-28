@@ -1,4 +1,4 @@
-23654387962330239
+23661165569501326
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97461,6 +97461,13 @@ Hole from sofle for M2 posts gold rimmer 2
 1
 0
 ergodonk_pico
+Hole from sofle for M2 posts gold rimmer 3
+
+
+0
+1
+0
+ergodonk_pico
 MUR340S_IN4001_TH_HYBRID
 
 
@@ -98175,6 +98182,20 @@ OLED SSD1306 128x64 UNVERIFIED v2
 12
 4
 sofle_v3b
+OLED SSD1306 128x64 UNVERIFIED v3
+
+
+0
+12
+4
+sofle_v3b
+OLED SSD1306 128x64 UNVERIFIED v3b
+
+
+0
+12
+4
+sofle_v3b
 Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
 Through hole pin header THT 1x05 2.54mm single row
@@ -98251,6 +98272,13 @@ Tenting_Puck.kicad_mod_nocenter_v2
 0
 4
 1
+sofle_v3b
+sol_thermal_releif
+
+
+0
+0
+0
 sofle_v3b
 uxcell a14092600ux0438 solenoid
 
