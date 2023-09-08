@@ -1,4 +1,4 @@
-23661165569501326
+23662859166030542
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98193,7 +98193,7 @@ OLED SSD1306 128x64 UNVERIFIED v3b
 
 
 0
-12
+16
 4
 sofle_v3b
 Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
@@ -98258,6 +98258,13 @@ level shifter
 0
 5
 5
+sofle_v3b
+Sofle Pico Logo
+
+
+0
+0
+0
 sofle_v3b
 TO-220-3_Horizontal_TabUp
 TO-220-3, Horizontal, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf

@@ -5060,7 +5060,7 @@
     (property "Value" "OLED" (at 19.05 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "sofle_v3b:OLED SSD1306 128x64 UNVERIFIED v2" (at 19.05 96.52 0)
+    (property "Footprint" "sofle_v3b:OLED SSD1306 128x64 UNVERIFIED v3b" (at 19.05 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 19.05 96.52 0)
