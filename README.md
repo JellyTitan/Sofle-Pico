@@ -3,19 +3,21 @@
 ![Sofle Pico](images/build_guide_v3/sofle_pico_v3.3.png)
 The Sofle Pico is based on the key layout of the Sofle V2 split keyboard. The Sofle Pico has been refactored to exclusively use the rp2040 based Pi Pico mcu. 
 
-- [Sofle Pico vs V2 & V1](#design-philosophy-and-quirks)
+[Overview](#overview)
+ - [Sofle Pico vs Sofle V1/V2](#design-philosophy-and-quirks)
  - [Pi Pico vs. ProMicro](#pi-pico-vs.-ProMicro)
  - [Features inherited from V2](#features-inherited-from-v2)
  - [New features](#new-features-in-v3)
  - [Notable changes](#notable-changes)
-- [Build Guide / Assembly](#build-guide--assembly)
- - [Parts](#parts)
- - [Required](#required)
+
+[Build Guide / Assembly](#build-guide--assembly)
+ - [Required Parts](#required-parts)
  - [Optional - RGB](#optional---rgb)
  - [Optional - OLED](#optional---oled)
  - [Optional - MCU Sockets](#optional---mcu-sockets)
  - [Optional - Solenoid](#optional---solenoid)
  - [Optional - Pimaroni trackball](#optional---pimaroni-trackball)
+ - [Regarding key plates](#regarding-key-plates)
  - [Soldering](#soldering)
  - [Diodes](#diodes)
  - [RGB (Optional)](#rgb-optional)
@@ -24,16 +26,17 @@ The Sofle Pico is based on the key layout of the Sofle V2 split keyboard. The So
  - [TRRS jack and Rotary Encoders](#trrs-jack-and-rotary-encoders)
  - [Case](#case)
  - [Flashing the firmware](#flashing-the-firmware)
-- [Troubleshooting](#troubleshooting)
+
+[Troubleshooting](#troubleshooting)
  - [No LEDs are working](#no-leds-are-working)
  - [Some LEDs are not working](#some-leds-are-not-working)
  - [An entire row or column of keys is not working](#an-entire-row-or-column-of-keys-is-not-working)
  - [Random key or keys not working](#random-key-or-keys-not-working)
 
-## Sofle Pico vs Sofle V1/V2
+## Overview
 
 ### Pi Pico vs. ProMicro
-Whereas Sofle v1 & v2 used the Promicro MCU, Sofle Pico uses the rp2040 MCU, which offers larger memory options at a low price point, which allows for more features like screen animations and RGB animation effects.
+Whereas [Sofle v1 & v2](https://github.com/josefadamcik/SofleKeyboard) used the Promicro MCU, Sofle Pico uses the rp2040 MCU, which offers larger memory options at a low price point. This allows for more features like screen animations and RGB animation effects.
 
 Although there is a QMK option to port the legacy pro-micro config to rp2040 boards that are backwards compatible, the rp2040 pins are not 5v tolerant. Essentially, the per key rgb doesn't work as it should.
 
@@ -51,26 +54,24 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 ### New features in V3
 * Default OLED is now 64x128, as opposed to 32x128.
 * OLED ports are separated and offset, so no jumper soldering is required.
+* 2 Common SSD1306 64x128 OLED variants are supported. (circle corner and oval corner).
 * Added clearly labeled and easily accessible [Pimoroni trackball](https://shop.pimoroni.com/en-us/products/trackball-breakout) tie in footprint.
-* Drastically simplified the PCB & improved labeling to simplify build troubleshooting. (The addition of a GND & VCC planes specifically).
+* Simplified the PCB & improved labeling to help with build troubleshooting. (The addition of a GND & VCC planes specifically).
 * Added through-hole/Surface mount hybrid footprints for the per-switch diodes.
 * Added a 'breakout' section for the unused pico pins to allow for easy tinkering.
-* Added optional solenoid.
-* The default communication is Serial, but the connection for TX/RX Full duplex is available if you would like to enable it. (The Pico supports firmware crossover).
-
-
+* The default communication protocol is full duplex TX/RX.
 
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
 * 3 degree rotation of the innermost thumb key. 
-* Sofle V1 & V2 firmware is not compatible due to the complete rewire for pipico.
+* Sofle V1 & V2 firmware is not compatible due to the complete rewire for pi pico.
 * Added drill holes above the mini-e hole to allow for easier tweezer placement.
 * MCU footprints side-by-side to reduce potential shorts.
-* Removed I2C Bus implementation.
+* Removed legacy I2C Bus implementation.
 * Modified thumb cluster outline to accommodate 1.25u thumb keycap.
 * Rounded board corners with a consistent radius. 
 * Added teardrops to decrease likelihood of acid traps during manufacture.
-* Added a VCC net to simplify routing.
+* Added VCC & GND net to simplify routing.
 * Poka-yoke TRRS footprint by removing unnecessary solder masks.
 * Tweaked diode placement & improved labeling for easier troubleshooting.
 * Removed reset button. It is no longer needed, as the Pico has a physical rest button.
@@ -82,9 +83,9 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 ![Sofle V3](images/build_guide_v3/tenting_puck.webp)
 ## Build Guide / Assembly
 
-### Parts
+<hr>
 
-#### Required
+### Required Parts
 
 
 
@@ -105,7 +106,9 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 | Case | 1 Left Set, 1 Right Set | Case files are located in the [case folder](./Case). | @todo - regenerate after v3.3 prototype validated |
 | Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | |
 
-#### Optional - RGB
+<hr>
+
+### Optional Parts - RGB
 
 These parts are necessary for the RGB lighting.
 
@@ -114,46 +117,49 @@ These parts are necessary for the RGB lighting.
 | 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
 | RGB SMD LEDs (Prefer SK6803MINI-E) | 74 | The 3MA SK6803MINI-E is highly recommended over the more traditional 12MA SK6812MINI-E due to its smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
-#### Optional - OLED
+<hr>
+
+### Optional Parts - OLED
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
-| SSD1306	128x64 | 1-2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. ![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
+| SSD1306	128x64 | 1-2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based soley on aesthetics.) ![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
 
 
-#### Optional - MCU Sockets
+### Optional - MCU Sockets
 This is strictly a quality of life upgrade. The older ProMicro's were notorious for weak jacks that could snap off. This is probably not needed with the PiPico.
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
 2.54mm Round Female Pin Header | 4 sets of 20 | They commonly come in strips of 40. They don't always snap in half cleanly, so get extra | [Aliexpress](https://www.aliexpress.us/item/2251832729504304.html)
 Needle pin male connectors | 80 | Diode legs would also work, but these little sets of 4 are nice to work with. | [Aliexpress](https://www.aliexpress.us/item/2251832650595759.html?spm=a2g0o.order_list.order_list_main.186.15a91802YueygY&gatewayAdapt=glo2usa)
-#### Optional - Solenoid
-Solenoid components are soldered to the pcb. The Solenoid itself attaches to an alternate set of plates. Technically you could add one on each hand, but i've not tried this. Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/412/solenoid_driver.pdf). 
-[QMK Docs for solenoid.](https://docs.qmk.fm/#/feature_haptic_feedback?id=solenoids)
+### Optional - Solenoid
+The solenoid feature is still a work in progress. It is designed to attach to a seperate backplate.
+Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/412/solenoid_driver.pdf). 
+[QMK Docs for solenoid.](https://docs.qmk.fm/#/feature_haptic_feedback?id=solenoids) This needs to be re-worked to account for the lower voltage and draw of the Pico. (I tried the existing circuit with a 1k resistor - Pico was not strong enough).
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
 | Solenoid | 1 | 4.5v Solenoid - I've only been able to get the Amazon Uxcell solenoid to work. I suspect the voltage is a bit low. | [Amazon](https://www.amazon.com/dp/B013DR655A/ref=cm_sw_em_r_mt_dp_YHJRTZ5YY042HC7522VG?_encoding=UTF8&psc=1)
- 2.2k Resistor | 1 | The 2.2k resistor works with the 5v ProMicro. @todo do the math here.| |
- 1N4001 Diode or MUR340 | 1 | Either the through hole IN4001 or the Surface mount MUR340 will work. | [AliExpress](https://www.aliexpress.us/item/3256802685977811.html)
+ ~~2.2k Resistor~~ | 1 | ~~The 2.2k resistor works with the 5v ProMicro.~~ @todo do the math here.| |
+ 1N4001 Diode or MUR340 | 1 | Either the through hole IN4001 or the Surface mount MUR340 will work. | [AliExpress](https://www.aliexpress.us/item/3256802685977811.html)|
+ TIP 120 | 1 | @todo Do the math here - is this still the best part? | 
 
-#### Optional - Pimoroni trackball
+### Optional - Pimoroni trackball
 Electrically, this should work - but i have not validated it. 
 | Name | Count | Remarks | Potential Storefront |
 |-|-|-|-|
 | Pimoroni trackball | 1 | The default footprint replaces a rotary encoder. Installing flush to the board is a bit too low to be comfortable, so you may want to raise it. @todo elaborate.|[Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout)|
 
 
-Regarding top plates:
- - The top plates from Sofle v1, v2, RGB and Choc versions are not compatible.
- - The solenoid & the OLED are taller than the switch plate, so they have their own separate taller plates.
- - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and solenoid/oled plates. 
+### Regarding key plates:
+ - The top/key plates from Sofle v1, v2, RGB and Choc versions are not compatible.
+ - The OLEDs are taller than the switch plate, so they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDS can be installed higher/lower.
+ - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates. 
 
-
+@todo - where does this go?
 The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The Choc V2 footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). 
 
 ## Updated Build Guide and Kits
 
 @todo - write this.
-
 
 @todo refresh Gerbers and update path
 @todo: Mention "Lead free" 
