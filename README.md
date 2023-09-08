@@ -30,22 +30,22 @@ The Sofle Pico is based on the key layout of the Sofle V2 split keyboard. The So
  - [An entire row or column of keys is not working](#an-entire-row-or-column-of-keys-is-not-working)
  - [Random key or keys not working](#random-key-or-keys-not-working)
 
-## Sofle Pico vs V2 & V1
+## Sofle Pico vs Sofle V1/V2
 
 ### Pi Pico vs. ProMicro
 Whereas Sofle v1 & v2 used the Promicro MCU, Sofle Pico uses the rp2040 MCU, which offers larger memory options at a low price point, which allows for more features like screen animations and RGB animation effects.
 
 Although there is a QMK option to port the legacy pro-micro config to rp2040 boards that are backwards compatible, the rp2040 pins are not 5v tolerant. Essentially, the per key rgb doesn't work as it should.
 
-There are many rp2040 boards available in the same form factor as the Promicro, but they tend to be 4-8 times more costly than the Pi Pico formfactor, and inexpensive Pi Pico clones are readily available.
+There are many rp2040 boards available in the same form factor as the Promicro, but they tend to be 4-8 times more costly than the Pi Pico form factor, and inexpensive Pi Pico clones are readily available.
 
-Pi Pico has a larger form factor. Sofle's have traditionally had a cutout above the thumb cluster, which is now occupied by the pi pico, so some of the aesthetic heritage is lost. PCB manufacturing generally charges by the square mm, so there was no additional cost from a production perspective.
+Sofle's have traditionally had a cutout above the thumb cluster. That space is now occupied by the larger form factor of the pi pico, so some of the aesthetic heritage is lost. PCB manufacturing generally charges by the square mm, so there was no additional cost from a production perspective.
 
-Accommodating the voltage variances between the Promicro and the Pi Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The mini-e LEDs commonly used for keyboards require 5v logic, which was used by the Promicro. The Pi Pico uses 3.3v logic. A level shifter, along with a lower current variant of the mini-e make this work. Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable 3V logic circuit.
+Accommodating the voltage variances between the Promicro and the Pi Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with Promicro keyboards require 5v logic. The Pi Pico uses 3.3v logic. A level shifter, along with a lower current variant of the SK6803MINI-E make this work. Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable 3V logic circuit.
 
 ### Features inherited from V2
  - Hotswap sockets are required. 
- - Per-key RGB remains optional and uses the relatively easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for v3)
+ - Per-key RGB remains optional and uses the relatively easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for Pico)
  - Key placement has not changed. (mostly - 3deg thumb key rotation).
 
 ### New features in V3

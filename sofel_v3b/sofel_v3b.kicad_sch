@@ -6074,7 +6074,7 @@
     (property "Datasheet" "" (at 229.235 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ccdb1fdc-1246-4336-9093-af0dcb3d6d9e))
+    (pin "1" (uuid f31043c3-e3a6-4cd3-b069-0201799903da))
     (instances
       (project "sofel_v3b"
         (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
