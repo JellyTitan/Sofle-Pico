@@ -1,13 +1,13 @@
 # Sofle Pico
 
+The Sofle Pico is based on the key layout of the Sofle V2 split keyboard. The Sofle Pico has been refactored to exclusively use the rp2040 based Pi Pico MCU. 
+
 ![Sofle Pico](images/build_guide_v3/sofle_pico_v3.3.png)
-The Sofle Pico is based on the key layout of the Sofle V2 split keyboard. The Sofle Pico has been refactored to exclusively use the rp2040 based Pi Pico mcu. 
 
 [Overview](#overview)
- - [Sofle Pico vs Sofle V1/V2](#design-philosophy-and-quirks)
- - [Pi Pico vs. ProMicro](#pi-pico-vs.-ProMicro)
+ - [Pi Pico vs. ProMicro](#pi-pico-vs-promicro)
  - [Features inherited from V2](#features-inherited-from-v2)
- - [New features](#new-features-in-v3)
+ - [New features](#new-features-in-the-sofle-pico)
  - [Notable changes](#notable-changes)
 
 [Build Guide / Assembly](#build-guide--assembly)
@@ -51,7 +51,7 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
  - Per-key RGB remains optional and uses the relatively easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for Pico)
  - Key placement has not changed. (mostly - 3deg thumb key rotation).
 
-### New features in V3
+### New features in the Sofle Pico
 * Default OLED is now 64x128, as opposed to 32x128.
 * OLED ports are separated and offset, so no jumper soldering is required.
 * 2 Common SSD1306 64x128 OLED variants are supported. (circle corner and oval corner).
