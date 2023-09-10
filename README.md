@@ -60,6 +60,7 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 * Added through-hole/Surface mount hybrid footprints for the per-switch diodes.
 * Added a 'breakout' section for the unused pico pins to allow for easy tinkering.
 * The default communication protocol is full duplex TX/RX.
+* Designed for automated PCB Assembly. 
 
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
