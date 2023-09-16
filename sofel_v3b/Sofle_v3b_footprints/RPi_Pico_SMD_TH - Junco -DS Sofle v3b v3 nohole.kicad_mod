@@ -553,9 +553,9 @@
       fd5f7d77-0f73-4021-88a8-0641f0fe8d98
     )
   )
-  (model "${KIPRJMOD}/KiCad-RP-Pico/RP-Pico Libraries/Pico.wrl"
-    (offset (xyz 0 0 0))
+  (model "${KIPRJMOD}/SofleClick.3dshapes/PICO_PinsDown.STEP"
+    (offset (xyz -11.75 -25.5 3.5))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 90 180 -180))
   )
 )
