@@ -220,6 +220,9 @@ Switch sockets installed on the back of the PCB facing up towards the front of t
 Heat the metal connector, apply solder and look for the solder to wick down to the PCB. You want a solid joint since this may take some mechanical strain from switch installation and removal.
 
 ### Level shifter
+The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
+![level shifter](images/build_guide_v3/sofle_pico_level_shifter_placement.png)
+
 ### LEDs
 
 ![LED](images/build_guide_v3/sofle_pico_led_orientation.png)
@@ -228,29 +231,20 @@ LEDs are placed on the back of the PCB. The lens should point up through the PCB
 
 To solder: tin one pad, place the LED and hold using tweezers, apply heat to the leg until the solder melts and the LED is flush with the board. Now the remaining legs can be soldered without the component moving. The LEDs are sensitive to heat. Let the LED cool between soldering each leg. Use the lowest heat needed for your solder.
 
-The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceeding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board.
+Alternately, you can use a rework station heat gun and solder paste. I prefer this method for the LEDs, i think it's easier to get components to sit flush.
 
-![LED](images/build_guide_choc/led_sequence.jpg)
+The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board.
 
+![LED](images/build_guide_v3/sofle_pico_led_wiring_chain.png)
 
-### OLED Jumpers
+### Pi Pico MCU
 
-![OLED Jumpers](images/build_guide_choc/oled_jumper.jpg )
+![Pi Pico MCU](images/build_guide_v3/sofle_pico_MCU_heroshot.png)
 
-Now we move to the front of the PCB.
-
-The jumpers in the photo should be bridged if using an OLED dispay. The jumpers may not be accessible later in the build depending on how the Pro Micro is attached. Bridge the jumpers on the top side of the board, the same side the ProMicro will be mounted on.
-
-
-### Pro Micro
-
-![Pro Micro](images/build_guide_choc/promicro.jpeg)
-
-The Pro Micro is installed on the top of the board, upside down and in the marked holes.
+The Pico is installed on the top of the board, face up, and in the marked holes. (There are many variants of the Pi Pico - the face up orientation ensures easy access to the reset button wherever it may be).
 
 * Top of the board: this is the side of the PCB opposite the diodes, LEDs and switch sockets
-* Upside down: both Pro Micro components should face the PCB with the mostly plain back facing out
-* Marked holes: there are two sets of holes in the PCB, use the holes with the rectangular outline on the top of the board
+* Marked holes: Insert the Pico into the holes with the rectangular outline on the top of the board. 
 
 Double-check your work here. This step is hard to reverse if a mistake is made.
 
@@ -262,7 +256,7 @@ To install a socketed Pro Micro using the diode leg approach [from splitkb.com][
 
  3. Solder the legs to the Pro Micro. Snip off the legs above the Pro Micro.
 
-If you ever need to remove the Pro Micro: do it by gently prying the board up in small increments, working your way around the board. Avoid pressure on the USB connector. The diode leags are quite weak and will usually bend if you pull the Pro Micro off in one action.
+If you ever need to remove the Pro Micro: do it by gently prying the board up in small increments, working your way around the board. Avoid pressure on the USB connector. The diode legs are quite weak and will usually bend if you pull the Pro Micro off in one action.
 
 
 ### OLED
