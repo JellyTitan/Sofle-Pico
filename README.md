@@ -28,7 +28,9 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Switch Sockets](#switch-sockets)
  - [Level Shifter](#level-shifter)
  - [LEDs](#leds)
- - [Pico](#pico)
+ - [Pi Pico MCU](#pi-pico-mcu)
+ - [OLED](#oled)
+ - [TRRS Jacks](#trrs-jacks)
  - [Hot-swap Sockets](#hot-swap-sockets)
  - [TRRS jack and Rotary Encoders](#trrs-jack-and-rotary-encoders)
  - [Case](#case)
@@ -108,7 +110,8 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 | M2 12mm FF spacers | 6 | Connects the bottom plate to the OLED plate, running through the PCB and the keyplate. @todo - is it really 12mm? | |
 | M2x4mm screws | 18 | M2 screws. | |
 | Case | 1 Left Set, 1 Right Set | Case files are located in the [case folder](./Case). | @todo - regenerate after v3.3 prototype validated |
-| Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | |
+| Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | | 
+
 
 <hr>
 
@@ -247,32 +250,56 @@ The Pico is installed on the top of the board, face up, and in the marked holes.
 * Marked holes: Insert the Pico into the holes with the rectangular outline on the top of the board. 
 
 Double-check your work here. This step is hard to reverse if a mistake is made.
+#### Pi Pico MCU installed permanently with header pins
+You can permanently install the Pico using the 20-pin male-male headers that came with the Pico. 
+1. insert the headers into the board and the Pico both before soldering. (The header pin rows can tilt a little if it's not inserted into both the board and the Pico.) The header pins may have one longer side. Install the longer side on the PCB, because you'll need to trim these, and the trimmed pins look better on the underside of the board. Use a piece of capton tape to attach the Pico to the PCB while soldering.
 
-To install a socketed Pro Micro using the diode leg approach [from splitkb.com][promicrosocketing]:
+1. Flip the board over. The pins on the back of the board that you will be soldering should _not_ be in the outline. Soldering 1 of the outermost pins on each pin header on the PCB. Hold the board up to make sure the pin header is sitting flush with the pcb. If it's not, you can reheat that joint until it is flush. 
+*@todo - this pick is gross - grab another without smudges and cathair.*
+![Pi Pico MCU](images/build_guide_v3/sofle_pico_starter_pins.png) 
+1. Solder the remaining pcb/pin header joints on the back.
+1. Flip the board over. With the Pico, repeat the process of soldering & checking 1 pin with the pin header and the Pico. 
+1. Solder all the remaining Pico/pin header pins.
+#### Pi Pico MCU installed with sockets
+Previous versions of the Sofle used diode legs. This guide does not - instead we'll use "needle pins", which are now readily available, inexpensive, and less fussy then diode legs. The needle pins will add some height to your MCU, which works well to support the OLEDs.
+![Pi Pico socketed MCU](images/build_guide_v3/sofle_pico_sockets_add_height.png)
+You can use diode legs if you're feeling fancy.
+To install a socketed Pico using the diode leg approach [from splitkb.com][promicrosocketing]:
 
- 1. Install the 12-pin female headers on the top of the board in the outlined through holes. Use some tape to temporarily tack them in place. Flip the board over onto a flat, hard surface. While soldering the first pins, push down on the PCB to ensure the headers are perpendicular and fully seated.
+1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of capton tape to hold everything in place can be helpful. 
 
- 2. Flip the board upright again. Optionally place some tape over the sockets to protect against fusing parts together. Place the Pro Micro upside down on top. Push diodes though the Pro Micro holes, through the tape and seated into the socket below.
+1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).
 
- 3. Solder the legs to the Pro Micro. Snip off the legs above the Pro Micro.
+1. Solder the remaining pins on the back of the pcb.
 
-If you ever need to remove the Pro Micro: do it by gently prying the board up in small increments, working your way around the board. Avoid pressure on the USB connector. The diode legs are quite weak and will usually bend if you pull the Pro Micro off in one action.
+1. Flip over the board. On the front, solder 1 pin on each side to the Pico. Again check that everything is flush before soldering the remaining pins.
+
+
+If you ever need to remove the Pico: do it by gently prying the board up in small increments, working your way around the board. Avoid pressure on the USB connector. The diode legs are quite weak and will usually bend if you pull the Pro Micro off in one action.
 
 
 ### OLED
+@todo add updated images when v3.4 prototype comes in.
 
-Install the OLED so it overhangs the Pro Micro. I added electrican's tape to the bottom of the OLED module where it might contact the Pro Micro.
+There are two common variants of the SSD1306 OLED. They are easily distinguishable by the corner holes. There is a separate socket for each of these, because they switch the GND/VCC pins. This pins are usually labeled on the OLEDs themselves. Please check the OLED pins against the marking on the PCB to ensure everything matches as expected.
 
-If you are socketing the OLED, install the 4 pin, half height female header on the top of the PCB. Then push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
+![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png) ![OLED sockets](images/build_guide_v3/sofle_pico_oled_socket_closeup.png)
+![OLED sockets](images/build_guide_v3/sofle_pico_LH_OLED_socket.png)
+We will be installing the OLED so it overhangs the Pro Micro. 
+1. Determine which socket your model of OLED will use.
+1. Add electrican's tape to the bottom of the OLED module where it might contact the Pico.
+1. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use capton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
+1. Solder the remaining socket pins.
+1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
+1. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.
+![OLED bumper](images/build_guide_v3/sofle_pico_OLED_bumper.png)
 
+### TRRS Jacks
+Solder these on the front of the boards, inserting into the outline.
+Some brands of jack will snap into the board, holding them in place while you solder. Other brands may require tape. Solder 1 pin first to check that everything is flush. Adjust as needed. Solder remaining pins. 
 
-### Solder misc components
-
-Use tape to tack each component in place while flipping the board over to solder.
-
-Solder the TRRS connector. You may need to bend the TRRS connector pins 90 degrees so they point down into the PCB. The R1 and R2 locations should remain empty.
-
-Solder the encoder.
+### Rotary encoder
+@todo this needs to be added to the TOC.
 
 
 ### Assemble
