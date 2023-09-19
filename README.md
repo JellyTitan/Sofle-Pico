@@ -75,7 +75,6 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
 * 3 degree rotation of the innermost thumb key. 
-* Added additional sockets for OLEDs, so no OLED jumpers are needed.
 * Sofle V1 & V2 firmware is not compatible due to the complete rewire for pi pico.
 * Added drill holes above the mini-e hole to allow for easier tweezer placement.
 * MCU footprints side-by-side to reduce potential shorts.
@@ -105,7 +104,7 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 | Raspberry Pi Picos | 2 | PCB is specifically designed with the official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle Pico is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907).| [AliExpress, YD-2040](https://www.aliexpress.us/item/3256803909832318.html) |
 | TRRS Jacks | 2 | PJ-320A | [AliExpress](https://www.aliexpress.us/item/2255800474897706.html) |
 | TRRS or TRS Cable (3.5mm "Headphone" Cable) | 1 | TRRS (4 pole) or TRS (3 pole) will work. | |
-| MX Style Switches | 58 | | |
+| MX Style Switches | 58 | 3-pin or 5-pin will work. If you're not using a keyplate, you'll want 5-pin.| |
 | Key Caps | 58 | | |
 | Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
 | M2 8mm FF spacers | 12 | Connects the bottom plate to the key plate, running through the PCB | |
@@ -222,14 +221,14 @@ Feel free to open an issue if you have a suggestion for improving the poka-yoke.
 
 ![diode orientation](images/build_guide_v3/sofle_pico_diode_orientation.png)
 
-Diodes, surface mount or through-hole, can be installed on either the front or the back, but the back is preferred for a cleaner look. If you are hand soldering, through diodes are recommended because they are easier.
+Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
-Diodes must be oriented with the white band in the direction of the "arrow" symbol on the PCB.
+Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
 
-For surface mount diodes, a common method is to tin one pad, place the diode on, apply the soldering iron to the diode leg until it melts the solder underneath and sinks flush with the PCB. Then come back and solder the other leg. Alternately, you can use a rework station heat gun and solder paste. I prefer this method for smds, i think it's easier to get components to sit flush.
+For surface mount diodes, a common method is to tin one pad, place the diode on, apply the soldering iron to the diode leg until it melts the solder underneath and sinks flush with the PCB. Then come back and solder the other leg. Alternately, you can use a rework station heat gun and solder paste. (I prefer this method for smds).
 .
 
-There is 1 diode per keyswitch, 1 diode on the rotary encoder, and one for the Pico on the far right.
+There is 1 diode per key, 1 diode on the rotary encoder, and one for the Pico on the far right.
 ![diode orientation](images/build_guide_v3/sofle_pico_diode_highlights.png)
 
 ### Switch Sockets
@@ -249,7 +248,7 @@ LEDs are placed on the back of the PCB. The lens should point up through the PCB
 
 To solder: tin one pad, place the LED and hold using tweezers, apply heat to the leg until the solder melts and the LED is flush with the board. Now the remaining legs can be soldered without the component moving. The LEDs are sensitive to heat. Let the LED cool between soldering each leg. Use the lowest heat needed for your solder.
 
-Alternately, you can use a rework station heat gun and solder paste. I prefer this method for the LEDs, i think it's easier to get components to sit flush.
+Alternately, you can use a rework station heat gun and solder paste. I prefer this method for the LEDs, i think it's easier to get components to sit flush. Put a dab of solder paste on each pad, then place your LEDs with tweezers or a steady hand. (The holes above/below the LED hole are intended to make tweezer placement easier).
 
 The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board.
 
