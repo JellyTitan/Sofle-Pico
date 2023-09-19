@@ -1,7 +1,7 @@
 # Sofle Pico Keyboard
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Pi Pico MCU. 
 
-The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The MX footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable 3V logic circuit.
+The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The MX footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable Pico LED level shifting circuit.
 ![Sofle Pico](images/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](images/build_guide_v3/sofle_pico_v3.3.png)
 
@@ -31,10 +31,11 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Pi Pico MCU](#pi-pico-mcu)
  - [OLED](#oled)
  - [TRRS Jacks](#trrs-jacks)
+ - [Rotary Encoders](#rotary-encoders)
  - [Hot-swap Sockets](#hot-swap-sockets)
- - [TRRS jack and Rotary Encoders](#trrs-jack-and-rotary-encoders)
- - [Case](#case)
- - [Flashing the firmware](#flashing-the-firmware)
+ - [Final assembly](#final-assembly)
+ - [Warnings and disclaimers](#warnings-and-disclaimers)
+ - [Firmware and programming](#firmware-and-programming)
 
 [Troubleshooting](#troubleshooting)
  - [No LEDs are working](#no-leds-are-working)
@@ -122,14 +123,15 @@ These parts are necessary for the RGB lighting.
 | Name | Count | Remarks | Potential Storefront |
 | --------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
-| RGB SMD LEDs (Prefer SK6803MINI-E) | 74 | The 3MA SK6803MINI-E is highly recommended over the more traditional 12MA SK6812MINI-E due to its smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
+| RGB SMD LEDs SK6803MINI-E | 74 | The 3MA SK6803MINI-E must be used instead of the more traditional 12MA SK6812MINI-E. The SK6803MINIE-E has a smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
 <hr>
 
 ### Optional Parts - OLED
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
-| SSD1306	128x64 | 1-2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based soley on aesthetics.) ![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
+| SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based soley on aesthetics.) ![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
+| 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](images/build_guide_v3/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html)|
 
 
 ### Optional - MCU Sockets
@@ -201,7 +203,7 @@ Then install the components on the front:
  - Pico MCU & socket
  - OLED & socket
  - TRRS connector
- - encoder
+ - Rotary encoder
 
 The order of assembly does not matter **except** for these 2 components because they stack on top of one another:
 1. the Pico MCU
@@ -217,6 +219,10 @@ Diodes must be oriented with the white band in the direction of the "arrow" symb
 
 For surface mount diodes, a common method is to tin one pad, place the diode on, apply the soldering iron to the diode leg until it melts the solder underneath and sinks flush with the PCB. Then come back and solder the other leg. Alternately, you can use a rework station heat gun and solder paste. I prefer this method for smds, i think it's easier to get components to sit flush.
 .
+
+There is 1 diode per keyswitch, 1 diode on the rotary encoder, and one for the Pico on the far right.
+![diode orientation](images/build_guide_v3/sofle_pico_diode_highlights.png)
+
 ### Switch Sockets
 Switch sockets installed on the back of the PCB facing up towards the front of the PCB. Make sure they are flush with the PCB. 
 
@@ -298,39 +304,32 @@ We will be installing the OLED so it overhangs the Pro Micro.
 Solder these on the front of the boards, inserting into the outline.
 Some brands of jack will snap into the board, holding them in place while you solder. Other brands may require tape. Solder 1 pin first to check that everything is flush. Adjust as needed. Solder remaining pins. 
 
-### Rotary encoder
-@todo this needs to be added to the TOC.
+### Rotary encoders
+Saved these for last because they are tallest. Insert into the top of the board, and solder on the backside. Some EC11's have metal tabs on opposite sides that add mechanical stability - no need to solder those.
 
+### Final assembly
+Installing the keys and case.
 
-### Assemble
-
-- Snap a few switches into the top plate, the corner switches work best
-
-- Place the PCB on a flat surface. This will save some strain on the solder joints in the next step (though they should be able handle it).
-
-- Carefully lower the top plate with switches on the main PCB and push into sockets. Ensure pins are aligned.
-
-- Snap the remaining switches into the top plate pressing into the sockets.
-
-- There are no standoff between the PCB and top plate
-
-- Place the encoder knob on the shaft. Tighten the set screw with a hex key. A small screwdriver for glasses may do in a pinch.
-
-- Optionally add oled covers
-
-- Put at least 4 adhesive rubber feet in the corners so the keyboard is not moving when you type.
+1. Snap a few switches into the top plate, the corner switches work best.
+1. Place the PCB on a flat surface. This will save some strain on the solder joints in the next step (though they should be able handle it).
+1. Carefully lower the top plate with switches on the main PCB and push into sockets. Ensure pins are aligned.
+1. Snap the remaining switches into the top plate pressing into the sockets.
+1. Place the encoder knob on the shaft. Tighten the set screw with a hex key. A small screwdriver for glasses may do in a pinch.
+1. Slide the four 8mm standoffs through the PCB and align to the holes on the key plate. Attach the standoffs to the keyplate using M2 screws. 
+1. Attach the bottom plate to the four standoffs installed in the previous step.
+1. Use M2 screws to attach the three 12mm standoffs to the OLED cover plate.
+1. Slide the three standoff on the OLED plate through the PCB. Attach those standoffs to the backplate using M2 screws.
+1. Put at least 4 adhesive rubber feet in the corners so the keyboard is not moving when you type.
 
 
 ## Warnings and disclaimers
-
 - Don't connect or disconnect the TRRS cable when the keyboard is powered. It may short out. Always disconnect the USB cable first.
 - Be gentle with micro USB ports on your microcontrollers. They are easy to break.
-- Keep in mind that this is a prototype of a DIY keyboard. It's not a polished product.
+- Keep in mind that this is a prototype of a DIY keyboard. It’s not a polished product.
 
 ## Firmware and programming
-
-
-The Sofle Choc uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](https://github.com/qmk/qmk_firmware/pull/16736). Instead use the [brianlow/qmk_firmware](https://github.com/brianlow/qmk_firmware) fork.
+@todo - update hte firmware.
+The Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](https://github.com/qmk/qmk_firmware/pull/16736). Instead use the [brianlow/qmk_firmware](https://github.com/brianlow/qmk_firmware) fork.
 Suggested approach is to build the firmware yourself. You should be familiar with QMK and be able to make it work on your local environment. If not, please [follow the instructions in the documentation][qmkintro]. Note QMK setup is fairly invasive (upgrade every homebrew package on your system) so you might want to consider the [QMK Docker image](https://beta.docs.qmk.fm/using-qmk/guides/development-environments/getting_started_docker) for compiling.
 
 To flash:
@@ -386,7 +385,12 @@ The default layout for the Sofle Choc is in the QMK fork and demonstrates some L
 
 * v2.1.1 - Top plate: moved the version label to less visible location, widened the area above the encoder. PCB version remains at v2.1
 * v2.1 - First published version
-
+<style>
+mark{
+    color:red;
+}
+</style>
+[🔼 Back to top](#sofle-pico-keyboard)
 ## Footnotes
 [layoutarticle]: <https://josef-adamcik.cz/electronics/in-search-of-the-best-custom-keyboard-layout.html> "In search of the best custom keyboard layout"
 [introductionarticle]: <https://josef-adamcik.cz/electronics/let-me-introduce-you-sofle-keyboard-split-keyboard-based-on-lily58.html> "Let me introduce you SofleKeyboard - a split keyboard based on Lily58 and Crkbd"
