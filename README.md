@@ -75,6 +75,7 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
 * 3 degree rotation of the innermost thumb key. 
+* Added additional sockets for OLEDs, so no OLED jumpers are needed.
 * Sofle V1 & V2 firmware is not compatible due to the complete rewire for pi pico.
 * Added drill holes above the mini-e hole to allow for easier tweezer placement.
 * MCU footprints side-by-side to reduce potential shorts.
@@ -208,6 +209,14 @@ Then install the components on the front:
 The order of assembly does not matter **except** for these 2 components because they stack on top of one another:
 1. the Pico MCU
 1. the OLED screen
+
+### Poka yoke
+When designing the Sofle Pico, an effort was made to '[poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)' the design, that is, to make the design as 'fool proof' as possible to assemble. 
+
+Specifically, clear markings/symbols and selective masking of footprint through-holes are used to ensure that components are soldered to the correct side & in the correct orientation. Outlines indicate the side the component should be inserted into. The side with the outlines has footprint through-holes masked, so that if the user inserted the component from the wrong side, it would not be solderabe.
+![diode orientation](images/build_guide_v3/sofle_pico_poke-yoke.png)
+Feel free to open an issue if you have a suggestion for improving the poka-yoke. (I'd like to move away from English language notes, and replace them with universal pictograms if the time ever permits).
+
 
 ### Diodes
 
