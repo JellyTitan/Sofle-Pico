@@ -46,7 +46,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ## Overview
 
 ### Pi Pico vs. ProMicro
-Whereas [Sofle v1 & v2](https://github.com/josefadamcik/SofleKeyboard) used the Promicro MCU, Sofle Pico uses the rp2040 MCU, which offers larger memory options at a low price point. This allows for more features like screen animations and RGB animation effects.
+Whereas [Sofle v1 & v2](https://github.com/josefadamcik/SofleKeyboard) used the Promicro MCU, Sofle Pico uses the rp2040 MCU. The Pico offers larger memory options at a low price point. This allows for more features like screen animations and RGB animation effects.
 
 Although there is a QMK option to port the legacy pro-micro config to rp2040 boards that are backwards compatible, the rp2040 pins are not 5v tolerant. Essentially, the per key rgb doesn't work as it should.
 
@@ -57,9 +57,9 @@ Sofle's have traditionally had a cutout above the thumb cluster. That space is n
 Accommodating the voltage variances between the Promicro and the Pi Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with Promicro keyboards require 5v logic. The Pi Pico uses 3.3v logic. A level shifter, along with a lower current variant of the SK6803MINI-E make this work. Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable 3V logic circuit.
 
 ### Features inherited from V2
+ - Key placement has not changed. (mostly - 3deg thumb key rotation).
  - Hotswap sockets are required. 
  - Per-key RGB remains optional and uses the relatively easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for Pico)
- - Key placement has not changed. (mostly - 3deg thumb key rotation).
 
 ### New features in the Sofle Pico
 * Default OLED is now 64x128, as opposed to 32x128.
@@ -387,10 +387,12 @@ The default layout for the Sofle Choc is in the QMK fork and demonstrates some L
 * v2.1 - First published version
 <style>
 mark{
-    color:red;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
 }
 </style>
-[🔼 Back to top](#sofle-pico-keyboard)
+<mark>[🔼 Back to top](#sofle-pico-keyboard)</mark>
 ## Footnotes
 [layoutarticle]: <https://josef-adamcik.cz/electronics/in-search-of-the-best-custom-keyboard-layout.html> "In search of the best custom keyboard layout"
 [introductionarticle]: <https://josef-adamcik.cz/electronics/let-me-introduce-you-sofle-keyboard-split-keyboard-based-on-lily58.html> "Let me introduce you SofleKeyboard - a split keyboard based on Lily58 and Crkbd"
