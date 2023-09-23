@@ -2,8 +2,8 @@
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Pi Pico MCU. 
 
 The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The MX footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable Pico LED level shifting circuit.
-![Sofle Pico](images/sofle_pico_v3.3_hero.png)
-![Sofle Pico](images/build_guide_v3/sofle_pico_v3.3.png)
+![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
+![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3.png)
 
 [Overview](#overview)
  - [Pi Pico vs. ProMicro](#pi-pico-vs-promicro)
@@ -91,7 +91,7 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 * Optimized for hand building - every SMD component has an alternate through hole footprint. (Except for the level-shifter, because 3.3v logic became popular after SMDs became common, so there is no through-hole component available).
 * Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
 Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).
-![Sofle V3](images/build_guide_v3/tenting_puck.webp)
+![Sofle V3](docs/images/build_guide_pico/tenting_puck.webp)
 ## Bill of materials
 
 ### Required Parts
@@ -130,8 +130,8 @@ These parts are necessary for the RGB lighting.
 ### Optional Parts - OLED
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
-| SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based soley on aesthetics.) ![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
-| 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](images/build_guide_v3/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html)|
+| SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based soley on aesthetics.) ![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
+| 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](docs/images/build_guide_pico/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html)|
 
 
 ### Optional - MCU Sockets
@@ -191,7 +191,7 @@ This guide includes all optional components.
 ### Prepare
 
 Make sure you know which side you are working on, and don't make two left hand sides by mistake. Stick a piece of tape on the front side of both PCBs to help remember.
-![Sofle V3](images/build_guide_v3/sofle_pico_tape.png)
+![Sofle V3](docs/images/build_guide_pico/sofle_pico_tape.png)
 
 This guide is written in the order I like to install components, starting with the components on the back, shortest to tallest:
  - diodes
@@ -213,14 +213,14 @@ The order of assembly does not matter **except** for these 2 components because 
 When designing the Sofle Pico, an effort was made to '[poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)' the design, that is, to make the design as 'fool proof' as possible to assemble. 
 
 Specifically, clear markings/symbols and selective masking of footprint through-holes are used to ensure that components are soldered to the correct side & in the correct orientation. Outlines indicate the side the component should be inserted into. The side with the outlines has footprint through-holes masked, so that if the user inserted the component from the wrong side, it would not be solderabe.
-![diode orientation](images/build_guide_v3/sofle_pico_poke-yoke.png)
+![diode orientation](docs/images/build_guide_pico/sofle_pico_poke-yoke.png)
 
 Please open an issue if you have a suggestion for improving the poka-yoke. (I'd like to move away from English language notes, and replace them with universal pictograms if the time ever
 
 
 ### Diodes
 
-![diode orientation](images/build_guide_v3/sofle_pico_diode_orientation.png)
+![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_orientation.png)
 
 Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
@@ -230,7 +230,7 @@ For surface mount diodes, a common method is to tin one pad, place the diode on,
 .
 
 There is 1 diode per key, 1 diode on the rotary encoder, and one for the Pico on the far right.
-![diode orientation](images/build_guide_v3/sofle_pico_diode_highlights.png)
+![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_highlights.png)
 
 ### Switch Sockets
 Switch sockets installed on the back of the PCB facing up towards the front of the PCB. Make sure they are flush with the PCB. 
@@ -239,11 +239,11 @@ Heat the metal connector, apply solder and look for the solder to wick down to t
 
 ### Level shifter
 The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
-![level shifter](images/build_guide_v3/sofle_pico_level_shifter_placement.png)
+![level shifter](docs/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
 
 ### LEDs
 
-![LED](images/build_guide_v3/sofle_pico_led_orientation.png)
+![LED](docs/images/build_guide_pico/sofle_pico_led_orientation.png)
 
 LEDs are placed on the back of the PCB. The lens should point up through the PCB so they shine into the bottom of the switch. One leg will have a diagonal cut. This cut leg should be aligned with the mark on the PCB.
 
@@ -253,11 +253,11 @@ Alternately, you can use a rework station heat gun and solder paste. I prefer th
 
 The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board.
 
-![LED](images/build_guide_v3/sofle_pico_led_wiring_chain.png)
+![LED](docs/images/build_guide_pico/sofle_pico_led_wiring_chain.png)
 
 ### Pi Pico MCU
 
-![Pi Pico MCU](images/build_guide_v3/sofle_pico_MCU_heroshot.png)
+![Pi Pico MCU](docs/images/build_guide_pico/sofle_pico_MCU_heroshot.png)
 
 The Pico is installed on the top of the board, face up, and in the marked holes. (There are many variants of the Pi Pico - the face up orientation ensures easy access to the reset button wherever it may be).
 
@@ -271,13 +271,13 @@ You can permanently install the Pico using the 20-pin male-male headers that cam
 
 1. Flip the board over. The pins on the back of the board that you will be soldering should _not_ be in the outline. Soldering 1 of the outermost pins on each pin header on the PCB. Hold the board up to make sure the pin header is sitting flush with the pcb. If it's not, you can reheat that joint until it is flush. 
 *@todo - this pick is gross - grab another without smudges and cathair.*
-![Pi Pico MCU](images/build_guide_v3/sofle_pico_starter_pins.png) 
+![Pi Pico MCU](docs/images/build_guide_pico/sofle_pico_starter_pins.png) 
 1. Solder the remaining pcb/pin header joints on the back.
 1. Flip the board over. With the Pico, repeat the process of soldering & checking 1 pin with the pin header and the Pico. 
 1. Solder all the remaining Pico/pin header pins.
 #### Pi Pico MCU installed with sockets
 Previous versions of the Sofle used diode legs. This guide does not - instead we'll use "needle pins", which are now readily available, inexpensive, and less fussy then diode legs. The needle pins will add some height to your MCU, which works well to support the OLEDs.
-![Pi Pico socketed MCU](images/build_guide_v3/sofle_pico_sockets_add_height.png)
+![Pi Pico socketed MCU](docs/images/build_guide_pico/sofle_pico_sockets_add_height.png)
 You can use diode legs if you're feeling fancy.
 To install a socketed Pico using the diode leg approach [from splitkb.com][promicrosocketing]:
 
@@ -298,8 +298,8 @@ If you ever need to remove the Pico: do it by gently prying the board up in smal
 
 There are two common variants of the SSD1306 OLED. They are easily distinguishable by the corner holes. There is a separate socket for each of these, because they switch the GND/VCC pins. This pins are usually labeled on the OLEDs themselves. Please check the OLED pins against the marking on the PCB to ensure everything matches as expected.
 
-![Sofle V3](images/build_guide_v3/oled_round.png) ![Sofle V3](images/build_guide_v3/oled_oval.png) ![OLED sockets](images/build_guide_v3/sofle_pico_oled_socket_closeup.png)
-![OLED sockets](images/build_guide_v3/sofle_pico_LH_OLED_socket.png)
+![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png) ![OLED sockets](docs/images/build_guide_pico/sofle_pico_oled_socket_closeup.png)
+![OLED sockets](docs/images/build_guide_pico/sofle_pico_LH_OLED_socket.png)
 We will be installing the OLED so it overhangs the Pro Micro. 
 1. Determine which socket your model of OLED will use.
 1. Add electrician's tape to the bottom of the OLED module where it might contact the Pico.
@@ -307,7 +307,7 @@ We will be installing the OLED so it overhangs the Pro Micro.
 1. Solder the remaining socket pins.
 1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
 1. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.
-![OLED bumper](images/build_guide_v3/sofle_pico_OLED_bumper.png)
+![OLED bumper](docs/images/build_guide_pico/sofle_pico_OLED_bumper.png)
 
 ### TRRS Jacks
 Solder these on the front of the boards, inserting into the outline.
