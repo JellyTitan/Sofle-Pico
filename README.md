@@ -214,7 +214,8 @@ When designing the Sofle Pico, an effort was made to '[poka-yoke](https://en.wik
 
 Specifically, clear markings/symbols and selective masking of footprint through-holes are used to ensure that components are soldered to the correct side & in the correct orientation. Outlines indicate the side the component should be inserted into. The side with the outlines has footprint through-holes masked, so that if the user inserted the component from the wrong side, it would not be solderabe.
 ![diode orientation](images/build_guide_v3/sofle_pico_poke-yoke.png)
-Feel free to open an issue if you have a suggestion for improving the poka-yoke. (I'd like to move away from English language notes, and replace them with universal pictograms if the time ever permits).
+
+Please open an issue if you have a suggestion for improving the poka-yoke. (I'd like to move away from English language notes, and replace them with universal pictograms if the time ever
 
 
 ### Diodes
@@ -301,7 +302,7 @@ There are two common variants of the SSD1306 OLED. They are easily distinguishab
 ![OLED sockets](images/build_guide_v3/sofle_pico_LH_OLED_socket.png)
 We will be installing the OLED so it overhangs the Pro Micro. 
 1. Determine which socket your model of OLED will use.
-1. Add electrican's tape to the bottom of the OLED module where it might contact the Pico.
+1. Add electrician's tape to the bottom of the OLED module where it might contact the Pico.
 1. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use capton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
 1. Solder the remaining socket pins.
 1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
