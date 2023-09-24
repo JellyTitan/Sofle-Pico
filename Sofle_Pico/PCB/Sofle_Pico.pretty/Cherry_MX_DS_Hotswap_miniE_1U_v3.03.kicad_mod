@@ -420,7 +420,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 180 180))
   )
-  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step" hide
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
     (offset (xyz 0 0 -1.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 180 0 180))
