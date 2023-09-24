@@ -88,7 +88,7 @@
   (pad "MP" thru_hole rect (at 0 5.6) (size 3.2 2) (drill oval 2.8 1.5) (layers "*.Cu" "*.Mask") (tstamp 03ebc302-ab68-47fe-afb6-3825bc9953a4))
   (pad "S1" thru_hole circle (at 7 2.5) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 7b59d7c4-7dc7-4625-8e4b-e496648facfe))
   (pad "S2" thru_hole circle (at 7 -2.5) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 5c02db88-a467-4803-b9b0-1409721d4b70))
-  (model "${KIPRJMOD}/SofleClick.3dshapes/EC11_Rotary_Encoder_Switched.step"
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/EC11_Rotary_Encoder_Switched.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))

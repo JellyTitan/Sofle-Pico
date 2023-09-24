@@ -2659,17 +2659,17 @@
         f81013b3-4c65-451a-99aa-5feadd0b37f6
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -3100,17 +3100,17 @@
         f80fd061-7467-46b1-98de-20db33293a19
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -3541,17 +3541,17 @@
         f153fedd-5d02-46e2-9059-c545b1ee8b60
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -3982,17 +3982,17 @@
         fee17876-fe91-44d0-b364-f0a05b58c50f
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -4423,17 +4423,17 @@
         fbb5eb7e-8269-4278-84dd-d0d6c7d0b45b
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -4864,17 +4864,17 @@
         ffd036f8-d900-4681-90e5-d1ef2c82b004
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -5305,17 +5305,17 @@
         f8b33907-12dd-4474-8e90-cffb4c1b9c27
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -5746,17 +5746,17 @@
         f9feb202-8bfa-4793-890c-54f914746fcc
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -6187,17 +6187,17 @@
         fa25acec-a28e-49d0-867b-d6d497c2aed5
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -6628,17 +6628,17 @@
         fd13de7c-4ce2-4051-917d-84083c6545de
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -7069,17 +7069,17 @@
         f3a0aeff-a7f8-4cae-b3c3-ec3b0c803f47
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -7510,17 +7510,17 @@
         ff80f5cf-4f83-4e6a-9bd6-0c11ae04ffdf
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -8731,17 +8731,17 @@
         ecc582c1-f5bc-49ef-9d24-e3b8b853968c
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -9172,17 +9172,17 @@
         fddacecf-34ee-4712-bbfc-17449ce228b2
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -9613,17 +9613,17 @@
         faf66b51-a83f-4a41-a072-23df9fbf39ee
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -10054,17 +10054,17 @@
         f83890ba-5309-433a-b2b7-9cc4aa11d0ad
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -10495,17 +10495,17 @@
         fb5f836f-b9cd-4ea9-80a0-ed0a5eb2f371
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -10936,17 +10936,17 @@
         ff354cf4-9945-42be-aef1-e43043254e98
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -11377,17 +11377,17 @@
         fd3ebd02-67c4-44c9-9038-10fc527d3052
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -11818,17 +11818,17 @@
         fd33d0c1-5619-4da4-a3be-4abb5d24848d
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -12259,17 +12259,17 @@
         f148f9d7-cd35-4d7e-8984-40c6607d4786
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -12700,17 +12700,17 @@
         fe95295b-49b3-460d-a11a-0b0490c8f265
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -13141,17 +13141,17 @@
         ffce24a0-92eb-4aef-b26a-45f595e4338b
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -13582,17 +13582,17 @@
         fda9282a-49d0-434c-a105-cfad9bb592d6
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -14023,17 +14023,17 @@
         ee7dff00-6807-4c0d-bb2a-ab90c41e83d6
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -14464,17 +14464,17 @@
         fc71d7ff-b3be-4a86-83ef-be50e7c0890c
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -15035,17 +15035,17 @@
         fca45c61-be57-4410-ab46-09df43db81d0
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -17036,17 +17036,17 @@
         feb4f184-c263-413b-ac2a-26098a1d713b
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))
@@ -18843,17 +18843,17 @@
         d7d02ba1-e548-4ac3-a2d7-a9879e588014
       )
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/YS-SK6812MINI-E.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
       (offset (xyz 0 -5 0.2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/Kailh-CherryMX-Socket.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
       (offset (xyz 1.3 7.6 2))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 180))
     )
-    (model "${KIPRJMOD}/SofleClick.3dshapes/CherryMX Switch.step"
+    (model "${KIPRJMOD}/Sofle_Pico.3dshapes/CherryMX Switch.step"
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 180 0 180))

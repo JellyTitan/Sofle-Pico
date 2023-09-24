@@ -289,7 +289,7 @@
       fed55f56-1201-4370-a932-8b7099c9edfa
     )
   )
-  (model "${KIPRJMOD}/SofleClick.3dshapes/SSD1306_OLED_Display(128x64).step"
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/SSD1306_OLED_Display(128x64).step"
     (offset (xyz 0 0.8 6))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
