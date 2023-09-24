@@ -1,0 +1,38 @@
+(footprint "Dummy 6812miniE" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "Placeholder for the nested SK6812Mini-E/Hotswop socket so the PNP/BOM generates correctly.")
+  (attr smd board_only allow_missing_courtyard)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp d3f857ca-a886-418b-bb35-7da1a0c84537)
+  )
+  (fp_text value "Dummy 6812miniE" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp b7ed0712-28e8-4bcb-82e1-85961d18777b)
+  )
+  (fp_line (start -0.3 0) (end 0.3 0)
+    (stroke (width 0.12) (type solid)) (layer "Dwgs.User") (tstamp 9ee73882-b37b-4a08-967d-31cb92d36082))
+  (fp_line (start 0 -0.3) (end 0 0.3)
+    (stroke (width 0.12) (type solid)) (layer "Dwgs.User") (tstamp 8173e204-5c0f-4f0e-b512-dc948e23d4ce))
+  (fp_line (start -1.7 1.5) (end -1.7 -1.5)
+    (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 2b685460-23a9-4b03-8a4d-a6cb2f1ee80b))
+  (fp_line (start 1.7 -1.5) (end -1.7 -1.5)
+    (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp eb4f6f4d-dfa0-4c05-b124-7cafe718840c))
+  (fp_line (start 1.7 -1.5) (end 1.7 1.5)
+    (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp f885531d-9f9b-403c-92ff-f5c33c3e1863))
+  (fp_line (start 1.7 1.5) (end -1.7 1.5)
+    (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp ff880bb9-d61a-48b1-a877-c263a4ff6bad))
+  (fp_circle (center 0 0) (end 0 1.5)
+    (stroke (width 0.1) (type solid)) (fill none) (layer "B.Fab") (tstamp 303e8b5b-fc20-4c9c-b949-60dc1272b53e))
+  (group "" (id e3b4c609-4d5f-46d2-91c5-efbfbdc4d986)
+    (members
+      2b685460-23a9-4b03-8a4d-a6cb2f1ee80b
+      303e8b5b-fc20-4c9c-b949-60dc1272b53e
+      8173e204-5c0f-4f0e-b512-dc948e23d4ce
+      9ee73882-b37b-4a08-967d-31cb92d36082
+      eb4f6f4d-dfa0-4c05-b124-7cafe718840c
+      f885531d-9f9b-403c-92ff-f5c33c3e1863
+      ff880bb9-d61a-48b1-a877-c263a4ff6bad
+    )
+  )
+)
