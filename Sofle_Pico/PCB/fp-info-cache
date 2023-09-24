@@ -1,4 +1,4 @@
-23568712628401604
+23544923288610036
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89256,6 +89256,118 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+Sofle_Pico
+Cherry_MX_DS_Hotswap_miniE_1U_v3.03
+
+
+0
+30
+6
+Sofle_Pico
+D_SOD-123_DO-35_Hybrid_DoubleSided_V2
+SOD-123
+SOD-123
+0
+10
+2
+Sofle_Pico
+Hole from sofle for M2 posts gold rimmer
+
+
+0
+1
+0
+Sofle_Pico
+Hole from sofle for M2 posts gold rimmer wide-keyplate-hole
+
+
+0
+1
+0
+Sofle_Pico
+Level Shifter Bypass Jumper
+
+
+0
+2
+2
+Sofle_Pico
+MJ-4PP-9
+
+
+0
+8
+4
+Sofle_Pico
+OLED SSD1306 128x64 UNVERIFIED v3b
+
+
+0
+16
+4
+Sofle_Pico
+Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+Sofle_Pico
+PinHeader_1x05_P2.54mm_Vertical
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+Sofle_Pico
+RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3 nohole
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+80
+40
+Sofle_Pico
+RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+7
+6
+Sofle_Pico
+SN74AHCT1G125 - Junco
+SN74AHCT1G125 Buffer Gate SOT-23
+level shifter
+0
+5
+5
+Sofle_Pico
+Sofle Pico Logo
+
+
+0
+0
+0
+Sofle_Pico
+Sofle Pico Logo embed
+
+
+0
+0
+0
+Sofle_Pico
+Tenting_Puck.kicad_mod_nocenter_v2
+
+
+0
+4
+1
+Sofle_Pico
+uxcell a14092600ux0438 solenoid
+
+
+0
+0
+0
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
@@ -97138,20 +97250,6 @@ V2_CherryMX_DS_Hotswap_miniE_1U_SEED_RH
 0
 11
 6
-ergodonk_simple
-Hole from sofle for M2 posts gold rimmer
-
-
-0
-1
-0
-ergodonk_simple
-Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-5
-5
 kailh-pg1425-x-switch
 Kailh-PG1425-X-Switch
 
@@ -97700,202 +97798,6 @@ mounting hole 2.2mm no annular m2
 0
 kbd
 waffle
-
-
-0
-0
-0
-sofle_v3b
-Cherry_MX_DS_Hotswap_miniE_1U
-
-
-0
-30
-6
-sofle_v3b
-Cherry_MX_DS_Hotswap_miniE_1U_v3.03
-
-
-0
-30
-6
-sofle_v3b
-D_SOD-123_DO-35_Hybrid_DoubleSided_V2
-SOD-123
-SOD-123
-0
-10
-2
-sofle_v3b
-Dummy 6812miniE
-Placeholder for the nested SK6812Mini-E/Hotswop socket so the PNP/BOM generates correctly.
-
-0
-0
-0
-sofle_v3b
-Hole from sofle for M2 posts gold rimmer
-
-
-0
-1
-0
-sofle_v3b
-Hole from sofle for M2 posts gold rimmer wide-keyplate-hole
-
-
-0
-1
-0
-sofle_v3b
-Level Shifter Bypass Jumper
-
-
-0
-2
-2
-sofle_v3b
-MJ-4PP-9
-
-
-0
-8
-4
-sofle_v3b
-MUR340S_IN4001_TH_HYBRID
-
-
-0
-6
-2
-sofle_v3b
-OLED SSD1306 128x64 UNVERIFIED
-
-
-0
-8
-4
-sofle_v3b
-OLED SSD1306 128x64 UNVERIFIED v2
-
-
-0
-12
-4
-sofle_v3b
-OLED SSD1306 128x64 UNVERIFIED v3
-
-
-0
-12
-4
-sofle_v3b
-OLED SSD1306 128x64 UNVERIFIED v3b
-
-
-0
-16
-4
-sofle_v3b
-Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-5
-5
-sofle_v3b
-PinHeader_1x02_P2.54mm_Vertical
-Through hole straight pin header, 1x02, 2.54mm pitch, single row
-Through hole pin header THT 1x02 2.54mm single row
-0
-2
-2
-sofle_v3b
-PinHeader_1x05_P2.54mm_Vertical
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-5
-5
-sofle_v3b
-RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-80
-40
-sofle_v3b
-RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3 nohole
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-80
-40
-sofle_v3b
-RPi_Pico_SMD_TH - Junco -DS Sofle v3b v4
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-80
-40
-sofle_v3b
-RPi_Pico_SMD_TH - Junco -DS Sofle v3b v4 2
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-80
-40
-sofle_v3b
-RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-7
-6
-sofle_v3b
-SN74AHCT1G125 - Junco
-SN74AHCT1G125 Buffer Gate SOT-23
-level shifter
-0
-5
-5
-sofle_v3b
-Sofle Pico Logo
-
-
-0
-0
-0
-sofle_v3b
-Sofle Pico Logo embed
-
-
-0
-0
-0
-sofle_v3b
-TO-220-3_Horizontal_TabUp
-TO-220-3, Horizontal, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
-TO-220-3 Horizontal RM 2.54mm
-0
-3
-3
-sofle_v3b
-Tenting_Puck.kicad_mod_nocenter_v2
-
-
-0
-4
-1
-sofle_v3b
-sol_thermal_releif
-
-
-0
-0
-0
-sofle_v3b
-uxcell a14092600ux0438 solenoid
 
 
 0
