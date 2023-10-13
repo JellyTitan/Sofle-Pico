@@ -4,6 +4,18 @@ Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-k
 The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The MX footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable Pico LED level shifting circuit.
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3.png)
+## Punchlist before PR
+* @todo Add pic of tape on back of OLED
+* @todo explore OLED jumper options to consolidate footprints
+* @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
+* @todo adapt bongocat for 128x64
+* @todo crib the roller encoder hybrid footprint from the stront https://github.com/JellyTitan/stront.git
+* Base on the stront build guid - we may be able to omit the level shifter completely?
+## PR Questions
+* Should the separate footprints for the two types of OLEDs be collapsed into a single footprint, and then OLED type is set with a jumper? (Increases build complexity, but simplifies case options).
+* Headers are required for the Pico. The pico footprints could be pushed farther apart, allowing for a headerless drag solder install, but that would make the board larger/increase manufacturing costs.
+* Should the LEDs be omitted in favor of choc footprints? (The drag soldering required for the level shifter & and the non-standard SK6803 makes the build more difficult)
+* Should the patch bay be omitted in favor of an optional USB-c jack? (The patch bay encourages tinkering, whereas the usb-c jack encourages automated production & vendor adoption).
 
 [Overview](#overview)
  - [Pi Pico vs. ProMicro](#pi-pico-vs-promicro)
@@ -180,8 +192,6 @@ Electrically, this should work - but i have not validated it.
 - flush cutters to trim diode legs
 - masking, kapton or electrical tape
 - isopropyl-alcohol for cleaning
-- screwdriver
-- 1.5mm hex key for the set screw on the encoder knob
 - multimeter for troubleshooting
 
 ## Build Guide / Assembly steps
@@ -265,7 +275,7 @@ The Pico is installed on the top of the board, face up, and in the marked holes.
 Double-check your work here. This step is hard to reverse if a mistake is made.
 #### Pi Pico MCU installed permanently with header pins
 You can permanently install the Pico using the 20-pin male-male headers that came with the Pico. 
-1. insert the headers into the board and the Pico both before soldering. (The header pin rows can tilt a little if it's not inserted into both the board and the Pico.) The header pins may have one longer side. Install the longer side on the PCB, because you'll need to trim these, and the trimmed pins look better on the underside of the board. Use a piece of capton tape to attach the Pico to the PCB while soldering.
+1. insert the headers into the board and the Pico both before soldering. (The header pin rows can tilt a little if it's not inserted into both the board and the Pico.) The header pins may have one longer side. Install the longer side on the PCB, because you'll need to trim these, and the trimmed pins look better on the underside of the board. Use a piece of kapton tape to attach the Pico to the PCB while soldering.
 
 1. Flip the board over. The pins on the back of the board that you will be soldering should _not_ be in the outline. Soldering 1 of the outermost pins on each pin header on the PCB. Hold the board up to make sure the pin header is sitting flush with the pcb. If it's not, you can reheat that joint until it is flush. 
 *@todo - this pick is gross - grab another without smudges and cathair.*
@@ -279,7 +289,7 @@ Previous versions of the Sofle used diode legs. This guide does not - instead we
 You can use diode legs if you're feeling fancy.
 To install a socketed Pico using the diode leg approach [from splitkb.com][promicrosocketing]:
 
-1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of capton tape to hold everything in place can be helpful. 
+1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of kapton tape to hold everything in place can be helpful. 
 
 1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).
 
@@ -300,8 +310,8 @@ There are two common variants of the SSD1306 OLED. They are easily distinguishab
 ![OLED sockets](docs/images/build_guide_pico/sofle_pico_LH_OLED_socket.png)
 We will be installing the OLED so it overhangs the Pro Micro. 
 1. Determine which socket your model of OLED will use.
-1. Add electrician's tape to the bottom of the OLED module where it might contact the Pico.
-1. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use capton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
+1. Add a strip of electrician's tape to the bottom of the OLED module where it might contact the Pico.
+1. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use kapton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
 1. Solder the remaining socket pins.
 1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
 1. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.

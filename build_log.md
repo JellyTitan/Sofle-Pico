@@ -62,12 +62,15 @@ Improvements made while building prototype 3.03, included in version3.04
 * moved diode labels
 * Removed Solenoid (Left it in blueprint to install on a backplate)
 * Updated branding 
+* Explored moving the rotary encoder farther from thumb cluster to allow for 'low profile' encoder knobs on EC12's. There is not enough room. (That particular encoder knob is 29mm). Added this feature to the list for Pico Zero features.
+![Sofle Pico](docs/images/build_log_pico/low_profile_encoder_test.png)
 * @todo refresh Gerbers and update path
 * @todo: Mention "Lead free" 
 * @todo: Mention Jlcpcbpart number placement
 * @todo: seperate jlcpcb gerber?
 
 ## Future Feature Wish list
-* USB-C instead of TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
+* USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate
-* Piezo speaker (QMK doesn't support this for ARM boards yet)
+* Move Rotary encoder so there is enough space for a 30mm "low profile" rotary encoder knob.
+* Piezo speaker (QMK doesn't support this for ARM boards yet)?

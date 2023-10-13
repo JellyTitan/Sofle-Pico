@@ -1,4 +1,4 @@
-23548328863039056
+23550024877385691
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89375,6 +89375,13 @@ Tenting_Puck.kicad_mod_nocenter_v2
 0
 4
 1
+Sofle_Pico
+rp2040-zero DS
+
+
+0
+33
+33
 Sofle_Pico
 uxcell a14092600ux0438 solenoid
 
