@@ -52,7 +52,7 @@ Improvements made while building prototype 3.02, included in version3.03
 * Modified OLED footprint to support both types of 128x64. (GND & VCC are switched)
 * Added help text for OLEDs
 * Center oled plate holes for round outline
-
+![Sofle Pico](docs/images/build_log_pico/sofle_pico_v3.3.png)
 # 3.7795 is the keyplate multiplier when creating Fusion 360 imports
 
 ## 3.3 -> 3.4
