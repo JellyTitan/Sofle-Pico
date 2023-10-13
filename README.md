@@ -3,14 +3,14 @@ Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-k
 
 The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), that is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the original Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). The MX footprints came from the well-regarded foostan [kbd library](https://github.com/foostan/kbd). Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable Pico LED level shifting circuit.
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
-![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3.png)
+![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before PR
 * @todo Add pic of tape on back of OLED
 * @todo explore OLED jumper options to consolidate footprints
 * @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
 * @todo adapt bongocat for 128x64
 * @todo crib the roller encoder hybrid footprint from the stront https://github.com/JellyTitan/stront.git
-* Base on the stront build guid - we may be able to omit the level shifter completely?
+* Base on the stront build guide - we may be able to omit the level shifter completely?
 ## PR Questions
 * Should the separate footprints for the two types of OLEDs be collapsed into a single footprint, and then OLED type is set with a jumper? (Increases build complexity, but simplifies case options).
 * Headers are required for the Pico. The pico footprints could be pushed farther apart, allowing for a headerless drag solder install, but that would make the board larger/increase manufacturing costs.
