@@ -5,17 +5,21 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before PR
-* @todo Add pic of tape on back of OLED
-* @todo explore OLED jumper options to consolidate footprints
 * @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
 * @todo adapt bongocat for 128x64
 * @todo crib the roller encoder hybrid footprint from the stront https://github.com/JellyTitan/stront.git
-* Base on the stront build guide - we may be able to omit the level shifter completely?
+* @todo Base on the stront build guide - we may be able to omit the level shifter completely?
+* @todo The Pimaroni works - but it kinda sucks. Is that expected behavior, or can it be cleaned up with some 'debounce' in the firmware?
+* @todo refresh Gerbers and update path
+* @todo: Mention "Lead free" 
+* @todo: Mention Jlcpcbpart number placement
+* @todo: seperate jlcpcb gerber?
+* @todo: Update flashing to include pico 'drag and drop' flashing
+* @todo: via support. (Update docs too!)
+* @todo: Add legacy sofle layout to QMK. (Currently only has my personal layout).
+
 ## PR Questions
-* Should the separate footprints for the two types of OLEDs be collapsed into a single footprint, and then OLED type is set with a jumper? (Increases build complexity, but simplifies case options).
-* Headers are required for the Pico. The pico footprints could be pushed farther apart, allowing for a headerless drag solder install, but that would make the board larger/increase manufacturing costs.
-* Should the LEDs be omitted in favor of choc footprints? (The drag soldering required for the level shifter & and the non-standard SK6803 makes the build more difficult)
-* Should the patch bay be omitted in favor of an optional USB-c jack? (The patch bay encourages tinkering, whereas the usb-c jack encourages automated production & vendor adoption).
+* Should the LEDs be omitted in favor of combo MX/choc footprints like the Sofle V1? (The drag soldering required for the level shifter & and the non-standard SK6803 makes the build more difficult)
 
 [Overview](#overview)
  - [Pi Pico vs. ProMicro](#pi-pico-vs-promicro)
@@ -151,7 +155,7 @@ This is strictly a quality of life upgrade. The older ProMicro's were notorious 
 2.54mm Round Female Pin Header | 4 sets of 20 | They commonly come in strips of 40. They don't always snap in half cleanly, so get extra | [Aliexpress](https://www.aliexpress.us/item/2251832729504304.html)
 Needle pin male connectors | 80 | Diode legs would also work, but these little sets of 4 are nice to work with. | [Aliexpress](https://www.aliexpress.us/item/2251832650595759.html?spm=a2g0o.order_list.order_list_main.186.15a91802YueygY&gatewayAdapt=glo2usa)
 ### Optional - Solenoid
-The solenoid feature is still a work in progress. It is designed to attach to a seperate backplate.
+The solenoid feature is still a work in progress. It is designed to attach to a separate backplate.
 Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/412/solenoid_driver.pdf). 
 [QMK Docs for solenoid.](https://docs.qmk.fm/#/feature_haptic_feedback?id=solenoids) This needs to be re-worked to account for the lower voltage and draw of the Pico. (I tried the existing circuit with a 1k resistor - Pico was not strong enough).
 | Name | Count | Remarks | Potential Storefront |
@@ -172,17 +176,8 @@ Electrically, this should work - but i have not validated it.
  - The top/key plates from Sofle v1, v2, RGB and Choc versions are not compatible.
  - Key plates are strongly recommended, but not technically required. (The thumb keys tend to fall out if you don't use a key plate).
  - The OLEDs are taller than the switch plate, so they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDS can be installed higher/lower.
- - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates. f
+ - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates.
 
-
-
-@todo refresh Gerbers and update path
-@todo: Mention "Lead free" 
-@todo: Mention Jlcpcbpart number placement
-@todo: seperate jlcpcb gerber?
-@todo: revise this -> See [sourcing][sourcing].
-
-@todo - rewrite left off here <<<<<
 ## Tools and materials
 
 - soldering iron and solder
@@ -346,21 +341,22 @@ Installing the keys and case.
 
 ## Firmware and programming
 @todo - update hte firmware.
-The Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](https://github.com/qmk/qmk_firmware/pull/16736). Instead use the [brianlow/qmk_firmware](https://github.com/brianlow/qmk_firmware) fork.
+The Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](https://github.com/qmk/qmk_firmware/pull/16736). Instead use the [jellytitan/qmk_firmware](https://github.com/jellytitan/qmk_firmware) fork.
 Suggested approach is to build the firmware yourself. You should be familiar with QMK and be able to make it work on your local environment. If not, please [follow the instructions in the documentation][qmkintro]. Note QMK setup is fairly invasive (upgrade every homebrew package on your system) so you might want to consider the [QMK Docker image](https://beta.docs.qmk.fm/using-qmk/guides/development-environments/getting_started_docker) for compiling.
 
 To flash:
 
-- Clone [https://github.com/brianlow/qmk_firmware](https://github.com/brianlow/qmk_firmware)
-- Switch to the `choc2` branch with `git checkout choc2`
+- Clone [https://github.com/jellytitan/qmk_firmware](https://github.com/jellytitan/qmk_firmware)
+- Switch to the `sofle_pico` branch with `git checkout sofle_pico`
 - Make sure your QMK environment [is setup][qmkintro].
 - Make sure halves are not connected together with TRRS cable.
-- Connect one half to USB, flash the firmware (always follow the current instructions in the QMK documentation! The command might look something like this: `qmk flash -kb sofle_choc -km default`). Use the reset button to reset the keyboard when you are asked to in console. Some Pro Micros require double-clicking the reset button to enter bootloader mode.
+- Connect one half to USB, flash the firmware (always follow the current instructions in the QMK documentation! The command might look something like this: `qmk flash -kb sofle_choc -km default`). Use the reset button to reset the keyboard when you are asked to in console. 
 - Connect the second half and flash it in the same way as the previous one.
 - Disconnect the USB cable. Connect both halves together with TRRS cable.
 - Connect USB cable to the **left** side.
-- Enjoy SofleKeyboard!
+- Enjoy!
 
+@todo - still need via support! Rewrite this section
 There is also a firmware version that uses [VIA](https://caniusevia.com/). VIA allows you to quickly change your keymap without flashing or a QMK build environment. I highly recommend it for experimenting. There are few downsides:
 - it doesn't support custom logic like a key for switching betwen Mac/Win
 - the exporting/importing keymaps has some problems with some multi-chord keys though typically I don't find I need to export/import
@@ -389,19 +385,19 @@ See the Sofle build guide.
 ## Default layout
 
 The default layout for the Sofle Choc is in the QMK fork and demonstrates some LED functions.
-
+@todo: validate this image works as expected after folding into the main repo.
 ![Default layout for Sofle Choc Keyboard](./images/sofle-choc-keyboard-layout.png)
 
 ## Images of keyboard
-
+@todo update these after final hardware!!
 ![Keyboard Photo 1](./images/SofleChoc_2.jpg)
-
 ![Keyboard Photo 2](./images/SofleChoc_3.jpg)
 
 ## Version History
-
+@todo: Would it be appropriate to move the build_log here?
 * v2.1.1 - Top plate: moved the version label to less visible location, widened the area above the encoder. PCB version remains at v2.1
 * v2.1 - First published version
+
 <style>
 mark{
     position: fixed;
@@ -422,7 +418,7 @@ mark{
 [springpinheader]: <https://yushakobo.jp/shop/a01mc-00/> "Spring pin headers - Japanese"
 [qmkprotonc]: https://qmk.fm/proton-c/ "QMK Proton-C"
 [promicrosocketing]: <https://docs.splitkb.com/hc/en-us/articles/360011263059> "How do I socket a microcontroller? by splitkb.com"
-[qmkintro]: <https://beta.docs.qmk.fm/newbs/newbs_getting_started> "QMK getting started"
+[qmkintro]: <https://docs.qmk.fm/#/newbs_getting_started> "QMK getting started"
 [qmkhandedness]: <https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness> "QMK firmware - setting handedness"
 [manufacturingproblems]: https://josef-adamcik.cz/electronics/corne-keyboard-build-log.html#manufacturing-at-jlcpcb---update-27112019 "Possible problems when manufacturing top plate for Corne"
 [nooledlag]: https://github.com/qmk/qmk_firmware/issues/7522 "No OLED lag bug"

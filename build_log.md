@@ -64,6 +64,14 @@ Improvements made while building prototype 3.03, included in version3.04
 * Updated branding 
 * Explored moving the rotary encoder farther from thumb cluster to allow for 'low profile' encoder knobs on EC12's. There is not enough room. (That particular encoder knob is 29mm). Added this feature to the list for Pico Zero features.
 ![Sofle Pico](docs/images/build_log_pico/low_profile_encoder_test.png)
+* Considered collapsing the 4 separate footprints for the two types of OLEDs into a set of 2 footprints, and then OLED type is set with a jumper - OR - dropping one OLED type for a single type with single footprint with handedness set by jumpers like the legacy Sofles. Decided against this, as it increases build complexity for the end user. The downside, is it complicates the case options because there is a 3mm placement difference between left and right OLEDs. If the acrylic OLED cover is used, this should not be noticeable. If 3d printing a case, the right/left sides will have minor differences to account for this gap.
+![Sofle Pico](docs/images/build_log_pico/sofle_pico_oled_jumper_study.png)
+* Considered pushing the Pico footprints farther apart, allowing for a headerless drag solder install & automated PCB manufacture. Decided against it due to increased manufacturing costs of the larger board. The increase in board size is not much, maybe 3mm-5mm, but having those pads close together may make hand drag soldering difficult? Also not sure if omitting the bottom through holes would be acceptable for automated assembly.
+![Sofle Pico](docs/images/build_log_pico/sofle_pico_drag_solder_vs_header.png)
+* Considered adding a USB C jack in addition to TRRS. (Example can be seen in the [Stront](https://github.com/zzeneg/stront)). This would allow for automated pcb assembly, and much cooler cables than can be found with TRRS. There's not enough room - unless the patch bay is omitted. I like the patch bay. Added this feature to the 'nice to have list'.
+
+![Sofle Pico](docs/images/build_log_pico/stront_jack.png)
+
 * @todo refresh Gerbers and update path
 * @todo: Mention "Lead free" 
 * @todo: Mention Jlcpcbpart number placement
@@ -71,6 +79,5 @@ Improvements made while building prototype 3.03, included in version3.04
 
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
-* Solenoid backplate
-* Move Rotary encoder so there is enough space for a 30mm "low profile" rotary encoder knob.
+* Solenoid backplate (Would need rp2040 zero for 5v)
 * Piezo speaker (QMK doesn't support this for ARM boards yet)?
