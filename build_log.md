@@ -81,3 +81,4 @@ Improvements made while building prototype 3.03, included in version3.04
 * Piezo speaker (QMK doesn't support this for ARM boards yet)?
 * Horizontal encoder/ec12 encoder combo.
 * Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
+* Add a 'handedness pin' for qmk auto-detection. (May not be needed - i think there's an 'x intersection' indicates handedness setting.)

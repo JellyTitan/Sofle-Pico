@@ -5,15 +5,17 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before PR
+* 'x intersection' indicates handedness setting in qmk
 * @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
 * @todo adapt bongocat for 128x64
+* @todo update Sofle Pico OLED logo with revised logo
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely?
 * @todo The Pimaroni works - but it kinda sucks. Is that expected behavior, or can it be cleaned up with some 'debounce' in the firmware?
 * @todo refresh Gerbers and update path 
 * @todo: Mention Jlcpcbpart number placement
 * @todo: seperate jlcpcb gerber?
 * @todo: Update flashing to include pico 'drag and drop' flashing
-* @todo: via support. (Update docs too!)
+* @todo: via support. (Updatfe docs too!)
 * @todo: Add legacy sofle layout to QMK. (Currently only has my personal layout).
 
 ## PR Questions
