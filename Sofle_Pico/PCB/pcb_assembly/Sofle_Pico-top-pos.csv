@@ -1,0 +1,9 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"","","e4819d78-7681-430c-a61d-7ce8f9aac4b4",21.470000,108.700000,180.000000,top
+"J2","4PIN","MJ-4PP-9",0.640000,60.510000,90.000000,top
+"J5","Conn_01x05_Socket","PinHeader_1x05_P2.54mm_Vertical",6.170000,43.510000,0.000000,top
+"J6","Conn_01x05_Socket","PinHeader_1x05_P2.54mm_Vertical",9.490000,43.510000,0.000000,top
+"REF**","Sofle Pico Logo","Sofle Pico Logo",14.790000,72.580000,90.000000,top
+"REF**","Sofle Pico Logo embed","Sofle Pico Logo embed",112.800000,26.220000,0.000000,top
+"REF**","Tenting Puck","Tenting_Puck.kicad_mod_nocenter_v2",68.375000,70.210000,0.000000,top
+"U3","Pico","RPi_Pico_SMD_TH - Junco -DS Sofle v3b v3 nohole",15.462500,90.925135,0.000000,top
