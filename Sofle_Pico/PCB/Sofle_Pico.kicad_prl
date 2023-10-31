@@ -64,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "fffffcf_ffffffff",
-    "zone_display_mode": 1
+    "visible_layers": "f3fffff_ffffffff",
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "Sofle_Pico.kicad_prl",
