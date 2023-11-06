@@ -2,7 +2,16 @@
 
 How to order this board from a PCB vendor - helpful info if it's your first time ordering a PCB.
 
-Most PCB vendors have a similar ordering process. I use [JLCPCB](https://jlcpcb.com/) because they are usually the most cost effective. I've had good luck with [Elecrow](https://www.elecrow.com/) too. [You can find PCB price comparison tools online.](https://pcbshopper.com/) When comparing pricing, the board dimensions are  146mm x 117mm. (Usually anything under 100x100mm is really inexpensive - so be sure to use the 146x117 dimensions when pricing).
+Most PCB vendors have a similar ordering process. I use [JLCPCB](https://jlcpcb.com/) because they are usually the most cost effective. I've had good luck with [Elecrow](https://www.elecrow.com/) too. [You can find PCB price comparison tools online.](https://pcbshopper.com/) When comparing pricing, be sure to enter the board dimensions, and set the minimum quantity to 5. Usually anything under 100x100mm is really inexpensive - so be sure to use actual dimensions when pricing. Most manufacturers have a 5 board minimum, so this is a safe quantity to start with.
+
+| Board    |Width (mm)|Height (mm)|
+|    ----: |  :----:  |  :----:   |
+|Sofle V1  |137       |110        |
+|Sofle V2  |144       |116        |
+|Sofle RGB |138       |112        |
+|Sofle Choc|144       |113        |
+|Sofle Pico|146       |117        | 
+
 
 Usually the minimum quantity to order is 5 boards. All the Sofle boards have been designed to be double sided, so a batch of 5 boards gets you 2 & 1/2 sets of Sofle.
 
@@ -20,7 +29,7 @@ While the file is uploading, it will take you to an options screen. Once the boa
 Changing the pcb color<sup>2</sup> may impact production time and price.
 Shipping estimates<sup>4</sup> can vary widely, so be sure to check those. (You'll see these options again during checkout).
 ![JLCPCB Home](docs/images/ordering_guide/JLCPCB_Ordering_2.png)
-It's worth noting, the default pcb surface finish contains Lead. For boards in cases, this is usually not a problem. If you're going to rock a naked board, consider going with "lead free" for a few bucks more.
+It's worth noting, the default pcb surface finish contains Lead. For boards in cases, this is usually not a problem. If you're going to rock a naked board, consider going with "lead free" for a few bucks more. The more popular colors like green and black tend to cost less for the lead free option.
 
 ![JLCPCB Home](docs/images/ordering_guide/JLCPCB_lead.png)
 The remainder of the checkout process is standard ecommerce stuff. After you pay for your order, it will be reviewed before going into production. They will let you know if the file has any issues.
