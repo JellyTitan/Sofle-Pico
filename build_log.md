@@ -92,6 +92,9 @@ In response to the question:
 
 >I appreciate the input on the RGB. As a touch typist - i don't really use the RGB & OLED - but those features were what drew me to the Sofle initially. I think the Sofle is a really great first board for people new to the hobby. I've tried to make this variant extra easy to solder and used accessible parts, in hopes that it would entice others to try it out. I'd like to keep the RGB in this version, and eventually, build a 2040 zero based version that drops the RGB in favor of supporting both choc & MX, along with a horizontal OLED. (I love the idea of a horizontal screen for a keymap 'cheat sheet' - i think that would be great for people transitioning into the split world).
 
+* user @[uberrice](https://github.com/uberrice) was gracious enough to provide a [peer review](https://github.com/JellyTitan/Sofle-Pico/issues/1). Revised annular ring widths to clear JLC minimums. 
+
+* 11-6-2023: Regenerated Bom/PNP/Gerber and submitted an order for v3.4.4. (Shipping was 2x as expensive today?)
 
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
