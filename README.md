@@ -7,8 +7,6 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ## Punchlist before Sofle PR
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
-* @todo: Mention Jlcpcbpart number placement
-* @todo: seperate jlcpcb gerber?
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 
 ## Punchlist before QMK PR

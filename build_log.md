@@ -96,10 +96,14 @@ In response to the question:
 
 * 11-6-2023: Regenerated Bom/PNP/Gerber and submitted an order for v3.4.4. (Shipping was 2x as expensive today?)
 
+## 3.4 -> 3.5
+* 11-8-23: Got a notification from JLC that there are 'too many slots' and an additional fee will be charged. I canceled the order. (It's only $5 USD extra - but thats a 50% price bump!) The fee probably stems from using 'edge cuts' to cutout the LED holes. I had a [similar issue](https://github.com/daneski13/Junco/issues/1#issuecomment-1575038490) with the Junco v1.1, and swapping out mechanical through holes for edge cuts in the footprint resolved the fee. (It's also alleged this fee is not charged consistently, based on who reviews your board at JLC). Based the new led design on the cutouts found in this [x-switch footprint](https://github.com/shikamiya/kicad-footprint-kailh-pg1425-x-switch/tree/master) & the unreleased [zerf9](https://github.com/freznel10/Zerf9) by freznel.
+![Using through holes to make a square](docs/images/build_log_pico/sofle_pico_LED_MTH_cutout.png)
+
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
 * Piezo speaker (QMK doesn't support this for ARM boards yet)?
-* Horizontal encoder/ec12 encoder combo.
+* Horizontal encoder/ec12 encoder combo. (The horizontal encoder needs additional cutouts - there isn't room for those with the base Pico)
 * Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
 * Add a 'handedness pin' for qmk auto-detection. (May not be needed - i think there's an 'x intersection' indicates handedness setting.)
