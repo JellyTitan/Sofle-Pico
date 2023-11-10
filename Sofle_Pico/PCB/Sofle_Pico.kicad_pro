@@ -408,7 +408,9 @@
       "SofleChocMX",
       "SofleChocLoud",
       "sofle_v3b",
-      "Sofle_Pico"
+      "Sofle_Pico",
+      "Keebio-Parts",
+      "kbd"
     ],
     "pinned_symbol_libs": []
   },
