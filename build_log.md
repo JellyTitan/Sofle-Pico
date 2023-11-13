@@ -116,7 +116,8 @@ In response to the question:
 |Chunky    |.3             |.6          |
 
 It looks like 3/6 is a safe bet. Reworked the led footprint to accommodate. Mode the vias out from between pads to prevent shorts from sloppy soldering.
- 
+Sent out v3.5 for production 11-13-23.
+
 ![Tons of LED footprint variants](docs/images/build_log_pico/oled_reworks.png)
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
