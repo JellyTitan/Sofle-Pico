@@ -99,7 +99,25 @@ In response to the question:
 ## 3.4 -> 3.5
 * 11-8-23: Got a notification from JLC that there are 'too many slots' and an additional fee will be charged. I canceled the order. (It's only $5 USD extra - but thats a 50% price bump!) The fee probably stems from using 'edge cuts' to cutout the LED holes. I had a [similar issue](https://github.com/daneski13/Junco/issues/1#issuecomment-1575038490) with the Junco v1.1, and swapping out mechanical through holes for edge cuts in the footprint resolved the fee. (It's also alleged this fee is not charged consistently, based on who reviews your board at JLC). Based the new led design on the cutouts found in this [x-switch footprint](https://github.com/shikamiya/kicad-footprint-kailh-pg1425-x-switch/tree/master) & the unreleased [zerf9](https://github.com/freznel10/Zerf9) by freznel.
 ![Using through holes to make a square](docs/images/build_log_pico/sofle_pico_LED_MTH_cutout.png)
+* Checked via settings for other popular boards:
 
+| Board    |Hole Width (mm)|Via dia (mm)|
+|    ----: |  :----:       |  :----:    |
+|Sofle V1  |.3             |.4          |
+|Sofle V2  |.3             |.4          |
+|Sofle RGB |.3             |.4          |
+|Sofle Choc|.3             |.4          |
+|Corne Classic|.4          |.6          |
+|Corne Choc|.4             |.6          |
+|Helix     |.4             |.6          |
+|Lily 58   |.4             |.6          |
+|Stront    |.4             |.8          |
+|Piantor   |.3             |.6          |
+|Chunky    |.3             |.6          |
+
+It looks like 3/6 is a safe bet. Reworked the led footprint to accommodate. Mode the vias out from between pads to prevent shorts from sloppy soldering.
+ 
+![Tons of LED footprint variants](docs/images/build_log_pico/oled_reworks.png)
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
