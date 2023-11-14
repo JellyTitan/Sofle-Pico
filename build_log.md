@@ -125,7 +125,6 @@ Sent out v3.5 for production 11-13-23.
 	* Updated LED footprint to remove potential acid trap.
 	* Removed routing on GND net since it's using a polygon. (best practice!)
 
-/Users/ryanrayneff/Unsynced/sofle_pico/Gerbers/production_ready/Sofle_Pico_v3.5.1_11-14-23.zip
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
