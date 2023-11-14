@@ -419,3 +419,5 @@ mark{
 [qmkhandedness]: <https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness> "QMK firmware - setting handedness"
 [soflegithub]: https://github.com/josefadamcik/SofleKeyboard "SofleKeyboard - KiCad project on Github.com"
 [sourcing]: <{{ site.baseurl }}/sourcing_parts.html> "Sourcing parts"
+
+v3.5: Board routing revision made by [uberrice](https://github.com/uberrice)
