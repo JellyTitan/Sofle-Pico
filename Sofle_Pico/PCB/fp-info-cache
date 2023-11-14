@@ -1,4 +1,4 @@
-23594585200762460
+23597985117589075
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96544,6 +96544,13 @@ Level Shifter Bypass Jumper
 2
 2
 ergodonk_kicad_library
+Level Shifter Bypass Jumper simple_zero
+
+
+0
+4
+3
+ergodonk_kicad_library
 LongOvalCut
 
 
@@ -97117,6 +97124,13 @@ rp2040 Zero DS
 0
 33
 33
+ergodonk_kicad_library
+rp2040 Zero simple_zero
+
+
+0
+23
+23
 ergodonk_kicad_library
 sofle_choc_miniE
 

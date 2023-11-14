@@ -133,6 +133,7 @@
     (thermal_bridge_angle 45)
     (options (clearance outline) (anchor rect))
     (primitives
+      (gr_arc (start 1.116699 -0.188461) (mid 0.89856 -0.14507) (end 0.774994 -0.33) (width 0.15))
       (gr_arc (start 1.55 -0.750001) (mid 1.283467 -0.106534) (end 0.64 0.159999) (width 0.5))
     ) (tstamp 28db79c4-db40-458c-8f76-abd79f884714))
   (pad "1" smd rect (at -2.540006 5.62) (size 1.7 0.82) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -141,6 +142,7 @@
     (thermal_bridge_angle 45)
     (options (clearance outline) (anchor rect))
     (primitives
+      (gr_arc (start -0.776428 -0.334929) (mid -0.899994 -0.15) (end -1.118133 -0.19339) (width 0.15))
       (gr_arc (start -0.64 0.160001) (mid -1.283467 -0.106532) (end -1.55 -0.749999) (width 0.5))
     ) (tstamp 68e73568-12f5-49bb-905e-fb646092edc8))
   (pad "2" thru_hole circle (at -5.090006 4.870001) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp a904e778-ff77-4967-b589-15506ef7ec04))
@@ -151,6 +153,7 @@
     (thermal_bridge_angle 45)
     (options (clearance outline) (anchor rect))
     (primitives
+      (gr_arc (start -1.045909 0.015921) (mid -0.854994 0.095) (end -0.775915 0.285915) (width 0.15))
       (gr_line (start -1.64 -0.159999) (end -0.35 -0.159999) (width 0.5))
       (gr_arc (start -2.55 0.750001) (mid -2.283467 0.106534) (end -1.64 -0.159999) (width 0.5))
       (gr_line (start 0 -1.01) (end 0 0) (width 0.6))
@@ -161,6 +164,7 @@
     (thermal_bridge_angle 45)
     (options (clearance outline) (anchor rect))
     (primitives
+      (gr_arc (start 0.775 0.285915) (mid 0.854078 0.094999) (end 1.044994 0.01592) (width 0.15))
       (gr_line (start 1.64 -0.160001) (end 0.35 -0.160001) (width 0.5))
       (gr_arc (start 1.64 -0.160001) (mid 2.283468 0.106532) (end 2.550001 0.749999) (width 0.5))
     ) (tstamp 841d1049-4176-4e2f-abed-6abed179b6ce))
@@ -177,6 +181,7 @@
           (xy -0.85 0.41)
         )
         (width 0) (fill yes))
+      (gr_arc (start 0.77644 0.324929) (mid 0.900007 0.139998) (end 1.118149 0.183386) (width 0.15))
       (gr_arc (start 0.65 -0.16) (mid 1.29347 0.10653) (end 1.56 0.75) (width 0.5))
       (gr_line (start 0.65 -0.16) (end 0.15 -0.16) (width 0.5))
     ) (tstamp cefe269a-e74d-4844-84f6-4bcd6d7cf1b1))
@@ -187,8 +192,6 @@
     (thermal_bridge_angle 45)
     (options (clearance outline) (anchor circle))
     (primitives
-      (gr_line (start -0.65 -0.16) (end -0.120006 -0.16) (width 0.5))
-      (gr_arc (start -1.56 0.75) (mid -1.293466 0.106534) (end -0.65 -0.16) (width 0.5))
       (gr_poly
         (pts
           (xy -0.85 0)
@@ -198,6 +201,9 @@
           (xy -0.85 0.41)
         )
         (width 0) (fill yes))
+      (gr_arc (start -1.56 0.75) (mid -1.293466 0.106534) (end -0.65 -0.16) (width 0.5))
+      (gr_line (start -0.65 -0.16) (end -0.120006 -0.16) (width 0.5))
+      (gr_arc (start -1.116711 0.188461) (mid -0.898572 0.145071) (end -0.775007 0.33) (width 0.15))
     ) (tstamp 6a465962-7b7b-41f4-93a9-a0cf5eed91af))
   (pad "3" smd roundrect (at 2.559994 5.62 180) (size 1.7 0.82) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0)
     (chamfer_ratio 0.5) (chamfer top_left)
@@ -210,6 +216,7 @@
     (thermal_bridge_angle 45)
     (options (clearance outline) (anchor rect))
     (primitives
+      (gr_arc (start -0.775927 -0.285915) (mid -0.855006 -0.095) (end -1.045921 -0.015921) (width 0.15))
       (gr_line (start -1.65 0.16) (end -0.36 0.16) (width 0.5))
       (gr_arc (start -1.65 0.16) (mid -2.29347 -0.10653) (end -2.56 -0.75) (width 0.5))
     ) (tstamp 15da6fb4-27ef-4456-a050-86ca7305a87e))
@@ -222,6 +229,7 @@
       (gr_line (start -0.2 0) (end -0.2 1.31) (width 0.6))
       (gr_line (start 1.65 0.16) (end 0.36 0.16) (width 0.5))
       (gr_arc (start 2.56 -0.75) (mid 2.293466 -0.106534) (end 1.65 0.16) (width 0.5))
+      (gr_arc (start 1.045921 -0.015921) (mid 0.855008 -0.095) (end 0.775931 -0.285915) (width 0.15))
     ) (tstamp a0887d9a-8da2-49b5-9036-f416d702d1ea))
   (pad "4" thru_hole circle (at 5.119994 4.87) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp 8eb6504e-1206-4479-8849-33f4f67c13e8))
   (pad "5" smd roundrect (at 5.842 -5.07) (size 2.55 2.52) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1)

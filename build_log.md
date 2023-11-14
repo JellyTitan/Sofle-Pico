@@ -119,6 +119,13 @@ It looks like 3/6 is a safe bet. Reworked the led footprint to accommodate. Mode
 Sent out v3.5 for production 11-13-23.
 
 ![Tons of LED footprint variants](docs/images/build_log_pico/oled_reworks.png)
+
+## v3.5.1 11-14-23
+* [Uberrice](https://github.com/JellyTitan/Sofle-Pico/issues/1#issuecomment-1810420994) was kind enough to review again:
+	* Updated LED footprint to remove potential acid trap.
+	* Removed routing on GND net since it's using a polygon. (best practice!)
+
+/Users/ryanrayneff/Unsynced/sofle_pico/Gerbers/production_ready/Sofle_Pico_v3.5.1_11-14-23.zip
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
