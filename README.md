@@ -5,11 +5,16 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before Sofle PR
+
+* @todo Convert logo to footprint (the font fails when loaded by PC users.)
+* @todo Convert version numbers to KiCad default font for easy update. (Can we tie these to a variable?)
+* @todo Merge user uberrice's improvements
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 
 ## Punchlist before QMK PR
+* @todo Limit max brightness of the SK6803's
 * @todo Added handedness indication via matrix pin intersection.
 * @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
 * @todo adapt bongocat for 128x64
