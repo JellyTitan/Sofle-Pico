@@ -1,4 +1,4 @@
-23597985117589075
+23599719182320791
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89362,6 +89362,20 @@ Sofle Pico Logo embed
 0
 0
 Sofle_Pico
+Sofle Pico Logo text only
+
+
+0
+0
+0
+Sofle_Pico
+Sofle Pico logo w text
+
+
+0
+0
+0
+Sofle_Pico
 Sofle Pico text inverted
 
 
@@ -96548,7 +96562,7 @@ Level Shifter Bypass Jumper simple_zero
 
 
 0
-4
+6
 3
 ergodonk_kicad_library
 LongOvalCut
@@ -97150,8 +97164,8 @@ uxcell a14092600ux0438 solenoid
 
 
 0
-0
-0
+9
+1
 ergodonk_pico
 2u_Stab
 
@@ -97299,13 +97313,6 @@ V2_CherryMX_KailhV2_solder
 0
 5
 2
-ergodonk_pico_library
-V2_CherryMX_DS_Hotswap_miniE_1U_SEED_RH
-
-
-0
-11
-6
 kailh-pg1425-x-switch
 Kailh-PG1425-X-Switch
 
