@@ -9,6 +9,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
+* Add UF2 files and update relative path in README.
 
 ## Punchlist before QMK PR
 * @todo Limit max brightness of the SK6803's
@@ -332,19 +333,45 @@ Installing the keys and case.
 1. Slide the three standoff on the OLED plate through the PCB. Attach those standoffs to the backplate using M2 screws.
 1. Put at least 4 adhesive rubber feet in the corners so the keyboard is not moving when you type.
 
-
 ## Warnings and disclaimers
 - Don't connect or disconnect the TRRS cable when the keyboard is powered. It may short out. Always disconnect the USB cable first.
-- Be gentle with micro USB ports on your microcontrollers. They are easy to break.
+- Be gentle with USB-C ports on your microcontrollers. They are easy to break.
 - Keep in mind that this is a prototype of a DIY keyboard. It’s not a polished product.
 
 ## Firmware and programming
 @todo - update hte firmware.
-The Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](https://github.com/qmk/qmk_firmware/pull/16736). Instead use the [jellytitan/qmk_firmware](https://github.com/jellytitan/qmk_firmware) fork.
-Suggested approach is to build the firmware yourself. You should be familiar with QMK and be able to make it work on your local environment. If not, please [follow the instructions in the documentation][qmkintro]. Note QMK setup is fairly invasive (upgrade every homebrew package on your system) so you might want to consider the [QMK Docker image](https://beta.docs.qmk.fm/using-qmk/guides/development-environments/getting_started_docker) for compiling.
+### The easy way
+The rp2040 supports 'drag and drop' flashing with a UF2 file on Mac or PC. This is the recommended approach if you're not familiar with compiling QMK firmware yourself. After the first 'drag and drop' flash, you can tweak your keymaps further using [VIA](https://www.caniusevia.com/).
+
+VIA allows you to quickly change your keymap without flashing or a QMK build environment. I highly recommend it for experimenting. There are few downsides:
+- it doesn't support custom logic like a key for switching between Mac/Win
+- the exporting/importing keymaps has some problems with some multi-chord keys though typically I don't find I need to export/import
+- lighting configuration keys only seem to affect lighting on the master side. If you don't change lighting much, a workaround is to plug just the right side in to the computer, change the lighting then plug everything back normally
+
+To flash with 'drag 'n drop':
+These instructions are a summarization of the [official explanation found in the QMK docs](https://docs.qmk.fm/#/flashing?id=raspberry-pi-rp2040-uf2).
+1. Make sure halves are not connected together with TRRS cable.
+1. Connect one half to USB.
+1. Enter the bootloader using any of the following methods. These are dependant on where your RP2040 came from. You may have to remove an OLED to access the `BOOT` button.
+    * Hold down `BOOT` and tap `RESET`.
+    * Hold the `BOOT` button while pluging in the usb cable.
+    * Double tapping the `RESET` button on the RP2040. ([Double tap reset is enabled by default on the RP2040](https://github.com/qmk/qmk_firmware/blob/master/docs/platformdev_rp2040.md#double-tap-reset-boot-loader-entry-iddouble-tap)).
+1. Wait for the OS to detect the device.
+1. Copy the .uf2 file to the new USB disk. 
+  * The files can be found in this repo at ./Sofle_Pico/Firmware
+  * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix. (@todo - can we use matrix detection to use a single file for both hands)?
+  * On Mac after the file is dropped, the 'Keyboard setup assistant' may be triggered. You can ignore and quit the assistant.(@todo add relative path to UF2 files.) 
+1. Unplug the side you just flashed, and repeat the process with the other side.
+1. Disconnect both halves from USB.
+1. Connect both halves together using the TRRS cable. 
+1. Connect the left half to USB.
+1. Test everything using VIA. (After you've downloaded and installed the VIA app from https://caniusevia.com/, it should recognize the keyboard when it opens).
+
+### The less easy way
+If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](@todo: Update this url with official PR). Instead use the [jellytitan/qmk_firmware](https://github.com/jellytitan/qmk_firmware) fork.
+https://docs.qmk.fm/#/flashing?id=raspberry-pi-rp2040-uf2
 
 To flash:
-
 - Clone [https://github.com/jellytitan/qmk_firmware](https://github.com/jellytitan/qmk_firmware)
 - Switch to the `sofle_pico` branch with `git checkout sofle_pico`
 - Make sure your QMK environment [is setup][qmkintro].
@@ -355,18 +382,7 @@ To flash:
 - Connect USB cable to the **left** side.
 - Enjoy!
 
-@todo - still need via support! Rewrite this section
-There is also a firmware version that uses [VIA](https://caniusevia.com/). VIA allows you to quickly change your keymap without flashing or a QMK build environment. I highly recommend it for experimenting. There are few downsides:
-- it doesn't support custom logic like a key for switching betwen Mac/Win
-- the exporting/importing keymaps has some problems with some multi-chord keys though typically I don't find I need to export/import
-- lighting configuration keys only seem to affect lighting on the master side. If you don't change lighting much, a workaround is to plug just the right side in to the computer, change the lighting then plug everrything back normally
-
-To use the VIA firmware
-
-- Clone https://github.com/brianlow/qmk_firmware
-- Switch to the `choc-brian` branch with `git checkout choc-brian`
-- When flashing use the `choc_brian` keymap: `qmk flash -kb sofle/rev1 -km choc-brian`
-- Download the VIA app from https://caniusevia.com/, it should recognize the keyboard when it opens
+ 
 
 ## Troubleshooting
 
