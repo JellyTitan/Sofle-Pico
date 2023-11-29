@@ -124,6 +124,11 @@ Sent out v3.5 for production 11-13-23.
 * [Uberrice](https://github.com/JellyTitan/Sofle-Pico/issues/1#issuecomment-1810420994) was kind enough to review again:
 	* Updated LED footprint to remove potential acid trap.
 	* Removed routing on GND net since it's using a polygon. (best practice!)
+	* Converted logo text to svg->footprint so it will transfer well between mac/pc. Had to add an exclusion zone for the text only logo in the copper. Rebuilding zones was creating an outline around the footprint. I tried making the footprint part of the zone, but it still wouldn't connect. :shrug:.
+	![Updated text logo with vcc plane exlusion zone.](docs/images/build_log_pico/text_logo_exclusion.png)
+	* Increased the line weight of the GND pin markings on the LEDs. (In it's currents state, it is easily obscured by solder paste).
+	* Considered moving the middle thumb key to allow 1.25u keycaps. The switch would need to move ~2.5mm. Decided against this, because no other Sofle boards do this, and it would require tweaking the bottom outline.
+	![1.25u thumb consideration](docs/images/build_log_pico/sofle_pico_middle_thumb_1.25u.png)
 
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
@@ -132,3 +137,4 @@ Sent out v3.5 for production 11-13-23.
 * Horizontal encoder/ec12 encoder combo. (The horizontal encoder needs additional cutouts - there isn't room for those with the base Pico)
 * Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
 * Add a 'handedness pin' for qmk auto-detection. (May not be needed - i think there's an 'x intersection' indicates handedness setting.)
+* Consider moving middle thumb key to allow for 1.25u keycap.
