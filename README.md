@@ -5,16 +5,16 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before Sofle PR
-* @todo Merge user uberrice's improvements
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 * Add UF2 files and update relative path in README.
 
 ## Punchlist before QMK PR
-* @todo Limit max brightness of the SK6803's
+* @todo Limit max brightness of the SK6803's (Did that - but can we increase default brightness?)
 * @todo Added handedness indication via matrix pin intersection.
 * @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
+* Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
 * @todo adapt bongocat for 128x64
 * @todo update Sofle Pico OLED logo with revised logo
 * @todo The Pimaroni works - but it kinda sucks. Is that expected behavior, or can it be cleaned up with some 'debounce' in the firmware?
@@ -117,7 +117,7 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 | Diodes | 62 | Surface mount SOD-123 1N4148, or through-hole 1N4148 diode. These are common, any old one should do. Through hole is usually easier to solder. | SMD: [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) [JLCPCB](https://jlcpcb.com/partdetail/3368026-1N4148SOD123/C2972760) Through-hole: [AliExpress](https://www.aliexpress.us/item/2251832473773777.html) |
 | Raspberry Pi Picos | 2 | PCB is specifically designed with the official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle Pico is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907).| [AliExpress, YD-2040](https://www.aliexpress.us/item/3256803909832318.html) |
 | TRRS Jacks | 2 | PJ-320A | [AliExpress](https://www.aliexpress.us/item/2255800474897706.html) |
-| TRRS or TRS Cable (3.5mm "Headphone" Cable) | 1 | TRRS (4 pole) or TRS (3 pole) will work. | |
+| TRRS  (3.5mm "Headphone" Cable) | 1 | TRRS ("4 pole" required) | |
 | MX Style Switches | 58 | 3-pin or 5-pin will work. If you're not using a keyplate, you'll want 5-pin.| |
 | Key Caps | 58 | | |
 | Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
@@ -356,6 +356,7 @@ These instructions are a summarization of the [official explanation found in the
     * Hold down `BOOT` and tap `RESET`.
     * Hold the `BOOT` button while pluging in the usb cable.
     * Double tapping the `RESET` button on the RP2040. ([Double tap reset is enabled by default on the RP2040](https://github.com/qmk/qmk_firmware/blob/master/docs/platformdev_rp2040.md#double-tap-reset-boot-loader-entry-iddouble-tap)).
+    * **Bootmagic reset** (works after you have flashed once): Hold down the top far corner key while plugging in the keyboard (`~` left half, `-` right half). This will also clear the EEPROM.
 1. Wait for the OS to detect the device.
 1. Copy the .uf2 file to the new USB disk. 
   * The files can be found in this repo at ./Sofle_Pico/Firmware
