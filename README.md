@@ -144,7 +144,7 @@ These parts are necessary for the RGB lighting.
 ### Optional Parts - OLED
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
-| SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> *!Note - at the time this board was built, the 128x64 SSD1306 OLED is not officially supported on ARM boards. (Pico is ARM, promicro is AMD). @todo - verify 64 & submit PR? Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based soley on aesthetics.) ![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
+| SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. <br> These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based solely on aesthetics.) If you come across more variants or different pin positions, please submit a PR! ![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
 | 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](docs/images/build_guide_pico/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html)|
 
 
@@ -299,7 +299,9 @@ If you ever need to remove the Pico: do it by gently prying the board up in smal
 ### OLED
 @todo add updated images when v3.4 prototype comes in.
 
-There are two common variants of the SSD1306 OLED. They are easily distinguishable by the corner holes. There is a separate socket for each of these, because they switch the GND/VCC pins. This pins are usually labeled on the OLEDs themselves. Please check the OLED pins against the marking on the PCB to ensure everything matches as expected.
+There are two common variants of the SSD1306 OLED. They are easily distinguishable by the corner holes. There is a separate socket for each of these, because they switch the GND/VCC pins. This pins are usually labeled on the OLEDs themselves. 
+
+**Please check the OLED pin labels against the marking on the PCB to ensure everything matches.** It's entirely possible that the OLEDS have GND/VCC in different locations than expected. (If you do find some that differ from the oval/round below, please update this doc ans submit a PR)! The GND pin is square.
 
 ![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png) ![OLED sockets](docs/images/build_guide_pico/sofle_pico_oled_socket_closeup.png)
 ![OLED sockets](docs/images/build_guide_pico/sofle_pico_LH_OLED_socket.png)

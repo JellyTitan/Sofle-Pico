@@ -129,6 +129,7 @@ Sent out v3.5 for production 11-13-23.
 	* Increased the line weight of the GND pin markings on the LEDs. (In it's currents state, it is easily obscured by solder paste).
 	* Considered moving the middle thumb key to allow 1.25u keycaps. The switch would need to move ~2.5mm. Decided against this, because no other Sofle boards do this, and it would require tweaking the bottom outline.
 	![1.25u thumb consideration](docs/images/build_log_pico/sofle_pico_middle_thumb_1.25u.png)
+	* OLED footprint GND pins made square. Increased font size on OLED pin markings.
 
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
