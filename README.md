@@ -35,6 +35,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Optional - Solenoid](#optional---solenoid)
  - [Optional - Pimaroni trackball](#optional---pimoroni-trackball)
  - [Optional - key plates](#optional---key-plates)
+ - [Optional - low profile header pins](#optional---low-profile-header-pins)
  - [Tools and materials](#tools-and-materials)
 
 [Build Guide / Assembly steps](#build-guide--assembly-steps)
@@ -177,6 +178,11 @@ Electrically, this should work - but i have not validated it.
  - Key plates are strongly recommended, but not technically required. (The thumb keys tend to fall out if you don't use a key plate).
  - The OLEDs are taller than the switch plate, so they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDS can be installed higher/lower.
  - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates.
+
+### Optional - low profile header pins
+- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html) instead. 
+
+@todo Update header pin length - 7.5mm or 8.55mm?
 
 ## Tools and materials
 

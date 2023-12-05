@@ -139,3 +139,4 @@ Sent out v3.5 for production 11-13-23.
 * Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
 * Add a 'handedness pin' for qmk auto-detection. (May not be needed - i think there's an 'x intersection' indicates handedness setting.)
 * Consider moving middle thumb key to allow for 1.25u keycap.
+* Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
