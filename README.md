@@ -5,18 +5,19 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before Sofle PR
+* @todo Added handedness by pull an unused pin high/low
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 * Add UF2 files and update relative path in README.
+* Update header pin length in readme.
+* Add optional header pin images in readme.
 
 ## Punchlist before QMK PR
-* @todo Limit max brightness of the SK6803's (Did that - but can we increase default brightness?)
-* @todo Added handedness indication via matrix pin intersection.
+* @todo Added handedness by pull an unused pin high/low
 * @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
 * Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
 * @todo adapt bongocat for 128x64
-* @todo update Sofle Pico OLED logo with revised logo
 * @todo The Pimaroni works - but it kinda sucks. Is that expected behavior, or can it be cleaned up with some 'debounce' in the firmware?
 * @todo: via support. (Update docs too!)
 * @todo: Validate legacy sofle layout to QMK. 
@@ -63,29 +64,29 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ## Overview
 
 ### Pi Pico vs. ProMicro
-Whereas [Sofle v1 & v2](https://github.com/josefadamcik/SofleKeyboard) used the Promicro MCU, Sofle Pico uses the rp2040 MCU. The Pico offers larger memory options at a low price point. This allows for more features like screen animations and RGB animation effects.
+Whereas [Sofle v1 & v2](https://github.com/josefadamcik/SofleKeyboard) used the Promicro MCU, Sofle Pico is built specifically for the RP2040 Pico MCU. The Pico offers larger memory options at a low price point. [Inexpensive clones are readily available](https://www.aliexpress.us/w/wholesale-raspberry-pi-pico.html). The increased MCU capacity of the Pico allows for more features like screen animations and RGB animation effects.
 
 Although there is a QMK option to port the legacy pro-micro config to rp2040 boards that are backwards compatible, the rp2040 pins are not 5v tolerant. Essentially, the per key rgb doesn't work as it should.
 
 There are many rp2040 boards available in the same form factor as the Promicro, but they tend to be 4-8 times more costly than the Pi Pico form factor, and inexpensive [Pi Pico clones](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo/edit#gid=0) are [readily available](https://www.aliexpress.us/item/3256803909832318.html).
 
-Accommodating the voltage variances between the Promicro and the Pi Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with Promicro keyboards require 5v logic. The Pi Pico uses 3.3v logic. A level shifter, along with a lower current variant of the SK6803MINI-E make this work. Thank you to the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable 3V logic circuit.
+Accommodating the voltage variances between the ProMicro and the Pi Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with ProMicro keyboards require 5v logic. The Pi Pico uses 3.3v logic. A level shifter, along with a lower current LED variant, specifically the SK6803MINI-E, work with the lower voltage. Thank you to Dane Skalski and the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing this excellent 3V logic circuit.
 
 ### Features inherited from V2
- - Key placement has not changed. (mostly - 3deg thumb key rotation).
+ - Key placement has not changed. (mostly - 1 thumb key got a 3 degree rotation).
  - Hotswap sockets are required. 
- - Per-key RGB remains optional and uses the relatively easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for Pico)
+ - Per-key RGB remains optional and uses the _relatively_ easy to solder SK6803 MINI-E LEDs. (Note lower current variant required for Pico).
 
 ### New features in the Sofle Pico
 * Default OLED is now 64x128, as opposed to 32x128.
 * OLED ports are separated and offset, so no jumper soldering is required.
-* 2 Common SSD1306 64x128 OLED variants are supported. (circle corner and oval corner).
-* Added clearly labeled and easily accessible [Pimoroni trackball](https://shop.pimoroni.com/en-us/products/trackball-breakout) tie in footprint.
+* 2 Common SSD1306 64x128 OLED variants are supported. The two common variants are circle corner and oval corner, which have different pinouts. There may be more pinout variants out there!
+* Added easily accessible [Pimoroni trackball](https://shop.pimoroni.com/en-us/products/trackball-breakout) tie in footprint. It works, but it's still a Pimoroni - so IMO it's still not a great experience. Your mileage may vary. 
 * Simplified the PCB & improved labeling to help with build troubleshooting. (The addition of a GND & VCC planes specifically).
 * Added through-hole/Surface mount hybrid footprints for the per-switch diodes.
 * Added a 'breakout' section for the unused pico pins to allow for easy tinkering.
 * The default communication protocol is full duplex TX/RX.
-* Designed for automated PCB Assembly. 
+* Designed for automated PCB Assembly.
 
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
@@ -95,15 +96,15 @@ Accommodating the voltage variances between the Promicro and the Pi Pico require
 * MCU footprints side-by-side to reduce potential shorts.
 * Removed legacy I2C Bus implementation.
 * Modified thumb cluster outline to accommodate 1.25u thumb keycap.
-* Rounded board corners with a consistent radius. 
 * Added teardrops to decrease likelihood of acid traps during manufacture.
 * Added VCC & GND net to simplify routing.
 * Poka-yoke TRRS footprint by removing unnecessary solder masks.
-* Tweaked diode placement & improved labeling for easier troubleshooting.
-* Removed reset button. It is no longer needed, as the Pico has a physical rest button.
+* Diode placement & labeling improved for easier troubleshooting.
+* Diodes can be installed on the front or back, making for lower cost PCBA.
+* Diodes can be SMD or through-hole. Through hole being easier to hand solder, and SMD are prefered for PCBA.
+* Reset button removed. It is no longer needed, as the Pico has a physical rest button.
 * The MCU is now facing upward. There are many PiPico board variants with buttons placed differently. Facing the MCU upward ensures accessability.
-* Optimized for PNP manufacture. The SMD location below the switches allows the diode to be installed on either side.
-* Optimized for hand building - every SMD component has an alternate through hole footprint. (Except for the level-shifter, because 3.3v logic became popular after SMDs became common, so there is no through-hole component available).
+
 * Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
 Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).
 ![Sofle V3](docs/images/build_guide_pico/tenting_puck.webp)
