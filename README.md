@@ -149,6 +149,8 @@ These parts are necessary for the RGB lighting.
 | SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. <br> These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based solely on aesthetics.) If you come across more variants or different pin positions, please submit a PR! ![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
 | 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](docs/images/build_guide_pico/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html)|
 
+<hr>
+
 
 ### Optional - MCU Sockets
 This is strictly a quality of life upgrade. The older ProMicro's were notorious for weak Micro USB jacks that could snap off. This is not needed with the Pi Pico which uses USB-C. However - if your using socketed OLEDs, the OLED sockets put the OLEDs about 5mm (@todo - measure this) above the board, so socketing the MCU helps support the OLEDs.
@@ -156,6 +158,9 @@ This is strictly a quality of life upgrade. The older ProMicro's were notorious 
 | - | - |-|-|
 2.54mm Round Female Pin Header | 4 sets of 20 | They commonly come in strips of 40. They don't always snap in half cleanly, so get extra | [Aliexpress](https://www.aliexpress.us/item/2251832729504304.html)
 Needle pin male connectors | 80 | Diode legs would also work, but these little sets of 4 are nice to work with. | [Aliexpress](https://www.aliexpress.us/item/2251832650595759.html?spm=a2g0o.order_list.order_list_main.186.15a91802YueygY&gatewayAdapt=glo2usa)
+
+<hr>
+
 ### Optional - Solenoid
 The solenoid feature is still a work in progress. It is designed to attach to a separate backplate.
 Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/412/solenoid_driver.pdf). 
@@ -167,18 +172,38 @@ Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/
  1N4001 Diode or MUR340 | 1 | Either the through hole IN4001 or the Surface mount MUR340 will work. | [AliExpress](https://www.aliexpress.us/item/3256802685977811.html)|
  TIP 120 | 1 | @todo Do the math here - is this still the best part? | 
 
+<hr>
+
 ### Optional - Pimoroni trackball
 Electrically, this should work - but i have not validated it. 
 | Name | Count | Remarks | Potential Storefront |
 |-|-|-|-|
 | Pimoroni trackball | 1 | The default footprint replaces a rotary encoder. Installing flush to the board is a bit too low to be comfortable, so you may want to raise it. @todo elaborate.|[Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout)|
 
+<hr>
 
 ### Optional - key plates:
  - The top/key plates from Sofle v1, v2, RGB and Choc versions are not compatible.
- - Key plates are strongly recommended, but not technically required. (The thumb keys tend to fall out if you don't use a key plate).
- - The OLEDs are taller than the switch plate, so they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDS can be installed higher/lower.
+ - Key plates are strongly recommended, but not technically required. (If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate).
+ - The key plates combined with a backplate make a nice 'sandwich' case. Another plate can be added to protect the OLEDs. 
  - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates.
+ - The OLEDs are taller than the switch plate, which is why they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDs can be installed higher/lower.
+ - Plates can be made from acrylic or pcb.
+ - Having a standoff kit is helpful when assembling the keyplates. [M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)
+ - Acrylic key plates should be 3mm thick, and PCBs should be 1.6mm thick. The switches fit better in the PCBs because most switches have 'retention nubs' designed for PCBs. 
+
+![retention nubs](docs/images/build_guide_pico/sofle_pico_retention_nubs.png)
+
+ | Name | Count | Remarks | Potential Storefront |
+|-|-|-|-|
+| keyplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
+| backplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
+| OLED plates | 2 | If using PCB, note there are variants for the different types of OLED's that have higher/lower holes. |Elecrow is great for acrylic, JLC is good for PCB|
+|M2 6mm screws|16| Any old M2 will do. I prefer hex cap for aesthetics.|[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)|
+| M2 18mm female-female standoffs (Same height for Acrylic or PCB)| 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
+| M2 6mm female-female standoffs (6mm for acrylic, 8mm for PCB)| 10 | Connects the front plate to the back plate, runs _through_ the pcb.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
+
+<hr>
 
 ### Optional - low profile header pins
 - The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html) instead. 
