@@ -133,12 +133,21 @@ Sent out v3.5 for production 11-13-23.
 	* Tried to indicate handedness via matrix intersection - realized matrix is a full 5x6 block with no unused intersections.
 	* Updated OLED logo using [image2cpp](https://javl.github.io/image2cpp/):
 		![Sofle Pico OLED logo regeneration instructions](docs/images/build_log_pico/Sofle_Pico_logo_OLED_regen_settings.png)
+  * Added QMK/VIA logo to RH to appear on boot:
+	![QMK 128x64 logo]("Design/Pico/QMK logo/qmk_via_OLED_128x64.svg")
+## v3.5.2 12-15-23
+  * Found an example of handedness by pin in a [Lotus58](https://github.com/TweetyDaBird/Lotus-Keyboard). The GND and VCC tie directly into those pins - specifically, not using a pull up resistor.
+ 
+	![Lotus 58 handedness schematic](docs/images/build_log_pico/lotus58_handedness.png)
+
+	![Lotus 58 handedness schematic](docs/images/build_log_pico/handed_by_pin_gnd.png)
+	![Lotus 58 handedness schematic](docs/images/build_log_pico/handed_by_pin_vcc.png)
 
 ## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
 * Piezo speaker (QMK doesn't support this for ARM boards yet)?
-* Horizontal encoder/ec12 encoder combo. (The horizontal encoder needs additional cutouts - there isn't room for those with the base Pico)
+* Horizontal encoder/ec12 encoder combo. (The horiontal encoder needs additional cutouts - there isn't room for those with the base Pico)
 * Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
 * Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
 * Put a GND plane on both sides, wire VCC directly. (with big fat traces)!

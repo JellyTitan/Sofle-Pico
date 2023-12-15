@@ -1,4 +1,4 @@
-23599722555527775
+23875838622931849
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59688,6 +59688,1119 @@ solder jumper open
 0
 5
 3
+Keebio footprints
+3_Pin_Jumper
+
+
+0
+9
+3
+Keebio footprints
+4pin35mmAudio
+
+
+0
+6
+6
+Keebio footprints
+AST1109MLTRQ
+Murata Buzzer http://www.murata.com/en-us/api/pdfdownloadapi?cate=&partno=PKMCS0909E4000-R1
+Murata Buzzer Beeper
+0
+2
+2
+Keebio footprints
+AT90USB1286_TQFP_14mm
+64-Lead Plastic Thin Quad Flatpack (PF) - 14x14x1 mm Body, 2.00 mm [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.8
+0
+64
+64
+Keebio footprints
+ATMEGA32U4-AU
+
+
+0
+44
+44
+Keebio footprints
+ArduinoProMicro
+
+
+0
+24
+24
+Keebio footprints
+ArduinoProMicro-BackSide
+
+
+0
+24
+24
+Keebio footprints
+ArduinoProMicro-Mini-USB
+
+
+0
+24
+24
+Keebio footprints
+ArduinoProMicro-Mini-USB-No-Text
+
+
+0
+24
+24
+Keebio footprints
+ArduinoProMicro-Mini-USB-ZigZag
+
+
+0
+24
+24
+Keebio footprints
+ArduinoProMicro-TopSide
+
+
+0
+24
+24
+Keebio footprints
+ArduinoProMicro-ZigZag
+
+
+0
+24
+24
+Keebio footprints
+CUI_SJ-43614-SMT
+
+
+0
+4
+4
+Keebio footprints
+C_0402
+Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)
+capacitor 0402
+0
+2
+2
+Keebio footprints
+C_0603
+SMT, 1608, 0603
+SMT, 1608, 0603
+0
+2
+2
+Keebio footprints
+Cherry-MX-Low-Profile
+
+
+0
+2
+2
+Keebio footprints
+Crystal_SMD_2520-4pin_2.5x2.0mm
+SMD Crystal SERIES SMD2520/4 http://www.newxtal.com/UploadFiles/Images/2012-11-12-09-29-09-776.pdf, 2.5x2.0mm^2 package
+SMD SMT crystal
+0
+4
+4
+Keebio footprints
+Crystal_SMD_3225-4pin_3.2x2.5mm
+SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, 3.2x2.5mm^2 package
+SMD SMT crystal
+0
+4
+4
+Keebio footprints
+D_0805
+
+
+0
+2
+2
+Keebio footprints
+D_SOD-323
+SOD-323
+SOD-323
+0
+2
+2
+Keebio footprints
+D_SOD123
+
+
+0
+2
+2
+Keebio footprints
+D_SOD123F
+
+
+0
+2
+2
+Keebio footprints
+Diode
+
+
+0
+2
+2
+Keebio footprints
+Diode-Hybrid-Back
+
+
+0
+6
+2
+Keebio footprints
+Diode-dual
+
+
+0
+10
+2
+Keebio footprints
+Diode-hybrid-3pad
+
+
+0
+6
+2
+Keebio footprints
+Diode_Long
+
+
+0
+2
+2
+Keebio footprints
+Elite-C
+
+
+0
+29
+29
+Keebio footprints
+Elite-C-ZigZag
+
+
+0
+29
+29
+Keebio footprints
+Elite-C-castellated-24pin
+
+
+0
+24
+24
+Keebio footprints
+Elite-C-castellated-24pin-holes
+
+
+0
+48
+24
+Keebio footprints
+Elite-C-castellated-29pin
+
+
+0
+29
+29
+Keebio footprints
+Elite-C-castellated-29pin-holes
+
+
+0
+58
+29
+Keebio footprints
+Epson_TSX-3225
+
+
+0
+4
+4
+Keebio footprints
+Fuse_0805
+SMT, 2012, 0805
+SMT, 2012, 0805
+0
+2
+2
+Keebio footprints
+HRO-TYPE-C-31-M-12-Assembly
+
+
+0
+16
+13
+Keebio footprints
+Header-6-Pin-ZigZag
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
+0
+6
+6
+Keebio footprints
+Header-12-Pin-ZigZag
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
+0
+12
+12
+Keebio footprints
+Header-12-Pin-ZigZag-Square
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
+0
+12
+12
+Keebio footprints
+I2C_Breakout
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
+Keebio footprints
+ICSP-Header
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
+0
+6
+6
+Keebio footprints
+ICSP-Header-ZigZag
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row
+Through hole socket strip THT 1x06 2.54mm single row
+0
+6
+6
+Keebio footprints
+ICSP_1.27mm
+Through hole straight pin header, 2x03, 1.27mm pitch, double rows
+Through hole pin header THT 2x03 1.27mm double row
+0
+6
+6
+Keebio footprints
+JUMPER_SMD_2DUB
+
+
+0
+12
+2
+Keebio footprints
+KLJ-1102
+
+
+0
+2
+2
+Keebio footprints
+Kailh-PG1350-1.5u
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-1.25u
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-1.25u-LED-flip
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-1u
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-1u-No-Clickhole
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-1u-NoLED
+
+
+0
+2
+2
+Keebio footprints
+Kailh-PG1350-1u-reversible
+
+
+0
+5
+4
+Keebio footprints
+Kailh-PG1350-1u-reversible-No-Clickhole
+
+
+0
+5
+4
+Keebio footprints
+Kailh-PG1350-1u-reversible-flip
+
+
+0
+5
+4
+Keebio footprints
+Kailh-PG1350-2.5u
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-2u
+
+
+0
+4
+4
+Keebio footprints
+Kailh-PG1350-2u-NoLED
+
+
+0
+2
+2
+Keebio footprints
+Kailh-PG1350-2u-Vert-NoLED
+
+
+0
+2
+2
+Keebio footprints
+LED_3mm
+
+
+0
+2
+2
+Keebio footprints
+LQFP-48_7x7mm_Pitch0.5mm
+48 LEAD LQFP 7x7mm (see MICREL LQFP7x7-48LD-PL-1.pdf)
+QFP 0.5
+0
+48
+48
+Keebio footprints
+Low-Profile-Choc-MX
+
+
+0
+5
+4
+Keebio footprints
+MD_Diode
+
+
+0
+2
+2
+Keebio footprints
+MX-Alps-Choc-1U
+
+
+0
+8
+4
+Keebio footprints
+MX-Alps-Choc-1U-No-Clickhole
+
+
+0
+8
+4
+Keebio footprints
+MX-Alps-Choc-1U-NoLED
+
+
+0
+6
+2
+Keebio footprints
+MX-Alps-Choc-1U-NoLED-Alt
+
+
+0
+6
+2
+Keebio footprints
+MX-Alps-Choc-2U
+
+
+0
+8
+4
+Keebio footprints
+MX-Alps-Choc-2U-StabFlip
+
+
+0
+8
+4
+Keebio footprints
+MX-Alps_DMask
+
+
+0
+2
+1
+Keebio footprints
+MX-Alps_FMask
+
+
+0
+2
+1
+Keebio footprints
+MX-Alps_FMask-2u
+
+
+0
+2
+1
+Keebio footprints
+MX-Alps_Switch_Cutout
+
+
+0
+2
+1
+Keebio footprints
+MX-Alps_Switch_Cutout-1u_1.25u
+
+
+0
+0
+0
+Keebio footprints
+MX-Alps_Switch_Cutout-1u_1.25u-3u-wide
+
+
+0
+0
+0
+Keebio footprints
+MX-Alps_Switch_Cutout-1u_2u
+
+
+0
+2
+1
+Keebio footprints
+MX-Alps_Switch_Cutout-3u-wide
+
+
+0
+0
+0
+Keebio footprints
+MX-Quad
+MX/Alps footprint
+
+0
+8
+2
+Keebio footprints
+MX_FMask
+
+
+0
+2
+1
+Keebio footprints
+MX_FMask-2u
+
+
+0
+3
+1
+Keebio footprints
+MX_FMask-2u-with-cutout
+
+
+0
+2
+1
+Keebio footprints
+MX_FMask-with-cutout
+
+
+0
+2
+1
+Keebio footprints
+MX_LED
+
+
+0
+2
+2
+Keebio footprints
+MX_Stabilizer_Cutout
+
+
+0
+0
+0
+Keebio footprints
+MX_Stabilizer_Cutout-2u
+
+
+0
+0
+0
+Keebio footprints
+MX_Switch_Cutout
+
+
+0
+0
+0
+Keebio footprints
+MX_Switch_Mod_Cutout
+
+
+0
+0
+0
+Keebio footprints
+Mini-USB
+
+
+0
+7
+6
+Keebio footprints
+MountingHole
+
+
+0
+1
+0
+Keebio footprints
+NovelKeys_Kailh_Big_Series_Switch
+
+
+0
+2
+2
+Keebio footprints
+Pin_Header_Straight_2x03_Pitch1.00mm
+Through hole straight pin header, 2x03, 1.00mm pitch, double rows
+Through hole pin header THT 2x03 1.00mm double row
+0
+6
+6
+Keebio footprints
+QFN-44-1EP_7x7mm_Pitch0.5mm
+UK Package; 44-Lead Plastic QFN (7mm x 7mm); (see Linear Technology QFN_44_05-08-1763.pdf)
+QFN 0.5
+0
+60
+45
+Keebio footprints
+RGB-6028
+
+
+0
+4
+4
+Keebio footprints
+RGB_3528_Blue_Notch
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
+Keebio footprints
+RGB_3528_Blue_Notch-MX
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
+Keebio footprints
+RGB_3528_Blue_Notch-MX-Flip
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
+Keebio footprints
+RP2040-QFN-56
+QFN, 56 Pin (http://www.cypress.com/file/416486/download#page=40), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+70
+57
+Keebio footprints
+R_0402
+Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 0402
+0
+2
+2
+Keebio footprints
+R_0603
+SMT, 1608, 0603
+SMT, 1608, 0603
+0
+2
+2
+Keebio footprints
+R_0805
+SMT, 2012, 0805
+SMT, 2012, 0805
+0
+2
+2
+Keebio footprints
+Resistor
+
+
+0
+2
+2
+Keebio footprints
+Resistor-Compact
+
+
+0
+2
+2
+Keebio footprints
+Resistor-Compact-1-side
+
+
+0
+2
+2
+Keebio footprints
+Resistor-Hybrid
+
+
+0
+10
+2
+Keebio footprints
+Resistor-Hybrid-Back
+
+
+0
+6
+2
+Keebio footprints
+RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+7
+6
+Keebio footprints
+RotaryEncoder_EC11
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+5
+5
+Keebio footprints
+RotaryEncoder_EC11-no-legs
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+5
+5
+Keebio footprints
+RotaryEncoder_EC11B-Horizontal-Dual
+
+
+0
+7
+5
+Keebio footprints
+RotaryEncoder_EC11_Nonplated
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+5
+5
+Keebio footprints
+SK6812-MINI-E
+
+
+0
+4
+4
+Keebio footprints
+SM0805D
+
+
+0
+2
+2
+Keebio footprints
+SOIC-8_3.9x4.9mm_Pitch1.27mm
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+Keebio footprints
+SOIC-8_5.23x5.23mm_P1.27mm
+SOIC, 8 Pin (http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf#page=68), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Keebio footprints
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+Keebio footprints
+SOT-23-6
+6-pin SOT-23 package
+SOT-23-6
+0
+6
+6
+Keebio footprints
+SOT-23_Handsoldering
+SOT-23, Handsoldering
+SOT-23
+0
+3
+3
+Keebio footprints
+SOT-143B
+SOT143B
+
+0
+4
+4
+Keebio footprints
+SOT-363_SC-70-6
+SOT-363, SC-70-6
+SOT-363 SC-70-6
+0
+6
+6
+Keebio footprints
+SW_SPST_3x3
+Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
+SPST Tactile Switch
+0
+4
+2
+Keebio footprints
+SW_SPST_TL3342
+Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
+SPST Tactile Switch
+0
+4
+2
+Keebio footprints
+SW_Tactile_SPST_Angled_MJTP1117
+tactile switch SPST right angle, PTS645VL39-2 LFS
+tactile switch SPST angled PTS645VL39-2 LFS C&K Button
+0
+4
+2
+Keebio footprints
+SW_Tactile_SPST_Angled_MJTP1117-no-mount
+tactile switch SPST right angle, PTS645VL39-2 LFS
+tactile switch SPST angled PTS645VL39-2 LFS C&K Button
+0
+2
+2
+Keebio footprints
+SinglePad
+
+
+0
+1
+1
+Keebio footprints
+SolderJumper
+
+
+0
+4
+3
+Keebio footprints
+SolderJumperLeft
+
+
+0
+3
+3
+Keebio footprints
+SolderJumperPair
+
+
+0
+6
+3
+Keebio footprints
+SolderJumperRight
+
+
+0
+3
+3
+Keebio footprints
+SolderJumperSet
+
+
+0
+12
+6
+Keebio footprints
+SolderJumperSets
+
+
+0
+6
+2
+Keebio footprints
+SolidCopper
+Mounting Hole 2.2mm, M2
+mounting hole 2.2mm m2
+0
+2
+1
+Keebio footprints
+TQFP-32_7x7mm_Pitch0.8mm
+32-Lead Plastic Thin Quad Flatpack (PT) - 7x7x1.0 mm Body, 2.00 mm [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.8
+0
+32
+32
+Keebio footprints
+TQFP-44_10x10mm_Pitch0.8mm
+44-Lead Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm Body [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.8
+0
+44
+44
+Keebio footprints
+TQFP-48_7x7mm_Pitch0.5mm
+48 LEAD TQFP 7x7mm (see MICREL TQFP7x7-48LD-PL-1.pdf)
+QFP 0.5
+0
+48
+48
+Keebio footprints
+TQFP-QFN-44_Combined
+44-Lead Plastic Thin Quad Flatpack (PT) - 10x10x1.0 mm Body [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.8
+0
+104
+45
+Keebio footprints
+TRRS-PJ-320A
+
+
+0
+4
+4
+Keebio footprints
+TRRS-PJ-320A-dual
+
+
+0
+5
+4
+Keebio footprints
+TRRS-PJ-320A-no-Fmask
+
+
+0
+8
+4
+Keebio footprints
+TRRS-PJ-320D
+
+
+0
+4
+4
+Keebio footprints
+TRRS-PJ-605
+
+
+0
+6
+6
+Keebio footprints
+TRRS-PJ-606
+
+
+0
+6
+6
+Keebio footprints
+TRRS_Jack
+
+
+0
+6
+6
+Keebio footprints
+TRRS_Jack-one-sided
+
+
+0
+4
+4
+Keebio footprints
+TRRS_Jumper
+
+
+0
+6
+6
+Keebio footprints
+Teensy_2.0
+
+
+0
+31
+31
+Keebio footprints
+Triple-Dual-1u-LED
+
+
+0
+21
+4
+Keebio footprints
+Triple-Dual-1u-LED-flip
+
+
+0
+21
+4
+Keebio footprints
+Triple-Dual-2u-LED
+
+
+0
+21
+4
+Keebio footprints
+Triple-Dual-2u-LED-stab-flip
+
+
+0
+21
+4
+Keebio footprints
+USB-C-12-Pin-MidMount
+
+
+0
+16
+13
+Keebio footprints
+USB-Mini-B_ LCSC-C46398
+
+
+0
+9
+6
+Keebio footprints
+USB-Mini-B_2leg
+
+
+0
+7
+6
+Keebio footprints
+USB_miniB_HandSolder
+http://www.hirose.co.jp/cataloge_hp/e24000019.pdf
+USB miniB hirose
+0
+9
+9
+Keebio footprints
+VIA-0.6mm
+
+
+0
+1
+1
+Keebio footprints
+WS2812B
+
+
+0
+4
+4
+Keebio footprints
+WS2812B-4020
+
+
+0
+4
+4
+Keebio footprints
+breakaway-hole
+
+
+0
+0
+0
+Keebio footprints
+breakaway-hole-big
+
+
+0
+0
+0
+Keebio footprints
+breakaway-mousebites
+
+
+0
+0
+0
+Keebio footprints
+solder_jumper
+
+
+0
+2
+2
 Kicad-Footprints-main
 Kailh_PG1232
 
@@ -89271,6 +90384,13 @@ Cherry_MX_DS_Hotswap_miniE_1U_v3.5
 28
 6
 Sofle_Pico
+Cherry_MX_DS_Hotswap_miniE_1U_v3.5.2
+
+
+0
+22
+6
+Sofle_Pico
 D_SOD-123_DO-35_Hybrid_DoubleSided_V2
 SOD-123
 SOD-123
@@ -97165,7 +98285,7 @@ uxcell a14092600ux0438 solenoid
 
 0
 9
-1
+0
 ergodonk_pico
 2u_Stab
 
@@ -97207,6 +98327,13 @@ Cherry_MX_DS_Hotswap_miniE_1U_sofle3b v2
 
 0
 30
+6
+ergodonk_pico
+Cherry_MX_DS_Hotswap_miniE_1U_v3.5.2
+
+
+0
+28
 6
 ergodonk_pico
 Cherry_MX_SS_Hotswap_miniE_1U_sofle3b v2

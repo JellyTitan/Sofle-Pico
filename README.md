@@ -5,22 +5,22 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before Sofle PR
-* @todo Added handedness by pull an unused pin high/low
+* @todo Added handedness by pull an unused pin high/low (Example here: https://github.com/TweetyDaBird/Lotus-Keyboard)
+* Revert LED cutouts from drills to edge cuts.
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 * Add UF2 files and update relative path in README.
 * Update header pin length in readme.
 * Add optional header pin images in readme.
+* Ubberice tweaked thumb trace - look closer
 
 ## Punchlist before QMK PR
 * @todo Added handedness by pull an unused pin high/low
-* @todo Update OLED with 5 second intro flash. (Add powered by QMK to one side)
 * Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
-* @todo adapt bongocat for 128x64
+* @todo adapt bongocat for 128x64 (doio/kb16 has a 128x32 library that can be adapted.)
 * @todo The Pimaroni works - but it kinda sucks. Is that expected behavior, or can it be cleaned up with some 'debounce' in the firmware?
 * @todo: via support. (Update docs too!)
-* @todo: Validate legacy sofle layout to QMK. 
 
 [Overview](#overview)
  - [Pi Pico vs. ProMicro](#pi-pico-vs-promicro)
