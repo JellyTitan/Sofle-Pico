@@ -119,8 +119,6 @@
   (pad "" np_thru_hole circle (at -2.54 -5.08) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask") (tstamp 34460faf-a8e9-4ec6-addf-1b31de471f08))
   (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers "*.Cu" "*.Mask") (tstamp 3200061f-6b0d-43c9-a7ab-971194f0d228))
   (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers "*.Cu" "*.Mask") (tstamp a7068b2b-4830-4d1b-97ee-7c745eee4966))
-  (pad "" np_thru_hole circle (at 0 3.37027) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp e17fd37d-f958-43b6-a9a9-0ea830ae458c))
-  (pad "" np_thru_hole circle (at 0 6.37) (size 1 1) (drill 1) (layers "F&B.Cu" "*.Mask") (tstamp 1e975ea2-a2a9-4a81-a736-1af41c68201e))
   (pad "" np_thru_hole circle (at 2.54 -5.08) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask") (tstamp ab0a0b64-33fc-470c-aec8-815a11988b03))
   (pad "" np_thru_hole circle (at 3.81 -2.54) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask") (tstamp 47cc8a6e-cd53-41f3-9cdc-a51fdca1b125))
   (pad "" np_thru_hole circle (at 5.08 0) (size 1.75 1.75) (drill 1.75) (layers "*.Cu" "*.Mask") (tstamp 3238b505-8643-445a-9d67-b4d3ca06f367))
@@ -146,7 +144,7 @@
           (xy -0.85 0.41)
         )
         (width 0) (fill yes))
-      (gr_arc (start 1.088917 -0.176284) (mid 0.899994 -0.14) (end 0.778485 -0.289144) (width 0.15))
+      (gr_arc (start 1.088917 -0.176284) (mid 0.899992 -0.139997) (end 0.778482 -0.289144) (width 0.15))
       (gr_arc (start 1.55 -0.750001) (mid 1.283467 -0.106534) (end 0.64 0.159999) (width 0.5))
     ) (tstamp cdb5bd90-59c0-4c5f-b1da-bfd37e742e6e))
   (pad "1" smd custom (at -2.540006 5.62) (size 0.82 0.82) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -322,7 +320,6 @@
       0a1675ce-36bc-4637-a5b5-d7a8b0bf9af3
       0c7a656b-254d-4862-9533-4e59c25374b0
       1098627b-215f-456a-a075-6e390b696a3b
-      1e975ea2-a2a9-4a81-a736-1af41c68201e
       2033dd26-13be-4b12-96ab-c02197fdd06b
       30face94-11d9-4d31-869f-d73c5bd72084
       3713c6a7-a43b-450b-98ea-823975e163f4
@@ -344,7 +341,6 @@
       bca8ed3b-7a13-4875-bcc6-9382db32a5b1
       cdb5bd90-59c0-4c5f-b1da-bfd37e742e6e
       cefe269a-e74d-4844-84f6-4bcd6d7cf1b1
-      e17fd37d-f958-43b6-a9a9-0ea830ae458c
       ec5d9e1c-535e-4dd6-83c1-29d59287aed4
       f6131c96-7638-426f-a8de-cbdfc132a579
       fdc3ec3d-b602-4969-a1ea-6716568f8314
