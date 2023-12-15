@@ -1,4 +1,4 @@
-23877548372786437
+23879251058649343
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90388,7 +90388,7 @@ Cherry_MX_DS_Hotswap_miniE_1U_v3.5.2
 
 
 0
-22
+24
 6
 Sofle_Pico
 D_SOD-123_DO-35_Hybrid_DoubleSided_V2
@@ -90446,6 +90446,13 @@ Through hole pin header THT 1x05 2.54mm single row
 0
 5
 5
+Sofle_Pico
+PinHeader_1x05_P2.54mm_Vertical_one-dead
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+4
+4
 Sofle_Pico
 RPi_Pico_SMD_TH - Junco -DS Sofle Pico handpins
 Through hole straight pin header, 2x20, 2.54mm pitch, double rows
