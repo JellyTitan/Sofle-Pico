@@ -5,8 +5,6 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.3_hero.png)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before Sofle PR
-* @todo Added handedness by pull an unused pin high/low (Example here: https://github.com/TweetyDaBird/Lotus-Keyboard)
-* Revert LED cutouts from drills to edge cuts.
 * @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
@@ -14,6 +12,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 * Update header pin length in readme.
 * Add optional header pin images in readme.
 * Ubberice tweaked thumb trace - look closer
+* Review docs and update images 
 
 ## Punchlist before QMK PR
 * @todo Added handedness by pull an unused pin high/low
