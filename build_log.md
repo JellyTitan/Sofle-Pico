@@ -140,10 +140,27 @@ Sent out v3.5 for production 11-13-23.
  
 	![Lotus 58 handedness schematic](docs/images/build_log_pico/lotus58_handedness.png)
 
-	![Lotus 58 handedness schematic](docs/images/build_log_pico/handed_by_pin_gnd.png)
-	![Lotus 58 handedness schematic](docs/images/build_log_pico/handed_by_pin_vcc.png)
+	![Lotus 58 handedness schematic gnd](docs/images/build_log_pico/handed_by_pin_gnd.png)
+	![Lotus 58 handedness schematic vcc](docs/images/build_log_pico/handed_by_pin_vcc.png)
+  * Since the drilled LED holes don't circumvent the 'too many holes' fee, I refactored the led footprint and pulled them out.
 
-## Future Feature Wish list
+	![updated LED footprint](docs/images/build_log_pico/v3.5.2_LED_footprint.png
+	)
+
+	* Using automatic teardrop generation created acid traps between the diode and the switch pad. Revised the diode footprint to add a through hole below the switch pad.
+	
+	Before:
+	
+	![acid trap 1](docs/images/build_log_pico/acid_trap1.png)
+	
+	Unsuccessfully tried adding extra pad to the switch:
+
+	![acid trap 1](docs/images/build_log_pico/acid_trap2.png)
+	
+	Added extra pad to the diode:
+	
+	![acid trap 1](docs/images/build_log_pico/acid_trap_fixed.png)
+	## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
 * Piezo speaker (QMK doesn't support this for ARM boards yet)?

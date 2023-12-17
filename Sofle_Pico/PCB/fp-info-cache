@@ -1,4 +1,4 @@
-23879251158884013
+23879266339893444
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90395,7 +90395,7 @@ D_SOD-123_DO-35_Hybrid_DoubleSided_V2
 SOD-123
 SOD-123
 0
-10
+12
 2
 Sofle_Pico
 Hole from sofle for M2 posts gold rimmer
@@ -90437,8 +90437,8 @@ Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
 Through hole pin header THT 1x05 2.54mm single row
 0
-5
-5
+4
+4
 Sofle_Pico
 PinHeader_1x05_P2.54mm_Vertical
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
