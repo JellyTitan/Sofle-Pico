@@ -32,9 +32,9 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Optional - OLED](#optional---oled)
  - [Optional - MCU Sockets](#optional---mcu-sockets)
  - [Optional - Solenoid](#optional---solenoid)
- - [Optional - Pimaroni trackball](#optional---pimoroni-trackball)
  - [Optional - key plates](#optional---key-plates)
  - [Optional - low profile header pins](#optional---low-profile-header-pins)
+ - [Optional - Pimaroni trackball (not recommended)](#optional---pimoroni-trackball---not-recommended)
  - [Tools and materials](#tools-and-materials)
 
 [Build Guide / Assembly steps](#build-guide--assembly-steps)
@@ -172,14 +172,6 @@ Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/
 
 <hr>
 
-### Optional - Pimoroni trackball
-Electrically, this should work - but i have not validated it. 
-| Name | Count | Remarks | Potential Storefront |
-|-|-|-|-|
-| Pimoroni trackball | 1 | The default footprint replaces a rotary encoder. Installing flush to the board is a bit too low to be comfortable, so you may want to raise it. @todo elaborate.|[Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout)|
-
-<hr>
-
 ### Optional - key plates:
  - The top/key plates from Sofle v1, v2, RGB and Choc versions are not compatible.
  - Key plates are strongly recommended, but not technically required. (If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate).
@@ -207,6 +199,15 @@ Electrically, this should work - but i have not validated it.
 - The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html) instead. 
 
 @todo Update header pin length - 7.5mm or 8.55mm?
+<hr>
+
+### Optional - Pimoroni trackball - not recommended
+Electrically, this works, but it's not a great experience. See [Pimaroni.md](pimoroni.md) for more details.
+| Name | Count | Remarks | Potential Storefront |
+|-|-|-|-|
+| Pimoroni trackball | 1 | The default footprint replaces a rotary encoder. Installing flush to the board is a bit too low to be comfortable, so you may want to raise it. @todo elaborate.|[Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout)|
+
+<hr>
 
 ## Tools and materials
 
