@@ -1,8 +1,8 @@
 # Sofle Pico Pimoroni Support
-@todo add image here.
 
 The Sofle Pico was designed with Pimoroni support. The outermost column of pins on the patch bay are intended for use with the Pimoroni. However - after trying it out, the experience is not great, so it's not recommended.  The cursor movement is 'jenky' at best. 
-
+![pim hole](docs/images/pimoroni/pimoroni_spot.png)
+![pim model](docs/images/pimoroni/pimoroni_model.png)
 
 QMK does [officially support](https://docs.qmk.fm/#/feature_pointing_device?id=pimoroni-trackball) the Pimoroni. There may be a way to improve the movement in QMK. 
 

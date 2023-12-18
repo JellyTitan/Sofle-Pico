@@ -149,17 +149,20 @@ Sent out v3.5 for production 11-13-23.
 
 	* Using automatic teardrop generation created acid traps between the diode and the switch pad. Revised the diode footprint to add a through hole below the switch pad.
 	
-	Before:
+	  Before:
 	
-	![acid trap 1](docs/images/build_log_pico/acid_trap1.png)
+	  ![acid trap 1](docs/images/build_log_pico/acid_trap1.png)
 	
-	Unsuccessfully tried adding extra pad to the switch:
+	  Unsuccessfully tried adding extra pad to the switch:
 
-	![acid trap 1](docs/images/build_log_pico/acid_trap2.png)
-	
-	Added extra pad to the diode:
-	
-	![acid trap 1](docs/images/build_log_pico/acid_trap_fixed.png)
+	  ![acid trap 1](docs/images/build_log_pico/acid_trap2.png)
+	  
+		Added extra pad to the diode:
+
+	  ![acid trap 1](docs/images/build_log_pico/acid_trap_fixed.png)
+	* Started a [reddit thread](https://www.reddit.com/r/olkb/comments/18kwwka/pimoroni_it_works_but_its_jenky_is_that_expected/) to figure out if the  pimaroni is just jenky, or if i'm doing it wrong. It looks like the Pimoroni is just jenky. I'm abandoning support, but making notes in the repo so that someone else can fix it if they want to.
+	* Moved the patch bay up by 2mm to make room for the Pimaroni
+	![Alt text](docs/images/build_log_pico/pimoroni_model.png)
 	## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
