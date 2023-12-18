@@ -31,7 +31,6 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Optional - RGB](#optional---rgb)
  - [Optional - OLED](#optional---oled)
  - [Optional - MCU Sockets](#optional---mcu-sockets)
- - [Optional - Solenoid](#optional---solenoid)
  - [Optional - key plates](#optional---key-plates)
  - [Optional - low profile header pins](#optional---low-profile-header-pins)
  - [Optional - Pimaroni trackball (not recommended)](#optional---pimoroni-trackball---not-recommended)
@@ -156,19 +155,6 @@ This is strictly a quality of life upgrade. The older ProMicro's were notorious 
 | - | - |-|-|
 2.54mm Round Female Pin Header | 4 sets of 20 | They commonly come in strips of 40. They don't always snap in half cleanly, so get extra | [Aliexpress](https://www.aliexpress.us/item/2251832729504304.html)
 Needle pin male connectors | 80 | Diode legs would also work, but these little sets of 4 are nice to work with. | [Aliexpress](https://www.aliexpress.us/item/2251832650595759.html?spm=a2g0o.order_list.order_list_main.186.15a91802YueygY&gatewayAdapt=glo2usa)
-
-<hr>
-
-### Optional - Solenoid
-The solenoid feature is still a work in progress. It is designed to attach to a separate backplate.
-Based on this [diagram by Adafruit](https://cdn-shop.adafruit.com/product-files/412/solenoid_driver.pdf). 
-[QMK Docs for solenoid.](https://docs.qmk.fm/#/feature_haptic_feedback?id=solenoids) This needs to be re-worked to account for the lower voltage and draw of the Pico. (I tried the existing circuit with a 1k resistor - Pico was not strong enough).
-| Name | Count | Remarks | Potential Storefront |
-| - | - |-|-|
-| Solenoid | 1 | 4.5v Solenoid - I've only been able to get the Amazon Uxcell solenoid to work. I suspect the voltage is a bit low. | [Amazon](https://www.amazon.com/dp/B013DR655A/ref=cm_sw_em_r_mt_dp_YHJRTZ5YY042HC7522VG?_encoding=UTF8&psc=1)
- ~~2.2k Resistor~~ | 1 | ~~The 2.2k resistor works with the 5v ProMicro.~~ @todo do the math here.| |
- 1N4001 Diode or MUR340 | 1 | Either the through hole IN4001 or the Surface mount MUR340 will work. | [AliExpress](https://www.aliexpress.us/item/3256802685977811.html)|
- TIP 120 | 1 | @todo Do the math here - is this still the best part? | 
 
 <hr>
 
