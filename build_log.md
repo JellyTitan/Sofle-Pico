@@ -160,9 +160,14 @@ Sent out v3.5 for production 11-13-23.
 		Added extra pad to the diode:
 
 	  ![acid trap 1](docs/images/build_log_pico/acid_trap_fixed.png)
-	* Started a [reddit thread](https://www.reddit.com/r/olkb/comments/18kwwka/pimoroni_it_works_but_its_jenky_is_that_expected/) to figure out if the  pimaroni is just jenky, or if i'm doing it wrong. It looks like the Pimoroni is just jenky. I'm abandoning support, but making notes in the repo so that someone else can fix it if they want to.
-	* Moved the patch bay up by 2mm to make room for the Pimaroni
-	![Alt text](docs/images/build_log_pico/pimoroni_model.png)
+	* Started a [reddit thread](https://www.reddit.com/r/olkb/comments/18kwwka/pimoroni_it_works_but_its_jenky_is_that_expected/) to figure out if the  pimaroni is just jenky, or if i'm doing it wrong. It looks like the Pimoroni is just jenky. I'm abandoning support, but making notes in the repo so that someone else can fix it if they want to. There are [other](https://www.reddit.com/r/olkb/comments/szm2w4/pimoroni_trackball_usability/) threads complaining about this issue.
+	* Moved the patch bay up by 2mm to make room for the Pimoroni.
+
+	  ![Alt text](docs/images/build_log_pico/pimoroni_model.png)
+	
+	* Looked into Cirque trackpad - it looks viable, and easy? [Beekeeb sells a breakout board](https://shop.beekeeb.com/product/23mm-cirque-glidepoint-circle-trackpad-module/?attribute_mounting-case=Sofle+v2&attribute_side=Right) that plugs right into the I2C Oled holes for Sofle. I ordered one to try it out. (12-18-23). I did poke-yoke the OLED holes by removing the masking on one side - that might cause issues with the breakout board orientation - but I don't think so, based on how the Sofle V2 jumpers are oriented. 
+
+	  ![beekeeb trackpad](docs/images/build_log_pico/beekeeb1.png) ![beekeeb trackpad](docs/images/build_log_pico/beekeeb2.png)![beekeeb trackpad](docs/images/build_log_pico/beekeeb3.png)
 	## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
