@@ -179,7 +179,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 <hr>
 
 ### Optional - low profile header pins
-- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). (My preference is 8.5mm).
+- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.
 ![retention nubs](docs/images/build_guide_pico/sofle_pico_luxary_pins.png)
 
 <hr>

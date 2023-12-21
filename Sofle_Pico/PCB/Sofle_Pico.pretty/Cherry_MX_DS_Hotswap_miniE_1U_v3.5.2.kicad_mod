@@ -99,8 +99,6 @@
     (stroke (width 0.12) (type solid)) (layer "Dwgs.User") (tstamp ec5d9e1c-535e-4dd6-83c1-29d59287aed4))
   (fp_line (start -9.525 -9.525) (end -9.525 9.525)
     (stroke (width 0.1) (type solid)) (layer "Cmts.User") (tstamp 875f0212-63df-4f93-b3d3-dbd2a1246b96))
-  (fp_line (start 1.609994 6.27) (end -1.590006 6.27)
-    (stroke (width 0.12) (type solid)) (layer "Cmts.User") (tstamp 0a1675ce-36bc-4637-a5b5-d7a8b0bf9af3))
   (fp_line (start 9.525 -9.525) (end -9.525 -9.525)
     (stroke (width 0.1) (type solid)) (layer "Cmts.User") (tstamp 7eb7bf87-0177-4419-a71f-306fc62e5c15))
   (fp_line (start 9.525 -9.525) (end 9.525 9.525)
@@ -344,7 +342,6 @@
       06f12c29-ff68-4f83-a547-4c69de7a1549
       089501fa-d987-4c63-baae-335fbd3c9676
       09083e90-9819-4abd-94c8-7472907f8f66
-      0a1675ce-36bc-4637-a5b5-d7a8b0bf9af3
       0c7a656b-254d-4862-9533-4e59c25374b0
       1098627b-215f-456a-a075-6e390b696a3b
       2033dd26-13be-4b12-96ab-c02197fdd06b
