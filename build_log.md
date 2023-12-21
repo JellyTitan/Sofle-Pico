@@ -168,6 +168,9 @@ Sent out v3.5 for production 11-13-23.
 	* Looked into Cirque trackpad - it looks viable, and easy? [Beekeeb sells a breakout board](https://shop.beekeeb.com/product/23mm-cirque-glidepoint-circle-trackpad-module/?attribute_mounting-case=Sofle+v2&attribute_side=Right) that plugs right into the I2C Oled holes for Sofle. I ordered one to try it out. (12-18-23). I did poke-yoke the OLED holes by removing the masking on one side - that might cause issues with the breakout board orientation - but I don't think so, based on how the Sofle V2 jumpers are oriented. 
 
 	  ![beekeeb trackpad](docs/images/build_log_pico/beekeeb1.png) ![beekeeb trackpad](docs/images/build_log_pico/beekeeb2.png)![beekeeb trackpad](docs/images/build_log_pico/beekeeb3.png)
+	* Found and removed dummy placeholder footprints for LED PCBA that were breaking the .step export. (Probably inherited from Sofle Choc?)
+	* Updated the bypass jumper footprint to make it easier to use. 
+	![revised bypass jumper](docs/images/build_log_pico/revised_bypass_jumper.png)
 	## Future Feature Wish list
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
