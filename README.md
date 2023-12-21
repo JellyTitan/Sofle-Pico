@@ -9,7 +9,6 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 * Add UF2 files and update relative path in README.
-* Update header pin length in readme.
 * Add optional header pin images in readme.
 * Review docs and update images 
 
@@ -180,9 +179,9 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 <hr>
 
 ### Optional - low profile header pins
-- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html) instead. 
+- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). (My preference is 8.5mm).
+![retention nubs](docs/images/build_guide_pico/sofle_pico_luxary_pins.png)
 
-@todo Update header pin length - 7.5mm or 8.55mm?
 <hr>
 
 ### Optional - Pimoroni trackball - not recommended
@@ -400,15 +399,12 @@ To flash:
 - Connect USB cable to the **left** side.
 - Enjoy!
 
- 
-
 ## Troubleshooting
 
 See the Sofle build guide.
 
 
 ## Links
-
 - [Github with KiCad projects][soflegithub]
 - [Layout in KeyboardLayout editor][soflechoclayout]
 - [QMK Firmware][qmk_firmware]
