@@ -172,7 +172,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 | keyplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
 | backplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
 | OLED plates | 2 | If using PCB, note there are variants for the different types of OLED's that have higher/lower holes. |Elecrow is great for acrylic, JLC is good for PCB|
-|M2 6mm screws|16| Any old M2 will do. I prefer hex cap for aesthetics.|[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)|
+|M2 5mm screws|16| Any old M2 will do. I prefer hex cap for aesthetics. 6mm works in a pinch - but may bottom out when using acrylic plates.|[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)|
 | M2 18mm female-female standoffs (Same height for Acrylic or PCB)| 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
 | M2 6mm female-female standoffs (6mm for acrylic, 8mm for PCB)| 10 | Connects the front plate to the back plate, runs _through_ the pcb.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
 
@@ -336,17 +336,22 @@ Some brands of jack will snap into the board, holding them in place while you so
 Saved these for last because they are tallest. Insert into the top of the board, and solder on the backside. Some EC11's have metal tabs on opposite sides that add mechanical stability - no need to solder those.
 
 ### Final assembly
-Installing the keys and case.
+Installing the keys and case. (The standoff lengths mentioned assume you are using an acrylic plate).
 
-1. Snap a few switches into the top plate, the corner switches work best.
-1. Place the PCB on a flat surface. This will save some strain on the solder joints in the next step (though they should be able handle it).
-1. Carefully lower the top plate with switches on the main PCB and push into sockets. Ensure pins are aligned.
+<video width="100%"  controls>
+  <source src="docs/videos/Sofle_pico_key_and_keyplate_install.mp4" type="video/mp4">
+</video>
+
+1. Place the PCB on a flat surface. This will keep the pressure distributed evenly when pressing in the switches.
+1. Snap a few switches into the top plate to help align things. The corner switches work best.
+1. Carefully lower the top plate with the alignment switches onto the main PCB and push into sockets. Ensure pins are aligned.
 1. Snap the remaining switches into the top plate pressing into the sockets.
-1. Place the encoder knob on the shaft. Tighten the set screw with a hex key. A small screwdriver for glasses may do in a pinch.
-1. Slide the four 8mm standoffs through the PCB and align to the holes on the key plate. Attach the standoffs to the keyplate using M2 screws. 
 1. Attach the bottom plate to the four standoffs installed in the previous step.
-1. Use M2 screws to attach the three 12mm standoffs to the OLED cover plate.
+1. Place the pcb on the back plate, aligning the standoffs with holes in the PCB.
+1. On the top of the pcb, attach the key plate to the standoffs using the M2 screws.
+1. Use M2 screws to attach the three 18mm standoffs to the OLED cover plate.
 1. Slide the three standoff on the OLED plate through the PCB. Attach those standoffs to the backplate using M2 screws.
+1. Place the encoder knob on the shaft. Tighten the set screw with a hex key. A small screwdriver for glasses may do in a pinch.
 1. Put at least 4 adhesive rubber feet in the corners so the keyboard is not moving when you type.
 
 ## Warnings and disclaimers
