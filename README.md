@@ -341,9 +341,7 @@ Saved these for last because they are tallest. Insert into the top of the board,
 ### Final assembly
 Installing the keys and case. (The standoff lengths mentioned assume you are using an acrylic plate).
 
-<video width="100%"  controls>
-  <source src="docs/videos/Sofle_pico_key_and_keyplate_install.mp4" type="video/mp4">
-</video>
+https://github.com/JellyTitan/Sofle-Pico/assets/72168556/54e6d6f9-5af3-4b82-98af-0372871ad146
 
 1. Place the PCB on a flat surface. This will keep the pressure distributed evenly when pressing in the switches.
 1. Snap a few switches into the top plate to help align things. The corner switches work best.
