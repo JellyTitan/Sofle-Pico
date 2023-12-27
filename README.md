@@ -5,18 +5,17 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4_hero.jpeg)
 ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4.png)
 ## Punchlist before Sofle PR
-* @todo Base on the stront build guide - we may be able to omit the level shifter completely? (Test with thermal imager?)
+* Round bottom screw mount of OLED plate.
 * @todo refresh Gerbers and update path 
 * @todo: Update build guide flashing to include pico 'drag and drop' flashing
 * Add UF2 files and update relative path in README.
-* Add optional header pin images in readme.
 * Review docs and update images 
+* Add sofle Pico branding at title to the Repo
 
 ## Punchlist before QMK PR
 * @todo Added handedness by pull an unused pin high/low
 * Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
 * @todo adapt bongocat for 128x64 (doio/kb16 has a 128x32 library that can be adapted.)
-* @todo The Pimaroni works - but it kinda sucks. Is that expected behavior, or can it be cleaned up with some 'debounce' in the firmware?
 * @todo: via support. (Update docs too!)
 
 [Overview](#overview)
@@ -132,8 +131,8 @@ These parts are necessary for the RGB lighting.
 
 | Name | Count | Remarks | Potential Storefront |
 | --------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Required for LEDs to work properly, Pico runs at 3.3V while the LEDs will require 5V | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
-| RGB SMD LEDs SK6803MINI-E | 74 | The 3MA SK6803MINI-E must be used instead of the more traditional 12MA SK6812MINI-E. The SK6803MINIE-E has a smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
+| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Optional - but not technically required. The Pico runs at 3.3V while the LEDs require 5V logic. If you omit this level shifter, the first LED in the circuit acts as a level shifter. In [casual tests](./build_log#thermal-imaging-led-test-conclusion.), omitting the level shifter makes the board run about 6C° hotter, which is still in the acceptable Pico operating range. I'm not sure if this will eventually burn out the LEDs prematurely. | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
+| RGB SMD LEDs SK6803MINI-E | 74 | The 3MA SK6803MINI-E must be used instead of the traditional 12MA SK6812MINI-E. The SK6803MINIE-E has a smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
 <hr>
 
@@ -257,6 +256,9 @@ Heat the metal connector, apply solder and look for the solder to wick down to t
 ### Level shifter
 The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
 ![level shifter](docs/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
+Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes. You'll need to do this for both hands.
+
+![Sloppy bypass jumper soldering](docs/images/build_guide_pico/sloppy_bypass_jumper.png)
 
 ### LEDs
 
@@ -346,7 +348,7 @@ Installing the keys and case. (The standoff lengths mentioned assume you are usi
 1. Snap a few switches into the top plate to help align things. The corner switches work best.
 1. Carefully lower the top plate with the alignment switches onto the main PCB and push into sockets. Ensure pins are aligned.
 1. Snap the remaining switches into the top plate pressing into the sockets.
-1. Attach the bottom plate to the four standoffs installed in the previous step.
+1. Attach the bottom plate to the five M2 6mm standoffs.
 1. Place the pcb on the back plate, aligning the standoffs with holes in the PCB.
 1. On the top of the pcb, attach the key plate to the standoffs using the M2 screws.
 1. Use M2 screws to attach the three 18mm standoffs to the OLED cover plate.
