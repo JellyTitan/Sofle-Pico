@@ -193,3 +193,4 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 * Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
 * Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
 * Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
+* Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
