@@ -76,6 +76,10 @@ Improvements made while building prototype 3.03, included in version3.04
 
 ![Sofle Pico](docs/images/build_log_pico/horizontal_rotary_encoders.png)
 
+* Agonizing over attribution placement. 
+
+![Sofle Pico](docs/images/build_log_pico/Sofle_attribution_study.png)
+
 * Spent far too much time dialing in the logo lockup. I'm stubborn and don't want to pay an Adobe subscription, so I did the text lockup in KiCad. Looking at other split keyboards. I really want a vertical lockup because of the visible logo in the coppers - but horizontal supports the attribution blurb better.
 
 ![Split keyboard branding study](docs/images/build_log_pico/split_kb_branding_study.png)
