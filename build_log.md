@@ -176,7 +176,7 @@ Sent out v3.5 for production 11-13-23.
 	* Updated the bypass jumper footprint to make it easier to use. 
 	![revised bypass jumper](docs/images/build_log_pico/revised_bypass_jumper.png)
 
-## Thermal imaging LED measurement
+* Thermal imaging LED measurement
 A redditor suggested that the level shifter could be omitted, because the first LED would do the same job.  After consulting the Junco owner, the math says the SK6812 will pull too many amps. The Sk6812 is preferable because it's more common/available, so it's at least worth a try. Using a Fluke TiS50, (resolution 220x165) I compared 3 variants, taking measurements sporadically over three hours.
 
 ![SK6803 MINI-E with bypass jumper](docs/images/build_log_pico/IR_00020.JPG)
@@ -185,11 +185,21 @@ A redditor suggested that the level shifter could be omitted, because the first 
 | SK6803 MINI-E | Y | ~120°F / 48°C |![SK6803 MINI-E with bypass jumper](docs/images/build_log_pico/IR_00014.JPG) |
 | SK6803 MINI-E | N | ~130°F / 54°C | ![SK6803 MINI-E without bypass jumper](docs/images/build_log_pico/IR_00013.JPG) |
 | SK6812 MINI-E | N | ~230°F / 110°C | ![SK6812 MINI-E without bypass jumper](docs/images/build_log_pico/IR_00011.JPG) |
-## Thermal imaging LED test conclusion.
+* **Thermal imaging LED test conclusion.**
 The SK6812 ran too hot. It overheated and shut down a few times. The SK6812Mini-e should not be used. 
 The average run temp for the SK6803 Mini-e was about 6°C difference with/without the level shifter. The Picos operating range is -20°C to 85°C, so even running without a level shifter puts us at 54°C, well within the acceptable range. Updating the build guide with level shifter as 'recommended, but not required'. 
 
+* **Power circuit refactor:** existing circuit was cribbed from Junco. There is a diode between VBus and Vsys. This diode gets hot. It looks like that is not needed, because there is an internal diode between vbus and vsys. According to the docs, the hand plugged into USB gets 5v, and then I can output 3.3v through vsys. The other hand takes in that 3.3v through the Vsys pin. The [the RP2040 docs](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)(pg15) recommend adding a shotkey diode before the VSYS pin for that other hand, so if both hands are plugged into USB, there won't be an issue. Based on [this video](https://www.youtube.com/watch?v=3PH9jzRsb5E), I could try using a 1N5817 Shottky diode. (Cheap, through hole, readily available). However - that would add additional complication. Plan A is to remove the VBUS connection entirely, and go vsys-vsys.
+![pico vsys internal diode](docs/images/build_log_pico/rp2040_docs.png) pico_internal_diode_vbus_vsys.png
+
+![pico vsys internal diode](docs/images/build_log_pico/pico_internal_diode_vbus_vsys.png)
+
+## v3.5.3
+* Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
+
+
 ## Future Feature Wish list
+* Color displays.
 * USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 * Solenoid backplate (Would need rp2040 zero for 5v)
 * Piezo speaker (QMK doesn't support this for ARM boards yet)?
@@ -198,3 +208,4 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 * Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
 * Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
 * Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
+* Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/docs/images/buildguide/haptic_solder.jpg)
