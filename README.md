@@ -130,10 +130,6 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 | MX Style Switches | 58 | 3-pin or 5-pin will work. If you're not using a keyplate, you'll want 5-pin.| |
 | Key Caps | 58 | | |
 | Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
-| M2 8mm FF spacers | 12 | Connects the bottom plate to the key plate, running through the PCB | |
-| M2 12mm FF spacers | 6 | Connects the bottom plate to the OLED plate, running through the PCB and the keyplate. @todo - is it really 12mm? | |
-| M2x4mm screws | 18 | M2 screws. | |
-| Case | 1 Left Set, 1 Right Set | Case files are located in the [case folder](./Case). | @todo - regenerate after v3.3 prototype validated |
 | Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | | 
 
 
@@ -169,7 +165,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 <hr>
 
 ### Optional - key plates:
- - The top/key plates from Sofle v1, v2, RGB and Choc versions are not compatible.
+ - The top/key plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
  - Key plates are strongly recommended, but not technically required. (If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate).
  - The key plates combined with a backplate make a nice 'sandwich' case. Another plate can be added to protect the OLEDs. 
  - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates.
@@ -185,9 +181,10 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 | keyplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
 | backplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
 | OLED plates | 2 | If using PCB, note there are variants for the different types of OLED's that have higher/lower holes. |Elecrow is great for acrylic, JLC is good for PCB|
-|M2 5mm screws|16| Any old M2 will do. I prefer hex cap for aesthetics. 6mm works in a pinch - but may bottom out when using acrylic plates.|[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)|
+|M2 5mm screws|32| Any old M2 will do. I prefer hex cap for aesthetics. 6mm works in a pinch - but may bottom out when using acrylic plates.|[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)|
 | M2 18mm female-female standoffs (Same height for Acrylic or PCB)| 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
 | M2 6mm female-female standoffs (6mm for acrylic, 8mm for PCB)| 10 | Connects the front plate to the back plate, runs _through_ the pcb.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
+| 2mm adhesive Rubber bumper feet. | 10|Only needed for acrylic cases. Put these on the top of the PCB, below the keyplate. Since the acrylic keyplate doesn't nestle into the switch retention nubs, placing these bumps between the plate and the pcb keeps the plate from flexing. @todo - add images. | [amazon](https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ) |
 
 <hr>
 
