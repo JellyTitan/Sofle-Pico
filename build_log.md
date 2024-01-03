@@ -195,17 +195,22 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 ![pico vsys internal diode](docs/images/build_log_pico/pico_internal_diode_vbus_vsys.png)
 
 ## v3.5.3
-* Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
+- [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
+- [ ] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?)
+- [ ] Validate the circuit revisions and thermal profile
+- [ ] Consider reworking the patch bay to support the trackpad.
 
+## v3.5.4
+- [ ] THe weAct variant moves pin 28, so handed pin detection won't work. Either move the handedness pin, or update the docs.
 
 ## Future Feature Wish list
-* Color displays.
-* USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
-* Solenoid backplate (Would need rp2040 zero for 5v)
-* Piezo speaker (QMK doesn't support this for ARM boards yet)?
-* Horizontal encoder/ec12 encoder combo. (The horiontal encoder needs additional cutouts - there isn't room for those with the base Pico)
-* Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
-* Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
-* Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
-* Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
-* Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/docs/images/buildguide/haptic_solder.jpg)
+- [ ] Color displays.
+- [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
+- [ ] Solenoid backplate (Would need rp2040 zero for 5v)
+- [ ] Piezo speaker (QMK doesn't support this for ARM boards yet)?
+- [ ] Horizontal encoder/ec12 encoder combo. (The horiontal encoder needs additional cutouts - there isn't room for those with the base Pico)
+- [ ] Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
+- [ ] Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
+- [ ] Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
+- [ ] Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
+- [ ] Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/docs/images/buildguide/haptic_solder.jpg)
