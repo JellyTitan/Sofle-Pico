@@ -193,17 +193,18 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 ![pico vsys internal diode](docs/images/build_log_pico/rp2040_docs.png) pico_internal_diode_vbus_vsys.png
 
 ![pico vsys internal diode](docs/images/build_log_pico/pico_internal_diode_vbus_vsys.png)
+- [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
 
 ## v3.5.3
-- [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
 - [ ] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?)
-- [ ] Validate the circuit revisions and thermal profile
+- [ ] Validate the circuit revisions and thermal profile for v3.5.2
 - [ ] Consider reworking the patch bay to support the trackpad.
-
-## v3.5.4
+- [x] Via Support added!
 - [ ] THe weAct variant moves pin 28, so handed pin detection won't work. Either move the handedness pin, or update the docs.
 
 ## Future Feature Wish list
+- [ ] Make switch numbering the same sequence as the LED connections to make debugging easier. This would require a big schematic/pcb revision.
+- [ ] The handedness pin config on the schematic was done by adding an extra pin - this is a hacky way to do things. I should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
 - [ ] Color displays.
 - [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 - [ ] Solenoid backplate (Would need rp2040 zero for 5v)

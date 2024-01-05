@@ -6,8 +6,8 @@
 
 # Sofle Pico Split Keyboard &middot; [![VIA: Compatibility](https://img.shields.io/badge/VIA-Supported-brightgreen?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAHRklEQVRo3u1ZDTDUaRgvhVjhUrrTh0gfnLo0uutU51bUpXOjlLKlXN2OyiAptGyr1kfYaNCXlFbdZBHllFypkCJkJ31QhNLd3DTTx81d3817z7PTv/nv7n8tF6Vmn5lndu3//b/v7/d7nvd5P/TpozGNaUxjGvvUzcjIyPSHWbNCg9euvRDJ57duCAqqdJk5c522trZOrwffF2zihAlzVvr4SERbtz5LSkggis4LCam3tbFx7pUEBhoYDJrt4rJhU3j4LSbwTO7j7S02NDQ07RXqW48f7+SzbNkhUP9JZwnQPTYq6qGzk9P6/v37a793AgYslvFMNjuQz+M1/h/wTB4eGtoAori8D/X7jB83znEph7MvITb23+4iQPfE+HiyYvny3KGmpuO6nYC+vr4R29HRjxcaWt8dYLdv20ayJRJysqiIFBw7Rnbv2KHUJj4m5qnr7NlCHR0d/XcmYDV6tIPXokW74mJiHnen6pdqakhza+tbb2xqIvvT01Wl2+0hgweP6TL4AQMGsBxnzPDduGFDXU+kznaRiNxobJQjgi45fJix/ba4ODLf3f1ApwmMMjefvGjhwpS46OhHPUGA7vvS0khZeTm5XFdHKi9dIvlHjjASiNmyhfA3biRh69c/geJiohK8rq6u/jQHh59Dg4NrehL4TgDV2YkOc4Ns5vMxpeR8xrRpoUoEPjM2/sJj3jzR1qioBz0FfjuAOgKgGiIjyfOICFIB6ibBb6rSB9XfxOMpEaDcb9Wqa0pEAvz8TvUUgT0AqlwoJA9B1ZdAgO7SzZuV1N+yaZNK8JRHwrtRIIilhYWjHJFZzs4CWIW7lwQAqwOgzxXAU34fiJ0Fgqh+LHx2pD4FPjMjg9RChSs5dYoIwsPJwvnzJXJEDAcOHAqbtufIElXBsKLDRJcpxQR0V2oqKS0tJVeuXiV1Uik5Xlgoq0D0NgdAnEe0SCCp6zBGDoyR0AX1EZMUCkFbWxtpaWkhrVDV8nJzycaQkBewmzaTI7PQw0PC1FFEWJhMMUVCFysrlUrmsaNHlQinA5krEBlMrz3wHftCNTsCj2MKBQISDe8hEYrQTSjT9+7dk/n169dlv4+2tGTLEbEwN/8WO1DVOUaLDvC3ggLSBOpQJG41N5ODYjFj9GD70in1Mc1wdb944YIsGxSfF4BQFBF0Xy43jrH8Bvn7N1IKMLniPNq/d68sCvl5eUrbCoxgV9T//eRJ0t7eLksbTJ/Sc+eU2sYIhU/v3r37lsihQ4fyGIk4TJ0ahC9g3WaafKiSukmO6iOwjqKLjgQxdai26OVlZTIyCLIdAMNyIGu7msu98s2UKWtgl2GQlZVVTBGBtq8sLS3NlYiwWKxBuGriy0hEcSHCQZkmP/6Gg6pTH5//evCgLHV2pqQoPd8FUaWIoGeKxVehxH5Hx+jm5raAnl4CgSCaMSpf29v7Apln9KpBB4jK4XxB4Jg6nVUfSydVcfATJy5T1Ovr619TIBsaGu7DTnuAwu5DRyqV/omECwsLy2tqam7Deb8fIxlTU1NrQUREOx08Rgf3OeomLN1xgmP6UJHNyc6WU1wM5PB3KP0vPRcsyIHdtVNoSMgWuuJLlizxVtqFW1mNmThxoi1+T0xMTP8JTOW+y9/fP+zc2bMkGtYTChhTuik61nysLnt371Yiju+2QjQokJdra19Md3BYB2f0z6lxhw8fPgLWi5dUm9zc3JMdbW6B0KT8/PxTKhsMGTLEtLm5+R9XV9f5c+fMSQHVXtHTTbG6iaB0Yu7TKw8emBSJni0pkSuhdnZ2kxTHzsjIyMNnd+7ceREcHByibqdeUlIitba2HquyQXp6es5cMPw+zMzMbuXy5RUUIFQbUwfnCH5itPAwhCSo9Ck5ffotAf81a5q/mz49DLpbSk8vkUiUqjjuYDAQ0K24uLgKAKo94np7e3Pj4+OTVTZgs9ku2dnZx6m/tfr21YIyuGp9UNADValVB1sJCmQbkIK7rGK4QPgRb1eoc35ZWdkNqk1TU9NjPT09Xabxvby8fIRCYYI6IlBtWatXrw5Q2UBLS6svDHpt7NixVnJ7M0NDM3c3t30A/LUikYMHDsivvr6+for9rlixwu/NOkAyMzNz4Nqnn4q7Ab3z58/Xw/rx7reQXC43kMfjRTI9sxg1aoY3h1McHBj417qAgD+8PD0L7CdP9mxsbPybIlJRUXHtTTDeGgJ3d3f3SEpKSuNwOEs7Gh/WiYTFixdz3pmIMRhMvqyuvBMbG7uDHhVI0e8Zj9NgJ06cKO+oLxsbmy9hvSj9ILeNtra2X1ETGqrXEycnJ7aqthKJpNje3t6uo/5Gjhw57INdnRYVFVVjRYICZNJRO1jLFqSmpqb32ht4yGuf5OTkNHXtYHvRv6qq6qaJiYlRrySCFae6urrFwMCApfbqCQwrZK+NCp/Pj4NS+8tH/98pOCtYnTlzplax/H6UJhaL8y0sLEZo/umoMY1pTGOfrP0HvAmUSMtVGugAAAAASUVORK5CYII=)](https://usevia.app/) [![QMK: Compatibility](https://img.shields.io/badge/QMK-Powered-brightgreen?logo=data:image/png;base64,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)](https://github.com/qmk/qmk_firmware) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) 
 
-> [!CAUTION]
-> :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark: This hardware is under active development and not production ready. see outstanding tasks below
+> [!WARNING]
+> This hardware is under active development and not production ready. see outstanding tasks below
 
 <details>
 <summary>Outstanding Hardware tasks</summary>
@@ -19,12 +19,13 @@
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
 - [ ] Update docs for the troubleshooting section.
-- [ ] Revise the VIA matrix
-- [ ] Add instructions for using matrix before PR goes through.
+- [x] Revise the VIA matrix
 - [ ] Buy me a coffee link?
 - [ ] Reconfigure patch bay for easier Cirque trackpad integration
 - [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
 - [ ] Validate v3.5.3 thermal circuit revisions.
+- [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
+- [ ] Add an additional breakout for 5V pin 1 & GND to allow for Solenoid backplate tie in.
 </details>
 <details>
 <summary>Outstanding firmware tasks</summary>
@@ -33,7 +34,7 @@
 - [ ] Added handedness by pull an unused pin high/low
 - [ ] Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
 - [ ] adapt bongocat for 128x64 (doio/kb16 has a 128x32 library that can be adapted.)
-- [ ] via support. (Update docs too!)
+- [x] via support. (Update docs too!)
 </details>
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Raspberry Pi Pico MCU. 
 
@@ -75,6 +76,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Final assembly](#final-assembly)
  - [Warnings and disclaimers](#warnings-and-disclaimers)
  - [Firmware and programming](#firmware-and-programming)
+ - [VIA](#via)
 
 [Troubleshooting](#troubleshooting)
  - [No LEDs are working](#no-leds-are-working)
@@ -269,6 +271,8 @@ For surface mount diodes, a common method is to tin one pad, place the diode on,
 .
 
 There is 1 diode per key, 1 diode on the rotary encoder, and one for the Pico on the far right.
+
+@todo: V3.5.4 removes this diode. Update the docs after validating the circuit.
 ![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_highlights.png)
 
 ### Switch Sockets
@@ -383,17 +387,12 @@ https://github.com/JellyTitan/Sofle-Pico/assets/72168556/54e6d6f9-5af3-4b82-98af
 - Keep in mind that this is a prototype of a DIY keyboard. It’s not a polished product.
 
 ## Firmware and programming
-@todo - update hte firmware.
-### The easy way
-The RP2040 supports 'drag and drop' flashing with a UF2 file on Mac or PC. This is the recommended approach if you're not familiar with compiling QMK firmware yourself. After the first 'drag and drop' flash, you can tweak your keymaps further using [VIA](https://www.caniusevia.com/).
 
-VIA allows you to quickly change your keymap without flashing or a QMK build environment. I highly recommend it for experimenting. There are few downsides:
-- it doesn't support custom logic like a key for switching between Mac/Win
-- the exporting/importing keymaps has some problems with some multi-chord keys though typically I don't find I need to export/import
-- lighting configuration keys only seem to affect lighting on the master side. If you don't change lighting much, a workaround is to plug just the right side in to the computer, change the lighting then plug everything back normally
+The RP2040 supports 'drag and drop' flashing with a UF2 file on Mac or PC. This is the recommended approach if you're not familiar with compiling QMK firmware yourself. 
 
-To flash with 'drag 'n drop':
-These instructions are a summarization of the [official explanation found in the QMK docs](https://docs.qmk.fm/#/flashing?id=raspberry-pi-RP2040-uf2).
+After the first 'drag and drop' flash, you can tweak your keymaps further using [VIA](https://www.caniusevia.com/). (Using VIA is covered in the [next section](#via)).
+ 
+### To flash with 'drag 'n drop':
 1. Make sure halves are not connected together with TRRS cable.
 1. Connect one half to USB.
 1. Enter the bootloader using any of the following methods. These are dependant on where your RP2040 came from. You may have to remove an OLED to access the `BOOT` button.
@@ -402,18 +401,19 @@ These instructions are a summarization of the [official explanation found in the
     * Double tapping the `RESET` button on the RP2040. ([Double tap reset is enabled by default on the RP2040](https://github.com/qmk/qmk_firmware/blob/master/docs/platformdev_RP2040.md#double-tap-reset-boot-loader-entry-iddouble-tap)).
     * **Bootmagic reset** (works after you have flashed once): Hold down the top far corner key while plugging in the keyboard (`~` left half, `-` right half). This will also clear the EEPROM.
 1. Wait for the OS to detect the device.
-1. Copy the .uf2 file to the new USB disk. 
-  * The files can be found in this repo at ./Sofle_Pico/Firmware
+1. Copy the .uf2 file to the new USB disk.
+  * The files can be found in this repo at `./Sofle_Pico/Firmware`. The VIA version is recommended: `sofle_pico_via_LH.uf2` and `sofle_pico_via_RH.uf2`.
   * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix. (@todo - can we use matrix detection to use a single file for both hands)?
   * On Mac after the file is dropped, the 'Keyboard setup assistant' may be triggered. You can ignore and quit the assistant.(@todo add relative path to UF2 files.) 
 1. Unplug the side you just flashed, and repeat the process with the other side.
 1. Disconnect both halves from USB.
 1. Connect both halves together using the TRRS cable. 
 1. Connect the left half to USB.
-1. Test everything using VIA. (After you've downloaded and installed the VIA app from https://caniusevia.com/, it should recognize the keyboard when it opens).
+1. Test everything using VIA. (See [details below](#via)).
 
-### The less easy way
-If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](@todo: Update this url with official PR). Instead use the [jellytitan/qmk_firmware](https://github.com/jellytitan/qmk_firmware) fork.
+### Compile your own firmware with QMK
+If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](@todo: Update this url with official PR). Instead use the [jellytitan/qmk_firmware](https://github.com/JellyTitan/qmk_firmware/tree/sofle_pico) fork. (Be sure to use the `sofle_pico` branch).
+
 https://docs.qmk.fm/#/flashing?id=raspberry-pi-RP2040-uf2
 
 To flash:
@@ -426,6 +426,23 @@ To flash:
 - Disconnect the USB cable. Connect both halves together with TRRS cable.
 - Connect USB cable to the **left** side.
 - Enjoy!
+
+## VIA
+Until the Sofle Pico layout is merged into the official VIA repo, you'll need to load the VIA definition manually.
+> [!IMPORTANT]
+> Editing with VIA will only work after you've flashed the Sofle Pico at least once.
+
+1. Visit https://usevia.app/
+1. Open the "Settings" tab by clicking on the gear icon at the top of the page. 
+1. Enable "Show Design tab". <br>
+![VIA show design tab switch](docs/images/VIA/via_1.png)
+1. Now you should see a paintbrush icon at the top of the screen. Click on that to open the "Design tab".
+1. Click "Load" to upload the file `via.json` file found in this repo at: `Sofle_Pico/Firmware/via.json`.
+![VIA uploading config](docs/images/VIA/via_2.png)
+1. After the definition is loaded, you will be asked to authorize a connection to your device.<br> ![VIA device authorization](docs/images/VIA/via_3.png)
+1. Clicking on the "Configure" tab will let you modify your layout.<br>
+![VIA Configure tab](docs/images/VIA/via_4.png)
+
 
 ## Troubleshooting
 
