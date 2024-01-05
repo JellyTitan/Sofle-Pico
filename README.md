@@ -411,6 +411,9 @@ After the first 'drag and drop' flash, you can tweak your keymaps further using 
 1. Connect the left half to USB.
 1. Test everything using VIA. (See [details below](#via)).
 
+### Flashing the second time around
+After the fist flash, subsequent flashes are even easier. Sofle Pico uses [Bootmagic lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md). You can enter boot mode by holding down the upper-left-most key while pluggin in the USB cable. (Or upper-right-most, respectively). Once your in boot mode, the Pico appears as a drive, and you can drag and drop the new `.uf2` file.
+
 ### Compile your own firmware with QMK
 If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware]. Support is not in the main QMK repository [yet](@todo: Update this url with official PR). Instead use the [jellytitan/qmk_firmware](https://github.com/JellyTitan/qmk_firmware/tree/sofle_pico) fork. (Be sure to use the `sofle_pico` branch).
 
