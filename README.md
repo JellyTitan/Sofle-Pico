@@ -26,6 +26,7 @@
 - [ ] Validate v3.5.3 thermal circuit revisions.
 - [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
 - [ ] Add an additional breakout for 5V pin 1 & GND to allow for Solenoid backplate tie in.
+- [ ] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/layouts
 </details>
 <details>
 <summary>Outstanding firmware tasks</summary>
