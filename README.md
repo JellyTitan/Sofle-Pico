@@ -13,28 +13,31 @@
 <summary>Outstanding Hardware tasks</summary>
 
 ## Punchlist before Sofle PR
-- [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
+- [x] Revise the VIA matrix
+- [x] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/
+- [ ] Validate v3.5.3 thermal circuit revisions.
+- [ ] Reconfigure patch bay for easier Cirque trackpad integration
+- [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
+- [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
+- [ ] Add an additional breakout for 5V pin 1 & GND to allow for Solenoid backplate tie in.
 - [ ] refresh Gerbers and update path 
 - [ ] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
-- [ ] Update docs for the troubleshooting section.
-- [x] Revise the VIA matrix
+- [ ] Update docs for the troubleshooting section.layouts
+- [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Buy me a coffee link?
-- [ ] Reconfigure patch bay for easier Cirque trackpad integration
-- [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
-- [ ] Validate v3.5.3 thermal circuit revisions.
-- [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
-- [ ] Add an additional breakout for 5V pin 1 & GND to allow for Solenoid backplate tie in.
-- [ ] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/layouts
 </details>
 <details>
 <summary>Outstanding firmware tasks</summary>
 
 ## Punchlist before QMK PR
 - [ ] Added handedness by pull an unused pin high/low
-- [ ] Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
-- [ ] adapt bongocat for 128x64 (doio/kb16 has a 128x32 library that can be adapted.)
+- [ ] Move the Animations into a seperate file. (Out of keymap files)
+- [ ] The Jellytitan keymap has better animations - move those to default
+- [ ] Refactor the LH Jellytitan layout, it could be using the space better.
+- [ ] Find an off-the-shelf 128x64 animation for the Righthand. (Bongo cat was first choice, but don't have time to refcator).
+- [x] (Won't do) Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
 - [x] via support. (Update docs too!)
 - [ ] After QMK PR Submission is approved, make VIA support PR. (Ready to go, but QMK must be complete before it will be allowed).
 </details>
@@ -85,6 +88,9 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Some LEDs are not working](#some-leds-are-not-working)
  - [An entire row or column of keys is not working](#an-entire-row-or-column-of-keys-is-not-working)
  - [Random key or keys not working](#random-key-or-keys-not-working)
+
+[Contributing](#contributing)
+ - [Feature wish list](#feature-wish-list)
 
 ## Overview
 
@@ -448,11 +454,22 @@ Until the Sofle Pico layout is merged into the official VIA repo, you'll need to
 1. Clicking on the "Configure" tab will let you modify your layout.<br>
 ![VIA Configure tab](docs/images/VIA/via_4.png)
 
-
 ## Troubleshooting
 
 See the Sofle build guide.
 
+## Contributing
+Sofle Pico is open source - feel free to help out!
+
+### Feature wish list
+There's some features & cleanup that I would like to add if time permits. They are all nice-to-have's, so if you've got the time and inclination, I'd appreciate the help!
+- [ ] Adapt bongocat for 128x64. I haven't been able to find any variants formatted for the orientation/size the Sofle Pico uses. (doio/kb16 has a 128x32 library that can be adapted)?
+- [ ] "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples.
+- [ ] Add support for color displays. Not sure this is viable with the current form factor. I couldn't find any reasonably priced i2c that fit nicely.
+- [ ] Make switch numbering the same sequence as the LED connections to make debugging easier. This would require a big schematic/pcb revision with only cosmetic changes. Probably not worth the effort. (Maybe add a simple graphic for led chain debugging under the rotary encoder?)
+- [ ] Solenoid backplate. Solenoid needs 5v. May be able to tap into VBUS on LH?
+- [ ] Piezo speaker. QMK doesn't support this for ARM boards yet, but maybe someday.
+- [ ] The handedness pin config on the schematic was done by adding an extra pin on the schematic - this is a hacky way to do things. Should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
 
 ## Links
 - [Github with KiCad projects][soflegithub]
@@ -463,7 +480,7 @@ See the Sofle build guide.
 
 ## Default layout
 
-The default layout for the Sofle Choc is in the QMK fork and demonstrates some LED functions.
+The default layout for the Sofle Pico is in the QMK fork and demonstrates some LED functions.
 @todo: validate this image works as expected after folding into the main repo.
 ![Default layout for Sofle Choc Keyboard](./images/sofle-choc-keyboard-layout.png)
 
