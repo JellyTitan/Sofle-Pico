@@ -35,6 +35,7 @@
 - [ ] Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
 - [ ] adapt bongocat for 128x64 (doio/kb16 has a 128x32 library that can be adapted.)
 - [x] via support. (Update docs too!)
+- [ ] After QMK PR Submission is approved, make VIA support PR. (Ready to go, but QMK must be complete before it will be allowed).
 </details>
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Raspberry Pi Pico MCU. 
 
@@ -431,7 +432,7 @@ To flash:
 - Enjoy!
 
 ## VIA
-Until the Sofle Pico layout is merged into the official VIA repo, you'll need to load the VIA definition manually.
+Until the Sofle Pico layout is merged into the official VIA repo, you'll need to load the VIA definition manually. ()
 > [!IMPORTANT]
 > Editing with VIA will only work after you've flashed the Sofle Pico at least once.
 
@@ -440,7 +441,7 @@ Until the Sofle Pico layout is merged into the official VIA repo, you'll need to
 1. Enable "Show Design tab". <br>
 ![VIA show design tab switch](docs/images/VIA/via_1.png)
 1. Now you should see a paintbrush icon at the top of the screen. Click on that to open the "Design tab".
-1. Click "Load" to upload the file `via.json` file found in this repo at: `Sofle_Pico/Firmware/via.json`.
+1. Click "Load" to upload the Sofle Pico specific config, `sofle_pico.json`. The file can be found in this repo: `Sofle_Pico/Firmware/sofle_pico.json`.<br> (The Sofle Pico PR for VIA can't be submitted until the QMK PR is submitted and approved. That PR is waiting and ready to go: [VIA PR for Sofle Pico](https://github.com/JellyTitan/keyboards/blob/sofle_pico/v3/sofle_pico/sofle_pico.json)).<br>
 ![VIA uploading config](docs/images/VIA/via_2.png)
 1. After the definition is loaded, you will be asked to authorize a connection to your device.<br> ![VIA device authorization](docs/images/VIA/via_3.png)
 1. Clicking on the "Configure" tab will let you modify your layout.<br>
