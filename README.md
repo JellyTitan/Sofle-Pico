@@ -16,6 +16,8 @@
 - [x] Revise the VIA matrix
 - [x] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/
 - [ ] Validate v3.5.3 thermal circuit revisions.
+- [ ] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later).
+- [ ] Add jumper & diode jig
 - [ ] Reconfigure patch bay for easier Cirque trackpad integration
 - [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
 - [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
