@@ -197,7 +197,10 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 
 ## v3.5.3
 - [ ] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?)
-- [ ] Validate the circuit revisions and thermal profile for v3.5.2
+- [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will make it to the diodes or other hand. 
+![Shimming in a diode gets the power working](docs/images/build_log_pico/v3.5.2_working_power_diode.JPG)
+![No extra diode required](docs/images/build_log_pico/v3.5.2_clone_sans_power_diode.JPG)
+- [ ] Added a power diode back in. (SChottky this time). Hoping that the updgrade to IN5817 from a standard 1N4148 will improve the thermal profile.
 - [ ] Consider reworking the patch bay to support the trackpad.
 - [x] Via Support added!
 - [ ] THe weAct variant moves pin 28, so handed pin detection won't work. Either move the handedness pin, or update the docs.
