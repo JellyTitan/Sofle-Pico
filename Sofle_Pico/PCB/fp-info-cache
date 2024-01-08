@@ -1,4 +1,4 @@
-23842075799316100
+23843782340626487
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90516,6 +90516,13 @@ Tenting_Puck.kicad_mod_nocenter_v2
 0
 4
 1
+Sofle_Pico
+sofle diode jig
+
+
+0
+0
+0
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking

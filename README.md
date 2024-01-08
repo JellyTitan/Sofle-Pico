@@ -17,13 +17,14 @@
 - [x] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/
 - [x] Validate v3.5.2 thermal circuit revisions. (failed - another revision required).
 - [ ] Validate v3.5.3 Schottky power circuit
+- [x] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
 - [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later).
-- [ ] Add jumper & diode jig
+- [ ] Add an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in.
 - [ ] The LEDs are 'wiggly' in the holes. Refactor with a better fitting hole.
 - [ ] Reconfigure patch bay for easier Cirque trackpad integration
 - [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
-- [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
-- [ ] Add an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in.
+- [x] Add jumper & diode jig
+- [ ] Add supporting documentation for diode jig
 - [ ] refresh Gerbers and update path 
 - [ ] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] Add UF2 files and update relative path in README.
