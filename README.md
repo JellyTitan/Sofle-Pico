@@ -15,13 +15,15 @@
 ## Punchlist before Sofle PR
 - [x] Revise the VIA matrix
 - [x] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/
-- [ ] Validate v3.5.3 thermal circuit revisions.
-- [ ] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later).
+- [x] Validate v3.5.2 thermal circuit revisions. (failed - another revision required).
+- [ ] Validate v3.5.3 Schottky power circuit
+- [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later).
 - [ ] Add jumper & diode jig
+- [ ] The LEDs are 'wiggly' in the holes. Refactor with a better fitting hole.
 - [ ] Reconfigure patch bay for easier Cirque trackpad integration
 - [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
 - [ ] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
-- [ ] Add an additional breakout for 5V pin 1 & GND to allow for Solenoid backplate tie in.
+- [ ] Add an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in.
 - [ ] refresh Gerbers and update path 
 - [ ] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] Add UF2 files and update relative path in README.
@@ -147,8 +149,9 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 | ------------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | PCB | 2 | The PCB should be 1.6mm thick. I used JLCPCB's default settings only customizing the PCB color, and selecting 'lead free' if not using a case. | Manufacturers such as JLCPCB, LCSC, and Elecrow. [Price comparison tool](https://pcbshopper.com/) | |
 | MX Hot-swap Sockets | 58 | The PCB requires sockets. Switches cannot be soldered directly to the board. | [Aliexpress](https://www.aliexpress.us/item/3256803687338432.html) |
-| Diodes | 62 | Surface mount SOD-123 1N4148, or through-hole 1N4148 diode. These are common, any old one should do. Through hole is usually easier to solder. | SMD: [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) [JLCPCB](https://jlcpcb.com/partdetail/3368026-1N4148SOD123/C2972760) Through-hole: [AliExpress](https://www.aliexpress.us/item/2251832473773777.html) |
-| Raspberry Pi Picos | 2 | PCB is specifically designed with the Official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle Pico is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907). The Official Pico uses Micro USB, which has been known to snap off. The USB-C variants are recommended. | [AliExpress: YD-2040](https://www.aliexpress.us/item/3256803909832318.html), [AliExpress: Tenstar](https://www.aliexpress.us/item/3256805868694592.html), [Official Raspberry Pi Resellers](https://www.raspberrypi.com/products/raspberry-pi-pico/)|
+| Diodes | 60 | Surface mount SOD-123 1N4148, or through-hole 1N4148 diode. These are common, any old one should do. Through hole is usually easier to solder. | SMD: [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) [JLCPCB](https://jlcpcb.com/partdetail/3368026-1N4148SOD123/C2972760) Through-hole: [AliExpress](https://www.aliexpress.us/item/2251832473773777.html) |
+| Schottky diodes | 2 | Through-hole 1N5817 diodes. These are common, any old one should do. Since you only need 2, consider getting it as part of diode kit. |  [AliExpress](https://www.aliexpress.us/item/3256805521351480.html) |
+| Raspberry Pi Picos | 2 | PCB is specifically designed with the Official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle Pico is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907). The Official Pico uses Micro USB, which has been known to snap off. The USB-C variants are recommended. | [AliExpress: YD-2040](https://www.aliexpress.us/item/3256803909832318.html), [AliExpress: Tenstar](https://www.aliexpress.us/item/3256805868694592.html), [Official Raspberry Pi Resellers](https://www.raspberrypi.com/products/raspberry-pi-pico/)|
 | TRRS Jacks | 2 | PJ-320A | [AliExpress](https://www.aliexpress.us/item/2255800474897706.html) |
 | TRRS  (3.5mm "Headphone" Cable) | 1 | TRRS ("4 pole" required) | |
 | MX Style Switches | 58 | 3-pin or 5-pin will work. If you're not using a keyplate, you'll want 5-pin.| |

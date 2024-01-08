@@ -196,7 +196,7 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 - [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
 
 ## v3.5.3
-- [ ] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?)
+- [x] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?). After testing v3.5.2, it was determined the diode is required for some clones, but can be omitted if using an 'offical' Pico. Dane had decided against using a Schottky there to simplify the circuit. 
 - [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will make it to the diodes or other hand. 
 ![Shimming in a diode gets the power working](docs/images/build_log_pico/v3.5.2_working_power_diode.JPG)
 ![No extra diode required](docs/images/build_log_pico/v3.5.2_clone_sans_power_diode.JPG)
