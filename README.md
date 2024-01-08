@@ -18,13 +18,12 @@
 - [x] Validate v3.5.2 thermal circuit revisions. (failed - another revision required).
 - [ ] Validate v3.5.3 Schottky power circuit
 - [x] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
-- [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later).
+- [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is 
+- [x] Add jumper & diode jignot yet supported by .json config. (This will save a PR later).
 - [ ] Add an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in.
-- [ ] The LEDs are 'wiggly' in the holes. Refactor with a better fitting hole.
 - [ ] Reconfigure patch bay for easier Cirque trackpad integration
 - [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
-- [x] Add jumper & diode jig
-- [ ] Add supporting documentation for diode jig
+- [ ] Add supporting documentation for diode jig & links to 3d printable diode comb.
 - [ ] refresh Gerbers and update path 
 - [ ] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] Add UF2 files and update relative path in README.
@@ -285,6 +284,9 @@ For surface mount diodes, a common method is to tin one pad, place the diode on,
 .
 
 There is 1 diode per key, 1 diode on the rotary encoder, and one for the Pico on the far right.
+
+There is a handy bending jig on the upper right corner of the board. You can use the second hole from the left for these diodes.
+![Diode bending jig](docs/images/build_guide_pico/bending_jig.png)
 
 @todo: V3.5.4 removes this diode. Update the docs after validating the circuit.
 ![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_highlights.png)
