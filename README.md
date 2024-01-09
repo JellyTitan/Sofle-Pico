@@ -19,15 +19,16 @@
 - [ ] Validate v3.5.3 Schottky power circuit
 - [x] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
 - [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is 
-- [x] Add jumper & diode jignot yet supported by .json config. (This will save a PR later).
+- [x] Add jumper & diode jignot yet supported by .json config. (This will save a PR later). 
+- [x] Reconfigure patch bay for easier Cirque trackpad integration 
+- [x] Add supporting documentation for diode jig.
+- [ ] Add 5v vbus tie in to the patch bay.
 - [ ] Add an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in.
-- [ ] Reconfigure patch bay for easier Cirque trackpad integration
-- [ ] Consider modifying OLED masking to allow for opposite side Cirque tie in.
-- [ ] Add supporting documentation for diode jig & links to 3d printable diode comb.
 - [ ] refresh Gerbers and update path 
 - [ ] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
+- [ ] Add link to 3d printable 8mm diode bending jig.
 - [ ] Update docs for the troubleshooting section.layouts
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Buy me a coffee link?
@@ -74,6 +75,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Prepare](#prepare)
  - [Soldering](#soldering)
  - [Diodes](#diodes)
+ - [Schottky Diodes](#schottky-diodes)
  - [Switch Sockets](#switch-sockets)
  - [Level Shifter](#level-shifter)
  - [LEDs](#leds)
@@ -249,6 +251,7 @@ Make sure you know which side you are working on, and don't make two left hand s
 
 This guide is written in the order I like to install components, starting with the components on the back, shortest to tallest:
  - diodes
+ - Schottky diodes
  - LEDs
  - level shifter
  - switch sockets
@@ -283,13 +286,21 @@ Diodes _must_ be oriented with the white band in the direction of the "arrow" sy
 For surface mount diodes, a common method is to tin one pad, place the diode on, apply the soldering iron to the diode leg until it melts the solder underneath and sinks flush with the PCB. Then come back and solder the other leg. Alternately, you can use a rework station heat gun and solder paste. (I prefer this method for smds).
 .
 
-There is 1 diode per key, 1 diode on the rotary encoder, and one for the Pico on the far right.
+There is 1 diode per key, 1 diode on the rotary encoder.
 
-There is a handy bending jig on the upper right corner of the board. You can use the second hole from the left for these diodes.
-![Diode bending jig](docs/images/build_guide_pico/bending_jig.png)
+There is a handy bending jig on the upper right corner of the board. You can use the second hole from the left for these 1N4148 diodes. If you've got a 3d printer handy, a diode jig is quite helpful.
+@todo Link to diode jig.
 
-@todo: V3.5.4 removes this diode. Update the docs after validating the circuit.
+![Diode bending jig](docs/images/build_guide_pico/1N4148_diode_jig.png)
+
 ![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_highlights.png)
+
+### Schottky Diodes
+
+There's one for each side. Insert on the front, right next to the MCU footprint. Be certain to orient these correctly. Solder on the back.
+The leftmost hole on the diode jig is for these. 
+![Schottky diode](docs/images/build_guide_pico/Schottky_diode.png) 
+![Diode bending jig](docs/images/build_guide_pico/1N5817_schottky_diode_jig.png)
 
 ### Switch Sockets
 Switch sockets installed on the back of the PCB facing up towards the front of the PCB. Make sure they are flush with the PCB. 
@@ -299,9 +310,9 @@ Heat the metal connector, apply solder and look for the solder to wick down to t
 ### Level shifter
 The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
 ![level shifter](docs/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
-Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes. You'll need to do this for both hands.
+Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes. Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
 
-![Sloppy bypass jumper soldering](docs/images/build_guide_pico/sloppy_bypass_jumper.png)
+![Sloppy bypass jumper soldering](docs/images/build_guide_pico/sloppy_bypass_jumper.png) ![Diode bending jig](docs/images/build_guide_pico/jumper_jig.png)
 
 ### LEDs
 
