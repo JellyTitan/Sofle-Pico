@@ -198,12 +198,25 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 ## v3.5.3
 - [x] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?). After testing v3.5.2, it was determined the diode is required for some clones, but can be omitted if using an 'offical' Pico. Dane had decided against using a Schottky there to simplify the circuit. 
 - [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will make it to the diodes or other hand. 
-![Shimming in a diode gets the power working](docs/images/build_log_pico/v3.5.2_working_power_diode.JPG)
-![No extra diode required](docs/images/build_log_pico/v3.5.2_clone_sans_power_diode.JPG)
-- [ ] Added a power diode back in. (SChottky this time). Hoping that the updgrade to IN5817 from a standard 1N4148 will improve the thermal profile.
-- [ ] Consider reworking the patch bay to support the trackpad.
-- [x] Via Support added!
-- [ ] THe weAct variant moves pin 28, so handed pin detection won't work. Either move the handedness pin, or update the docs.
+
+<img alt="Shimming in a diode gets the power working" src="docs/images/build_log_pico/v3.5.2_working_power_diode.JPG" width="300">
+<img alt="No extra diode required" src="docs/images/build_log_pico/v3.5.2_clone_sans_power_diode.JPG" width="300">
+- Added a power diode back in. (SChottky this time). Hoping that the updgrade to IN5817 from a standard 1N4148 will improve the thermal profile.
+- I didn't want to wait for a new board to validate the power circuit revisions - so I pulled the 1N4148 diodes off of a working v3.5.0 board and measured the heat. It looks like the IN5817's are a vast improvement. I updated the docs to include these.
+It's noteworthy that the level shifter made almost no difference on the heat - except the hotspots are now on the outermost LED's and not the MCU.
+
+| Level Shifter | Power Circuit Diode | Brightness % | Hight Temp | Image |
+|    ----:      |        :----:       |    :----:    |     :----: | :---: |
+| Yes           | 1N4148              | 50%          | 98°F       | ![pico vsys internal diode](docs/images/build_log_pico/level_shifter_1n4148_half_bright.JPG)  |
+| Yes           | 1N4148              | 100%          | 140°F       | ![pico vsys internal diode](docs/images/build_log_pico/level_shifter_1n4148_full_bright.JPG)  |
+| Yes           | 1N5817              | 50%          | 91°F       | ![pico vsys internal diode](docs/images/build_log_pico/level_shifter_1n5817_half_bright.JPG)  |
+| Yes           | 1N5817              | 100%         | 108°F       | ![pico vsys internal diode](docs/images/build_log_pico/level_shifter_1n5817_full_bright.JPG)  |
+| No            | 1N5817              | 50%          | 91°F       | ![pico vsys internal diode](docs/images/build_log_pico/no_level_shifter_1n5817_half_bright.JPG)  |
+| No           | 1N5817              | 100%         | 110°F       | ![pico vsys internal diode](docs/images/build_log_pico/no_level_shifter_1n5817_full_bright.JPG)  |
+
+- Tried to get the 23mm Circque trackpad working. It doesn't work - but I want the option to continue development in the future, so i added a footprint specifically for the trackpad.
+- Via Support added!
+- The weAct variant moves pin 28, so handed pin detection won't work. Moved the handedness pin to GP18. 
 
 ## Future Feature Wish list
 - [ ] Make switch numbering the same sequence as the LED connections to make debugging easier. This would require a big schematic/pcb revision.
