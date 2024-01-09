@@ -217,6 +217,8 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 - Tried to get the 23mm Circque trackpad working. It doesn't work - but I want the option to continue development in the future, so i added a footprint specifically for the trackpad.
 - Via Support added!
 - The weAct variant moves pin 28, so handed pin detection won't work. Moved the handedness pin to GP18. 
+- Considered adding an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in. The 5v VBUS input is pretty well isolated in the upper left. It would take a fiar bit of work to implement. Not gonna do it - it's not fun anymore! :C
+- While conducting thermal tests I connected USB cables to both sides at the same time. I burnt out the VBUS input on the lefthand board. :C This makes me think adding a patchbay tie in for VBUS is probably a dangerous idea. Not gonna implement it.
 
 ## Future Feature Wish list
 - [ ] Make switch numbering the same sequence as the LED connections to make debugging easier. This would require a big schematic/pcb revision.

@@ -16,16 +16,14 @@
 - [x] Revise the VIA matrix
 - [x] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/
 - [x] Validate v3.5.2 thermal circuit revisions. (failed - another revision required).
-- [ ] Validate v3.5.3 Schottky power circuit
+- [x] Validate v3.5.3 Schottky power circuit
 - [x] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
-- [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is 
-- [x] Add jumper & diode jignot yet supported by .json config. (This will save a PR later). 
+- [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later). 
+- [x] Add jumper & diode jig 
 - [x] Reconfigure patch bay for easier Cirque trackpad integration 
 - [x] Add supporting documentation for diode jig.
-- [ ] Add 5v vbus tie in to the patch bay.
-- [ ] Add an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in.
+- [x] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] refresh Gerbers and update path 
-- [ ] Update build guide flashing to include pico 'drag and drop' flashing
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
 - [ ] Add link to 3d printable 8mm diode bending jig.
@@ -141,8 +139,11 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 
 * Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
 Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).
-![Sofle Pcb puck mount footprint](docs/images/build_guide_pico/puck_mount.png)
-![Sofle V3](docs/images/build_guide_pico/tenting_puck.webp)
+
+<img  alt="Sofle Pcb puck mount footprint" src="docs/images/build_guide_pico/puck_mount.png" style="width:100%; max-width: 300px" />
+<img  alt="Mounting puck attached to PCB" src="docs/images/build_guide_pico/tenting_puck.webp" style="width:100%; max-width: 300px" />
+
+
 ## Bill of materials
 
 ### Required Parts
