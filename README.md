@@ -23,11 +23,13 @@
 - [x] Reconfigure patch bay for easier Cirque trackpad integration 
 - [x] Add supporting documentation for diode jig.
 - [x] Update build guide flashing to include pico 'drag and drop' flashing
+- [ ] Add acrylic case cutout for Cirque jack.
 - [ ] refresh Gerbers and update path 
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
 - [ ] Add link to 3d printable 8mm diode bending jig.
-- [ ] Update docs for the troubleshooting section.layouts
+- [ ] Update docs for the troubleshooting section.layout
+- [ ] Add Sofle Pico Decals and regenerate Fusion 360 videos.[Decal instructional](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-3932C5D1-F7CC-4F7C-B86B-806E6C1EDEFB)
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Buy me a coffee link?
 </details>

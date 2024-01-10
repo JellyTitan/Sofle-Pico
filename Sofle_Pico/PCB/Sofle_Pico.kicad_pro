@@ -415,7 +415,9 @@
       "Keebio-Parts",
       "kbd"
     ],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Sofle_Pico"
+    ]
   },
   "meta": {
     "filename": "Sofle_Pico.kicad_pro",
