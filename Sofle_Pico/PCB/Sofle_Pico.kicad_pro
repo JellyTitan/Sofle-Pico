@@ -416,7 +416,8 @@
       "kbd"
     ],
     "pinned_symbol_libs": [
-      "Sofle_Pico"
+      "Sofle_Pico",
+      "SofleKeyboard-rescue"
     ]
   },
   "meta": {
