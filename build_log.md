@@ -219,9 +219,11 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 - The weAct variant moves pin 28, so handed pin detection won't work. Moved the handedness pin to GP18. 
 - Considered adding an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in. The 5v VBUS input is pretty well isolated in the upper left. It would take a fiar bit of work to implement. Not gonna do it - it's not fun anymore! :C
 - While conducting thermal tests I connected USB cables to both sides at the same time. I burnt out the VBUS input on the lefthand board. :C This makes me think adding a patchbay tie in for VBUS is probably a dangerous idea. Not gonna implement it.
+-  Made switch numbering the same sequence as the LED connections to make debugging easier. This required a big schematic/pcb revision - splitting the Switch/LED footprint combos out into seperate footprints.
+- Added tie in's for cirque trackpad breakout boards. Even though i couldn't get the cirque to work.
+- Revised keyplate outline to accomodate the Cirque breakout board risers.
 
 ## Future Feature Wish list
-- [ ] Make switch numbering the same sequence as the LED connections to make debugging easier. This would require a big schematic/pcb revision.
 - [ ] The handedness pin config on the schematic was done by adding an extra pin - this is a hacky way to do things. I should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
 - [ ] Color displays.
 - [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)

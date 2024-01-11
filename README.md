@@ -23,7 +23,7 @@
 - [x] Reconfigure patch bay for easier Cirque trackpad integration 
 - [x] Add supporting documentation for diode jig.
 - [x] Update build guide flashing to include pico 'drag and drop' flashing
-- [ ] Add acrylic case cutout for Cirque jack.
+- [x] Add acrylic case cutout for Cirque jack.
 - [ ] refresh Gerbers and update path 
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
