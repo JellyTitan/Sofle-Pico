@@ -1,4 +1,4 @@
-(footprint "RPi_Pico_SMD_TH-DS Sofle Pico handpins" (version 20221018) (generator pcbnew)
+(footprint "RPi_Pico_SMD_TH_DS" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (descr "Through hole straight pin header, 2x20, 2.54mm pitch, double rows")
   (tags "Through hole pin header THT 2x20 2.54mm double row")
@@ -7,7 +7,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 96315415-cfed-47d2-b3dd-d782358bd0df)
   )
-  (fp_text value "RPi_Pico_SMD_TH-DS Sofle Pico handpins" (at 0 28.09) (layer "F.Fab") hide
+  (fp_text value "RPi_Pico_SMD_TH_DS" (at 0 28.09) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 46cbe85d-ff47-428e-b187-4ebd50a66e0c)
   )
@@ -345,8 +345,8 @@
   (pad "22" thru_hole circle (at 7.62 21.59) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "B.Mask") (tstamp 78b44915-d68e-4488-a873-34767153ef98))
   (pad "23" thru_hole rect (at -7.62 19.05) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "F.Mask") (tstamp fe0a6b33-aa1c-49d8-be38-c942fa904f29))
   (pad "23" thru_hole rect (at 7.62 19.05) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "B.Mask") (tstamp 3993c707-5291-41b6-83c0-d1c09cb3833a))
+  (pad "24" thru_hole circle (at -7.62 16.51) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "F.Mask") (tstamp a56b5885-efd3-484a-9761-4bbfe7135ad5))
   (pad "24" thru_hole circle (at 7.62 16.51) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "B.Mask") (tstamp 17ff35b3-d658-499b-9a46-ea36063fed4e))
-  (pad "24b" thru_hole circle (at -7.62 16.51) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "F.Mask") (tstamp a56b5885-efd3-484a-9761-4bbfe7135ad5))
   (pad "25" thru_hole circle (at -7.62 13.97) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "F.Mask") (tstamp be3a5bf5-a5b6-41d5-9437-215e3a044a8b))
   (pad "25" thru_hole circle (at 7.62 13.97) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "B.Mask") (tstamp d13b0eae-4711-4325-a6bb-aa8e3646e86e))
   (pad "26" thru_hole circle (at -7.62 11.43) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "F.Mask") (tstamp 069a2a0d-9b63-4eed-80a5-dda88aa28055))

@@ -1,4 +1,4 @@
-23850615446458501
+23850637986349705
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90468,12 +90468,12 @@ Through hole pin header THT 1x05 2.54mm single row
 4
 4
 Sofle_Pico
-RPi_Pico_SMD_TH-DS Sofle Pico handpins
+RPi_Pico_SMD_TH_DS
 Through hole straight pin header, 2x20, 2.54mm pitch, double rows
 Through hole pin header THT 2x20 2.54mm double row
 0
 80
-41
+40
 Sofle_Pico
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
@@ -98319,7 +98319,7 @@ uxcell a14092600ux0438 solenoid
 
 
 0
-9
+0
 0
 ergodonk_pico
 2u_Stab

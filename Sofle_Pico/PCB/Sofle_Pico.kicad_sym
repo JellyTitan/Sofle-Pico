@@ -271,7 +271,7 @@
     (property "Value" "Pico" (at 0 19.05 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "RPi_Pico:RPi_Pico_SMD_TH" (at 0 0 90)
+    (property "Footprint" "Sofle_Pico:RPi_Pico_SMD_TH_DS" (at 0 0 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 0 0 0)

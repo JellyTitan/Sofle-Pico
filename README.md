@@ -24,6 +24,7 @@
 - [x] Add supporting documentation for diode jig.
 - [x] Update build guide flashing to include pico 'drag and drop' flashing
 - [x] Add acrylic case cutout for Cirque jack.
+- [ ] Regenerate the keyplate files
 - [ ] refresh Gerbers and update path 
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 

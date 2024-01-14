@@ -222,6 +222,7 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 -  Made switch numbering the same sequence as the LED connections to make debugging easier. This required a big schematic/pcb revision - splitting the Switch/LED footprint combos out into seperate footprints.
 - Added tie in's for cirque trackpad breakout boards. Even though i couldn't get the cirque to work.
 - Revised keyplate outline to accomodate the Cirque breakout board risers.
+- Removed handedness pin from GP28. It would need a pull-up resistor, and I chose to omit that in lieu of flashing both hands seperately initially.
 
 ## Future Feature Wish list
 - [ ] The handedness pin config on the schematic was done by adding an extra pin - this is a hacky way to do things. I should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
