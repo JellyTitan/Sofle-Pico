@@ -193,9 +193,9 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 ![pico vsys internal diode](docs/images/build_log_pico/rp2040_docs.png) pico_internal_diode_vbus_vsys.png
 
 ![pico vsys internal diode](docs/images/build_log_pico/pico_internal_diode_vbus_vsys.png)
-- [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.2_12-27-23.zip`
+- [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.3_12-27-23.zip`
 
-## v3.5.3
+## v3.5.4
 - [x] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?). After testing v3.5.2, it was determined the diode is required for some clones, but can be omitted if using an 'offical' Pico. Dane had decided against using a Schottky there to simplify the circuit. 
 - [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will make it to the diodes or other hand. 
 
@@ -223,6 +223,10 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 - Added tie in's for cirque trackpad breakout boards. Even though i couldn't get the cirque to work.
 - Revised keyplate outline to accomodate the Cirque breakout board risers.
 - Removed handedness pin from GP28. It would need a pull-up resistor, and I chose to omit that in lieu of flashing both hands seperately initially.
+- Added GND plane stitching.
+- Submitted new file for production 1-13-24. `Sofle_Pico_v3.5.4_1-13-24.zip`
+
+## v3.5.5
 
 ## Future Feature Wish list
 - [ ] The handedness pin config on the schematic was done by adding an extra pin - this is a hacky way to do things. I should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
