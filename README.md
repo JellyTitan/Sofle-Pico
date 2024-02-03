@@ -1,7 +1,7 @@
 <picture >
   <source media="(prefers-color-scheme: dark)" srcset="./docs/images/logos/sofle-pico-logo-readme-lockup-darkmode.svg">
   <source media="(prefers-color-scheme: light)" srcset="./docs/images/logos/sofle-pico-logo-readme-lockup-lightmode.svg">
-  <img style="max-width: 600px" alt="Sofle Pico logo" src="./docs/images/logos/sofle-pico-logo-readme-lockup-lightmode.svg">
+  <img width="100%" alt="Sofle Pico logo" src="./docs/images/logos/sofle-pico-logo-readme-lockup-lightmode.svg">
 </picture>
 
 # Sofle Pico Split Keyboard &middot; [![VIA: Compatibility](https://img.shields.io/badge/VIA-Supported-brightgreen?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAHRklEQVRo3u1ZDTDUaRgvhVjhUrrTh0gfnLo0uutU51bUpXOjlLKlXN2OyiAptGyr1kfYaNCXlFbdZBHllFypkCJkJ31QhNLd3DTTx81d3817z7PTv/nv7n8tF6Vmn5lndu3//b/v7/d7nvd5P/TpozGNaUxjGvvUzcjIyPSHWbNCg9euvRDJ57duCAqqdJk5c522trZOrwffF2zihAlzVvr4SERbtz5LSkggis4LCam3tbFx7pUEBhoYDJrt4rJhU3j4LSbwTO7j7S02NDQ07RXqW48f7+SzbNkhUP9JZwnQPTYq6qGzk9P6/v37a793AgYslvFMNjuQz+M1/h/wTB4eGtoAori8D/X7jB83znEph7MvITb23+4iQPfE+HiyYvny3KGmpuO6nYC+vr4R29HRjxcaWt8dYLdv20ayJRJysqiIFBw7Rnbv2KHUJj4m5qnr7NlCHR0d/XcmYDV6tIPXokW74mJiHnen6pdqakhza+tbb2xqIvvT01Wl2+0hgweP6TL4AQMGsBxnzPDduGFDXU+kznaRiNxobJQjgi45fJix/ba4ODLf3f1ApwmMMjefvGjhwpS46OhHPUGA7vvS0khZeTm5XFdHKi9dIvlHjjASiNmyhfA3biRh69c/geJiohK8rq6u/jQHh59Dg4NrehL4TgDV2YkOc4Ns5vMxpeR8xrRpoUoEPjM2/sJj3jzR1qioBz0FfjuAOgKgGiIjyfOICFIB6ibBb6rSB9XfxOMpEaDcb9Wqa0pEAvz8TvUUgT0AqlwoJA9B1ZdAgO7SzZuV1N+yaZNK8JRHwrtRIIilhYWjHJFZzs4CWIW7lwQAqwOgzxXAU34fiJ0Fgqh+LHx2pD4FPjMjg9RChSs5dYoIwsPJwvnzJXJEDAcOHAqbtufIElXBsKLDRJcpxQR0V2oqKS0tJVeuXiV1Uik5Xlgoq0D0NgdAnEe0SCCp6zBGDoyR0AX1EZMUCkFbWxtpaWkhrVDV8nJzycaQkBewmzaTI7PQw0PC1FFEWJhMMUVCFysrlUrmsaNHlQinA5krEBlMrz3wHftCNTsCj2MKBQISDe8hEYrQTSjT9+7dk/n169dlv4+2tGTLEbEwN/8WO1DVOUaLDvC3ggLSBOpQJG41N5ODYjFj9GD70in1Mc1wdb944YIsGxSfF4BQFBF0Xy43jrH8Bvn7N1IKMLniPNq/d68sCvl5eUrbCoxgV9T//eRJ0t7eLksbTJ/Sc+eU2sYIhU/v3r37lsihQ4fyGIk4TJ0ahC9g3WaafKiSukmO6iOwjqKLjgQxdai26OVlZTIyCLIdAMNyIGu7msu98s2UKWtgl2GQlZVVTBGBtq8sLS3NlYiwWKxBuGriy0hEcSHCQZkmP/6Gg6pTH5//evCgLHV2pqQoPd8FUaWIoGeKxVehxH5Hx+jm5raAnl4CgSCaMSpf29v7Apln9KpBB4jK4XxB4Jg6nVUfSydVcfATJy5T1Ovr619TIBsaGu7DTnuAwu5DRyqV/omECwsLy2tqam7Deb8fIxlTU1NrQUREOx08Rgf3OeomLN1xgmP6UJHNyc6WU1wM5PB3KP0vPRcsyIHdtVNoSMgWuuJLlizxVtqFW1mNmThxoi1+T0xMTP8JTOW+y9/fP+zc2bMkGtYTChhTuik61nysLnt371Yiju+2QjQokJdra19Md3BYB2f0z6lxhw8fPgLWi5dUm9zc3JMdbW6B0KT8/PxTKhsMGTLEtLm5+R9XV9f5c+fMSQHVXtHTTbG6iaB0Yu7TKw8emBSJni0pkSuhdnZ2kxTHzsjIyMNnd+7ceREcHByibqdeUlIitba2HquyQXp6es5cMPw+zMzMbuXy5RUUIFQbUwfnCH5itPAwhCSo9Ck5ffotAf81a5q/mz49DLpbSk8vkUiUqjjuYDAQ0K24uLgKAKo94np7e3Pj4+OTVTZgs9ku2dnZx6m/tfr21YIyuGp9UNADValVB1sJCmQbkIK7rGK4QPgRb1eoc35ZWdkNqk1TU9NjPT09Xabxvby8fIRCYYI6IlBtWatXrw5Q2UBLS6svDHpt7NixVnJ7M0NDM3c3t30A/LUikYMHDsivvr6+for9rlixwu/NOkAyMzNz4Nqnn4q7Ab3z58/Xw/rx7reQXC43kMfjRTI9sxg1aoY3h1McHBj417qAgD+8PD0L7CdP9mxsbPybIlJRUXHtTTDeGgJ3d3f3SEpKSuNwOEs7Gh/WiYTFixdz3pmIMRhMvqyuvBMbG7uDHhVI0e8Zj9NgJ06cKO+oLxsbmy9hvSj9ILeNtra2X1ETGqrXEycnJ7aqthKJpNje3t6uo/5Gjhw57INdnRYVFVVjRYICZNJRO1jLFqSmpqb32ht4yGuf5OTkNHXtYHvRv6qq6qaJiYlRrySCFae6urrFwMCApfbqCQwrZK+NCp/Pj4NS+8tH/98pOCtYnTlzplax/H6UJhaL8y0sLEZo/umoMY1pTGOfrP0HvAmUSMtVGugAAAAASUVORK5CYII=)](https://usevia.app/) [![QMK: Compatibility](https://img.shields.io/badge/QMK-Powered-brightgreen?logo=data:image/png;base64,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)](https://github.com/qmk/qmk_firmware) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) 
@@ -64,12 +64,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 
 [Bill of Materials](#bill-of-materials)
  - [Required Parts](#required-parts)
- - [Optional - RGB](#optional---rgb)
- - [Optional - OLED](#optional---oled)
- - [Optional - MCU Sockets](#optional---mcu-sockets)
- - [Optional - key plates](#optional---key-plates)
- - [Optional - low profile header pins](#optional---low-profile-header-pins)
- - [Optional - Pimaroni trackball (not recommended)](#optional---pimoroni-trackball---not-recommended)
+ - [Optional Parts](#optional-parts)
  - [Tools and materials](#tools-and-materials)
 
 [Build Guide / Assembly steps](#build-guide--assembly-steps)
@@ -168,7 +163,9 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 
 <hr>
 
-### Optional Parts - RGB
+### Optional Parts
+
+#### Optional - RGB
 
 These parts are necessary for the RGB lighting.
 
@@ -179,7 +176,7 @@ These parts are necessary for the RGB lighting.
 
 <hr>
 
-### Optional Parts - OLED
+#### Optional - OLED
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
 | SSD1306	128x64 | 2 | These are monochromatic, usually white, yellow, or blue. <br> <br> Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. <br> These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. (The round holes is installed 10mm higher, so it is preferred based solely on aesthetics.) If you come across more variants or different pin positions, please submit a PR! ![Sofle V3](docs/images/build_guide_pico/oled_round.png) ![Sofle V3](docs/images/build_guide_pico/oled_oval.png)| [AliExpress](https://www.aliexpress.us/item/2251832457635357.html)|
@@ -188,7 +185,7 @@ These parts are necessary for the RGB lighting.
 <hr>
 
 
-### Optional - MCU Sockets
+#### Optional - MCU Sockets
 This is strictly a quality of life upgrade. The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) uses [Micro USB](https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors) which can snap off. The MCU sockets are strongly recommended if you choose those. Alternately, many of the Pico clones offer USB-C, which is known to be less fragile. However - if your using socketed OLEDs, the OLED sockets put the OLEDs about 5mm (@todo - measure this) above the board, so socketing the MCU helps support the OLEDs.
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
@@ -197,7 +194,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 
 <hr>
 
-### Optional - key plates:
+#### Optional - key plates:
  - The top/key plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
  - Key plates are strongly recommended, but not technically required. (If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate).
  - The key plates combined with a backplate make a nice 'sandwich' case. Another plate can be added to protect the OLEDs. 
@@ -221,13 +218,13 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 
 <hr>
 
-### Optional - low profile header pins
+#### Optional - low profile header pins
 - The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.
 ![retention nubs](docs/images/build_guide_pico/sofle_pico_luxary_pins.png)
 
 <hr>
 
-### Optional - Pimoroni trackball - not recommended
+#### Optional - Pimoroni trackball - not recommended
 Electrically, this works, but it's not a great experience. See [Pimaroni.md](pimoroni.md) for more details.
 | Name | Count | Remarks | Potential Storefront |
 |-|-|-|-|
@@ -247,21 +244,31 @@ Electrically, this works, but it's not a great experience. See [Pimaroni.md](pim
 - multimeter for troubleshooting
 
 ## Build Guide / Assembly steps
-This guide includes all optional components.
-### Prepare
+This guide includes all optional components. 
 
-Make sure you know which side you are working on, and don't make two left hand sides by mistake. Stick a piece of tape on the front side of both PCBs to help remember.
-![Sofle V3](docs/images/build_guide_pico/sofle_pico_tape.png)
+There's a few common soldering methods used with through-hole components. In this guide, we'll be using the third method - "work holding". Accordingly, the docs will not reference flipping the PCB over for soldering legs.
+
+1. **The bendy method**: Push the legs through the holes, then bend the legs slightly outward on the bottom side to keep the component in the hole when the PCB is flipped over. Solder on the side of the board opposite from the side the component was inserted.
+<br> <img src="docs/images/build_guide_pico/diode_bend_top.JPG" alt="pcb with diode inserted from the top" width="49%" /> <img src="docs/images/build_guide_pico/diode_bend_under.JPG" alt="pcb with bent diode legs" width="49%" />
+1. **The tape method**: Push the legs through the holes and put a piece of kapton tape over the component to keep it in place when the board is flipped. Solder on the side of the board opposite from the side the component was inserted.
+<br> <img src="docs/images/build_guide_pico/kapton_top.JPG" alt="pcb with diodes held in place by kapton tape" width="49%" /> <img src="docs/images/build_guide_pico/kapton_under.JPG" alt="underside of pcb with diodes held in place by kapton tape" width="49%" />
+1. **Work holding**: Use helping hands or work holding jig to keep the PCB lifted off the work surface. Insert components through the holes, _do not_ flip the pcb, and solder on the side the components are inserted. <br> This is the recommended method.<br>If you have access to a 3d printer, you can print disposable [work holding legs designed specifically for the ErgoDonk Zero PCB](https://www.printables.com/model/733164-ergodonk-zero-pcb-holding-feet). <br> <Br>
+**[Magnetic work holding thingies](https://www.aliexpress.us/item/2255800735314797.html)** <br><img src="docs/images/build_guide_pico/top_jig.JPG" alt="pcb in workholding jigs with diodes inserted from the top" width="49%" /> <img src="docs/images/build_guide_pico/workholding_jig_solder_from_top.JPG" alt="pcb in workholding jigs with diodes protruding" width="49%" /><br> <br>**[3d Printable work holding feet](https://www.printables.com/model/733164-ergodonk-zero-pcb-holding-feet)**<br>
+<img src="docs/images/build_guide_pico/ErgoDonk_zero_all_feet.JPG" alt="Disposable 3d printable work holding legs for the ErgoDonk Zero" width="32%" /> <img src="docs/images/build_guide_pico/Ergodonk_zero_one_foot.JPG" alt="Close up of a disposable 3d printable work holding leg for the ErgoDonk Zero" width="32%" /> <img src="docs/images/build_guide_pico/3d_model_of_work_feet.png" alt="3d model of a disposable 3d printable work holding leg for the ErgoDonk Zero" width="32%" />
+@todo: Update the feet images?
+
+### Prepare
+It's recommended to build the left hand first, from start to finish. 
 
 This guide is written in the order I like to install components, starting with the components on the back, shortest to tallest:
  - diodes
- - Schottky diodes
  - LEDs
- - level shifter
  - switch sockets
 
 Then install the components on the front:
+ - level shifter
  - Pico MCU & socket
+ - Schottky diodes
  - OLED & socket
  - TRRS connector
  - Rotary encoder
@@ -274,10 +281,10 @@ The order of assembly does not matter **except** for these 2 components because 
 When designing the Sofle Pico, an effort was made to '[poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)' the design, that is, to make the design as 'fool proof' as possible to assemble. 
 
 Specifically, clear markings/symbols and selective masking of footprint through-holes are used to ensure that components are soldered to the correct side & in the correct orientation. Outlines indicate the side the component should be inserted into. The side with the outlines has footprint through-holes masked, so that if the user inserted the component from the wrong side, it would not be solderabe.
+
 ![diode orientation](docs/images/build_guide_pico/sofle_pico_poke-yoke.png)
 
 Please open an issue if you have a suggestion for improving the poka-yoke. (I'd like to move away from English language notes, and replace them with universal pictograms if the time ever
-
 
 ### Diodes
 
@@ -291,9 +298,8 @@ For surface mount diodes, a common method is to tin one pad, place the diode on,
 .
 
 There is 1 diode per key, 1 diode on the rotary encoder.
-
-There is a handy bending jig on the upper right corner of the board. You can use the second hole from the left for these 1N4148 diodes. If you've got a 3d printer handy, a diode jig is quite helpful.
 @todo Link to diode jig.
+There is a handy bending jig on the upper right corner of the board. You can use the second hole from the left for these 1N4148 diodes. If you've got a 3d printer handy, a diode jig is quite helpful.
 
 ![Diode bending jig](docs/images/build_guide_pico/1N4148_diode_jig.png)
 
@@ -488,12 +494,11 @@ Sofle Pico is open source - feel free to help out!
 ### Feature wish list
 There's some features & cleanup that I would like to add if time permits. They are all nice-to-have's, so if you've got the time and inclination, I'd appreciate the help!
 - [ ] Adapt bongocat for 128x64. I haven't been able to find any variants formatted for the orientation/size the Sofle Pico uses. (doio/kb16 has a 128x32 library that can be adapted)?
-- [ ] "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples.
-- [ ] Add support for color displays. Not sure this is viable with the current form factor. I couldn't find any reasonably priced i2c that fit nicely.
-- [ ] Make switch numbering the same sequence as the LED connections to make debugging easier. This would require a big schematic/pcb revision with only cosmetic changes. Probably not worth the effort. (Maybe add a simple graphic for led chain debugging under the rotary encoder?)
+- [ ] "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples. I haven't found any examples in the QMK repo. Does this feature still work?
+- [ ] Add support for color displays. Not sure this is viable with the current form factor. I couldn't find any reasonably priced i2c that fit nicely. I looked into e-ink - but the refresh rate on those is crazy slow, so they are not viable in their current state.
 - [ ] Solenoid backplate. Solenoid needs 5v. May be able to tap into VBUS on LH?
 - [ ] Piezo speaker. QMK doesn't support this for ARM boards yet, but maybe someday.
-- [ ] The handedness pin config on the schematic was done by adding an extra pin on the schematic - this is a hacky way to do things. Should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
+- [ ] Automatic 'handedness'. There are no free spots in the matrix to use the matrix designation, and pulling one of the free pins  high/low would requires a 4.7k resistor, and I would rather not complicate the build with additional parts for something that will only get used once. (By 'once', i mean the alternative is to flash left/right hands seperately. Presumably after the initial flash, all changes/updates would be done using VIA).
 
 ## Links
 - [Github with KiCad projects][soflegithub]
@@ -516,14 +521,6 @@ The default layout for the Sofle Pico is in the QMK fork and demonstrates some L
 ## Version History
 See the [build log](build_log.md).
 
-<style>
-mark{
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-}
-</style>
-<mark>[🔼 Back to top](#sofle-pico-split-keyboard)</mark>
 ## Footnotes
 [layoutarticle]: <https://josef-adamcik.cz/electronics/in-search-of-the-best-custom-keyboard-layout.html> "In search of the best custom keyboard layout"
 [introductionarticle]: <https://josef-adamcik.cz/electronics/let-me-introduce-you-sofle-keyboard-split-keyboard-based-on-lily58.html> "Let me introduce you SofleKeyboard - a split keyboard based on Lily58 and Crkbd"

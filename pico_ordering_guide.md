@@ -17,7 +17,7 @@ Usually the minimum quantity to order is 5 boards. All the Sofle boards have bee
 
 The production files are known as "gerbers", and they are usually uploaded as a `.zip` file. (It's essentially a collection of files for each layer of the board, like holes, graphics, traces etc.) 
 
-@todo Some Sofles don't have a zip of the gerbers in each folder. Can we change that?
+@todo Some Sofles don't have a zip of the Gerbers in each folder. Can we change that?
 In this repo, the gerber file for each Sofle variant can be found in it's subfolder under PCB's/
 @todo: link to each variant here:
 
