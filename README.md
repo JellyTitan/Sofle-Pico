@@ -287,42 +287,46 @@ Specifically, clear markings/symbols and selective masking of footprint through-
 Please open an issue if you have a suggestion for improving the poka-yoke. (I'd like to move away from English language notes, and replace them with universal pictograms if the time ever
 
 ### Diodes
+There is 1 diode per key, 1 diode on the rotary encoder.
+![diode locations highlighted](docs/images/build_guide_pico/sofle_pico_diode_highlights.png)
+
+Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
 
 ![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_orientation.png)
 
 Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
-Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
-
 For surface mount diodes, a common method is to tin one pad, place the diode on, apply the soldering iron to the diode leg until it melts the solder underneath and sinks flush with the PCB. Then come back and solder the other leg. Alternately, you can use a rework station heat gun and solder paste. (I prefer this method for smds).
-.
 
-There is 1 diode per key, 1 diode on the rotary encoder.
-@todo Link to diode jig.
-There is a handy bending jig on the upper right corner of the board. You can use the second hole from the left for these 1N4148 diodes. If you've got a 3d printer handy, a diode jig is quite helpful.
+For through-hole diodes, there is a bending jig on the upper right corner of the board. This is a painfully slow way to get pretty bends. ![Diode bending jig](docs/images/build_guide_pico/1N4148_diode_jig.png) 
 
-![Diode bending jig](docs/images/build_guide_pico/1N4148_diode_jig.png)
+If you've got a 3d printer handy, a printed diode [bending jig](https://www.printables.com/model/734696-diode-bending-jig-8mm) can be used to make quick uniform bends. Alternately, a carpenters pencil is roughly the right size. (The diode holes are 8mm apart, wooden pencils are often 7mm - 8mm).<br><img width="32%" alt="Using a carpenters pencil as a bending jig" src="docs/images/build_guide_pico/diode_jig_fold.jpeg" /> <img width="32%" alt="Using a carpenters pencil as a bending jig" src="docs/images/build_guide_pico/diode_jig_cut.jpeg" /> <img width="32%" alt="Using a carpenters pencil as a bending jig" src="docs/images/build_guide_pico/carpenter_pencil.JPG" />
 
-![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_highlights.png)
+With the PCB eleveated via workholding, insert the bent diodes into the holes on the back of the board. Solder the legs in place. flip over the board, and trim the legs.
+When you trim off the diode legs, save 2 for use as bypass jumpers.
 
-### Schottky Diodes
-
-There's one for each side. Insert on the front, right next to the MCU footprint. Be certain to orient these correctly. Solder on the back.
-The leftmost hole on the diode jig is for these. 
-![Schottky diode](docs/images/build_guide_pico/Schottky_diode.png) 
-![Diode bending jig](docs/images/build_guide_pico/1N5817_schottky_diode_jig.png)
+<img src="docs/images/build_guide_pico/sofle_pico_diodes_soldered.jpeg" alt="3d model of a disposable 3d printable work holding leg for the ErgoDonk Zero" width="49%" /> <img src="docs/images/build_guide_pico/sofle_pico_diodes_clipping.jpeg" alt="3d model of a disposable 3d printable work holding leg for the ErgoDonk Zero" width="49%" />
 
 ### Switch Sockets
 Switch sockets installed on the back of the PCB facing up towards the front of the PCB. Make sure they are flush with the PCB. 
 
-Heat the metal connector, apply solder and look for the solder to wick down to the PCB. You want a solid joint since this may take some mechanical strain from switch installation and removal.
+Heat the metal connector, apply solder and look for the solder to wick down to the PCB. You want a solid joint since this may take some mechanical strain from switch installation and removal. 
+
+I like to put all the sockets in, find a comfortable position, solder one side of each socket, then rotate the board 180 and solder the remaining sides.
+
+<img src="docs/images/build_guide_pico/sofle_pico_sockets_1.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a tilted angle" width="49%" /> <img src="docs/images/build_guide_pico/sofle_pico_sockets_2.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a above" width="49%" />
 
 ### Level shifter
 The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
 ![level shifter](docs/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
-Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes. Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
+Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes. 
+<img src="docs/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="32%" />
 
-![Sloppy bypass jumper soldering](docs/images/build_guide_pico/sloppy_bypass_jumper.png) ![Diode bending jig](docs/images/build_guide_pico/jumper_jig.png)
+Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
+
+<img src="docs/images/build_guide_pico/jumper_jig.jpeg" alt="Sofle Pico jumper bender location" width="32%" />
+<img src="docs/images/build_guide_pico/jumper_bender_in_use.jpeg" alt="Sofle Pico jumper bender in use" width="32%" />
+<img src="docs/images/build_guide_pico/level_shifter_bypass_jumper.jpeg" alt="Sofle Pico jumper bender in use" width="32%" />
 
 ### LEDs
 
@@ -375,6 +379,11 @@ To install a socketed Pico using the diode leg approach [from splitkb.com][ProMi
 
 If you ever need to remove the Pico: do it by gently prying the board up in small increments, working your way around the board. Avoid pressure on the USB connector. The diode legs are quite weak and will usually bend if you pull the Pro Micro off in one action.
 
+### Schottky Diodes
+There's one for each side. Insert on the front, right next to the MCU footprint. Be certain to orient these correctly. Solder on the back.
+The leftmost hole on the diode jig is for these. 
+![Schottky diode](docs/images/build_guide_pico/Schottky_diode.png) 
+![Diode bending jig](docs/images/build_guide_pico/1N5817_schottky_diode_jig.png)
 
 ### OLED
 @todo add updated images when v3.4 prototype comes in.
