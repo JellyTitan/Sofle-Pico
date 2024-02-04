@@ -401,8 +401,9 @@ If you ever need to remove the Pico: do it by gently prying the board up in smal
 ### Schottky Diodes
 There's one for each side. Insert on the front, right next to the MCU footprint. Be certain to orient these correctly. Solder on the back.
 The leftmost hole on the diode jig is for these. 
-![Schottky diode](docs/images/build_guide_pico/Schottky_diode.png) 
-![Diode bending jig](docs/images/build_guide_pico/1N5817_schottky_diode_jig.png)
+
+<img src="docs/images/build_guide_pico/Schottky_diode.jpeg" alt="Schottky diode" width="32%" /> <img src="docs/images/build_guide_pico/1N5817_schottky_diode_jig.jpeg" alt="Diode bending jig" width="32%" />
+<img src="docs/images/build_guide_pico/power_circuit_bend.jpeg" alt="Schottky diode legs bending with jig" width="32%" /><br><img src="docs/images/build_guide_pico/power_circuit_diode_top.jpeg" alt="Schottky diode inserted next to MCU" width="49%" /> <img src="docs/images/build_guide_pico/power_circuit_diode_snip.jpeg" alt="Schottky diode pin trimming" width="49%" />
 
 <hr>
 
