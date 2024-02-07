@@ -296,7 +296,10 @@ There is 1 diode per key, 1 diode on the rotary encoder.
 
 Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
 
-![diode orientation](docs/images/build_guide_pico/sofle_pico_diode_orientation.png)
+<img width="49%" alt="SMD orientation marking example" src="docs/images/build_guide_pico/smd_diode_orientation_1.jpeg
+" />
+<img width="49%" alt="SMD orientation example" src="docs/images/build_guide_pico/smd_diode_orientation_2.jpeg
+" />
 
 Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
@@ -306,9 +309,10 @@ For through-hole diodes, there is a bending jig on the upper right corner of the
 
 If you've got a 3d printer handy, a printed diode [bending jig](https://www.printables.com/model/734696-diode-bending-jig-8mm) can be used to make quick uniform bends. Alternately, a carpenters pencil is roughly the right size. (The diode holes are 8mm apart, wooden pencils are often 7mm - 8mm).<br><img width="32%" alt="Using a carpenters pencil as a bending jig" src="docs/images/build_guide_pico/diode_jig_fold.jpeg" /> <img width="32%" alt="Using a carpenters pencil as a bending jig" src="docs/images/build_guide_pico/diode_jig_cut.jpeg" /> <img width="32%" alt="Using a carpenters pencil as a bending jig" src="docs/images/build_guide_pico/carpenter_pencil.JPG" />
 
-With the PCB eleveated via workholding, insert the bent diodes into the holes on the back of the board. Solder the legs in place. flip over the board, and trim the legs.
-When you trim off the diode legs, save 2 for use as bypass jumpers.
+With the PCB eleveated via workholding, insert the bent diodes into the holes on the back of the board. 
+Diodes _must_ be oriented with the black band in the direction of the "arrow" symbol on the PCB. There is also a black outline around the pad to make it easy to check the diode orientation is correct after the diode has been soldered in place.<br><img src="docs/images/build_guide_pico/diode_orientation.jpeg" alt="Through hole diode orientation" width="100%" />
 
+Solder the legs in place. flip over the board, and trim the legs. When you trim off the diode legs, save 2 for use as bypass jumpers.<br>
 <img src="docs/images/build_guide_pico/sofle_pico_diodes_soldered.jpeg" alt="3d model of a disposable 3d printable work holding leg for the ErgoDonk Zero" width="49%" /> <img src="docs/images/build_guide_pico/sofle_pico_diodes_clipping.jpeg" alt="3d model of a disposable 3d printable work holding leg for the ErgoDonk Zero" width="49%" />
 
 <hr>
