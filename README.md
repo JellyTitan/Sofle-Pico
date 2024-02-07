@@ -331,8 +331,7 @@ I like to put all the sockets in, find a comfortable position, solder one side o
 ### Level shifter
 The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
 ![level shifter](docs/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
-Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes. 
-<img src="docs/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="32%" />
+Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes.<br><img src="docs/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="32%" />
 
 Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
 
@@ -352,9 +351,10 @@ To solder: tin one pad, place the LED and hold using tweezers, apply heat to the
 
 Alternately, you can use a rework station heat gun and solder paste. I prefer this method for the LEDs, i think it's easier to get components to sit flush. Put a dab of solder paste on each pad, then place your LEDs with tweezers or a steady hand. (The holes above/below the LED hole are intended to make tweezer placement easier).
 
-The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board.
-
+The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board. 
 ![LED](docs/images/build_guide_pico/sofle_pico_led_wiring_chain.png)
+<br>
+Revisions after v3.5.4 will have the LED number directly above the LED to make troubleshooting the LED chain easier.<br><img src="docs/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg" alt="Sofle Pico LED sequence markings." width="32%" />
 
 <hr>
 
