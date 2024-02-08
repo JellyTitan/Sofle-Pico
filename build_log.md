@@ -225,11 +225,10 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 - Removed handedness pin from GP28. It would need a pull-up resistor, and I chose to omit that in lieu of flashing both hands seperately initially.
 - Added GND plane stitching.
 - Submitted new file for production 1-13-24. `Sofle_Pico_v3.5.4_1-13-24.zip`
+- Tested the prototype - it works! I'm calling tis the first stable release.
 
-## v3.5.5
 
 ## Future Feature Wish list
-- [ ] The handedness pin config on the schematic was done by adding an extra pin - this is a hacky way to do things. I should use two seperate Pico footprints, one for each side. This would also make it easier to tweak the layout for the SMD footprints.
 - [ ] Color displays.
 - [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 - [ ] Solenoid backplate (Would need rp2040 zero for 5v)

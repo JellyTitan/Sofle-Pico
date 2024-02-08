@@ -28,7 +28,7 @@
 - [ ] refresh Gerbers and update path 
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
-- [ ] Add link to 3d printable 8mm diode bending jig.
+- [x] Add link to 3d printable 8mm diode bending jig.
 - [ ] Update docs for the troubleshooting section.layout
 - [ ] Add Sofle Pico Decals and regenerate Fusion 360 videos.[Decal instructional](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-3932C5D1-F7CC-4F7C-B86B-806E6C1EDEFB)
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
@@ -57,7 +57,7 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 
 
 [Overview](#overview)
- - [Pico vs. ProMicro](#pi-pico-vs-ProMicro)
+ - [Pico vs. ProMicro](#pico-vs-promicro)
  - [Features inherited from V2](#features-inherited-from-v2)
  - [New features](#new-features-in-the-sofle-pico)
  - [Notable changes](#notable-changes)
@@ -67,9 +67,9 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
  - [Optional Parts](#optional-parts)
  - [Tools and materials](#tools-and-materials)
 
-[Build Guide / Assembly steps](#build-guide--assembly-steps)
+[Build Guide](#build-guide)
+ - [Soldering and workholding](#soldering-and-workholding)
  - [Prepare](#prepare)
- - [Soldering](#soldering)
  - [Diodes](#diodes)
  - [Schottky Diodes](#schottky-diodes)
  - [Switch Sockets](#switch-sockets)
@@ -94,6 +94,8 @@ The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan), based
 [Contributing](#contributing)
  - [Feature wish list](#feature-wish-list)
 
+<hr>
+
 ## Overview
 
 ### Pico vs. ProMicro
@@ -105,10 +107,14 @@ There are many RP2040 boards available in the same form factor as the ProMicro, 
 
 Accommodating the voltage variances between the ProMicro and the Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with ProMicro keyboards require 5v logic. The Pico uses 3.3v logic. A level shifter, along with a lower current LED variant, specifically the SK6803MINI-E, work with the lower voltage. Thank you to Dane Skalski and the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing this excellent 3V logic circuit.
 
+<hr>
+
 ### Features inherited from V2
  - Key placement has not changed. (mostly - 1 thumb key got a 3 degree rotation).
  - Hotswap sockets are required. 
  - Per-key RGB remains optional and uses the _relatively_ easy to solder SK6803 MINI-E LEDs.
+
+<hr>
 
 ### New features in the Sofle Pico
 * Default OLED is now 64x128, as opposed to 32x128.
@@ -120,6 +126,8 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 * Added a 'breakout' section for the unused Pico pins to allow for easy tinkering.
 * The default communication protocol is full duplex TX/RX.
 * Should be able to support [Cirque trackpads](https://shop.beekeeb.com/product/40mm-cirque-glidepoint-circle-trackpad-module-diy-kit-for-split-mechanical-keyboard/) that use a breakout board to tie into the i2C bus. (I haven't tried this yet - please submit a PR if you can validate).
+
+<hr>
 
 ### Notable changes
 * Improved labeling and footprint masking to poke-yoke the build process.
@@ -138,8 +146,8 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 * Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
 Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).
 
-<img  alt="Sofle Pcb puck mount footprint" src="docs/images/build_guide_pico/puck_mount.png" style="width:100%; max-width: 300px" />
-<img  alt="Mounting puck attached to PCB" src="docs/images/build_guide_pico/tenting_puck.webp" style="width:100%; max-width: 300px" />
+<img  alt="Sofle Pcb puck mount footprint" src="docs/images/build_guide_pico/puck_mount.png" width="49%" />
+<img  alt="Mounting puck attached to PCB" src="docs/images/build_guide_pico/tenting_puck.webp" width="49%" />
 
 
 ## Bill of materials
@@ -243,8 +251,9 @@ Electrically, this works, but it's not a great experience. See [Pimaroni.md](pim
 - isopropyl-alcohol for cleaning
 - multimeter for troubleshooting
 
-## Build Guide / Assembly steps
-This guide includes all optional components. 
+## Build Guide
+
+### Soldering and workholding
 
 There's a few common soldering methods used with through-hole components. In this guide, we'll be using the third method - "work holding". Accordingly, the docs will not reference flipping the PCB over for soldering legs.
 
@@ -260,6 +269,9 @@ There's a few common soldering methods used with through-hole components. In thi
 <hr>
 
 ### Prepare
+
+This guide includes all optional components. 
+
 It's recommended to build the left hand first, from start to finish. 
 
 This guide is written in the order I like to install components, starting with the components on the back, shortest to tallest:
@@ -335,9 +347,7 @@ Alternately, if you've decided to omit the level shifter, be sure to bridge the 
 
 Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
 
-<img src="docs/images/build_guide_pico/jumper_jig.jpeg" alt="Sofle Pico jumper bender location" width="32%" />
-<img src="docs/images/build_guide_pico/jumper_bender_in_use.jpeg" alt="Sofle Pico jumper bender in use" width="32%" />
-<img src="docs/images/build_guide_pico/level_shifter_bypass_jumper.jpeg" alt="Sofle Pico jumper bender in use" width="32%" />
+<img src="docs/images/build_guide_pico/jumper_jig.jpeg" alt="Sofle Pico jumper bender location" width="32%" /> <img src="docs/images/build_guide_pico/jumper_bender_in_use.jpeg" alt="Sofle Pico jumper bender in use" width="32%" /> <img src="docs/images/build_guide_pico/level_shifter_bypass_jumper.jpeg" alt="Sofle Pico jumper bender in use" width="32%" />
 
 <hr>
 
@@ -388,12 +398,10 @@ To install a socketed Pico using the diode leg approach [from splitkb.com][ProMi
 1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of kapton tape to hold everything in place can be helpful. 
 <img src="docs/images/build_guide_pico/needle_pin_inserts.jpeg" alt="Sofle Pico jumper bender in use" width="50%" />
 
-1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).
-<img src="docs/images/build_guide_pico/wonky_MCU.jpeg" alt="Tilted MCU" width="49%" /> <img src="docs/images/build_guide_pico/wonky_fixed_MCU.jpeg" alt="Tilted MCU corrected" width="49%" />
-
-1. Solder the remaining pins on the back of the pcb.<br>
-<img src="docs/images/build_guide_pico/backside_MCU_pins_soldered.jpeg" alt="Tilted MCU corrected" width="49%" />
-1. Flip over the board. On the front, solder 1 pin on each side to the Pico. Again check that everything is flush before soldering the remaining pins.<br><img src="docs/images/build_guide_pico/MCU_solder_1_pin.jpeg" alt="One pin on the MCU soldered" width="49%" /> <img src="docs/images/build_guide_pico/MCU_solder_all_pins.jpeg" alt="All pisn on the MCU soldered - quite badly" width="49%" />
+1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).<br><img src="docs/images/build_guide_pico/wonky_MCU.jpeg" alt="Tilted MCU" width="47%" /> <img src="docs/images/build_guide_pico/wonky_fixed_MCU.jpeg" alt="Tilted MCU corrected" width="47%" />
+1. Solder the remaining pins on the back of the pcb.<br><img src="docs/images/build_guide_pico/backside_MCU_pins_soldered.jpeg" alt="Tilted MCU corrected" width="47%" />
+1. Flip over the board. On the front, solder 1 pin on each side to the Pico. Again check that everything is flush before soldering the remaining pins.
+<br><img src="docs/images/build_guide_pico/MCU_solder_1_pin.jpeg" alt="One pin on the MCU soldered" width="47%" /> <img src="docs/images/build_guide_pico/MCU_solder_all_pins.jpeg" alt="All pisn on the MCU soldered - quite badly" width="47%" />
 
 
 
@@ -422,23 +430,23 @@ There are two common variants of the SSD1306 OLED. They are easily distinguishab
 ![OLED sockets](docs/images/build_guide_pico/sofle_pico_LH_OLED_socket.png)
 We will be installing the OLED so it overhangs the Pro Micro. 
 1. Determine which socket your model of OLED will use.
-1. Add a strip of electrician's tape to the bottom of the OLED module where it might contact the Pico.
+1. Add a strip of electrician's tape to the bottom of the OLED module where it might contact the Pico. (Or a sticker)!
 1. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use kapton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
 1. Solder the remaining socket pins.
 1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
 1. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.<br>
-<img src="docs/images/build_guide_pico/sofle_pico_OLED_bumper.png" alt="OLED bumper" width="100%" /><br>If you installed MCU sockets, the OLED may not seat all the way down.<br><img src="docs/images/build_guide_pico/socket_gap.jpeg" alt="gap between OLED and OLED socket" width="100%" />
+<img src="docs/images/build_guide_pico/sofle_pico_OLED_bumper.png" alt="OLED bumper" width="100%" /><br>If you installed MCU sockets, the OLED may not seat all the way down. This is ugly, and I hate it. YMMV.<br><img src="docs/images/build_guide_pico/socket_gap.jpeg" alt="gap between OLED and OLED socket" width="100%" />
 
 <hr>
 
 ### TRRS Jacks
-Solder these on the front of the boards, inserting into the outline.
-Some brands of jack will snap into the board, holding them in place while you solder. Other brands may require tape. Solder 1 pin first to check that everything is flush. Adjust as needed. Solder remaining pins. 
+Insert into the outline on the front of the board, solder on the back.
+Some brands of jack will snap into the board, holding them in place while you solder. Other brands may require tape to hold them in place while you flip the board over. Solder 1 pin first to check that everything is flush and adjust as needed. Solder remaining pins.<br><img src="docs/images/build_guide_pico/trrs_1.jpeg" alt="TRRS jack inserting into outline on top of PCB" width="47%" /> <img src="docs/images/build_guide_pico/trrs_2.jpeg" alt="TRRS jack inserted into outline on top of PCB" width="47%" />
 
 <hr>
 
 ### Rotary encoders
-Saved these for last because they are tallest. Insert into the top of the board, and solder on the backside. Some EC11's have metal tabs on opposite sides that add mechanical stability - no need to solder those.
+Saved for last because they are tallest. Insert into the top of the board, and solder on the backside. Some EC11's have metal tabs on opposite sides that add mechanical stability - no need to solder those. Solder 1 pin first to check that everything is flush and adjust as needed. Solder remaining pins.<br><img src="docs/images/build_guide_pico/ec11_2.jpeg" alt="EC11 rotary encoder inserted into outline on top of PCB" width="47%" /> <img src="docs/images/build_guide_pico/ec11_1.jpeg" alt="EC11 rotary encoder soldered on the back of the PCB" width="47%" /> 
 
 <hr>
 
@@ -481,7 +489,7 @@ After the first 'drag and drop' flash, you can tweak your keymaps further using 
 1. Wait for the OS to detect the device.
 1. Copy the .uf2 file to the new USB disk.
   * The files can be found in this repo at `./Sofle_Pico/Firmware`. The VIA version is recommended: `sofle_pico_via_LH.uf2` and `sofle_pico_via_RH.uf2`.
-  * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix. (@todo - can we use matrix detection to use a single file for both hands)?
+  * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix.
   * On Mac after the file is dropped, the 'Keyboard setup assistant' may be triggered. You can ignore and quit the assistant.(@todo add relative path to UF2 files.) 
 1. Unplug the side you just flashed, and repeat the process with the other side.
 1. Disconnect both halves from USB.
