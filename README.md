@@ -332,9 +332,10 @@ Solder the legs in place. flip over the board, and trim the legs. When you trim 
 ### Switch Sockets
 Switch sockets installed on the back of the PCB facing up towards the front of the PCB. Make sure they are flush with the PCB. 
 
-Heat the metal connector, apply solder and look for the solder to wick down to the PCB. You want a solid joint since this may take some mechanical strain from switch installation and removal. 
-
-I like to put all the sockets in, find a comfortable position, solder one side of each socket, then rotate the board 180 and solder the remaining sides.
+1. Put all the sockets in place. PCB hole tolerance can vary quite a bit, so some sockets may snap in, while others rest in the holes. If you have some that snap in, be sure to check everything is flush before you start soldering. 
+1. Solder _one_ side of each socket by heating the metal connector. Apply solder and look for the solder to wick down to the PCB. You want a solid joint since this may take some mechanical strain from switch installation and removal. The 3d printed workholding feet are really handy here. You can reposition the board as you work to get the best angle for soldering those connectors.
+1. Give the board a few good taps to make sure there are no loose sockets.
+1. Rotate the board 180 degrees and solder the remaining sides.
 
 <img src="docs/images/build_guide_pico/sofle_pico_sockets_1.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a tilted angle" width="49%" /> <img src="docs/images/build_guide_pico/sofle_pico_sockets_2.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a above" width="49%" />
 
