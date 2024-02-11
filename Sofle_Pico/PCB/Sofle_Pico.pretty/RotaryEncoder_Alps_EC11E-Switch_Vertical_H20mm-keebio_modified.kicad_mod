@@ -88,6 +88,8 @@
   (fp_circle (center 0 0) (end 3 0)
     (stroke (width 0.12) (type solid)) (fill none) (layer "F.Fab") (tstamp d764080d-bba7-4a16-81aa-808f82031cc5))
   (fp_rect (start -8 -6.5) (end 7.6 6.5)
+    (stroke (width 0.12) (type default)) (fill none) (layer "User.3") (tstamp 3e604cf6-de11-4852-b57e-f91c384f5c1e))
+  (fp_rect (start -8 -6.5) (end 7.6 6.5)
     (stroke (width 0.12) (type default)) (fill none) (layer "User.4") (tstamp 93d49a7d-a4d4-49c1-aebd-604d0c27a503))
   (pad "" np_thru_hole oval (at 0 -5.6) (size 2.8 1.5) (drill oval 2.8 1.5) (layers "F&B.Cu" "*.Mask") (tstamp 9e83d822-194b-47d0-a880-b69371f706c8))
   (pad "" np_thru_hole oval (at 0 5.6) (size 2.8 1.5) (drill oval 2.8 1.5) (layers "F&B.Cu" "*.Mask") (tstamp 03ebc302-ab68-47fe-afb6-3825bc9953a4))

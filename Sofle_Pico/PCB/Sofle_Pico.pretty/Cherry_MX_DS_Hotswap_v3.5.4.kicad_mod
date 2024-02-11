@@ -81,6 +81,12 @@
     (stroke (width 0.1) (type solid)) (layer "Cmts.User") (tstamp 4723532a-03ab-402b-bd66-966edce17987))
   (fp_line (start 9.525 9.525) (end -9.525 9.525)
     (stroke (width 0.1) (type solid)) (layer "Cmts.User") (tstamp 89f85d7a-7d5d-4b50-acfa-6d6f42943cdd))
+  (fp_rect (start -2.15 -7.5) (end 2.15 -6.5)
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp 035cfb38-75ec-49a5-bd71-c0799550cf81))
+  (fp_rect (start -2.15 6.5) (end 2.15 7.5)
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp 9c92b2a9-d396-44b0-ac9e-ff51f474f3e0))
+  (fp_rect (start 7 -7) (end -7 7)
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp 48f95e19-fe4c-4261-bcb5-e71618bf7635))
   (fp_rect (start 7 -7) (end -7 7)
     (stroke (width 0.12) (type default)) (fill none) (layer "User.4") (tstamp 6d244f2f-1f90-45e9-95ed-996325a4dbd1))
   (pad "" np_thru_hole circle (at -5.08 0) (size 1.75 1.75) (drill 1.75) (layers "*.Cu" "*.Mask") (tstamp 068986ac-a166-4cdc-ab51-f1cdc01f169c))
@@ -103,6 +109,12 @@
   (pad "2" thru_hole circle (at 6.3 -3.82) (size 1 1) (drill 0.3) (layers "*.Cu") (tstamp 6be5d565-219f-4f03-bf53-e0c471f38355))
   (pad "2" smd roundrect (at 7.085 -2.555) (size 2.55 2.53) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1)
     (chamfer_ratio 0) (chamfer top_left) (tstamp 7d548285-636f-42de-b1ce-318259bd9b1e))
+  (group "" (id 9d2455c0-68e9-4245-b699-9776e6a0e907)
+    (members
+      035cfb38-75ec-49a5-bd71-c0799550cf81
+      9c92b2a9-d396-44b0-ac9e-ff51f474f3e0
+    )
+  )
   (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh-CherryMX-Socket.step"
     (offset (xyz 1.3 7.6 2))
     (scale (xyz 1 1 1))
