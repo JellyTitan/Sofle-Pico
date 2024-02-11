@@ -202,17 +202,22 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 
 <hr>
 
-#### Optional - key plates:
- - The top/key plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
- - Key plates are strongly recommended, but not technically required. (If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate).
+#### Optional - Case:
+ - The case plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
+ - Key plates are strongly recommended, but not technically required.(If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate.
  - The key plates combined with a backplate make a nice 'sandwich' case. Another plate can be added to protect the OLEDs. 
  - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates.
  - The OLEDs are taller than the switch plate, which is why they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDs can be installed higher/lower.
- - Plates can be made from acrylic or pcb.
+ - Plates can be made from acrylic, pcb, or 3d printed.
  - Having a standoff kit is helpful when assembling the keyplates. [M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)
  - Acrylic key plates should be 3mm thick, and PCBs should be 1.6mm thick. The switches fit better in the PCBs because most switches have 'retention nubs' designed for PCBs. 
+ There are designs for each of these in this repo:
+    - [Acrylic](./Sofle_Pico/Case/Acrylic_case/)
+    - [PCB](./Sofle_Pico/Case/PCB_case/)
+    - [3d printable](./Sofle_Pico/Case/3d_printable_case/)
 
-![retention nubs](docs/images/build_guide_pico/sofle_pico_retention_nubs.png)
+<img src="docs/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs">
+
 
  | Name | Count | Remarks | Potential Storefront |
 |-|-|-|-|
