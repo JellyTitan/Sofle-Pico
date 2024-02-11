@@ -13,23 +13,11 @@
 <summary>Outstanding Hardware tasks</summary>
 
 ## Punchlist before Sofle PR
-- [x] Revise the VIA matrix
-- [x] Update the VIA config - the rotary encoder is malformed: https://www.caniusevia.com/docs/
-- [x] Validate v3.5.2 thermal circuit revisions. (failed - another revision required).
-- [x] Validate v3.5.3 Schottky power circuit
-- [x] Move handedness pin away from pin28. (There's a clone that has that in a different spot).
-- [x] Switch L/R handedness pins to make left high, because "SPLIT_HAND_PIN_LOW_IS_LEFT" is not yet supported by .json config. (This will save a PR later). 
-- [x] Add jumper & diode jig 
-- [x] Reconfigure patch bay for easier Cirque trackpad integration 
-- [x] Add supporting documentation for diode jig.
-- [x] Update build guide flashing to include pico 'drag and drop' flashing
-- [x] Add acrylic case cutout for Cirque jack.
 - [ ] Generate the PCB case files
 - [ ] refresh Gerbers and update path 
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
-- [x] Add link to 3d printable 8mm diode bending jig.
-- [ ] Update docs for the troubleshooting section.layout
+- [ ] Update docs for the troubleshooting section.
 - [ ] Add Sofle Pico Decals and regenerate Fusion 360 videos.[Decal instructional](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-3932C5D1-F7CC-4F7C-B86B-806E6C1EDEFB)
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Buy me a coffee link?

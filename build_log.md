@@ -227,6 +227,10 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 - Submitted new file for production 1-13-24. `Sofle_Pico_v3.5.4_1-13-24.zip`
 - Tested the prototype - it works! I'm calling tis the first stable release.
 
+## v3.5.5
+Since the main PCB is stable, focusing on case and documentation.
+- Reviewed the backplate branding for legacy sofles, decided to go more minimalist and de-emphasize the text.<br>
+<img src="docs/images/build_log_pico/bottom_sofle_RGB.png" alt="Back plate of the Sofle RGB" width="32%"> <img src="docs/images/build_log_pico/bottom_sofle_v1.png" alt="Back plate of the Sofle v1" width="32%"> <img src="docs/images/build_log_pico/bottom_sofle_v2.png" alt="Back plate of the Sofle v2" width="32%"> 
 
 ## Future Feature Wish list
 - [ ] Color displays.
