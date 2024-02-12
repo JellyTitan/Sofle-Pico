@@ -17,8 +17,8 @@
 - [x] Place PCB case order to validate
 - [ ] Validate the PCB case gerbers
 - [ ] Update path to case files from the Main README
-- [ ] Write PCB Case readme
-- [ ] Move case BOM from README to individual cases.
+- [x] Write PCB Case readme
+- [x] Move case BOM from README to individual cases.
 - [ ] Add images to the case sub-sections
 - [ ] Move case readme images to the docs directory?
 - [ ] Add UF2 files and update relative path in README.
@@ -210,17 +210,6 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
     - [3d printable](./Sofle_Pico/Case/3d_printable_case/3d_printable_case.md)
 @todo - add images of each of the case types here.
 <img src="docs/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs">
-
-
- | Name | Count | Remarks | Potential Storefront |
-|-|-|-|-|
-| keyplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
-| backplates | 2 | |Elecrow is great for acrylic, JLC is good for PCB|
-| OLED plates | 2 | If using PCB, note there are variants for the different types of OLED's that have higher/lower holes. |Elecrow is great for acrylic, JLC is good for PCB|
-|M2 5mm screws|32| Any old M2 will do. I prefer hex cap for aesthetics. 6mm works in a pinch - but may bottom out when using acrylic plates.|[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)|
-| M2 18mm female-female standoffs (Same height for Acrylic or PCB)| 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
-| M2 6mm female-female standoffs (6mm for acrylic, 8mm for PCB)| 10 | Connects the front plate to the back plate, runs _through_ the pcb.|[M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)|
-| 2mm adhesive Rubber bumper feet. | 10|Only needed for acrylic cases. Put these on the top of the PCB, below the keyplate. Since the acrylic keyplate doesn't nestle into the switch retention nubs, placing these bumps between the plate and the pcb keeps the plate from flexing. @todo - add images. | [amazon](https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ) |
 
 <hr>
 
