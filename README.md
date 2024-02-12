@@ -207,7 +207,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
  There are designs for each of these in this repo:
     - [Acrylic](./Sofle_Pico/Case/Acrylic_case/)
     - [PCB](./Sofle_Pico/Case/PCB_case/)
-    - [3d printable](./Sofle_Pico/Case/3d_printable_case/)
+    - [3d printable](./Sofle_Pico/Case/3d_printable_case/3d_printable_case.md)
 @todo - add images of each of the case types here.
 <img src="docs/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs">
 
