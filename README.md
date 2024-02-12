@@ -13,8 +13,14 @@
 <summary>Outstanding Hardware tasks</summary>
 
 ## Punchlist before Sofle PR
-- [ ] Generate the PCB case files
-- [ ] refresh Gerbers and update path 
+- [x] Generate the PCB case files
+- [x] Place PCB case order to validate
+- [ ] Validate the PCB case gerbers
+- [ ] Update path to case files from the Main README
+- [ ] Write PCB Case readme
+- [ ] Move case BOM from README to individual cases.
+- [ ] Add images to the case sub-sections
+- [ ] Move case readme images to the docs directory?
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
 - [ ] Update docs for the troubleshooting section.
@@ -134,8 +140,7 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 * Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
 Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).
 
-<img  alt="Sofle Pcb puck mount footprint" src="docs/images/build_guide_pico/puck_mount.png" width="49%" />
-<img  alt="Mounting puck attached to PCB" src="docs/images/build_guide_pico/tenting_puck.webp" width="49%" />
+<img  alt="Sofle Pcb puck mount footprint" src="docs/images/build_guide_pico/puck_mount.png" width="49%" /> <img  alt="Mounting puck attached to PCB" src="docs/images/build_guide_pico/tenting_puck.webp" width="49%" />
 
 
 ## Bill of materials
@@ -203,7 +208,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
     - [Acrylic](./Sofle_Pico/Case/Acrylic_case/)
     - [PCB](./Sofle_Pico/Case/PCB_case/)
     - [3d printable](./Sofle_Pico/Case/3d_printable_case/)
-
+@todo - add images of each of the case types here.
 <img src="docs/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs">
 
 
@@ -220,8 +225,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 <hr>
 
 #### Optional - low profile header pins
-- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.
-![retention nubs](docs/images/build_guide_pico/sofle_pico_luxary_pins.png)
+- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.<br><img src="docs/images/build_guide_pico/sofle_pico_luxary_pins.png" alt="low-profile header pins" width="200px">
 
 <hr>
 
@@ -301,10 +305,7 @@ There is 1 diode per key, 1 diode on the rotary encoder.
 
 Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
 
-<img width="49%" alt="SMD orientation marking example" src="docs/images/build_guide_pico/smd_diode_orientation_1.jpeg
-" />
-<img width="49%" alt="SMD orientation example" src="docs/images/build_guide_pico/smd_diode_orientation_2.jpeg
-" />
+<img width="49%" alt="SMD orientation marking example" src="docs/images/build_guide_pico/smd_diode_orientation_1.jpeg" /> <img width="49%" alt="SMD orientation example" src="docs/images/build_guide_pico/smd_diode_orientation_2.jpeg" />
 
 Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
