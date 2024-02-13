@@ -1,4 +1,4 @@
-23850676544515366
+23866054016918517
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90544,6 +90544,69 @@ Tenting_Puck.kicad_mod_nocenter_v2
 0
 4
 1
+Sofle_Pico
+backplate_Tenting_Puck_v3.5.5
+
+
+0
+1
+0
+Sofle_Pico
+backplate_hole_M2_terminate
+
+
+0
+1
+0
+Sofle_Pico
+backplate_non-hole_Cherry_MX_v3.5.5
+
+
+0
+0
+0
+Sofle_Pico
+backplate_non-hole_EC11_v3.5.5
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+0
+0
+Sofle_Pico
+keyplate_Tenting_Puck_v3.5.5
+
+
+0
+4
+1
+Sofle_Pico
+keyplate_hole_Cherry_MX_v3.5.5
+
+
+0
+0
+0
+Sofle_Pico
+keyplate_hole_EC11_v3.5.5
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+0
+0
+Sofle_Pico
+keyplate_hole_M2_standoff_passthrough
+
+
+0
+1
+0
+Sofle_Pico
+keyplate_hole_M2_terminate
+
+
+0
+1
+0
 Sofle_Pico
 sofle diode jig
 
