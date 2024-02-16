@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -38,6 +38,7 @@
       7,
       9,
       10,
+      11,
       12,
       13,
       14,
@@ -72,31 +73,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "Sofle_Chico.kicad_sch",
-        "open": true,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": -2124,
-          "pos_y": 53,
-          "size_x": 1739,
-          "size_y": 1220
-        }
-      },
-      {
-        "name": "Sofle_Chico.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": 183,
-          "pos_y": 0,
-          "size_x": 1458,
-          "size_y": 1374
-        }
-      }
-    ]
+    "files": []
   }
 }
