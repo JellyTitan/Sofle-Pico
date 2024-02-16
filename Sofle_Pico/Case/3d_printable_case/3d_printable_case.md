@@ -1,7 +1,9 @@
 # 3d printable Sofle Pico case
 This is also posted on [Printables](https://www.printables.com/model/760098-sofle-pico-case). You'll find the latest discussion there.
-
-<img src="sofle_pico_3d_printed_plates.png" alt="3d render of the Sofle Pico 3d printable case" width="32%"> <img alt="Sofle Pico 3d printed full set of case plates" src="full_plate_set.jpeg" width="32%"> <img alt="Sofle Pico back plate with 'helper discs' attached to the corners" src="back_plate_with_helper_discs.jpeg" width="32%">
+<img src="sofle_pico_3d_printable_case.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%">
+<img src="sofle_pico_3d_printed_case_backside.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%">
+<img src="sofle_pico_3d_printed_case_green_glow.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="32%">
+ <img alt="Sofle Pico 3d printed full set of case plates" src="full_plate_set.jpeg" width="32%"> <img alt="Sofle Pico back plate with 'helper discs' attached to the corners" src="back_plate_with_helper_discs.jpeg" width="32%">
 
 ## BOM
  | Name | Count | Remarks | Potential Storefront |
