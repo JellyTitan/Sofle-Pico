@@ -20,11 +20,12 @@
 - [x] Write PCB Case readme
 - [x] Move case BOM from README to individual cases.
 - [ ] Add images to the case sub-sections
-- [ ] Move case readme images to the docs directory?
-- [ ] Add UF2 files and update relative path in README.
+- [x] Move case readme images to the docs directory? (Won't do - going to point build guide to this repo).
+- [x] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
+- [ ] Started a sofle doc commit - needs hero images and build guide decisions. (See @todo).
 - [ ] Update docs for the troubleshooting section.
-- [ ] Add Sofle Pico Decals and regenerate Fusion 360 videos.[Decal instructional](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-3932C5D1-F7CC-4F7C-B86B-806E6C1EDEFB)
+- [ ] Add Sofle Pico Decals and regenerate Fusion 360 videos. (Wont do)
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Buy me a coffee link?
 </details>
@@ -538,7 +539,7 @@ To avoid 'breaking changes' when creating Sofle Pico variants, please keep the f
 ### Feature wish list
 
 There's some features & cleanup that I would like to add if time permits. They are all nice-to-have's, so if you've got the time and inclination, I'd appreciate the help!
-
+- [ ] Markings on the PCB for rubber bumper placement. (5 per side) On the bottom of the case, placement doesn't matter so much, but between the acrylic keyplate and the pcb, this would be helpful. (The acrylic keyplate can flex lots during assembly, this prevents key-popout.)
 - [ ] Markdown files - fixing typos / grammar or improving clarity, documentation, etc. (I lean towards 'overly-verbose' - can you help me make this more 'concise')?
 - [ ] Validate the PCB case. The files have been created, but not ordered & tested.
 - [ ] Adapt bongocat for 128x64. I haven't been able to find any variants formatted for the orientation/size the Sofle Pico uses. (doio/kb16 has a 128x32 library that can be adapted)?
