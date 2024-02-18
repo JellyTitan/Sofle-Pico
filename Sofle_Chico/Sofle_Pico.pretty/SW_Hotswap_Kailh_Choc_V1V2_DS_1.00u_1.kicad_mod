@@ -335,24 +335,24 @@
     ) (tstamp a7780285-a6c2-417e-b321-d6b325f8d96e))
   (pad "2" smd roundrect (at -8.5 -3.8) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp 0fb5f62f-e143-4a33-a094-1517c64f69b2))
   (pad "2" smd roundrect (at 8.5 -3.8) (size 2.55 2.5) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp 4139082b-17f5-43d5-9ee6-12886b4714d8))
-  (model "C:/Users/ext.peter.werle/Documents/custom_keyboards/Datasheets/Switches/Kailh/PG1350-socket.STEP"
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/PG1350-socket.STEP"
     (offset (xyz 5 3.75 0.1))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))
   )
-  (model "C:/Users/ext.peter.werle/Documents/custom_keyboards/Datasheets/Switches/Kailh/Kailh_PG1353.STEP"
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh_PG1353.STEP" hide
     (opacity 0.8000)    (offset (xyz 0 0 -4.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 -90))
   )
-  (model "C:/Users/ext.peter.werle/Documents/custom_keyboards/Datasheets/Switches/Kailh/Kailh LP Choc Burnt Orange.STEP" hide
-    (opacity 0.6500)    (offset (xyz 0 0 -4.5))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 90 0 -90))
-  )
-  (model "C:/Users/ext.peter.werle/Documents/custom_keyboards/Datasheets/Switches/Kailh/Kailh LP Choc PC Keycap.step"
-    (opacity 0.3500)    (offset (xyz 0 0 -4.5))
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/Kailh LP Choc PC Keycap.step"
+    (opacity 0.1500)    (offset (xyz 0 -0.5 -4.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 180 0))
+  )
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/kailh_choc.step"
+    (opacity 0.3000)    (offset (xyz 0 0 -1.8))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 0))
   )
 )
