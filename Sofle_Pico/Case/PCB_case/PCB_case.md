@@ -1,6 +1,6 @@
 # PCB Case
 > [!WARNING]
-> These plates have not been tested in production. They are the same as the 3d printed plates, so I have a high degree of confidence they should work. If you do make these, please let me know so I can mark them as validated, or submit a PR. Also, some 'hero' shots would be great for the repo!
+> These plates have not been tested in production. They are the same as the 3d printed plates, so I have a high degree of confidence they will work. If you do make these, please let me know so I can mark them as validated, or submit a PR. Also, some 'hero' shots would be great for the repo!
 <br><img src="sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
 
 <hr>
