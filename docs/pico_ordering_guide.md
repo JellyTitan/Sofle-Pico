@@ -1,3 +1,9 @@
+---
+layout: page
+title: PCB Ordering
+permalink: /pcb-ordering
+---
+
 # PCB Ordering Guide.
 
 How to order this board from a PCB vendor - helpful info if it's your first time ordering a PCB.

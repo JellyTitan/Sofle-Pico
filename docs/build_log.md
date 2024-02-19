@@ -1,3 +1,9 @@
+---
+layout: page
+title: Build Log
+permalink: /build-log
+---
+
 # Sofle Pico Build log
 These notes were made in KiCad during the design & build process. There were ultimately 4 produced iterations to get things dialed in. Mostly a personal punch list.
 

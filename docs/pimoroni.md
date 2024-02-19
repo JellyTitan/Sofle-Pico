@@ -1,3 +1,9 @@
+---
+layout: page
+title: Pimoroni
+permalink: /pimoroni
+---
+
 # Sofle Pico Pimoroni Support
 
 The Sofle Pico was designed for [Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout) support on the right hand in lieu of a rotary encoder. The outermost column of pins on the patch bay on the right hand line up with the Pimoroni pin out. However - after trying it out, the experience is not great, so it's not recommended.  The cursor movement is 'jenky' at best. 
