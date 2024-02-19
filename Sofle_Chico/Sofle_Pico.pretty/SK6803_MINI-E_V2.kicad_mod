@@ -1,0 +1,83 @@
+(footprint "SK6803_MINI-E_V2" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "SK6803_MINI-E, Datasheet matching pinout, Double Sided")
+  (attr smd)
+  (fp_text reference "REF**" (at 0.074982 -2.205) (layer "B.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (tstamp 1e6f7c72-9932-4bb7-9b0c-2b0e39f0ea61)
+  )
+  (fp_text value "SK6803_MINI-E_V2" (at 0.01 -3.85) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 9f2f5f03-bfc4-40d6-9a77-189ea0448363)
+  )
+  (fp_text user "${REFERENCE}" (at 0.074982 -2.215) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp c4ce9e6a-5ca2-40fd-b14d-251876967c65)
+  )
+  (fp_circle (center 4.074982 0.755) (end 3.824982 0.755)
+    (stroke (width 0.25) (type default)) (fill none) (layer "B.SilkS") (tstamp 1098627b-215f-456a-a075-6e390b696a3b))
+  (fp_circle (center 4.074982 -0.745) (end 3.824982 -0.745)
+    (stroke (width 0.25) (type default)) (fill none) (layer "F.SilkS") (tstamp 603a0c68-3283-42da-974f-8d9bf7fb903d))
+  (fp_line (start 0 -0.3) (end 0 0.3)
+    (stroke (width 0.1) (type solid)) (layer "Dwgs.User") (tstamp ec5d9e1c-535e-4dd6-83c1-29d59287aed4))
+  (fp_line (start 0.3 0) (end -0.3 0)
+    (stroke (width 0.1) (type solid)) (layer "Dwgs.User") (tstamp 07ba1dca-09d8-405e-8ef7-e629c18fcff9))
+  (fp_rect (start 1.774982 -1.495) (end -1.625018 1.605)
+    (stroke (width 0.125) (type default)) (fill none) (layer "Edge.Cuts") (tstamp bca8ed3b-7a13-4875-bcc6-9382db32a5b1))
+  (fp_circle (center 0 0) (end 0 1.5)
+    (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab") (tstamp 8820f771-6db7-4e26-9c0b-cdd6a41fca0b))
+  (pad "1" smd roundrect (at 2.724982 -0.665 180) (size 1.7 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15)
+    (chamfer_ratio 0.4) (chamfer top_left)
+    (thermal_bridge_angle 45) (tstamp 95513852-c396-4b37-a55e-12a3d160fc28))
+  (pad "1" smd roundrect (at 2.724982 0.775) (size 1.7 0.82) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.15)
+    (chamfer_ratio 0.4) (chamfer bottom_right)
+    (thermal_bridge_angle 45) (tstamp e4126714-4cc2-49f4-bac1-1c4023bc7c4d))
+  (pad "2" smd roundrect (at 2.724982 -0.665 180) (size 1.7 0.82) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.15)
+    (thermal_bridge_angle 45) (tstamp ec8b7d2c-f789-4456-bef0-d07f5afb9cd9))
+  (pad "2" smd roundrect (at 2.724982 0.775) (size 1.7 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15)
+    (thermal_bridge_angle 45) (tstamp c637c464-de25-4347-b2a3-b9ac326e2518))
+  (pad "3" smd roundrect (at -2.575018 -0.665) (size 1.7 0.82) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.15)
+    (thermal_bridge_angle 45) (tstamp 725cffb5-333f-42bc-8a3e-1a02b584cdca))
+  (pad "3" smd roundrect (at -2.575018 0.775 180) (size 1.7 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15)
+    (thermal_bridge_angle 45) (tstamp bd8cd4ff-93ee-4dbe-9bf8-a759dce8eeff))
+  (pad "4" smd roundrect (at -2.575018 -0.665 180) (size 1.7 0.82) (layers "F.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.15)
+    (thermal_bridge_angle 45) (tstamp 13003fdd-e91e-4826-a31d-8036722a8c19))
+  (pad "4" smd roundrect (at -2.575018 0.775 180) (size 1.7 0.82) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.15)
+    (thermal_bridge_angle 45) (tstamp 06f12c29-ff68-4f83-a547-4c69de7a1549))
+  (zone (net 0) (net_name "") (layers "F&B.Cu") (tstamp 2cefb82d-48b8-471a-8b02-ad39d3e7c005) (name "LED_VOID") (hatch edge 0.5)
+    (connect_pads (clearance 0))
+    (min_thickness 0.25) (filled_areas_thickness no)
+    (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+    (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
+    (polygon
+      (pts
+        (xy -1.525018 -1.395)
+        (xy 1.674982 -1.395)
+        (xy 1.674982 1.5)
+        (xy -1.525 1.5)
+        (xy -1.525 -1.395)
+      )
+    )
+  )
+  (group "" (id 10a69432-c1d5-4bff-905c-6533181f12ab)
+    (members
+      06f12c29-ff68-4f83-a547-4c69de7a1549
+      07ba1dca-09d8-405e-8ef7-e629c18fcff9
+      1098627b-215f-456a-a075-6e390b696a3b
+      13003fdd-e91e-4826-a31d-8036722a8c19
+      2cefb82d-48b8-471a-8b02-ad39d3e7c005
+      603a0c68-3283-42da-974f-8d9bf7fb903d
+      725cffb5-333f-42bc-8a3e-1a02b584cdca
+      8820f771-6db7-4e26-9c0b-cdd6a41fca0b
+      bca8ed3b-7a13-4875-bcc6-9382db32a5b1
+      e4126714-4cc2-49f4-bac1-1c4023bc7c4d
+      ec5d9e1c-535e-4dd6-83c1-29d59287aed4
+      ec8b7d2c-f789-4456-bef0-d07f5afb9cd9
+    )
+  )
+  (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
+    (offset (xyz 0 0 0.1))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 180 0 180))
+  )
+)
