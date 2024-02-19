@@ -1,3 +1,9 @@
+---
+layout: page
+title: PCB Ordering
+permalink: /pcb-ordering
+---
+
 # PCB Ordering Guide.
 
 How to order this board from a PCB vendor - helpful info if it's your first time ordering a PCB.
@@ -23,17 +29,17 @@ In this repo, the gerber file for each Sofle variant can be found in it's subfol
 
 The homepage of JLCPCB has a drag & drop upload. Drag the gerber `.zip` and drop it on the "add gerber file" box.
 
-![JLCPCB Home](docs/images/ordering_guide/JLCPCB_Ordering_1.png)
+![JLCPCB Home](images/ordering_guide/JLCPCB_Ordering_1.png)
 
 While the file is uploading, it will take you to an options screen. Once the board size is detected<sup>1</sup>, the price<sup>3</sup> will update accordingly.
 Changing the pcb color<sup>2</sup> may impact production time and price.
 Shipping estimates<sup>4</sup> can vary widely, so be sure to check those. (You'll see these options again during checkout).
-![JLCPCB Home](docs/images/ordering_guide/JLCPCB_Ordering_2.png)
+![JLCPCB Home](images/ordering_guide/JLCPCB_Ordering_2.png)
 It's worth noting, the default pcb surface finish contains Lead. For boards in cases, this is usually not a problem. If you're going to rock a naked board, consider going with "lead free"<sup>5</sup> for a few bucks more. The more popular colors like green and black tend to cost less for the lead free option.
 
 By default, all JLC boards have a part number printed on them. (Most people won't notice them unless your looking for them). You can pay extra to have them removed. Some Sofle versions support the option to "Specify a location"<sup>6</sup>. (Essentially this is a line of text on the PCB that will JLC will substitute with their part number.) There is no additional charge for specifying the location. The following Sofle variants support this option:
 
 @todo do any Sofles besides Pico do this?
 
-![JLCPCB Home](docs/images/ordering_guide/JLCPCB_lead.png)
+![JLCPCB Home](images/ordering_guide/JLCPCB_lead.png)
 The remainder of the checkout process is standard ecommerce stuff. After you pay for your order, it will be reviewed before going into production. They will let you know if the file has any issues.
