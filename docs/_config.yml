@@ -31,7 +31,7 @@ twitter_username: jekyllrb
 github_username:  JellyTitan
 
 # Build settings
-theme: slate
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
