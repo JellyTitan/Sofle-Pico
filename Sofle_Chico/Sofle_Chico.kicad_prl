@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 0,
-    "active_layer_preset": "All Copper Layers",
+    "active_layer": 31,
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -38,7 +38,6 @@
       7,
       9,
       10,
-      11,
       12,
       13,
       14,
@@ -65,7 +64,7 @@
       39,
       40
     ],
-    "visible_layers": "0001000_ffffffff",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
@@ -73,6 +72,31 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Sofle_Chico.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 1,
+          "maximized": true,
+          "pos_x": -9,
+          "pos_y": -9,
+          "size_x": 2578,
+          "size_y": 1408
+        }
+      },
+      {
+        "name": "Sofle_Chico.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": false,
+          "pos_x": -1322,
+          "pos_y": 87,
+          "size_x": 1116,
+          "size_y": 884
+        }
+      }
+    ]
   }
 }
