@@ -249,3 +249,4 @@ Since the main PCB is stable, focusing on case and documentation.
 - [ ] Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
 - [ ] Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
 - [ ] Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/images/buildguide/haptic_solder.jpg)
+- [ ] To prevent pin shorts caused by TRRS cable unexpected removal, maybe add an RJ45 jack footprint? There isn't room on the current Sofle Pico, but maybe a RP2040 Zero based variant could support it? https://github.com/JellyTitan/Sofle-Pico/discussions/13
