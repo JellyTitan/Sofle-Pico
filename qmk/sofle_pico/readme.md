@@ -1,12 +1,12 @@
 # sofle_pico <!-- omit from toc -->
 
-![sofle_pico](https://i.imgur.com/WzZaIgQh.jpg)
-@todo: update this file
+![Sofle Pico](https://i.imgur.com/12R25jF.jpg)
+
 Sofle Pico is a 60% Raspberry Pi Pico powered split keyboard boasting a 4x6 layout with an aggressive columnar stagger. It has 5 "thumb" keys on either side, support for 2-4 rotary encoders, and per-key RGB lighting.
 
-- Keyboard Maintainer: [Dane Skalski](https://github.com/Daneski13)
+- Keyboard Maintainer: [Ryan Neff](https://github.com/JellyTitan)
 - Hardware Supported: sofle_pico PCB, Raspberry Pi Pico
-- Hardware Availability: [PCB, Case, Parts List](https://github.com/Daneski13/sofle_pico)
+- Hardware Availability: [PCB, Case, Parts List](https://github.com/JellyTitan/sofle_pico)
 
 Remember you have to flash both halves of the keyboard for it to work!
 
@@ -39,3 +39,5 @@ Enter the bootloader in 3 ways:
 - **Keycode in layout**: In the default layout, the `Bootloader` keycode is above home row pinky on the right side's adjust layer.
 
 Once you enter the bootloader, the keyboard will show up as a USB device on your computer, you could drag and drop a firmware file to flash it, but I recommend using the flash commands for the respective side.
+
+[Keyboard-layout-editor.com](http://www.keyboard-layout-editor.com/#/gists/2fa0527caf2f6e527e4f46787a74a9d2)
