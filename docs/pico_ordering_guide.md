@@ -6,7 +6,7 @@ permalink: /pcb-ordering
 
 # PCB Ordering Guide.
 
-How to order this board from a PCB vendor - helpful info if it's your first time ordering a PCB.
+How to order this board from a PCB vendor - helpful info if it's your first time ordering a PCB. This should be easy enough even for people who don’t know much about PCB manufacturing process. But keep in mind, nobody can guarantee that there are not going to be some problems and if you have no idea what are you doing it might be more difficult to deal with any issues along the way.
 
 Most PCB vendors have a similar ordering process. I use [JLCPCB](https://jlcpcb.com/) because they are usually the most cost effective. I've had good luck with [Elecrow](https://www.elecrow.com/) too. [You can find PCB price comparison tools online.](https://pcbshopper.com/) When comparing pricing, be sure to enter the board dimensions, and set the minimum quantity to 5. Usually anything under 100x100mm is really inexpensive - so be sure to use actual dimensions when pricing. Most manufacturers have a 5 board minimum, so this is a safe quantity to start with.
 
@@ -17,9 +17,8 @@ Most PCB vendors have a similar ordering process. I use [JLCPCB](https://jlcpcb.
 |Sofle RGB |138       |112        |
 |Sofle Choc|144       |113        |
 |Sofle Pico|146       |117        | 
-
-
-Usually the minimum quantity to order is 5 boards. All the Sofle boards have been designed to be double sided, so a batch of 5 boards gets you 2 & 1/2 sets of Sofle.
+ 
+Usually the minimum order quantity (MOQ) is 5 boards. All the Sofle boards have been designed to be double sided. You'll need two pcb's to make a set, so a batch of five boards gets you two and a half sets of Sofle.
 
 The production files are known as "gerbers", and they are usually uploaded as a `.zip` file. (It's essentially a collection of files for each layer of the board, like holes, graphics, traces etc.) 
 
