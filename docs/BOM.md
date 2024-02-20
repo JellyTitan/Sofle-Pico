@@ -67,7 +67,13 @@ These parts are necessary for the RGB lighting.
 
 
 #### Optional - MCU Sockets
-This is strictly a quality of life upgrade. The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) uses [Micro USB](https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors) which can snap off. The MCU sockets are strongly recommended if you choose those. Alternately, many of the Pico clones offer USB-C, which is known to be less fragile. However - if your using socketed OLEDs, the OLED sockets put the OLEDs about 5mm above the board, so socketing the MCU helps support the OLEDs.
+The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) uses [Micro USB](https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors) which can snap off. The MCU sockets are strongly recommended if you choose those. There are many Pico clones available that offer USB-C, which is known to be less fragile. (These are my preference).
+
+If you have your heart set on micro-usb connectors, or plan on disconnecting the board often, consider [magnetic data cables](https://www.aliexpress.us/item/3256803453035055.html).
+
+If the TRRS cable connecting the two halves is disconnected while the board is powered, it may short one of the communication pins on the Pico. The easy fix for that is to swap out the Pico, which is where sockets are real handy.
+
+Sockets also raise the height of the MCU enough to help support the OLEDs.
 ![Pico socketed MCU](images/build_guide_pico/sofle_pico_sockets_add_height.png)
 ![Pico socketed MCU](images/build_guide_pico/sofle_pico_socket_w_OLED.jpeg)
 
