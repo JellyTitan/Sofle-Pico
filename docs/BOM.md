@@ -16,12 +16,20 @@ For the remaining components, most of them can be bought on Ebay on AliExpress, 
 
 ## Vendors
 There are not yet vendors selling the Sofle Pico. 
-
-[Bill of Materials](#bill-of-materials)
- - 
- - [Required Parts](#required-parts)
- - [Optional Parts](#optional-parts)
- - [Tools and materials](#tools-and-materials)
+   
+- [Sofle Pico BOM (aka "Parts list")](#sofle-pico-bom-aka-parts-list)
+- [Sourcing parts](#sourcing-parts)
+- [Vendors](#vendors)
+- [Bill of materials](#bill-of-materials)
+  - [Required Parts](#required-parts)
+  - [Optional Parts](#optional-parts)
+    - [Optional - RGB](#optional---rgb)
+    - [Optional - OLED](#optional---oled)
+    - [Optional - MCU Sockets](#optional---mcu-sockets)
+    - [Optional - Case](#optional---case)
+    - [Optional - low profile header pins](#optional---low-profile-header-pins)
+    - [Optional - Pimoroni trackball - not recommended](#optional---pimoroni-trackball---not-recommended)
+- [Tools and materials](#tools-and-materials)
 
 ## Bill of materials
 
@@ -71,7 +79,7 @@ The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) use
 
 If you have your heart set on micro-usb connectors, or plan on disconnecting the board often, consider [magnetic data cables](https://www.aliexpress.us/item/3256803453035055.html).
 
-If the TRRS cable connecting the two halves is disconnected while the board is powered, it may short one of the communication pins on the Pico. The easy fix for that is to swap out the Pico, which is where sockets are real handy.
+If the TRRS cable connecting the two halves is disconnected while the board is powered, it may short one of the communication pins on the Pico. The easy fix for that is to swap out the Pico, which is where sockets are real handy. 
 
 Sockets also raise the height of the MCU enough to help support the OLEDs.
 ![Pico socketed MCU](images/build_guide_pico/sofle_pico_sockets_add_height.png)
@@ -84,7 +92,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 
 <hr>
 
-#### Optional - Case:
+#### Optional - Case
  - The case plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
  - Key plates are strongly recommended, but not technically required. If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate.
  - The key plates combined with a backplate make a nice 'sandwich' case. Another plate can be added to protect the OLEDs. 
@@ -107,7 +115,7 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 <hr>
 
 #### Optional - low profile header pins
-- The header pins that come with the Pico are usually too long. You can either clip them off after soldering, or use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.<br><img src="images/build_guide_pico/sofle_pico_luxary_pins.png" alt="low-profile header pins" width="200px">
+If you've chosen not to socket the MCU, these are nicer than the header pins that come with the Pico. The default pins that ship with the Pico are usually too long. Clipping them off after soldering can look 'rough'. Instead I prefer to use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.<br><img src="images/build_guide_pico/sofle_pico_luxary_pins.png" alt="low-profile header pins" width="200px">
 
 <hr>
 
