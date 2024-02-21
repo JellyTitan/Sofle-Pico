@@ -486,7 +486,7 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "VCC",
+        "name": "VDC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
@@ -846,8 +846,8 @@
         "pattern": "GND"
       },
       {
-        "netclass": "VCC",
-        "pattern": "VCC"
+        "netclass": "VDC",
+        "pattern": "VDC"
       }
     ]
   },

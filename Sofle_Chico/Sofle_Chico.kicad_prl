@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -64,7 +64,7 @@
       39,
       40
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "0001000_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
@@ -77,24 +77,12 @@
         "name": "Sofle_Chico.kicad_pcb",
         "open": false,
         "window": {
-          "display": 1,
-          "maximized": true,
-          "pos_x": -9,
-          "pos_y": -9,
-          "size_x": 2578,
-          "size_y": 1408
-        }
-      },
-      {
-        "name": "Sofle_Chico.kicad_sch",
-        "open": false,
-        "window": {
           "display": 0,
-          "maximized": false,
-          "pos_x": -1322,
-          "pos_y": 87,
-          "size_x": 1116,
-          "size_y": 884
+          "maximized": true,
+          "pos_x": -1928,
+          "pos_y": -8,
+          "size_x": 1936,
+          "size_y": 1056
         }
       }
     ]
