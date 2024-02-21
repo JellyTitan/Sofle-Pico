@@ -13,21 +13,21 @@
 <summary>Outstanding Hardware tasks</summary>
 
 ## Punchlist before Sofle PR
+**PR IS MOSTLY READY TO GO [HERE](https://github.com/JellyTitan/SofleKeyboard/tree/sofle_pico)**
 - [x] Generate the PCB case files
 - [x] Place PCB case order to validate
 - [ ] Validate the PCB case gerbers
 - [ ] Update path to case files from the Main README
-- [ ] PCB Ordering guide is missing numbers on the main image.
-- [ ] PCB Ordering guide not linked to from main readme. 
+- [x] PCB Ordering guide not linked to from main readme. 
 - [x] Write PCB Case readme
 - [x] Move case BOM from README to individual cases.
-- [ ] Add images to the case sub-sections
+- [x] Add images to the case sub-sections
 - [x] Move case readme images to the docs directory? (Won't do - going to point build guide to this repo).
 - [x] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
 - [ ] Started a sofle doc commit - needs hero images and build guide decisions. (See @todo).
 - [ ] Update docs for the troubleshooting section.
-- [ ] Add Sofle Pico Decals and regenerate Fusion 360 videos. (Wont do)
+- [x] Add Sofle Pico Decals and regenerate Fusion 360 videos. (Wont do)
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Buy me a coffee link?
 - [ ] Add an email in `_config.yml`. Can i use the @soflepico.com email? (soflepico@gmail.com already taken)
@@ -37,16 +37,27 @@
 <summary>Outstanding firmware tasks</summary>
 
 ## Punchlist before QMK PR
-- [ ] Added handedness by pull an unused pin high/low
 - [ ] Move the Animations into a seperate file. (Out of keymap files)
 - [ ] The Jellytitan keymap has better animations - move those to default
 - [ ] Refactor the LH Jellytitan layout, it could be using the space better.
-- [ ] Find an off-the-shelf 128x64 animation for the Righthand. (Bongo cat was first choice, but don't have time to refcator).
-- [x] (Won't do) Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples
+- [x] Double check the formatting and QMK PR checklist.
+- [x] Added handedness by pull an unused pin high/low (Won't do - i chose to keep the circuit simple).
+- [x] Find an off-the-shelf 128x64 animation for the Righthand. (Bongo cat was first choice, but don't have time to refcator). Won't do - moved to 'wish list'.
+- [x] (Won't do) Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples (Moved to wish list)
 - [x] via support. (Update docs too!)
-- [ ] After QMK PR Submission is approved, make VIA support PR. (Ready to go, but QMK must be complete before it will be allowed).
+## Punchlist before VIA PR
+- [ ] VIA PR is ready - but there _must_ be a QMK commit in master before a VIA PR will be considered. (It will be auto-deleted!)
 </details>
-
+<details>
+<summary>Outstanding documentation tasks</summary>
+- [ ] PCB Ordering guide is missing numbers on the main image.
+- [ ] Jekyll nav structure needs nesting
+- [ ] Font weight needs improvement
+- [ ] increase container width
+- [ ] Add Kofi link
+- [ ] Add prominent github link in the nav
+- [ ] setup a twitter account
+</details>
 
  ![Sofle Pico](docs/images/build_guide_pico/sofle_pico_v3.4_hero.jpeg)
 
