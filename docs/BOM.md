@@ -3,8 +3,22 @@ layout: page
 title: BOM
 permalink: /bom
 ---
-## Sofle Pico BOM (aka "Parts list")
+# Sofle Pico BOM (aka "Parts list")
 
+- [Sofle Pico BOM (aka "Parts list")](#sofle-pico-bom-aka-parts-list)
+  - [Sourcing parts](#sourcing-parts)
+  - [Vendors](#vendors)
+  - [Bill of materials](#bill-of-materials)
+    - [Required Parts](#required-parts)
+    - [Optional Parts](#optional-parts)
+      - [Optional - RGB](#optional---rgb)
+      - [Optional - OLED](#optional---oled)
+      - [Optional - MCU Sockets](#optional---mcu-sockets)
+      - [Optional - Case](#optional---case)
+      - [Optional - low profile header pins](#optional---low-profile-header-pins)
+      - [Optional - Pimoroni trackball - not recommended](#optional---pimoroni-trackball---not-recommended)
+  - [Tools and materials](#tools-and-materials)
+  
 ## Sourcing parts
 This sourcing guide was heavily influenced by the [legacy sourcing guide](https://josefadamcik.github.io/SofleKeyboard/sourcing_parts.html) written by Josef Adamčík.
 
@@ -16,20 +30,6 @@ For the remaining components, most of them can be bought on Ebay on AliExpress, 
 
 ## Vendors
 There are not yet vendors selling the Sofle Pico. 
-   
-- [Sofle Pico BOM (aka "Parts list")](#sofle-pico-bom-aka-parts-list)
-- [Sourcing parts](#sourcing-parts)
-- [Vendors](#vendors)
-- [Bill of materials](#bill-of-materials)
-  - [Required Parts](#required-parts)
-  - [Optional Parts](#optional-parts)
-    - [Optional - RGB](#optional---rgb)
-    - [Optional - OLED](#optional---oled)
-    - [Optional - MCU Sockets](#optional---mcu-sockets)
-    - [Optional - Case](#optional---case)
-    - [Optional - low profile header pins](#optional---low-profile-header-pins)
-    - [Optional - Pimoroni trackball - not recommended](#optional---pimoroni-trackball---not-recommended)
-- [Tools and materials](#tools-and-materials)
 
 ## Bill of materials
 
