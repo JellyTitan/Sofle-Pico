@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 44,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -79,23 +79,11 @@
         "open": false,
         "window": {
           "display": 1,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 2576,
-          "size_y": 1416
-        }
-      },
-      {
-        "name": "Sofle_Chico.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
           "maximized": false,
-          "pos_x": -1409,
-          "pos_y": 14,
-          "size_x": 1368,
-          "size_y": 1406
+          "pos_x": -872,
+          "pos_y": 57,
+          "size_x": 2576,
+          "size_y": 1388
         }
       }
     ]
