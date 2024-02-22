@@ -3504,8 +3504,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 31fa9d2b-5bb9-4bc3-9a02-29136e10c413)
   )
-  (text "Refer to Sofle Pico build guide \nand your SPECIFIC RPI Module SCH \nbefore installing D31\n\n+VDC is variable! User MUST\nknow/verify their VSYS pin voltage!\nRead RPI Pico datasheet Chapter 4.5-4.6\n+VDC≈4.9-5.0V w/ USB Power\n+VDC≈4.7-4.9V w/ TRRS Power\n+VDC≈ VBATT if using a battery"
-    (at 82.55 34.29 0)
+  (text "D31 is not required for official RPI Pico \nboards that have an onboard Zener Diode.\nRefer to Sofle-Pico build guide \nand your exact RPI Module SCH \n\n+VDC is variable! User MUST\nknow/verify their VSYS pin voltage!\nRead RPI Pico datasheet Chapter 4.5-4.6\n+VDC≈4.9-5.0V w/ USB Power\n+VDC≈4.7-4.9V w/ TRRS Power\n+VDC≈ VBATT if using a battery"
+    (at 82.55 38.1 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3ec4dfc2-12b7-4722-b5a4-374167c1cdeb)
   )
