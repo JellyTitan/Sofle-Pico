@@ -1,8 +1,10 @@
 ---
 layout: page
+nav_title: Build Guide
 title: Build Guide
 permalink: /build
 ---
+{:toc}
 
 [Build Guide](#build-guide)
  - [Soldering and workholding](#soldering-and-workholding)

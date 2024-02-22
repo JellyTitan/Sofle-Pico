@@ -31,13 +31,11 @@ twitter_username: jekyllrb
 github_username:  JellyTitan
 
 # Build settings
-# theme: minima
-remote_theme: jekyll/minima
+theme: just-the-docs
 plugins:
   - jekyll-feed
 
-minima:
-  skin: dark
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -57,3 +55,25 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/images/logos/sofle-pico-logo-readme-lockup-darkmode.svg"
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/images/logos/favicon.ico"
+# Aux links for the upper right navigation
+aux_links:
+  "Sofle Pico on GitHub":
+    - "//github.com/JellyTitan/Sofle-Pico"
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+# Google Analytics Tracking (optional)
+# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
+ga_tracking: G-JFRQQ42MCT
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
