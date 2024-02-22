@@ -1,274 +1,57 @@
-66615306705293
-Sofle_Pico
-Cherry_MX_DS_Hotswap_miniE_1U_v3.5.2
-
-
-0
-30
-6
-Sofle_Pico
-Cherry_MX_DS_Hotswap_v3.5.4
-
-
-0
-6
-2
-Sofle_Pico
-Cirque tie in
-
-
-0
-4
-4
-Sofle_Pico
-D_DO-41_SOD81_P10.16mm_Horizontal
-Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
-Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
-0
-2
-2
-Sofle_Pico
-D_SOD-123_DO-35_Hybrid_DoubleSided_V2
-SOD-123
-SOD-123
-0
-10
-2
-Sofle_Pico
-D_SOD-123_DO-41_7.62mm_Hybrid_DoubleSided
-SOD-123
-SOD-123
-0
-10
-2
-Sofle_Pico
-Dummy 6812miniE
-Placeholder for the nested SK6812Mini-E/Hotswop socket so the PNP/BOM generates correctly.
-
-0
-0
-0
-Sofle_Pico
-Hole from sofle for M2 posts gold rimmer
-
-
+13626090138112
+Fiducial
+Fiducial_0.5mm_Mask1.5mm
+Circular Fiducial, 0.5mm bare copper, 1.5mm soldermask opening
+fiducial
 0
 1
 0
-Sofle_Pico
-Hole from sofle for M2 posts gold rimmer wide-keyplate-hole
-
-
+Fiducial
+Fiducial_0.5mm_Mask1mm
+Circular Fiducial, 0.5mm bare copper, 1mm soldermask opening (Level C)
+fiducial
 0
 1
 0
-Sofle_Pico
-Level Shifter Bypass Jumper
-
-
-0
-6
-2
-Sofle_Pico
-MJ-4PP-9
-
-
-0
-8
-4
-Sofle_Pico
-OLED SSD1306 128x64
-
-
-0
-16
-4
-Sofle_Pico
-Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-4
-4
-Sofle_Pico
-PinHeader_1x05_P2.54mm_Vertical
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-5
-5
-Sofle_Pico
-PinHeader_1x05_P2.54mm_Vertical_one-dead
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-4
-4
-Sofle_Pico
-RPi_Pico_SMD_TH_DS
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-80
-40
-Sofle_Pico
-RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-5
-5
-Sofle_Pico
-SK6803_MINI-E_V2
-SK6803_MINI-E, Datasheet matching pinout, Double Sided
-
-0
-8
-4
-Sofle_Pico
-SK6803_MINIE_v3.5.4
-
-
-0
-24
-4
-Sofle_Pico
-SN74AHCT1G125
-SN74AHCT1G125 Buffer Gate SOT-23
-level shifter
-0
-5
-5
-Sofle_Pico
-SOT-23_DS
-SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py
-SOT TO_SOT_SMD
-0
-6
-3
-Sofle_Pico
-SW_Hotswap_Kailh_Choc_V1V2_DS_1.00u_1
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Double-Sided Keycap 1.00u
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Double-Sided Cutout Keycap 1.00u
-0
-4
-2
-Sofle_Pico
-SW_MX_HS_DS_1u
-Footprint for Cherry MX style switches with Kailh hotswap socket
-
-0
-14
-2
-Sofle_Pico
-Sofle Pico Logo
-
-
-0
-0
-0
-Sofle_Pico
-Sofle Pico Logo copper
-
-
-0
-0
-0
-Sofle_Pico
-Sofle Pico Logo embed
-
-
-0
-0
-0
-Sofle_Pico
-Sofle Pico Logo text only
-
-
-0
-0
-0
-Sofle_Pico
-Sofle Pico logo w text
-
-
-0
-0
-0
-Sofle_Pico
-Tenting_Puck.kicad_mod_nocenter_v2
-
-
-0
-4
-1
-Sofle_Pico
-backplate_Tenting_Puck_v3.5.5
-
-
+Fiducial
+Fiducial_0.75mm_Mask1.5mm
+Circular Fiducial, 0.75mm bare copper, 1.5mm soldermask opening (Level B)
+fiducial
 0
 1
 0
-Sofle_Pico
-backplate_hole_M2_terminate
-
-
+Fiducial
+Fiducial_0.75mm_Mask2.25mm
+Circular Fiducial, 0.75mm bare copper, 2.25mm soldermask opening
+fiducial
 0
 1
 0
-Sofle_Pico
-backplate_non-hole_Cherry_MX_v3.5.5
-
-
-0
-0
-0
-Sofle_Pico
-backplate_non-hole_EC11_v3.5.5
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-0
-0
-Sofle_Pico
-keyplate_Tenting_Puck_v3.5.5
-
-
-0
-4
-1
-Sofle_Pico
-keyplate_hole_Cherry_MX_v3.5.5
-
-
-0
-0
-0
-Sofle_Pico
-keyplate_hole_EC11_v3.5.5
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-0
-0
-Sofle_Pico
-keyplate_hole_M2_standoff_passthrough
-
-
+Fiducial
+Fiducial_1.5mm_Mask3mm
+Circular Fiducial, 1.5mm bare copper, 3mm soldermask opening
+fiducial
 0
 1
 0
-Sofle_Pico
-keyplate_hole_M2_terminate
-
-
+Fiducial
+Fiducial_1.5mm_Mask4.5mm
+Circular Fiducial, 1.5mm bare copper, 4.5mm soldermask opening
+fiducial
 0
 1
 0
-Sofle_Pico
-sofle diode jig
-
-
+Fiducial
+Fiducial_1mm_Mask2mm
+Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)
+fiducial
 0
+1
 0
+Fiducial
+Fiducial_1mm_Mask3mm
+Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)
+fiducial
+0
+1
 0
