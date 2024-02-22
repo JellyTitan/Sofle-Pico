@@ -1,5 +1,6 @@
 ---
 layout: page
+nav_title: Troubleshooting
 title: Troubleshooting
 permalink: /troubleshooting
 ---
