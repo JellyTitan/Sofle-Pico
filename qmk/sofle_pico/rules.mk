@@ -1,15 +1,4 @@
-# Split Keyboard Stuff
-# SPLIT_KEYBOARD = yes
+# Build Options
+# Configures the USART FULL DUPLEX driver. This config is unique to the RP2040.
+# https://github.com/qmk/qmk_firmware/blob/master/docs/serial_driver.md#pin-configuration-2
 SERIAL_DRIVER = vendor
-
-# # Enable Bootmagic Lite
-# BOOTMAGIC_ENABLE = yes
-
-# Default Folder
-DEFAULT_FOLDER = sofle_pico/rev1
-# @todo: Move to json
-WPM_ENABLE = yes
-
-# @todo: Move to json
-OLED_DRIVER = SSD1306
-OLED_TRANSPORT = i2c
