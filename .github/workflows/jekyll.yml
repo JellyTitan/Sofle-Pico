@@ -5,9 +5,6 @@
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll site to Pages
-
-env: 
-  baseurl: /docs
   
 on:
   # Runs on pushes targeting the default branch
@@ -47,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "/docs"
+        run: bundle exec jekyll build --baseurl="/docs"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
