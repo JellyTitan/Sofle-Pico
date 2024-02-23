@@ -1,5 +1,6 @@
 ---
 layout: page
+nav_title: BOM
 title: BOM
 permalink: /bom
 ---

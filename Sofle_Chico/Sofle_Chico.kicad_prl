@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -73,19 +73,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "Sofle_Chico.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": -872,
-          "pos_y": 57,
-          "size_x": 2576,
-          "size_y": 1388
-        }
-      }
-    ]
+    "files": []
   }
 }

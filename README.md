@@ -13,7 +13,7 @@
 <summary>Outstanding Hardware tasks</summary>
 
 ## Punchlist before Sofle PR
-**PR IS MOSTLY READY TO GO [HERE](https://github.com/JellyTitan/SofleKeyboard/tree/sofle_pico)**
+**PR IS MOSTLY READY TO GO [DRAFT PR HERE](https://github.com/josefadamcik/SofleKeyboard/pull/195)**
 - [x] Generate the PCB case files
 - [x] Place PCB case order to validate
 - [ ] Validate the PCB case gerbers
