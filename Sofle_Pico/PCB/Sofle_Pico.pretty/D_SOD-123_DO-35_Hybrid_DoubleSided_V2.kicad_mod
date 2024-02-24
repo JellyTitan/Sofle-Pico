@@ -85,14 +85,6 @@
   (pad "2" smd rect (at 2.96 0) (size 2.12 1.2) (layers "F.Cu") (tstamp c5e02873-de97-48fd-a49a-455a8251fe7a))
   (pad "2" smd rect (at 2.97 0) (size 2.14 1.2) (layers "B.Cu") (tstamp bb5752aa-79b4-4e3c-b9e9-6c18dc3cf0ff))
   (pad "2" thru_hole circle (at 4 0) (size 1.4 1.4) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp 77d701d7-b747-4d8b-9d7a-4ff9d6690f0c))
-  (pad "2" thru_hole circle (at 5.65 0) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp 7d01addc-fec5-4ba8-a035-6f8fb074662a))
-  (pad "2" smd custom (at 5.65 0) (size 0.6 0.6) (layers "F.Cu")
-    (thermal_bridge_angle 45)
-    (options (clearance outline) (anchor circle))
-    (primitives
-      (gr_line (start 0 0) (end -1.63 -0.39) (width 0.6))
-      (gr_line (start 0 0) (end -1.6 0.4) (width 0.6))
-    ) (tstamp e745071b-c200-43cf-a31c-ff35c41ea5d0))
   (group "" (id e487b248-75c9-4109-a5e0-534b9e95a5d8)
     (members
       24a9f1d5-415b-4daf-b0db-771113ef6e11

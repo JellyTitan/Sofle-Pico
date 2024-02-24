@@ -75,7 +75,7 @@
         "footprint": "error",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "ignore",
-        "hole_near_hole": "ignore",
+        "hole_near_hole": "error",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -98,7 +98,7 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -113,20 +113,20 @@
       "rules": {
         "max_error": 0.005,
         "min_clearance": 0.19999999999999998,
-        "min_connection": 0.0,
+        "min_connection": 0.125,
         "min_copper_edge_clearance": 0.3,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.32999999999999996,
+        "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.6,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.19999999999999998,
-        "min_track_width": 0.127,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.125,
         "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.39999999999999997,
+        "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -439,8 +439,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -455,8 +455,8 @@
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.4,
+        "track_width": 0.25,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -469,11 +469,28 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "VCC",
+        "name": "Serial",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "VDC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
-        "via_diameter": 0.4,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -485,15 +502,15 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
+        "netclass": "Serial",
         "pattern": "/i2c_c"
       },
       {
-        "netclass": "Default",
+        "netclass": "Serial",
         "pattern": "/i2c_d"
       },
       {
-        "netclass": "Default",
+        "netclass": "Serial",
         "pattern": "DATA"
       },
       {
@@ -769,11 +786,11 @@
         "pattern": "RESET"
       },
       {
-        "netclass": "Default",
+        "netclass": "Serial",
         "pattern": "SCL"
       },
       {
-        "netclass": "Default",
+        "netclass": "Serial",
         "pattern": "SDA"
       },
       {
@@ -829,8 +846,8 @@
         "pattern": "GND"
       },
       {
-        "netclass": "VCC",
-        "pattern": "VCC"
+        "netclass": "VDC",
+        "pattern": "VDC"
       }
     ]
   },
