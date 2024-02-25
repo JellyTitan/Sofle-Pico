@@ -28,11 +28,15 @@ concurrency:
 env: 
   GITHUB_CONTEXT: ${{ toJSON(github) }}
   GITHUB_VARS: ${{ toJSON(vars) }}
+  working-directory: docs
   
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./docs
     steps:
       - name: AggressivelyVerbose
         run: set -x
@@ -55,11 +59,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4  
       - name: Build with Jekyll
-        working-directory: docs
+        # working-directory: docs
         # Outputs to the './_site' directory by default
         run: |
           ls
-          echo "HOTDOS "
+          echo "HOTDOgS "
           pwd
           bundle install
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
