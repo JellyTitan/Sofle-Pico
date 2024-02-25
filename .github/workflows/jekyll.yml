@@ -25,7 +25,9 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+env: 
+  ALLMYVARS: ${{ toJSON(vars) }}
+  
 jobs:
   # Build job
   build:
