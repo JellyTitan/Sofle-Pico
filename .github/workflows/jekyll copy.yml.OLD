@@ -9,9 +9,7 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
-    paths:
-      - "docs/**"
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,37 +25,53 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+env: 
+  GITHUB_CONTEXT: ${{ toJSON(github) }}
+  GITHUB_VARS: ${{ toJSON(vars) }}
+  # working-directory: docs
+  
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: docs
+        working-directory: ./docs
     steps:
+      - name: AggressivelyVerbose
+        run: set -x
       - name: Checkout
         uses: actions/checkout@v4
+      - name: outputtroubleshooting
+        run: |
+          ls
+          echo "pwd is " 
+          pwd
+          cd docs
+          pwd
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
         with:
           ruby-version: '3.1' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
-          working-directory: '${{ github.workspace }}/docs'
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v4  
       - name: Build with Jekyll
+        # working-directory: docs
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: |
+          ls
+          echo "HOTDOgS "
+          pwd
+          bundle install
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: "docs/_site/"
 
   # Deployment job
   deploy:
