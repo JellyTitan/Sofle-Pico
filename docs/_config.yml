@@ -31,7 +31,7 @@ twitter_username: jekyllrb
 github_username:  JellyTitan
 
 # Build settings
-remote_theme: just-the-docs
+theme: just-the-docs
 plugins:
   - jekyll-feed
 
