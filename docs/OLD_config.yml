@@ -18,7 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
 title: Sofle Pico
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -26,15 +25,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   Pico MCU, 128x64 OLEDs, RGB lighting, rotary encoders, and supports a 
   tenting puck.
 domain: jellytitan.github.io
-baseurl: /docs/ # the subpath of your site, e.g. /blog
+baseurl: /docs # the subpath of your site, e.g. /blog
 url: "https://soflepico.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  JellyTitan
 
 # Build settings
-theme: minima
+remote_theme: just-the-docs
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,3 +55,25 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/images/logos/sofle-pico-logo-readme-lockup-darkmode.svg"
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/images/logos/favicon.ico"
+# Aux links for the upper right navigation
+aux_links:
+  "Sofle Pico on GitHub":
+    - "//github.com/JellyTitan/Sofle-Pico"
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+# Google Analytics Tracking (optional)
+# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
+ga_tracking: G-JFRQQ42MCT
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
