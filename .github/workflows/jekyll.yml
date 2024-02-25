@@ -34,7 +34,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hotdogs
+      - name: AggressivelyVerbose
         run: set -x
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,6 +43,7 @@ jobs:
           ls
           echo "pwd is " 
           pwd
+          cd docs
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
         with:
@@ -52,8 +53,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-        with:
-          generator_config_file: "docs/_config.yml"
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
