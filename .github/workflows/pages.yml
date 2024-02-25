@@ -4,6 +4,8 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# This script was taken from the just-the-docs README:
+# https://github.com/just-the-docs/just-the-docs-template/tree/main
 name: Deploy Jekyll site to Pages (just-the-docs)
 
 on:

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contribute
-permalink: /contribute
+title: Contributing
+permalink: /contributing
 ---
 
 Sofle Pico is open source - feel free to help out!
