@@ -58,6 +58,7 @@ jobs:
         # Outputs to the './_site' directory by default
         run: |
           ls
+          cd docs/
           echo "HOTDOS "
           pwd
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
