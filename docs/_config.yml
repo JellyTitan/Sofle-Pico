@@ -77,3 +77,11 @@ color_scheme: dark
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 ga_tracking: G-JFRQQ42MCT
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+
+# Adds support for callouts, a.k.a. 'alerts'
+callouts:
+  warning:
+    title: Warning
+    color: red
+  new:
+    color: green
