@@ -28,7 +28,7 @@ concurrency:
 env: 
   GITHUB_CONTEXT: ${{ toJSON(github) }}
   GITHUB_VARS: ${{ toJSON(vars) }}
-  working-directory: docs
+  # working-directory: docs
   
 jobs:
   # Build job
