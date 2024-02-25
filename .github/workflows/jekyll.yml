@@ -26,7 +26,8 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 env: 
-  ALLMYVARS: ${{ toJSON(vars) }}
+  GITHUB_CONTEXT: ${{ toJSON(github) }}
+  GITHUB_VARS: ${{ toJSON(vars) }}
   
 jobs:
   # Build job
