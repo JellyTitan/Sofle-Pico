@@ -43,7 +43,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
         with:
-          generator_config_file: /docs
+          generator_config_file: '/docs/_config.yml'
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
