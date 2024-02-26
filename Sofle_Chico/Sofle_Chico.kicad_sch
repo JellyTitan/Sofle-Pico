@@ -6,8 +6,8 @@
 
   (title_block
     (title "Sofle Pico")
-    (date "2023-12-18")
-    (rev "v3.5.2")
+    (date "2024-02-25")
+    (rev "v3.5.X")
     (comment 1 "https://github.com/josefadamcik/SofleKeyboard")
     (comment 2 "Based on the Sofle by Josef Adamcik")
     (comment 3 "https://github.com/JellyTitan")
