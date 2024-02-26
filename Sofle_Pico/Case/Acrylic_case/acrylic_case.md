@@ -1,7 +1,7 @@
 # Acrylic case
-![Acrylic case render](sofle_pico_acrylic_case.png)
+<img src="acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%">
+<img src="sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%">
 
-@todo add some hero images.
 <hr>
 
 ## Details
