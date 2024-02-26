@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 38,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -73,6 +73,19 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Sofle_Pico.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 1,
+          "maximized": false,
+          "pos_x": -16,
+          "pos_y": 0,
+          "size_x": 2576,
+          "size_y": 1416
+        }
+      }
+    ]
   }
 }
