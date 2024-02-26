@@ -50,7 +50,6 @@ There are not yet vendors selling the Sofle Pico.
 | Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
 | Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | | 
 
-
 <hr>
 
 ### Optional Parts
@@ -67,6 +66,7 @@ These parts are necessary for the RGB lighting.
 <hr>
 
 #### Optional - OLED
+
 | Name | Count | Remarks | Potential Storefront |
 | ---- | ----- | ------- | -------------------- |
 | SSD1306 128x64 | 2 | These are monochromatic, usually white, yellow, or blue. Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. The round holes is installed 10mm higher, so it is preferred based solely on aesthetics. If you come across more variants or different pin positions, please submit a PR.<br>![Sofle V3](/images/build_guide_pico/oled_round.png) <br>![Sofle V3](/images/build_guide_pico/oled_oval.png) | [AliExpress](https://www.aliexpress.us/item/2251832457635357.html) |
@@ -75,6 +75,7 @@ These parts are necessary for the RGB lighting.
 <hr>
 
 #### Optional - MCU Sockets
+
 The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) uses [Micro USB](https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors) which can snap off. The MCU sockets are strongly recommended if you choose those. There are many Pico clones available that offer USB-C, which is known to be less fragile. (These are my preference).
 
 If you have your heart set on micro-usb connectors, or plan on disconnecting the board often, consider [magnetic data cables](https://www.aliexpress.us/item/3256803453035055.html).
