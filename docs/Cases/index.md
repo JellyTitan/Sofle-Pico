@@ -16,14 +16,7 @@ has_children: true
  - Plates can be made from acrylic, pcb, or 3d printed.
  - Having a standoff kit is helpful when assembling the keyplates. [M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)
  - Acrylic key plates should be 3mm thick, and PCBs should be 1.6mm thick. The switches fit better in the PCBs because most switches have 'retention nubs' designed for PCBs.<br><img src="/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs" width="20%">
-  
- There are designs for each of these in the main sofle repo:
- 
-- [Acrylic](https://github.com/JellyTitan/Sofle-Pico/blob/main/Sofle_Pico/Case/Acrylic_case/acrylic_case.md)
-- [PCB](https://github.com/JellyTitan/Sofle-Pico/blob/main/Sofle_Pico/Case/PCB_case/PCB_case.md)
-- [3d printable](https://github.com/JellyTitan/Sofle-Pico/blob/main/Sofle_Pico/Case/3d_printable_case/3d_printable_case.md)
 
 <img src="/images/build_guide_pico/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="32%"> <img src="/images/build_guide_pico/fdm_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="32%">
 
-@todo update links to cases in Sofle base repo after PR.
-@todo Use GH actions to clone those folders into these docs so maintaining them in 2 places isn't needed.
+@todo update links to cases in Sofle base repo after PR?

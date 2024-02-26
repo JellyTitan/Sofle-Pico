@@ -18,6 +18,8 @@ These don't retain the switches as tightly as the 3d printed or the PCB cases, b
 
 The production ready files for upload can be found in the "production_ready" folder. They are zipped .dxf files. I recommend 3mm thickness.
 
+{: .info}
+>  Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case).
 <hr>
 
 ## BOM

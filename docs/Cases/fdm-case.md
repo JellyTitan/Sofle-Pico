@@ -38,6 +38,9 @@ There are two variants for the OLED covers due to the two types of OLEDs that ca
 
 <img alt="Kailh switch data sheet excerpt showing the switch retention nubs" src="/images/cases/sofle_pico_oled_window_variants.png" >
 
+{: .new}
+> Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/3d_printable_case).
+
 ## About these plates
 These plates were created by exporting svg layers directly from KiCad. The Svg's were imported into Fusion360 with a 3.7795% scale. (Not sure why the KiCad exports are so small - but that multiplier seems to get them where they need to go). The svg sketches were fixed up, then extruded to 3mm.
 

@@ -10,6 +10,10 @@ nav_order: 3
 {: .warning }
 > These plates have not been tested in production. They are the same as the 3d printed plates, so I have a high degree of confidence they will work. If you do make these, please let me know so I can mark them as validated, or submit a PR. Also, some hero shots would be great for the repo!
 
+{: .info}
+> Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/PCB_case).
+
+
 <br><img src="/images/cases/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="/images/cases/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
 
 <hr>
