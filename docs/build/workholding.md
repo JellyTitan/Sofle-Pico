@@ -1,6 +1,6 @@
 ---
 layout: page
-title: workholding
+title: Workholding
 parent: Build
 nav_order: 2
 ---

@@ -2,8 +2,8 @@
 layout: page
 title: Cases
 permalink: /cases
-nav_order: 3
-has_children: false
+nav_order: 4
+has_children: true
 ---
 
 # Sofle Pico Cases

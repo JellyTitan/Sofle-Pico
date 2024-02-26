@@ -1,10 +1,9 @@
 ---
+layout: page
+title: Overview
+nav_order: 1
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/themes/#overriding-theme-defaults
-
-layout: page
-title: Home
-# 
 ---
 
 # Sofle Pico Split Keyboard
