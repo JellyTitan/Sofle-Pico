@@ -3,6 +3,7 @@ layout: page
 nav_title: Troubleshooting
 title: Troubleshooting
 permalink: /troubleshooting
+nav_order: 4
 ---
 
 @todo - write this. Lean on Junco and Sofle for a structure.
