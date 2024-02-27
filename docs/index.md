@@ -24,7 +24,8 @@ Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-k
     - [New features in the Sofle Pico](#new-features-in-the-sofle-pico)
     - [Notable changes](#notable-changes)
   - [Firmware](#firmware)
-  - [About the Sofle Pico](#about-the-sofle-pico)
+  - [About the project.](#about-the-project)
+  - [License](#license)
 
 <hr>
 
@@ -86,13 +87,21 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 
 Sofle uses [QMK firmware](https://qmk.fm/) (Not yet in main branch) @todo update with link to PR.
 
-The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). @todo VIA not yet committed to main branch - via PR is blocked by QMK PR.
+The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). 
+
+@todo VIA not yet committed to main branch - via PR is blocked by QMK PR.
 
 <hr>
 
-## About the Sofle Pico
+## About the project.
+
 The Sofle Pico was designed by [Ryan Neff](https://github.com/JellyTitan) with the help of [uberrice](https://github.com/uberrice).<br>The Sofle Pico is based on the excellent Sofle Choc designed by [Brian Low](https://github.com/brianlow), which is based on the fantastic Sofle RGB by [Dane Evans](https://github.com/DaneEvans) which was based on the Sofle v2 by [Josef Adamčík](https://github.com/josefadamcik). 
 
 The MX footprints came from the highly regarded foostan [kbd library](https://github.com/foostan/kbd). 
 
 Thank you to [Dane Skalski](https://github.com/daneski13) and the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable Pico LED level shifting circuit.
+
+<hr>
+
+## License
+Sofle Pico is distributed by an [MIT license](https://github.com/JellyTitan/Sofle-Pico/blob/main/LICENSE).
