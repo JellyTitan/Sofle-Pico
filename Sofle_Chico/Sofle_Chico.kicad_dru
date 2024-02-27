@@ -1,0 +1,6 @@
+(version 1)
+
+(rule hole_to_hole
+    (constraint hole_to_hole (min 0.0mm))
+    (condition "A.Type == 'pad' && B.Type == 'pad'"))
+
