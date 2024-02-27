@@ -36,7 +36,9 @@ While the file is uploading, it will take you to an options screen. Once the boa
 Changing the pcb color<sup>3</sup> may impact production time and price.
 Shipping estimates<sup>4</sup> can vary widely, so be sure to check those. (You'll see these options again during checkout).
 ![JLCPCB Home](/images/ordering_guide/JLCPCB_Ordering_2.png)
-It's worth noting, the default pcb surface finish contains Lead. For boards in cases, this is usually not a problem. If you're going to rock a naked board, consider going with "lead free"<sup>5</sup> for a few bucks more. The more popular colors like green and black tend to cost less for the lead free option.
+
+{: .warning}
+> The default pcb surface finish contains Lead. For boards in cases, this is usually not a problem. If you're going to rock a naked board, consider going with "lead free"<sup>5</sup> for a few bucks more. The more popular colors like green and black tend to cost less for the lead free option.
 
 By default, all JLC boards have a part number printed on them. (Most people won't notice them unless your looking for them). You can pay extra to have them removed. Some Sofle versions support the option to "Specify a location"<sup>6</sup>. (Essentially this is a line of text on the PCB that will JLC will substitute with their part number.) There is no additional charge for specifying the location. Currently only the Sofle Pico supports this option.
 

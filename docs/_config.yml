@@ -87,6 +87,8 @@ callouts:
     color: green
   info:
     color: blue
+  warning:
+    color: yellow
 
 
 # Footer content
