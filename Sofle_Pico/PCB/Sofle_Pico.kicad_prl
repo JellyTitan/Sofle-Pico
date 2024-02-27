@@ -80,10 +80,22 @@
         "window": {
           "display": 1,
           "maximized": false,
-          "pos_x": -16,
-          "pos_y": 0,
-          "size_x": 2576,
-          "size_y": 1416
+          "pos_x": 199,
+          "pos_y": -1007,
+          "size_x": 1987,
+          "size_y": 998
+        }
+      },
+      {
+        "name": "Sofle_Pico.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 1,
+          "maximized": false,
+          "pos_x": 879,
+          "pos_y": -1053,
+          "size_x": 1292,
+          "size_y": 1029
         }
       }
     ]

@@ -1,279 +1,524 @@
-68346314834475
-Sofle_Pico
-Cherry_MX_DS_Hotswap_miniE_1U_v3.5.2
+128087653899495
+kbd
+1pin_conn
+Resitance 3 pas
+R
+0
+1
+1
+kbd
+Breakaway_Tabs
 
 
 0
-30
-6
-Sofle_Pico
-Cherry_MX_DS_Hotswap_v3.5.4
+0
+0
+kbd
+CherryMX_1u
 
 
 0
-6
 2
-Sofle_Pico
-Cirque tie in
+2
+kbd
+CherryMX_ChocV2_1.5u
+
+
+0
+5
+2
+kbd
+CherryMX_ChocV2_1u
+
+
+0
+5
+2
+kbd
+CherryMX_Choc_1.5u
 
 
 0
 4
+2
+kbd
+CherryMX_Choc_1u
+
+
+0
 4
-Sofle_Pico
-D_DO-41_SOD81_P10.16mm_Horizontal
-Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
-Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
+2
+kbd
+CherryMX_Choc_Hotswap
+
+
+0
+8
+2
+kbd
+CherryMX_Choc_Hotswap_1.5u
+
+
+0
+8
+2
+kbd
+CherryMX_Hotswap
+
+
 0
 2
 2
-Sofle_Pico
-D_SOD-123_DO-35_Hybrid_DoubleSided_V2
-SOD-123
-SOD-123
+kbd
+CherryMX_Hotswap_1.5u
+
+
 0
-10
 2
-Sofle_Pico
-D_SOD-123_DO-41_7.62mm_Hybrid_DoubleSided
-SOD-123
-SOD-123
+2
+kbd
+CherryMX_MidHeight_Choc_Hotswap
+
+
 0
-10
+8
 2
-Sofle_Pico
-Dummy 6812miniE
-Placeholder for the nested SK6812Mini-E/Hotswop socket so the PNP/BOM generates correctly.
+kbd
+CherryMX_MidHeight_Hotswap
+
+
+0
+4
+2
+kbd
+CherryMX_MidHeight_Hotswap_1.5u
+
+
+0
+4
+2
+kbd
+ChocV1_V2_Hotswap
+
+
+0
+3
+2
+kbd
+ChocV1_V2_Hotswap_1.5u
+
+
+0
+3
+2
+kbd
+D3_SMD
+Resitance 3 pas
+R
+0
+4
+2
+kbd
+D3_SMD_v2
+Resitance 3 pas
+R
+0
+2
+2
+kbd
+D3_TH
+Resitance 3 pas
+R
+0
+4
+2
+kbd
+D3_TH_SMD
+Resitance 3 pas
+R
+0
+6
+2
+kbd
+D3_TH_SMD_v2
+Resitance 3 pas
+R
+0
+4
+2
+kbd
+GND_pad
+
+
+0
+2
+2
+kbd
+HOLE
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+0
+0
+kbd
+IM_HOLE
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+0
+0
+kbd
+JP
+
+
+0
+3
+2
+kbd
+JPC2
+
+
+0
+3
+2
+kbd
+Jumper
+
+
+0
+2
+2
+kbd
+LED_WS2812B-PLCC4
+http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf
+LED NeoPixel
+0
+4
+4
+kbd
+M2_HOLE
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+1
+0
+kbd
+M2_HOLE_v2
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+0
+0
+kbd
+M2_HOLE_v3
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
+0
+9
+1
+kbd
+M2_Hole_NPTH_Outside
+
 
 0
 0
 0
-Sofle_Pico
-Hole from sofle for M2 posts gold rimmer
+kbd
+M2_Hole_TH
 
 
 0
 1
 0
-Sofle_Pico
-Hole from sofle for M2 posts gold rimmer wide-keyplate-hole
+kbd
+M2_Hole_TH_Outside
 
 
 0
 1
 0
-Sofle_Pico
-Level Shifter Bypass Jumper
-
-
+kbd
+M2_Threads_v2
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
 0
-6
-2
-Sofle_Pico
+1
+0
+kbd
 MJ-4PP-9
 
 
 0
 8
 4
-Sofle_Pico
-OLED SSD1306 128x64
+kbd
+MJ-4PP-9_1side
 
 
 0
-16
-4
-Sofle_Pico
-Pimaroni_PinHeader_1x05_P2.54mm_Vertical Sofle v3b
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
 4
 4
-Sofle_Pico
-PinHeader_1x05_P2.54mm_Vertical
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-5
-5
-Sofle_Pico
-PinHeader_1x05_P2.54mm_Vertical_one-dead
-Through hole straight pin header, 1x05, 2.54mm pitch, single row
-Through hole pin header THT 1x05 2.54mm single row
-0
-4
-4
-Sofle_Pico
-RPi_Pico_SMD_TH_DS
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-80
-40
-Sofle_Pico
-RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm-keebio_modified
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-5
-5
-Sofle_Pico
-SK6803_MINI-E_V2
-SK6803_MINI-E, Datasheet matching pinout, Double Sided
+kbd
+MX_ALPS_PG1350_noLed
+
 
 0
-8
-4
-Sofle_Pico
-SK6803_MINI-E_hole
-SK6803_MINI-E, Datasheet matching pinout, Double Sided
+11
+2
+kbd
+MX_ALPS_PG1350_noLed_1.75u
+
 
 0
-8
+11
+2
+kbd
+OLED
+Connecteur 6 pins
+CONN DEV
+0
 4
-Sofle_Pico
-SK6803_MINIE_v3.5.4
+4
+kbd
+OLED_1side
+Connecteur 6 pins
+CONN DEV
+0
+4
+4
+kbd
+OLED_v2
+Connecteur 6 pins
+CONN DEV
+0
+4
+4
+kbd
+ProMicro_v2
+
+
+0
+48
+24
+kbd
+ProMicro_v2_1side
 
 
 0
 24
-4
-Sofle_Pico
-SN74AHCT1G125
-SN74AHCT1G125 Buffer Gate SOT-23
-level shifter
+24
+kbd
+ProMicro_v3
+
+
 0
-5
-5
-Sofle_Pico
-SOT-23_DS
-SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py
-SOT TO_SOT_SMD
+24
+24
+kbd
+ProMicro_v3.5
+
+
+0
+24
+24
+kbd
+R
+Resitance 3 pas
+R
+0
+2
+2
+kbd
+ResetSW
+
+
+0
+2
+2
+kbd
+ResetSW_1side
+
+
+0
+2
+2
+kbd
+ResetSW_4
+
+
+0
+4
+2
+kbd
+ResetSW_4P
+
+
+0
+4
+2
+kbd
+SK6812MINI_rev
+
+
+0
+8
+4
+kbd
+SK6812MINI_underglow_rev
+
+
+0
+8
+4
+kbd
+SW_Hole
+
+
+0
+0
+0
+kbd
+SW_Hole_ALPS
+
+
+0
+0
+0
+kbd
+SW_Hole_TH
+
+
+0
+4
+1
+kbd
+StripLED_1side
+
+
+0
+3
+3
+kbd
+StripLED_OUT_1side
+
+
+0
+1
+1
+kbd
+StripLED_rev
+
+
 0
 6
 3
-Sofle_Pico
-SW_Hotswap_Kailh_Choc_V1V2_DS_1.00u_1
-Kailh Choc keyswitch CPG1350 V1 CPG1353 V2 Hotswap Double-Sided Keycap 1.00u
-Kailh Choc Keyswitch Switch CPG1350 V1 CPG1353 V2 Hotswap Double-Sided Cutout Keycap 1.00u
+kbd
+YS-SK6812MINI-E
+
+
 0
 4
+4
+kbd
+corne
+
+
+0
+0
+0
+kbd
+corne-cherry-logo
+
+
+0
+0
+0
+kbd
+corne-horizontal
+
+
+0
+0
+0
+kbd
+corne-logo
+
+
+0
+0
+0
+kbd
+corne-logo-horizontal
+
+
+0
+0
+0
+kbd
+corne-logo-horizontal-mask
+
+
+0
+0
+0
+kbd
+corne-logo-silk
+
+
+0
+0
+0
+kbd
+corne-mask
+
+
+0
+0
+0
+kbd
+keyswitch_cherrymx_alps_choc12_1.5u
+
+
+0
+6
 2
-Sofle_Pico
-SW_MX_HS_DS_1u
-Footprint for Cherry MX style switches with Kailh hotswap socket
+kbd
+keyswitch_cherrymx_alps_choc12_1u
+
 
 0
-14
+6
 2
-Sofle_Pico
-Sofle Pico Logo
+kbd
+keyswitch_hole
+
+
+0
+2
+2
+kbd
+petit_split-logo
 
 
 0
 0
 0
-Sofle_Pico
-Sofle Pico Logo copper
-
-
+kbd
+spacer_m2
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
 0
 0
 0
-Sofle_Pico
-Sofle Pico Logo embed
-
-
+kbd
+thread_m2
+Mounting Hole 2.2mm, no annular, M2
+mounting hole 2.2mm no annular m2
 0
 0
 0
-Sofle_Pico
-Sofle Pico Logo text only
-
-
-0
-0
-0
-Sofle_Pico
-Sofle Pico logo w text
-
-
-0
-0
-0
-Sofle_Pico
-Tenting_Puck.kicad_mod_nocenter_v2
-
-
-0
-4
-1
-Sofle_Pico
-backplate_Tenting_Puck_v3.5.5
-
-
-0
-1
-0
-Sofle_Pico
-backplate_hole_M2_terminate
-
-
-0
-1
-0
-Sofle_Pico
-backplate_non-hole_Cherry_MX_v3.5.5
-
-
-0
-0
-0
-Sofle_Pico
-backplate_non-hole_EC11_v3.5.5
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-0
-0
-Sofle_Pico
-keyplate_Tenting_Puck_v3.5.5
-
-
-0
-4
-1
-Sofle_Pico
-keyplate_hole_Cherry_MX_v3.5.5
-
-
-0
-0
-0
-Sofle_Pico
-keyplate_hole_EC11_v3.5.5
-Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
-rotary encoder
-0
-0
-0
-Sofle_Pico
-keyplate_hole_M2_standoff_passthrough
-
-
-0
-1
-0
-Sofle_Pico
-keyplate_hole_M2_terminate
-
-
-0
-1
-0
-Sofle_Pico
-sofle diode jig
+kbd
+waffle
 
 
 0

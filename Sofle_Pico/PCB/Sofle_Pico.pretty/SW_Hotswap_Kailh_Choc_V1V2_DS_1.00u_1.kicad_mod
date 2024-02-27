@@ -12,17 +12,9 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 123d160f-04b5-4b48-a3ec-b6bc95fac7fb)
   )
-  (fp_text user "LH_SKT" (at 0.75 -3.75 -135 unlocked) (layer "B.SilkS")
-      (effects (font (size 1 0.762) (thickness 0.125)) (justify left bottom mirror))
-    (tstamp 1b5b1b4f-bd74-4c6d-8b83-13dd73c33a0f)
-  )
   (fp_text user "${REFERENCE}" (at -8.5 -0.25 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 8bbf9228-e950-4a59-9284-7270b18471e4)
-  )
-  (fp_text user "RH_SKT" (at -0.75 -4 135 unlocked) (layer "F.SilkS")
-      (effects (font (size 1 0.762) (thickness 0.125)) (justify left bottom))
-    (tstamp e6490bef-d991-4a62-aad9-1a24a17df7d7)
   )
   (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -292,6 +284,30 @@
     (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp f977c717-aab2-4617-b60b-2a07ecf06216))
   (fp_line (start 7.5 7.5) (end 7.5 -7.5)
     (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 9201788d-d1ca-41c0-9be7-16245a02d3ed))
+  (fp_line (start -0.2 0) (end 0.2 0)
+    (stroke (width 0.1) (type default)) (layer "User.3") (tstamp 8affdb2d-2d01-41c1-b727-e7fd657811e8))
+  (fp_line (start 0 0.2) (end 0 -0.2)
+    (stroke (width 0.1) (type default)) (layer "User.3") (tstamp b26acfcd-f445-4507-9a76-6ea94053b9f9))
+  (fp_rect (start 7 -7) (end -7 7)
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp 7992c01c-0a57-422d-ac6c-d8c7bdc3a274))
+  (fp_poly
+    (pts
+      (xy -7.5 6.000221)
+      (xy -7.5 -6)
+      (xy -6.5 -6)
+      (xy -6.5 6.000221)
+    )
+
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp 9c96766f-61e8-4e4c-b0e3-a52d1ee4574b))
+  (fp_poly
+    (pts
+      (xy 6.5 6.000221)
+      (xy 6.5 -6)
+      (xy 7.5 -6)
+      (xy 7.5 6.000221)
+    )
+
+    (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp 76489bef-62a6-4ecf-b091-5ff59246b2e3))
   (pad "" np_thru_hole circle (at -5.5 0) (size 1.9 1.9) (drill 1.9) (layers "F&B.Cu" "*.Mask") (tstamp 0a0bc18f-2b8d-48c5-9db6-f95d70f32647))
   (pad "" np_thru_hole circle (at -5 -3.8) (size 3.05 3.05) (drill 3.05) (layers "*.Cu" "*.Mask") (tstamp 7faf5b70-0596-4182-a259-5c1f5611ab2f))
   (pad "" np_thru_hole circle (at 0 -5.9) (size 3.05 3.05) (drill 3.05) (layers "*.Cu" "*.Mask") (tstamp f17fde35-cb1e-41e6-9e69-520caeaeeb39))
@@ -331,6 +347,12 @@
     ) (tstamp f46c430b-5400-46af-b695-55c06e529dd2))
   (pad "2" smd roundrect (at -8.5 -3.8) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (tstamp 0fb5f62f-e143-4a33-a094-1517c64f69b2))
   (pad "2" smd roundrect (at 8.5 -3.8) (size 2.55 2.5) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp 4139082b-17f5-43d5-9ee6-12886b4714d8))
+  (group "" (id a1d3ccf8-543b-48c8-b019-8f8221e9e27c)
+    (members
+      76489bef-62a6-4ecf-b091-5ff59246b2e3
+      9c96766f-61e8-4e4c-b0e3-a52d1ee4574b
+    )
+  )
   (model "${KIPRJMOD}/Sofle_Pico.3dshapes/PG1350-socket.STEP"
     (offset (xyz 5 3.75 0.1))
     (scale (xyz 1 1 1))
