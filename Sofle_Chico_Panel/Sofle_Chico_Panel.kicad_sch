@@ -1,0 +1,48 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 21b17b23-a59f-4931-b84d-3d9b0f18ccb9)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 75.565 79.375) (size 30.48 19.685) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5af8c640-4168-4e01-8c31-1ddf9eb1f2f9)
+    (property "Sheetname" "Sofle-Chico_Pri" (at 75.565 78.6634 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Sofle_Chico.kicad_sch" (at 75.565 99.6446 0) (show_name)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Sofle_Chico_Panel"
+        (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 123.19 79.375) (size 30.48 19.685) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 64d4cd32-93b0-46d2-8270-bf3dd0c56250)
+    (property "Sheetname" "Sofle_Chico_Sec" (at 123.19 78.6634 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Sofle_Chico.kicad_sch" (at 123.19 99.6446 0) (show_name)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Sofle_Chico_Panel"
+        (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
