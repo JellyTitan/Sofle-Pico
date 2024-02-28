@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Sofle_Pico")(type "KiCad")(uri "${KIPRJMOD}/Sofle_Pico.pretty")(options "")(descr ""))
+  (lib (name "Sofle_cHICO")(type "KiCad")(uri "C:/Users/ext.peter.werle/Documents/custom_keyboards/HW Ref Gits/Sofle-Chico/Sofle_Chico/Sofle_Pico.pretty")(options "")(descr ""))
+)
