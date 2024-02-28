@@ -27,7 +27,7 @@ Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-k
 - [x] Write PCB Case readme
 - [x] Move case BOM from README to individual cases.
 - [x] Add images to the case sub-sections
-- [x] Move case readme images to the docs directory? (Won't do - going to point build guide to this repo).
+- [x] Move case readme images to the docs directory?
 - [x] Add UF2 files and update relative path in README.
 - [ ] Review docs and update images 
 - [ ] Started a sofle doc commit - needs hero images and build guide decisions. (See @todo).
@@ -55,11 +55,11 @@ Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-k
 </details>
 <details>
 <summary>Outstanding documentation tasks</summary>
-- [ ] PCB Ordering guide is missing numbers on the main image.
-- [ ] Jekyll nav structure needs nesting
+- [x] PCB Ordering guide is missing numbers on the main image.
+- [x] Jekyll nav structure needs nesting
 - [ ] Font weight needs improvement
 - [ ] increase container width
-- [ ] Add Kofi link
+- [x] Add Kofi link
 - [ ] Add prominent github link in the nav
 - [ ] setup a twitter account
 </details>
@@ -75,11 +75,8 @@ The MX footprints came from the highly regarded foostan [kbd library](https://gi
 
 Thank you to [Dane Skalski](https://github.com/daneski13) and the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing a viable Pico LED level shifting circuit.
 
-<!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B2D03MR) -->
-
 ## Firmware 
 
 Sofle uses [QMK firmware](https://qmk.fm/) (Not yet in main branch) @todo update with link to PR.
 
 The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). @todo VIA not yet committed to main branch - via PR is blocked by QMK PR.
-
