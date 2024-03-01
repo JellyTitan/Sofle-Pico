@@ -1,8 +1,8 @@
 ---
 layout: page
-nav_title: BOM
 title: BOM
-permalink: /bom
+parent: Build
+nav_order: 3
 ---
 # Sofle Pico BOM (aka "Parts list")
 
@@ -50,7 +50,6 @@ There are not yet vendors selling the Sofle Pico.
 | Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
 | Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | | 
 
-
 <hr>
 
 ### Optional Parts
@@ -67,14 +66,16 @@ These parts are necessary for the RGB lighting.
 <hr>
 
 #### Optional - OLED
+
 | Name | Count | Remarks | Potential Storefront |
 | ---- | ----- | ------- | -------------------- |
-| SSD1306 128x64 | 2 | These are monochromatic, usually white, yellow, or blue. Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. The round holes is installed 10mm higher, so it is preferred based solely on aesthetics. If you come across more variants or different pin positions, please submit a PR.<br>![Sofle V3](images/build_guide_pico/oled_round.png) <br>![Sofle V3](images/build_guide_pico/oled_oval.png) | [AliExpress](https://www.aliexpress.us/item/2251832457635357.html) |
-| 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](images/build_guide_pico/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html) |
+| SSD1306 128x64 | 2 | These are monochromatic, usually white, yellow, or blue. Note: There are two common variants of this OLED. One has circular holes in the corner, and the other has oval holes. These variants have the GND/VCC pins switched. The version with the round holes is preferred, but either will work. The round holes is installed 10mm higher, so it is preferred based solely on aesthetics. If you come across more variants or different pin positions, please submit a PR.<br>![Sofle V3](/images/build_guide_pico/oled_round.png) <br>![Sofle V3](/images/build_guide_pico/oled_oval.png) | [AliExpress](https://www.aliexpress.us/item/2251832457635357.html) |
+| 4 pin female headers | 2 | 2.54 pitch. ~8mm high is preferable if you'll be socketing the MCU. If you can't find 8mm, ~6mm or ~10mm is fine. ![Sofle V3](/images/build_guide_pico/sofle_pico_4-pin_femalesockets.png)|[Aliexpress](https://www.aliexpress.us/item/2251832667924622.html) |
 
 <hr>
 
 #### Optional - MCU Sockets
+
 The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) uses [Micro USB](https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors) which can snap off. The MCU sockets are strongly recommended if you choose those. There are many Pico clones available that offer USB-C, which is known to be less fragile. (These are my preference).
 
 If you have your heart set on micro-usb connectors, or plan on disconnecting the board often, consider [magnetic data cables](https://www.aliexpress.us/item/3256803453035055.html).
@@ -82,8 +83,8 @@ If you have your heart set on micro-usb connectors, or plan on disconnecting the
 If the TRRS cable connecting the two halves is disconnected while the board is powered, it may short one of the communication pins on the Pico. The easy fix for that is to swap out the Pico, which is where sockets are real handy. 
 
 Sockets also raise the height of the MCU enough to help support the OLEDs.
-![Pico socketed MCU](images/build_guide_pico/sofle_pico_sockets_add_height.png)
-![Pico socketed MCU](images/build_guide_pico/sofle_pico_socket_w_OLED.jpeg)
+![Pico socketed MCU](/images/build_guide_pico/sofle_pico_sockets_add_height.png)
+![Pico socketed MCU](/images/build_guide_pico/sofle_pico_socket_w_OLED.jpeg)
 
 | Name | Count | Remarks | Potential Storefront |
 | - | - |-|-|
@@ -93,29 +94,12 @@ Needle pin male connectors | 80 | Diode legs would also work, but these little s
 <hr>
 
 #### Optional - Case
- - The case plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
- - Key plates are strongly recommended, but not technically required. If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate.
- - The key plates combined with a backplate make a nice 'sandwich' case. Another plate can be added to protect the OLEDs. 
- - Spacers are intended to pass through the main pcb and screw onto the bottom plates, top plates, and OLED plates.
- - The OLEDs are taller than the switch plate, which is why they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDs can be installed higher/lower.
- - Plates can be made from acrylic, pcb, or 3d printed.
- - Having a standoff kit is helpful when assembling the keyplates. [M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)
- - Acrylic key plates should be 3mm thick, and PCBs should be 1.6mm thick. The switches fit better in the PCBs because most switches have 'retention nubs' designed for PCBs.<br><img src="images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs" width="20%">
-  
- There are designs for each of these in the main sofle repo:
- 
-    - [Acrylic](./Sofle_Pico/Case/Acrylic_case/)
-    - [PCB](./Sofle_Pico/Case/PCB_case/)
-    - [3d printable](./Sofle_Pico/Case/3d_printable_case/3d_printable_case.md)
-
-<img src="images/build_guide_pico/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="32%"> <img src="images/build_guide_pico/fdm_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="32%">
-
-@todo update links to cases in Solfe base repo after PR.
+There are plenty of case options. See the [Cases](/cases) section.
 
 <hr>
 
 #### Optional - low profile header pins
-If you've chosen not to socket the MCU, these are nicer than the header pins that come with the Pico. The default pins that ship with the Pico are usually too long. Clipping them off after soldering can look 'rough'. Instead I prefer to use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.<br><img src="images/build_guide_pico/sofle_pico_luxary_pins.png" alt="low-profile header pins" width="200px">
+If you've chosen not to socket the MCU, these are nicer than the header pins that come with the Pico. The default pins that ship with the Pico are usually too long. Clipping them off after soldering can look 'rough'. Instead I prefer to use [low profile header pins](https://www.aliexpress.us/item/3256805874707460.html). You only need 4, but I haven't seen them sold in quantities smaller than 50. I recommend the 20-pin 8.5mm. The 7.5mm, & 9.5mm work just fine too. If they are out of 20-pin, you can break 40-pins in twain.<br><img src="/images/build_guide_pico/sofle_pico_luxary_pins.png" alt="low-profile header pins" width="200px">
 
 <hr>
 
