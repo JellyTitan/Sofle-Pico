@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -8,18 +8,18 @@
     "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
-      "images": 0.6399999856948853,
-      "pads": 0.8999999761581421,
-      "tracks": 1.0,
-      "vias": 1.0,
-      "zones": 0.4000000059604645
+      "images": 0.550000011920929,
+      "pads": 0.6899999976158142,
+      "tracks": 0.9399999976158142,
+      "vias": 0.8799999952316284,
+      "zones": 0.3799999952316284
     },
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -76,24 +76,12 @@
         "name": "Sofle_Chico_Panel.kicad_pcb",
         "open": false,
         "window": {
-          "display": 1,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 2576,
-          "size_y": 1416
-        }
-      },
-      {
-        "name": "Sofle_Chico_Panel.kicad_sch",
-        "open": true,
-        "window": {
           "display": 0,
           "maximized": false,
-          "pos_x": -1636,
-          "pos_y": 150,
-          "size_x": 1483,
-          "size_y": 1063
+          "pos_x": -1815,
+          "pos_y": 166,
+          "size_x": 1767,
+          "size_y": 1223
         }
       }
     ]

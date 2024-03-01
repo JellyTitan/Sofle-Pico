@@ -2,7 +2,7 @@
   (layer "F.Cu")
   (descr "SOD-123")
   (tags "SOD-123")
-  (attr smd)
+  (attr through_hole)
   (fp_text reference "REF**" (at 1.43 2.17) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     (tstamp d97d57e2-cd0c-47d9-a3a7-0038b4c66076)
