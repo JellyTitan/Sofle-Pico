@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 37,
-    "active_layer_preset": "",
+    "active_layer": 36,
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -71,19 +71,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "Sofle_Chico_Panel.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": -1815,
-          "pos_y": 166,
-          "size_x": 1767,
-          "size_y": 1223
-        }
-      }
-    ]
+    "files": []
   }
 }
