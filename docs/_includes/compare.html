@@ -5,12 +5,15 @@ If you edit the svg, you may need to manually remove an xml header.
 The default checked state in the html corresponds to layer visibility in inkscape.
 {%- endcomment -%}
 <style>
-  svg#sofle_key_compare {
-    width: 100%;
-    background-color: white;
-    margin-top: 15px;
+  #compare_toggles {
+    padding: 15px 0 0 15px;
   }
-
+  #compare_toggles,
+  svg#sofle_key_compare {
+    color: #212121;
+    background-color: white;
+    width: 100%;
+  }
   .toggle {
     display: inline-block;
     margin-right: 10px;
