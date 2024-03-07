@@ -20,7 +20,8 @@ Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-k
 - [Sofle Pico Split Keyboard](#sofle-pico-split-keyboard)
   - [Overview](#overview)
     - [Pico vs. ProMicro](#pico-vs-promicro)
-    - [Features inherited from V2](#features-inherited-from-v2)
+    - [Features inherited from Sofle V2](#features-inherited-from-sofle-v2)
+    - [Key placement comparison between Sofle variants](#key-placement-comparison-between-sofle-variants)
     - [New features in the Sofle Pico](#new-features-in-the-sofle-pico)
     - [Notable changes](#notable-changes)
   - [Firmware](#firmware)
@@ -42,10 +43,16 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 
 <hr>
 
-### Features inherited from V2
+### Features inherited from Sofle V2
  - Key placement has not changed. (mostly - 1 thumb key got a 3 degree rotation).
  - Hotswap sockets are required. 
  - Per-key RGB remains optional and uses the _relatively_ easy to solder SK6803 MINI-E LEDs.
+
+<hr>
+
+### Key placement comparison between Sofle variants
+
+{% include compare.html %}
 
 <hr>
 
