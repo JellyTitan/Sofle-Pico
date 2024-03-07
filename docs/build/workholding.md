@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Workholding
+description: Suggested work holding and assembly methods 
 parent: Build
 nav_order: 2
 ---

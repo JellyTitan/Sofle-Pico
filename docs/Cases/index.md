@@ -2,6 +2,7 @@
 layout: page
 title: Cases
 permalink: /cases
+description: Sofle Pico case variant overview
 nav_order: 4
 has_children: true
 ---

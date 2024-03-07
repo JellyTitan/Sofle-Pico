@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Drag-and-drop
+description: Instructions for flashing the Sofle Pico using the drag and drop method
 # permalink: /pcb-ordering
 parent: Flashing
 nav_order: 1

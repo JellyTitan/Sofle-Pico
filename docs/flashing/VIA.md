@@ -1,6 +1,7 @@
 ---
 layout: page
 title: VIA
+description: Instructions for modifying the Sofle Pico key map using the online VIA configurator
 # permalink: /pcb-ordering
 parent: Flashing
 nav_order: 2

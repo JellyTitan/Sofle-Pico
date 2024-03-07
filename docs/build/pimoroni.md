@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Pimoroni Support
+description: Pimaroni implementation notes
 parent: Build
 nav_order: 6
 ---

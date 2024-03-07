@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Build Guide
+description: Sofle Pico keyboard build guide.
 # permalink: /build
 parent: Build
 nav_order: 5

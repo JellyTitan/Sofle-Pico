@@ -1,6 +1,7 @@
 ---
 layout: page
 title: BOM
+description: Bill of Materials and sourcing notes
 parent: Build
 nav_order: 3
 ---

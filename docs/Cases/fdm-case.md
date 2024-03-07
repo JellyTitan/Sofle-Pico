@@ -2,6 +2,7 @@
 layout: page
 title: "3d Printable (FDM)"
 parent: Cases
+description: 3d printable Sofle Pico case instructions and links
 nav_order: 2
 ---
 
@@ -38,7 +39,7 @@ There are two variants for the OLED covers due to the two types of OLEDs that ca
 
 <img alt="Kailh switch data sheet excerpt showing the switch retention nubs" src="/images/cases/sofle_pico_oled_window_variants.png" >
 
-{: .new}
+{: .info}
 > Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/3d_printable_case).
 
 ## About these plates

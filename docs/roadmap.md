@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Variant Roadmap
+description: Sofle Pico variant creation roadmap
 permalink: /variants
 nav_order: 6
 ---

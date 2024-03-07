@@ -44,3 +44,6 @@ gem 'jekyll-loading-lazy'
 
 # Automatically add target="_blank" to external links: https://github.com/keithmifsud/jekyll-target-blank
 gem 'jekyll-target-blank'
+
+# Adds SEO tags: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md
+gem 'jekyll-seo-tag'

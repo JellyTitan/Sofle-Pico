@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Poka-yoke
+description: Poka-yoke design philosophy
 parent: Build
 nav_order: 1
 ---

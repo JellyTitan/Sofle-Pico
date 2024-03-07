@@ -286,6 +286,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
   jekyll-loading-lazy
+  jekyll-seo-tag
   jekyll-sitemap
   jekyll-target-blank
   just-the-docs

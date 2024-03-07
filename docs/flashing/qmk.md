@@ -1,6 +1,7 @@
 ---
 layout: page
 title: QMK
+description: Instructions for compiling QMK firmware for the Sofle Pico
 # permalink: /pcb-ordering
 parent: Flashing
 nav_order: 3

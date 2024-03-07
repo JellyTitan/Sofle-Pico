@@ -2,6 +2,7 @@
 layout: page
 title: Acrylic
 parent: Cases
+description: Acrylic case files and ordering instructions
 nav_order: 1
 ---
 
