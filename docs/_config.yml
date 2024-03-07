@@ -80,7 +80,8 @@ aux_links_new_tab: true
 # Supports true (default) or false
 heading_anchors: true
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+# color_scheme: dark
+color_scheme: pico
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 ga_tracking: G-JFRQQ42MCT
