@@ -34,6 +34,7 @@ github_username:  JellyTitan
 theme: just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 
 # Exclude from processing.
