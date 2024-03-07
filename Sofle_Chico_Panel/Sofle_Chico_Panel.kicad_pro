@@ -408,7 +408,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Sofle_Pico"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -848,7 +850,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../Sofle_Chico/Case/3D Print/Sofle_Chico_Panel.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

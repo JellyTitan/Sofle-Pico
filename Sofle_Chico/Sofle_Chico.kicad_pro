@@ -857,7 +857,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "Sofle_Pico.step",
+      "step": "Case/3D Print/Sofle_Chico_PCB.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
