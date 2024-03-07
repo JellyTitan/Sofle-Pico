@@ -41,3 +41,6 @@ gem 'jekyll-sitemap'
 
 # Adds lazy-loading: https://github.com/gildesmarais/jekyll-loading-lazy
 gem 'jekyll-loading-lazy'
+
+# Automatically add target="_blank" to external links: https://github.com/keithmifsud/jekyll-target-blank
+gem 'jekyll-target-blank'
