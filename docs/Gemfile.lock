@@ -134,6 +134,9 @@ GEM
       octokit (>= 4, < 7, != 4.4.0)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-loading-lazy (0.1.1)
+      jekyll (>= 3.0, < 5.0)
+      nokogiri (>= 1.10, < 2.0)
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
@@ -279,6 +282,7 @@ DEPENDENCIES
   github-pages (= 231)
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
+  jekyll-loading-lazy
   jekyll-sitemap
   just-the-docs
   tzinfo (>= 1, < 3)

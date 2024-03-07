@@ -38,3 +38,6 @@ gem "webrick", "~> 1.8"
 
 # Generates sitemaps: https://github.com/jekyll/jekyll-sitemap
 gem 'jekyll-sitemap'
+
+# Adds lazy-loading: https://github.com/gildesmarais/jekyll-loading-lazy
+gem 'jekyll-loading-lazy'

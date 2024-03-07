@@ -35,7 +35,7 @@ theme: just-the-docs
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
+  - jekyll-loading-lazy
 
 # Exclude from processing.
 # The following items will not be processed, by default.
