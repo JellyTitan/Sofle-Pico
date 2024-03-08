@@ -3,6 +3,7 @@ layout: page
 nav_title: Build Log
 title: Build Log
 permalink: /build-log
+nav_order: 6
 ---
 
 # Sofle Pico Build log

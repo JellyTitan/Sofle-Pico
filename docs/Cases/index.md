@@ -5,6 +5,7 @@ permalink: /cases
 description: Sofle Pico case variant overview
 nav_order: 4
 has_children: true
+image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 ---
 
 # Sofle Pico Cases

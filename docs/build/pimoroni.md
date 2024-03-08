@@ -4,6 +4,7 @@ title: Pimoroni Support
 description: Pimaroni implementation notes
 parent: Build
 nav_order: 6
+image: /images/pimoroni/pimoroni_model.png
 ---
 
 # Sofle Pico Pimoroni Support

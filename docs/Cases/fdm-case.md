@@ -4,6 +4,7 @@ title: "3d Printable (FDM)"
 parent: Cases
 description: 3d printable Sofle Pico case instructions and links
 nav_order: 2
+image: /images/cases/sofle_pico_3d_printed_case_green_glow.jpeg
 ---
 
 # 3d printable Sofle Pico case

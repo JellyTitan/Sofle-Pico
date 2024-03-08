@@ -4,6 +4,7 @@ title: Acrylic
 parent: Cases
 description: Acrylic case files and ordering instructions
 nav_order: 1
+image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 ---
 
 # Acrylic case

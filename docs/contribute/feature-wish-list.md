@@ -1,25 +1,12 @@
 ---
 layout: page
-title: Contributing
-permalink: /contributing
+title: Feature Wish List
+permalink: /contributing/wish-list
+nav_order: 1
+parent: Contributing
 ---
 
-Sofle Pico is open source - feel free to help out!
-
-The Sofle Picos' PCB & schematics have been intentionally designed to make it easy to swap in alternative switch footprints. 
-
-When making hardware contributions, please use "[Semantic versioning](https://semver.org/)".
-
-To avoid 'breaking changes' when creating Sofle Pico variants, please keep the following in mind:
-- Changing the outline or moving the locations of the PCB, jack, knob, or switches would break compatability between cases.
-- Changing the schematic pinout would require a different QMK & VIA build and _may_ be considered a breaking change. However, there are several unused pins, please use those for adding new stuff. Currently QMK is migrating to a .json based keyboard config, so pinout changes may be easier in the future.
-- Please prototype the variant before making a PR.
-- Please create a case if the variant is not compatible with existing cases.
-- Please include all footprints, symbols, and 3d models in the repo.
-- If you use open source work, please attribute.
-- Update the README / documentation of your changes as necessary.
-
-### Feature wish list
+# Feature wish list
 
 There's some features & cleanup that I would like to add if time permits. They are all nice-to-have's, so if you've got the time and inclination, I'd appreciate the help!
 - [ ] Markings on the PCB for rubber bumper placement. (5 per side) On the bottom of the case, placement doesn't matter so much, but between the acrylic keyplate and the pcb, this would be helpful. (The acrylic keyplate can flex lots during assembly, this prevents key-popout.)

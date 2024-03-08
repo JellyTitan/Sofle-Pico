@@ -11,10 +11,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Github aux nav button.
-.aux-nav-list-item .btn {
-  margin: .9rem;
-  font-size: 1rem;
-  svg {
-    vertical-align: text-top;
+
+  .aux-nav-list-item .btn {
+    margin: .8rem;
+    font-size: 1rem;
+    svg {
+      vertical-align: text-top;
+    }
+  }
+
+
+
+#site-nav {
+  .nav-list .nav-list-item {
+    font-size: $font-size-5 !important;
   }
 }
+tr:nth-child(even) td {
+  background-color: $grey-lt-100;
+}
+thead th {
+  background-color: $grey-lt-300;
+}
+
