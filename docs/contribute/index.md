@@ -19,7 +19,7 @@ has_children: true
 When making hardware contributions, please use "[Semantic versioning](https://semver.org/)".
 
 To avoid 'breaking changes' when creating Sofle Pico variants, please keep the following in mind:
-- Changing the outline or moving the locations of the PCB, jack, knob, or switches would break compatability between cases.
+- Changing the outline or moving the locations of the PCB, jack, knob, or switches would break compatibility between cases.
 - Changing the schematic pinout would require a different QMK & VIA build and _may_ be considered a breaking change. However, there are several unused pins, please use those for adding new stuff. Currently QMK is migrating to a .json based keyboard config, so pinout changes may be easier in the future.
 - Please prototype the variant before making a PR.
 - Please create a case if the variant is not compatible with existing cases.

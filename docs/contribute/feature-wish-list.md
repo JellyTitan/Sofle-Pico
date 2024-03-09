@@ -10,6 +10,7 @@ parent: Contributing
 
 There's some features & cleanup that I would like to add if time permits. They are all nice-to-have's, so if you've got the time and inclination, I'd appreciate the help!
 - [ ] Markings on the PCB for rubber bumper placement. (5 per side) On the bottom of the case, placement doesn't matter so much, but between the acrylic keyplate and the pcb, this would be helpful. (The acrylic keyplate can flex lots during assembly, this prevents key-popout.)
+- [ ] Convert the rotary encoders to a combo switch/rotary footprint, so you can choose either. (May need to update case files)? <br><img src="/images/build_guide_pico/thumb_combo_wish_list.png" alt="Rotary encoder and switch combo footprint from the Junco" width="100px">
 - [ ] Markdown files - fixing typos / grammar or improving clarity, documentation, etc. (I lean towards 'overly-verbose' - can you help me make this more 'concise')?
 - [ ] Validate the PCB case. The files have been created, but not ordered & tested.
 - [ ] Adapt bongocat for 128x64. I haven't been able to find any variants formatted for the orientation/size the Sofle Pico uses. (doio/kb16 has a 128x32 library that can be adapted)?
