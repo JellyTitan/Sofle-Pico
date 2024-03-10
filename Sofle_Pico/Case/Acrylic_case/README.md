@@ -1,1 +1,1 @@
-The documentation for this case can be found at https://soflepico.com/cases/acrylic-case.html
+The documentation for this case can be found at https://www.soflepico.com/cases/fdm-case.html
