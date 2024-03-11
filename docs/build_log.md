@@ -32,7 +32,8 @@ These notes were made in KiCad during the design & build process. There were ult
 	 level shifter bypass. (THis doesn't work - they overheat the boards)
 * DONE: Consider removing volt shifter. Really hard to solder, may not be necessary. 
 	(Testing shifter bypass to asses SK6812 instead of SK6803) (DONT DO THIS! THE BOARD OVERHEATS)
-* * Lessons learned/TODO 5-22-23:
+
+* Lessons learned 5-22-23:
 * DONE: Remove OLED pin markings after prototype validation
 * DONE: The 4 holes in the keyplate need to be smaller, otherwise the posts go through, and that sucks.
 * DONE: Make a hole in the bottom plate for the tenting puck to recess into.
