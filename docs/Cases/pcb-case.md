@@ -15,7 +15,7 @@ nav_order: 3
 > Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/PCB_case).
 
 
-<br><img src="/images/cases/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="/images/cases/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
+<br><a href="/images/cases/sofle_pico_bottom_RH.png"><img src="/images/cases/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"></a> <a href="/images/cases/sofle_pico_bottom_LH.png"><img src="/images/cases/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%"></a>
 
 <hr>
 

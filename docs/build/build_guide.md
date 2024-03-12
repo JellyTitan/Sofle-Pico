@@ -8,25 +8,16 @@ nav_order: 5
 image: /images/build_guide_pico/sofle_pico_MCU_heroshot.png
 ---
 # Build Guide
+{: .no_toc }
 
-[Build Guide](#build-guide)
-- [Build Guide](#build-guide)
-    - [Prepare](#prepare)
-    - [Diodes](#diodes)
-    - [Switch Sockets](#switch-sockets)
-    - [Level shifter](#level-shifter)
-    - [LEDs](#leds)
-    - [Pico MCU](#pico-mcu)
-      - [Pico MCU installed permanently with header pins](#pico-mcu-installed-permanently-with-header-pins)
-      - [Pico MCU installed with sockets](#pico-mcu-installed-with-sockets)
-    - [Schottky Diodes](#schottky-diodes)
-    - [OLED](#oled)
-    - [TRRS Jacks](#trrs-jacks)
-    - [Rotary encoders](#rotary-encoders)
-    - [Final assembly](#final-assembly)
-  - [Warnings and disclaimers](#warnings-and-disclaimers)
+## Table of contents
+{: .no_toc .text-delta }
 
-### Prepare
+1. TOC
+{:toc}
+
+
+## Prepare
 
 This guide includes all optional components. 
 
@@ -51,32 +42,32 @@ The order of assembly does not matter **except** for these 2 components because 
 
 <hr>
 
-### Diodes
+## Diodes
 There is 1 diode per key, 1 diode on the rotary encoder.
 
-<img width="100%" alt="Sofle Pico diode locations highlighted" src="/images/build_guide_pico/sofle_pico_diode_highlights.png" />
+<a href="/images/build_guide_pico/sofle_pico_diode_highlights.png"><img src="/images/build_guide_pico/sofle_pico_diode_highlights.png" width="100%" alt="Sofle Pico diode locations highlighted" /></a>
 
 Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
 
-<img width="49%" alt="SMD orientation marking example" src="/images/build_guide_pico/smd_diode_orientation_1.jpeg" /> <img width="49%" alt="SMD orientation example closeup" src="/images/build_guide_pico/smd_diode_orientation_2.jpeg" />
+<a href="/images/build_guide_pico/smd_diode_orientation_1.jpeg"><img src="/images/build_guide_pico/smd_diode_orientation_1.jpeg" width="49%" alt="SMD orientation marking example" /></a> <a href="/images/build_guide_pico/smd_diode_orientation_2.jpeg"><img src="/images/build_guide_pico/smd_diode_orientation_2.jpeg" width="49%" alt="SMD orientation example closeup" /></a>
 
 Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
 For surface mount diodes, a common method is to tin one pad, place the diode on, apply the soldering iron to the diode leg until it melts the solder underneath and sinks flush with the PCB. Then come back and solder the other leg. Alternately, you can use a rework station heat gun and solder paste. (I prefer this method for smds).
 
-For through-hole diodes, there is a bending jig on the upper right corner of the board. This is a painfully slow way to get pretty bends. <img alt="Diode bending jig built into the PCB" src="/images/build_guide_pico/1N4148_diode_jig.png" />
+For through-hole diodes, there is a bending jig on the upper right corner of the board. This is a painfully slow way to get pretty bends. <a href="/images/build_guide_pico/1N4148_diode_jig.png"><img src="/images/build_guide_pico/1N4148_diode_jig.png" alt="Diode bending jig built into the PCB" /></a>
 
-If you've got a 3d printer handy, a printed diode [bending jig](https://www.printables.com/model/734696-diode-bending-jig-8mm) can be used to make quick uniform bends. Alternately, a carpenters pencil is roughly the right size. (The diode holes are 8mm apart, wooden pencils are often 7mm - 8mm).<br><img width="32%" alt="Using a bending jig" src="/images/build_guide_pico/diode_jig_fold.jpeg" /> <img width="32%" alt="Diodes on tape that were bent with a bending jig" src="/images/build_guide_pico/diode_jig_cut.jpeg" /> <img width="32%" alt="Using a carpenters pencil as a bending jig" src="/images/build_guide_pico/carpenter_pencil.JPG" />
+If you've got a 3d printer handy, a printed diode [bending jig](https://www.printables.com/model/734696-diode-bending-jig-8mm) can be used to make quick uniform bends. Alternately, a carpenters pencil is roughly the right size. (The diode holes are 8mm apart, wooden pencils are often 7mm - 8mm).<br><a href="/images/build_guide_pico/diode_jig_fold.jpeg"><img src="/images/build_guide_pico/diode_jig_fold.jpeg" width="32%" alt="Using a bending jig" /></a> <a href="/images/build_guide_pico/diode_jig_cut.jpeg"><img src="/images/build_guide_pico/diode_jig_cut.jpeg" width="32%" alt="Diodes on tape that were bent with a bending jig" /></a> <a href="/images/build_guide_pico/carpenter_pencil.JPG"><img src="/images/build_guide_pico/carpenter_pencil.JPG" width="32%" alt="Using a carpenters pencil as a bending jig" /></a>
 
 With the PCB eleveated via workholding, insert the bent diodes into the holes on the back of the board. 
-Diodes _must_ be oriented with the black band in the direction of the "arrow" symbol on the PCB. There is also a black outline around the pad to make it easy to check the diode orientation is correct after the diode has been soldered in place.<br><img src="/images/build_guide_pico/diode_orientation.jpeg" alt="Through hole diode orientation" width="100%" />
+Diodes _must_ be oriented with the black band in the direction of the "arrow" symbol on the PCB. There is also a black outline around the pad to make it easy to check the diode orientation is correct after the diode has been soldered in place.<br><a href="/images/build_guide_pico/diode_orientation.jpeg"><img src="/images/build_guide_pico/diode_orientation.jpeg" alt="Through hole diode orientation" width="100%" /></a>
 
 Solder the legs in place. flip over the board, and trim the legs. When you trim off the diode legs, save 2 for use as bypass jumpers.<br>
-<img src="/images/build_guide_pico/sofle_pico_diodes_soldered.jpeg" alt="Soldered diodes protruding through the Sofle Pico PCB" width="49%" /> <img src="/images/build_guide_pico/sofle_pico_diodes_clipping.jpeg" alt="Trimming diode legs protruding through the Sofle Pico PCB" width="49%" />
+<a href="/images/build_guide_pico/sofle_pico_diodes_soldered.jpeg"><img src="/images/build_guide_pico/sofle_pico_diodes_soldered.jpeg" alt="Soldered diodes protruding through the Sofle Pico PCB" width="49%" /></a> <a href="/images/build_guide_pico/sofle_pico_diodes_clipping.jpeg"><img src="/images/build_guide_pico/sofle_pico_diodes_clipping.jpeg" alt="Trimming diode legs protruding through the Sofle Pico PCB" width="49%" /></a>
 
 <hr>
 
-### Switch Sockets
+## Switch Sockets
 Switch sockets installed on the back of the PCB facing up towards the front of the PCB. Make sure they are flush with the PCB. 
 
 1. Put all the sockets in place. PCB hole tolerance can vary quite a bit, so some sockets may snap in, while others rest in the holes. If you have some that snap in, be sure to check everything is flush before you start soldering. 
@@ -84,22 +75,22 @@ Switch sockets installed on the back of the PCB facing up towards the front of t
 1. Give the board a few good taps to make sure there are no loose sockets.
 1. Rotate the board 180 degrees and solder the remaining sides.
 
-<img src="/images/build_guide_pico/sofle_pico_sockets_1.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a tilted angle" width="49%" /> <img src="/images/build_guide_pico/sofle_pico_sockets_2.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a above" width="49%" />
+<a href="/images/build_guide_pico/sofle_pico_sockets_1.jpeg"><img src="/images/build_guide_pico/sofle_pico_sockets_1.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a tilted angle" width="49%" /></a> <a href="/images/build_guide_pico/sofle_pico_sockets_2.jpeg"><img src="/images/build_guide_pico/sofle_pico_sockets_2.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a above" width="49%" /></a>
 
 <hr>
 
-### Level shifter
+## Level shifter
 The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
 ![level shifter](/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
-Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes.<br><img src="/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="32%" />
+Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes.<br><a href="/images/build_guide_pico/sloppy_bypass_jumper.png"><img src="/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="32%" /></a>
 
 Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
 
-<img src="/images/build_guide_pico/jumper_jig.jpeg" alt="Sofle Pico jumper bender location" width="32%" /> <img src="/images/build_guide_pico/jumper_bender_in_use.jpeg" alt="Sofle Pico jumper bender in use" width="32%" /> <img src="/images/build_guide_pico/level_shifter_bypass_jumper.jpeg" alt="Sofle Pico jumper bender in use" width="32%" />
+<a href="/images/build_guide_pico/jumper_jig.jpeg"><img src="/images/build_guide_pico/jumper_jig.jpeg" alt="Sofle Pico jumper bender location" width="32%" /></a> <a href="/images/build_guide_pico/jumper_bender_in_use.jpeg"><img src="/images/build_guide_pico/jumper_bender_in_use.jpeg" alt="Sofle Pico jumper bender in use" width="32%" /></a> <a href="/images/build_guide_pico/level_shifter_bypass_jumper.jpeg"><img src="/images/build_guide_pico/level_shifter_bypass_jumper.jpeg" alt="Sofle Pico jumper bender in use" width="32%" /></a>
 
 <hr>
 
-### LEDs
+## LEDs
 
 ![LED](/images/build_guide_pico/sofle_pico_led_orientation.png)
 
@@ -110,14 +101,14 @@ To solder: tin one pad, place the LED and hold using tweezers, apply heat to the
 Alternately, you can use a rework station heat gun and solder paste. I prefer this method for the LEDs, i think it's easier to get components to sit flush. Put a dab of solder paste on each pad, then place your LEDs with tweezers or a steady hand. (The holes above/below the LED hole are intended to make tweezer placement easier).
 
 The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board. 
-<img src="/images/build_guide_pico/sofle_pico_led_wiring_chain.png" alt="Sofle Pico LED circuit sequence." width="100%" />
+<a href="/images/build_guide_pico/sofle_pico_led_wiring_chain.png"><img src="/images/build_guide_pico/sofle_pico_led_wiring_chain.png" alt="Sofle Pico LED circuit sequence." width="100%" /></a>
 <br>
-Revisions v3.5.4 and later will have the LED number directly above the LED to make troubleshooting the LED chain easier.<br><img src="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg" alt="Sofle Pico LED sequence markings." width="32%" />
+Revisions v3.5.4 and later will have the LED number directly above the LED to make troubleshooting the LED chain easier.<br><a href="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg"><img src="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg" alt="Sofle Pico LED sequence markings." width="32%" /></a>
 
 <hr>
 
-### Pico MCU
-<img src="/images/build_guide_pico/sofle_pico_MCU_heroshot.png" alt="Sofle Pico MCU with elevated OLED closeup" width="100%" />
+## Pico MCU
+<a href="/images/build_guide_pico/sofle_pico_MCU_heroshot.png"><img src="/images/build_guide_pico/sofle_pico_MCU_heroshot.png" alt="Sofle Pico MCU with elevated OLED closeup" width="100%" /></a>
 
 The Pico is installed on the top of the board, face up, and in the marked holes. (There are many variants of the Pico - the face up orientation ensures easy access to the reset button wherever it may be).
 
@@ -125,7 +116,8 @@ The Pico is installed on the top of the board, face up, and in the marked holes.
 * Marked holes: Insert the Pico into the holes with the rectangular outline on the top of the board. 
 
 Double-check your work here. This step is hard to reverse if a mistake is made.
-#### Pico MCU installed permanently with header pins
+
+### Pico MCU installed permanently with header pins
 You can permanently install the Pico using the 20-pin male-male headers that came with the Pico. 
 1. insert the headers into the board and the Pico both before soldering. (The header pin rows can tilt a little if it's not inserted into both the board and the Pico.) The header pins may have one longer side. Install the longer side on the PCB, because you'll need to trim these, and the trimmed pins look better on the underside of the board. Use a piece of kapton tape to attach the Pico to the PCB while soldering.
 
@@ -136,41 +128,41 @@ You can permanently install the Pico using the 20-pin male-male headers that cam
 1. Flip the board over. With the Pico, repeat the process of soldering & checking 1 pin with the pin header and the Pico. 
 1. Solder all the remaining Pico/pin header pins.
 
-#### Pico MCU installed with sockets
+### Pico MCU installed with sockets
 Previous versions of the Sofle used diode legs. This guide does not - instead we'll use "needle pins", which are now readily available, inexpensive, and less fussy then diode legs, but they add more height than diode legs would, which works well to support the OLEDs.
 ![Pico socketed MCU](/images/build_guide_pico/sofle_pico_sockets_add_height.png)
 
 To install a socketed Pico using the diode leg approach [from splitkb.com][ProMicrosocketing]:
 
 1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of kapton tape to hold everything in place can be helpful. 
-<img src="/images/build_guide_pico/needle_pin_inserts.jpeg" alt="Sofle Pico with needle pins to be socketed" width="50%" />
+<a href="/images/build_guide_pico/needle_pin_inserts.jpeg"><img src="/images/build_guide_pico/needle_pin_inserts.jpeg" alt="Sofle Pico with needle pins to be socketed" width="50%" /></a>
 
-1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).<br><img src="/images/build_guide_pico/wonky_MCU.jpeg" alt="Tilted MCU" width="47%" /> <img src="/images/build_guide_pico/wonky_fixed_MCU.jpeg" alt="Tilted MCU corrected" width="47%" />
-1. Solder the remaining pins on the back of the pcb.<br><img src="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg" alt="Tilted MCU corrected" width="47%" />
+1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).<br><a href="/images/build_guide_pico/wonky_MCU.jpeg"><img src="/images/build_guide_pico/wonky_MCU.jpeg" alt="Tilted MCU" width="47%" /></a> <a href="/images/build_guide_pico/wonky_fixed_MCU.jpeg"><img src="/images/build_guide_pico/wonky_fixed_MCU.jpeg" alt="Tilted MCU corrected" width="47%" /></a>
+1. Solder the remaining pins on the back of the pcb.<br><a href="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg"><img src="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg" alt="Tilted MCU corrected" width="47%" /></a>
 1. Flip over the board. On the front, solder 1 pin on each side to the Pico. Again check that everything is flush before soldering the remaining pins.
-<br><img src="/images/build_guide_pico/MCU_solder_1_pin.jpeg" alt="One pin on the MCU soldered" width="47%" /> <img src="/images/build_guide_pico/MCU_solder_all_pins.jpeg" alt="All pins on the MCU soldered - quite badly" width="47%" />
+<br><a href="/images/build_guide_pico/MCU_solder_1_pin.jpeg"><img src="/images/build_guide_pico/MCU_solder_1_pin.jpeg" alt="One pin on the MCU soldered" width="47%" /></a> <a href="/images/build_guide_pico/MCU_solder_all_pins.jpeg"><img src="/images/build_guide_pico/MCU_solder_all_pins.jpeg" alt="All pins on the MCU soldered - quite badly" width="47%" /></a>
 
 If you ever need to remove the Pico, do it by gently prying the board up in small increments, working your way around the board. Avoid pressure on the USB connector. The diode legs are quite weak and will usually bend if you pull the Pico off in one action. A [spudger](https://www.aliexpress.us/item/3256804504939626.html) tool is really handy for this sort of thing.
 
 <hr>
 
-### Schottky Diodes
+## Schottky Diodes
 There's one for each side. Insert on the front, right next to the MCU footprint. Be certain to orient these correctly. Solder on the back.
 The leftmost hole on the diode jig is for these. 
 
-<img src="/images/build_guide_pico/Schottky_diode.jpeg" alt="Schottky diode placement" width="32%" /> <img src="/images/build_guide_pico/1N5817_schottky_diode_jig.jpeg" alt="Diode bending jig" width="32%" />
-<img src="/images/build_guide_pico/power_circuit_bend.jpeg" alt="Schottky diode legs bending with jig" width="32%" /><br><img src="/images/build_guide_pico/power_circuit_diode_top.jpeg" alt="Schottky diode inserted next to MCU" width="49%" /> <img src="/images/build_guide_pico/power_circuit_diode_snip.jpeg" alt="Schottky diode leg trimming" width="49%" />
+<a href="/images/build_guide_pico/Schottky_diode.jpeg"><img src="/images/build_guide_pico/Schottky_diode.jpeg" alt="Schottky diode placement" width="32%" /></a> <a href="/images/build_guide_pico/1N5817_schottky_diode_jig.jpeg"><img src="/images/build_guide_pico/1N5817_schottky_diode_jig.jpeg" alt="Diode bending jig" width="32%" /></a>
+<a href="/images/build_guide_pico/power_circuit_bend.jpeg"><img src="/images/build_guide_pico/power_circuit_bend.jpeg" alt="Schottky diode legs bending with jig" width="32%" /></a><br><a href="/images/build_guide_pico/power_circuit_diode_top.jpeg"><img src="/images/build_guide_pico/power_circuit_diode_top.jpeg" alt="Schottky diode inserted next to MCU" width="49%" /></a> <a href="/images/build_guide_pico/power_circuit_diode_snip.jpeg"><img src="/images/build_guide_pico/power_circuit_diode_snip.jpeg" alt="Schottky diode leg trimming" width="49%" /></a>
 
 <hr>
 
-### OLED
+## OLED
 @todo add updated images when v3.4 prototype comes in.
 
 There are two common variants of the SSD1306 OLED. They are easily distinguishable by the corner holes. There is a separate socket for each of these, because they switch the GND/VCC pins. This pins are usually labeled on the OLEDs themselves. 
 
 **Please check the OLED pin labels against the marking on the PCB to ensure everything matches.** It's entirely possible that the OLEDS have GND/VCC in different locations than expected. (If you do find some that differ from the oval/round below, please update this doc ans submit a PR)! The GND pin is square.
-<br><img src="/images/build_guide_pico/oled_round.png" alt="Round corner hole OLED" width="25%" /> <img src="/images/build_guide_pico/oled_oval.png" alt="Oval corner hole OLED" width="25%" /> <img src="/images/build_guide_pico/sofle_pico_oled_socket_closeup.png" alt="Sofle Pico OLED sockets with corner shape indicators" width="50%" />
-<img src="/images/build_guide_pico/sofle_pico_LH_OLED_socket.png" alt="Close up of OLED socketed" width="100%" /> 
+<br><a href="/images/build_guide_pico/oled_round.png"><img src="/images/build_guide_pico/oled_round.png" alt="Round corner hole OLED" width="25%" /></a> <a href="/images/build_guide_pico/oled_oval.png"><img src="/images/build_guide_pico/oled_oval.png" alt="Oval corner hole OLED" width="25%" /></a> <a href="/images/build_guide_pico/sofle_pico_oled_socket_closeup.png"><img src="/images/build_guide_pico/sofle_pico_oled_socket_closeup.png" alt="Sofle Pico OLED sockets with corner shape indicators" width="50%" /></a>
+<a href="/images/build_guide_pico/sofle_pico_LH_OLED_socket.png"><img src="/images/build_guide_pico/sofle_pico_LH_OLED_socket.png" alt="Close up of OLED socketed" width="100%" /></a> 
 @todo get a new picture with updated socket markings.
 
 We will be installing the OLED so it overhangs the Pro Micro. 
@@ -180,22 +172,22 @@ We will be installing the OLED so it overhangs the Pro Micro.
 1. Solder the remaining socket pins.
 1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
 1. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.<br>
-<img src="/images/build_guide_pico/sofle_pico_OLED_bumper.png" alt="OLED bumper" width="100%" /><br>If you installed MCU sockets, the OLED may not seat all the way down. This is ugly, and I hate it. YMMV.<br><img src="/images/build_guide_pico/socket_gap.jpeg" alt="gap between OLED and OLED socket" width="100%" />
+<a href="/images/build_guide_pico/sofle_pico_OLED_bumper.png"><img src="/images/build_guide_pico/sofle_pico_OLED_bumper.png" alt="OLED bumper" width="100%" /></a><br>If you installed MCU sockets, the OLED may not seat all the way down. This is ugly, and I hate it. YMMV.<br><a href="/images/build_guide_pico/socket_gap.jpeg"><img src="/images/build_guide_pico/socket_gap.jpeg" alt="gap between OLED and OLED socket" width="100%" /></a>
 
 <hr>
 
-### TRRS Jacks
+## TRRS Jacks
 Insert into the outline on the front of the board, solder on the back.
-Some brands of jack will snap into the board, holding them in place while you solder. Other brands may require tape to hold them in place while you flip the board over. Solder 1 pin first to check that everything is flush and adjust as needed. Solder remaining pins.<br><img src="/images/build_guide_pico/trrs_1.jpeg" alt="TRRS jack inserting into outline on top of PCB" width="47%" /> <img src="/images/build_guide_pico/trrs_2.jpeg" alt="TRRS jack inserted into outline on top of PCB" width="47%" />
+Some brands of jack will snap into the board, holding them in place while you solder. Other brands may require tape to hold them in place while you flip the board over. Solder 1 pin first to check that everything is flush and adjust as needed. Solder remaining pins.<br><a href="/images/build_guide_pico/trrs_1.jpeg"><img src="/images/build_guide_pico/trrs_1.jpeg" alt="TRRS jack inserting into outline on top of PCB" width="47%" /></a> <a href="/images/build_guide_pico/trrs_2.jpeg"><img src="/images/build_guide_pico/trrs_2.jpeg" alt="TRRS jack inserted into outline on top of PCB" width="47%" /></a>
 
 <hr>
 
-### Rotary encoders
-Saved for last because they are tallest. Insert into the top of the board, and solder on the backside. Some EC11's have metal tabs on opposite sides that add mechanical stability - no need to solder those. Solder 1 pin first to check that everything is flush and adjust as needed. Solder remaining pins.<br><img src="/images/build_guide_pico/ec11_2.jpeg" alt="EC11 rotary encoder inserted into outline on top of PCB" width="47%" /> <img src="/images/build_guide_pico/ec11_1.jpeg" alt="EC11 rotary encoder soldered on the back of the PCB" width="47%" /> 
+## Rotary encoders
+Saved for last because they are tallest. Insert into the top of the board, and solder on the backside. Some EC11's have metal tabs on opposite sides that add mechanical stability - no need to solder those. Solder 1 pin first to check that everything is flush and adjust as needed. Solder remaining pins.<br><a href="/images/build_guide_pico/ec11_2.jpeg"><img src="/images/build_guide_pico/ec11_2.jpeg" alt="EC11 rotary encoder inserted into outline on top of PCB" width="47%" /></a> <a href="/images/build_guide_pico/ec11_1.jpeg"><img src="/images/build_guide_pico/ec11_1.jpeg" alt="EC11 rotary encoder soldered on the back of the PCB" width="47%" /></a> 
 
 <hr>
 
-### Final assembly
+## Final assembly
 Installing the keys and case. The standoff lengths mentioned assume you are using an acrylic or 3d printed plate. 
 <!-- The embedded link works in a github .md, but fails as a jekyll page. The <video> was cribbed from a github rendered markdown page
 https://github.com/JellyTitan/Sofle-Pico/assets/72168556/54e6d6f9-5af3-4b82-98af-0372871ad146 -->

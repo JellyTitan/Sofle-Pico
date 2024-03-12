@@ -11,7 +11,7 @@ image: /images/pimoroni/pimoroni_model.png
 
 The Sofle Pico was designed for [Pimoroni](https://shop.pimoroni.com/en-us/products/trackball-breakout) support on the right hand in lieu of a rotary encoder. The outermost column of pins on the patch bay on the right hand line up with the Pimoroni pin out. However - after trying it out, the experience is not great, so it's not recommended.  The cursor movement is 'jenky' at best. 
 
-<img src="/images/pimoroni/pimoroni_spot.png" alt="pcb with diode inserted from the top" width="49%" /> <img src="/images/pimoroni/pimoroni_model.png" alt="pcb with bent diode legs" width="49%" />
+<a href="/images/pimoroni/pimoroni_spot.png"><img src="/images/pimoroni/pimoroni_spot.png" alt="pcb with diode inserted from the top" width="49%" /></a> <a href="/images/pimoroni/pimoroni_model.png"><img src="/images/pimoroni/pimoroni_model.png" alt="pcb with bent diode legs" width="49%" /></a>
 
 QMK does [officially support](https://docs.qmk.fm/#/feature_pointing_device?id=pimoroni-trackball) the Pimoroni. There may be a way to improve the jenky movement in QMK. 
 

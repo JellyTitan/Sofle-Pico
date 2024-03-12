@@ -9,8 +9,8 @@ image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 
 # Acrylic case
 
-<img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%">
-<img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%">
+<a href="/images/cases/acrylic_case_hero_shot.jpeg"><img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
+<a href="/images/cases/sofle_pico_acrylic_case.jpeg"><img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
 
 <hr>
 

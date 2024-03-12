@@ -10,10 +10,10 @@ image: /images/cases/sofle_pico_3d_printed_case_green_glow.jpeg
 # 3d printable Sofle Pico case
 
 This is also posted on [Printables](https://www.printables.com/model/760098-sofle-pico-case). You'll find the latest discussion there.
-<img src="/images/cases/sofle_pico_3d_printable_case.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%">
-<img src="/images/cases/sofle_pico_3d_printed_case_backside.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%">
-<img src="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="32%">
- <img alt="Sofle Pico 3d printed full set of case plates" src="/images/cases/full_plate_set.jpeg" width="32%"> <img alt="Sofle Pico back plate with 'helper discs' attached to the corners" src="/images/cases/back_plate_with_helper_discs.jpeg" width="32%">
+<a href="/images/cases/sofle_pico_3d_printable_case.jpeg"><img src="/images/cases/sofle_pico_3d_printable_case.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%"></a>
+<a href="/images/cases/sofle_pico_3d_printed_case_backside.jpeg"><img src="/images/cases/sofle_pico_3d_printed_case_backside.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%"></a>
+<a href="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg"><img src="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="32%"></a>
+ <a href="/images/cases/full_plate_set.jpeg"><img src="/images/cases/full_plate_set.jpeg" alt="Sofle Pico 3d printed full set of case plates" width="32%"></a> <a href="/images/cases/back_plate_with_helper_discs.jpeg"><img src="/images/cases/back_plate_with_helper_discs.jpeg" alt="Sofle Pico back plate with 'helper discs' attached to the corners" width="32%"></a>
 
 ## BOM
 
@@ -34,11 +34,11 @@ The slicer-ready files can be found in the "production_ready" folder. These are 
 
 The latest version of the key plates have notches that the switches slot into. The non-notched earlier version of the key plate have been removed from the repo. The notched key plate should be printed with the pretty side toward the print bed, so there is a right hand & left hand versions of the file.
 
-<img src="/images/cases/sofle_pico_notched_keyplates.png" alt="Sofle Pico keyplate with retention notches" width="65%"> <img alt="Kailh switch data sheet excerpt showing the switch retention nubs" src="/images/cases/switch_retention_nub.png" width="32%">
+<a href="/images/cases/sofle_pico_notched_keyplates.png"><img src="/images/cases/sofle_pico_notched_keyplates.png" alt="Sofle Pico keyplate with retention notches" width="65%"></a> <a href="/images/cases/switch_retention_nub.png"><img src="/images/cases/switch_retention_nub.png" alt="Kailh switch data sheet excerpt showing the switch retention nubs" width="32%"></a>
 
 There are two variants for the OLED covers due to the two types of OLEDs that can be used. 
 
-<img alt="Kailh switch data sheet excerpt showing the switch retention nubs" src="/images/cases/sofle_pico_oled_window_variants.png" >
+<a href="/images/cases/sofle_pico_oled_window_variants.png"><img src="/images/cases/sofle_pico_oled_window_variants.png" alt="Kailh switch data sheet excerpt showing the switch retention nubs" ></a>
 
 {: .info}
 > Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/3d_printable_case).
