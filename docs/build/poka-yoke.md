@@ -3,6 +3,7 @@ layout: page
 title: Poka-yoke
 description: Poka-yoke design philosophy
 parent: Build
+permalink: /build/poka-yoke
 nav_order: 1
 ---
 

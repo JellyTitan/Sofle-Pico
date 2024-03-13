@@ -2,6 +2,7 @@
 layout: page
 title: Acrylic
 parent: Cases
+permalink: /cases/acrylic-case
 description: Acrylic case files and ordering instructions
 nav_order: 1
 image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg

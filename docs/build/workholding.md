@@ -3,6 +3,7 @@ layout: page
 title: Workholding
 description: Suggested work holding and assembly methods 
 parent: Build
+permalink: /build/workholding
 nav_order: 2
 image: /images/build_guide_pico/sofle_pico_workholding_foot_closeup.jpeg
 ---

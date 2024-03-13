@@ -3,6 +3,7 @@ layout: page
 title: Plate foam
 description: Instructions for cutting of plate foam for the Sofle Pico
 parent: Cases
+permalink: /cases/plate-foam
 nav_order: 4
 ---
 

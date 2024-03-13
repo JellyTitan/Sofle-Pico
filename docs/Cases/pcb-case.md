@@ -3,6 +3,7 @@ layout: page
 title: PCB
 description: PCB Case for the Sofle Pico
 parent: Cases
+permalink: /cases/pcb-case
 nav_order: 3
 ---
 

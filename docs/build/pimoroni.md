@@ -3,6 +3,7 @@ layout: page
 title: Pimoroni Support
 description: Pimaroni implementation notes
 parent: Build
+permalink: /build/pimarnoi
 nav_order: 6
 image: /images/pimoroni/pimoroni_model.png
 ---
