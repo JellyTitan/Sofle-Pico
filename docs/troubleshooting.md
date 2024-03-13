@@ -4,7 +4,7 @@ nav_title: Troubleshooting
 title: Troubleshooting
 description: Sofle Pico troubleshooting guide
 permalink: /troubleshooting
-nav_order: 5
+nav_order: 6
 ---
 
 This troubleshooting guide has been compiled from prior Sofle generations, the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.

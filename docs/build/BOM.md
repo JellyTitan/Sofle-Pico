@@ -6,28 +6,21 @@ parent: Build
 permalink: /build/bom
 nav_order: 3
 ---
-# Sofle Pico BOM (aka "Parts list")
+# Bill of Materials (BOM aka "Parts list")
+{: .no_toc }
 
-- [Sofle Pico BOM (aka "Parts list")](#sofle-pico-bom-aka-parts-list)
-  - [Sourcing parts](#sourcing-parts)
-  - [Vendors](#vendors)
-  - [Bill of materials](#bill-of-materials)
-    - [Required Parts](#required-parts)
-    - [Optional Parts](#optional-parts)
-      - [Optional - RGB](#optional---rgb)
-      - [Optional - OLED](#optional---oled)
-      - [Optional - MCU Sockets](#optional---mcu-sockets)
-      - [Optional - Case](#optional---case)
-      - [Optional - low profile header pins](#optional---low-profile-header-pins)
-      - [Optional - Pimoroni trackball - not recommended](#optional---pimoroni-trackball---not-recommended)
-  - [Tools and materials](#tools-and-materials)
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
   
 ## Sourcing parts
 This sourcing guide was heavily influenced by the [legacy sourcing guide](https://josefadamcik.github.io/SofleKeyboard/sourcing_parts.html) written by Josef Adamčík.
 
 Sofle Keyboard is supposed to be simple DIY keyboard so it’s possible to source all the parts yourself starting with PCBs, case plates and ending with every component on the board.
 
-In the case of PCBs and plates it might be more cost effective to buy them through a vendor, but it’s possible to go through manufacturing process as well. There is a guide to help you [place an order with a PCB vendor](pcb-ordering). This can be an interesting process, and I encourage trying it.
+In the case of PCBs and plates it might be more cost effective to buy them through a vendor, but it’s possible to go through manufacturing process as well. There is a guide to help you [place an order with a PCB vendor](/build/pcb-ordering). This can be an interesting process, and I encourage trying it.
 
 For the remaining components, most of them can be bought on Ebay on AliExpress, or Amazon. There used to be significant savings found through AliExpress - but that price gap has been closing in the past few years. If the component is similar in price, I would recommend deferring to the more trusted vendor. 
 

@@ -12,57 +12,10 @@
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Raspberry Pi Pico MCU. 
 
 > [!ALERT]
-> This hardware is now stable!. Documentation, Sofle PR, QMK PR, and VIA PR's are the bulk of the remaining work.
+> This hardware is now stable!. Documentation, Sofle PR, QMK PR, and VIA PR's are the bulk of the remaining work. The remaining tasks can be seen at [soflepico.com/status](https://www.soflepico.com/status)
 
-<details>
-<summary>Outstanding Hardware tasks</summary>
 
-## Punchlist before Sofle PR
-**PR IS MOSTLY READY TO GO [DRAFT PR HERE](https://github.com/josefadamcik/SofleKeyboard/pull/195)**
-- [x] Generate the PCB case files
-- [x] Place PCB case order to validate
-- [ ] Validate the PCB case gerbers
-- [ ] Update path to case files from the Main README
-- [x] PCB Ordering guide not linked to from main readme. 
-- [x] Write PCB Case readme
-- [x] Move case BOM from README to individual cases.
-- [x] Add images to the case sub-sections
-- [x] Move case readme images to the docs directory?
-- [x] Add UF2 files and update relative path in README.
-- [ ] Review docs and update images 
-- [ ] Started a sofle doc commit - needs hero images and build guide decisions. (See @todo).
-- [ ] Update docs for the troubleshooting section.
-- [x] Add Sofle Pico Decals and regenerate Fusion 360 videos. (Wont do)
-- [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
-- [ ] Buy me a coffee link?
-- [ ] Add an email in `_config.yml`. Can i use the @soflepico.com email? (soflepico@gmail.com already taken)
-- [ ] Add a `twitter_username` in `config.yml`
-</details>
-<details>
-<summary>Outstanding firmware tasks</summary>
 
-## Punchlist before QMK PR
-- [ ] Move the Animations into a seperate file. (Out of keymap files)
-- [ ] The Jellytitan keymap has better animations - move those to default
-- [ ] Refactor the LH Jellytitan layout, it could be using the space better.
-- [x] Double check the formatting and QMK PR checklist.
-- [x] Added handedness by pull an unused pin high/low (Won't do - i chose to keep the circuit simple).
-- [x] Find an off-the-shelf 128x64 animation for the Righthand. (Bongo cat was first choice, but don't have time to refcator). Won't do - moved to 'wish list'.
-- [x] (Won't do) Add "boot mode" graphic: https://docs.qmk.fm/#/feature_oled_driver?id=other-examples (Moved to wish list)
-- [x] via support. (Update docs too!)
-## Punchlist before VIA PR
-- [ ] VIA PR is ready - but there _must_ be a QMK commit in master before a VIA PR will be considered. (It will be auto-deleted!)
-</details>
-<details>
-<summary>Outstanding documentation tasks</summary>
-- [x] PCB Ordering guide is missing numbers on the main image.
-- [x] Jekyll nav structure needs nesting
-- [ ] Font weight needs improvement
-- [ ] increase container width
-- [x] Add Kofi link
-- [ ] Add prominent github link in the nav
-- [ ] setup a twitter account
-</details>
 
 > [!IMPORTANT]
 > Build guide and other supporting documentation can be found at [soflepico.com](https://www.soflepico.com)
@@ -78,5 +31,7 @@ Thank you to [Dane Skalski](https://github.com/daneski13) and the [Junco](https:
 ## Firmware 
 
 Sofle uses [QMK firmware](https://qmk.fm/) (Not yet in main branch) @todo update with link to PR.
+If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware]. Sofle Pico is not yet in the main QMK repository. If you'd like to compile your own firmware, you can use the the [jellytitan/qmk_firmware](https://github.com/JellyTitan/qmk_firmware/tree/sofle_pico) fork. (Be sure to use the `sofle_pico` branch).
 
-The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). @todo VIA not yet committed to main branch - via PR is blocked by QMK PR.
+
+The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). Until the VIA PR is merged, you can [make adjustments by uploading the config file manually](https://www.soflepico.com/flashing/via).

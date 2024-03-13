@@ -3,7 +3,7 @@ layout: page
 title: Flashing
 description: Overview of methods used for flashing Sofle Pico
 permalink: /flashing
-nav_order: 3
+nav_order: 4
 has_children: true
 ---
 
