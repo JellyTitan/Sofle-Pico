@@ -194,7 +194,8 @@ A redditor suggested that the level shifter could be omitted, because the first 
 | SK6803 MINI-E | Y | ~120°F / 48°C |![SK6803 MINI-E with bypass jumper](images/build_log_pico/IR_00014.JPG) |
 | SK6803 MINI-E | N | ~130°F / 54°C | ![SK6803 MINI-E without bypass jumper](images/build_log_pico/IR_00013.JPG) |
 | SK6812 MINI-E | N | ~230°F / 110°C | ![SK6812 MINI-E without bypass jumper](images/build_log_pico/IR_00011.JPG) |
-* **Thermal imaging LED test conclusion.**
+
+### Thermal imaging LED test conclusion
 The SK6812 ran too hot. It overheated and shut down a few times. The SK6812Mini-e should not be used. 
 The average run temp for the SK6803 Mini-e was about 6°C difference with/without the level shifter. The Picos operating range is -20°C to 85°C, so even running without a level shifter puts us at 54°C, well within the acceptable range. Updating the build guide with level shifter as 'recommended, but not required'. 
 * Reduced default QMK max brightness: In QMK `info.json`, reducing `rgb_matrix.max_brightness: 127` down from `255` reduced the operating temp of the level-shifter SK6803MINI-E down to ~100°F. This seems like a much better default. Didn't try it with the bypass jumper variant though. 

@@ -22,6 +22,6 @@ An additional mounting bracket will likely need to be designed to position the t
 
 Jenky movement example:
 
-<video  controls>
-  <source src="/videos/pimoroni/jenk_mouse.mov" type="video/mp4">
+<video controls>
+  <source src="/videos/jenk_mouse.mov" type="video/mp4">
 </video>

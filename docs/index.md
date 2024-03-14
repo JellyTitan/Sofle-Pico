@@ -96,7 +96,7 @@ Sofle uses [QMK firmware](https://qmk.fm/) (Not yet in main branch) @todo update
 The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). 
 
 {: .warning}
-> @todo VIA not yet committed to main branch - via PR is blocked by QMK PR. However - the [via config can be manually uploaded](/flashing/VIA.html) to use the web interface.
+> @todo VIA not yet committed to main branch - via PR is blocked by QMK PR. However - the [via config can be manually uploaded](flashing/via) to use the web interface.
 
 <hr>
 

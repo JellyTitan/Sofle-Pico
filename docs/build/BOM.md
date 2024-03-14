@@ -20,7 +20,7 @@ This sourcing guide was heavily influenced by the [legacy sourcing guide](https:
 
 Sofle Keyboard is supposed to be simple DIY keyboard so it’s possible to source all the parts yourself starting with PCBs, case plates and ending with every component on the board.
 
-In the case of PCBs and plates it might be more cost effective to buy them through a vendor, but it’s possible to go through manufacturing process as well. There is a guide to help you [place an order with a PCB vendor](/build/pcb-ordering). This can be an interesting process, and I encourage trying it.
+In the case of PCBs and plates it might be more cost effective to buy them through a vendor, but it’s possible to go through manufacturing process as well. There is a guide to help you [place an order with a PCB vendor](/build/pico-ordering-guide). This can be an interesting process, and I encourage trying it.
 
 For the remaining components, most of them can be bought on Ebay on AliExpress, or Amazon. There used to be significant savings found through AliExpress - but that price gap has been closing in the past few years. If the component is similar in price, I would recommend deferring to the more trusted vendor. 
 
@@ -55,7 +55,7 @@ These parts are necessary for the RGB lighting.
 
 | Name | Count | Remarks | Potential Storefront |
 | ---- | ----- | ------- | -------------------- |
-| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Optional - but not technically required. The Pico runs at 3.3V while the LEDs require 5V logic. If you omit this level shifter, the first LED in the circuit acts as a level shifter. In [casual tests](build_log#thermal-imaging-led-test-conclusion.), omitting the level shifter makes the board run about 6°C hotter, which is still in the acceptable Pico operating range. I'm not sure if this will eventually burn out the LEDs prematurely. | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
+| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Optional - but not technically required. The Pico runs at 3.3V while the LEDs require 5V logic. If you omit this level shifter, the first LED in the circuit acts as a level shifter. In [casual tests](/build-log#thermal-imaging-led-test-conclusion), omitting the level shifter makes the board run about 6°C hotter, which is still in the acceptable Pico operating range. I'm not sure if this will eventually burn out the LEDs prematurely. | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
 | RGB SMD LEDs SK6803MINI-E | 74 | The 3MA SK6803MINI-E must be used instead of the traditional 12MA SK6812MINI-E. The SK6803MINIE-E has a smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
 <hr>
@@ -99,7 +99,7 @@ If you've chosen not to socket the MCU, these are nicer than the header pins tha
 <hr>
 
 #### Optional - Pimoroni trackball - not recommended
-Electrically, this works, but it's not a great experience. The footprint is there if you want to continue development. See [Pimaroni.md](pimoroni.md) for more details.
+Electrically, this works, but it's not a great experience. The footprint is there if you want to continue development. See [Pimoroni Support](pimoroni.md) for more details.
 
 <hr>
 

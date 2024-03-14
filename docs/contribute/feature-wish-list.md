@@ -23,7 +23,7 @@ There's some features & cleanup that I would like to add if time permits. They a
 - [ ] Piezo speaker. QMK doesn't support this for ARM boards yet, but maybe someday.
 - [ ] USB-C jack in addition to TRRS.
 - [ ] Horizontal encoder/ec12 encoder combo. (The horiontal encoder needs additional cutouts - there isn't room for those with the base Pico)
-- [ ] Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/images/buildguide/haptic_solder.jpg)
+- [ ] Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/docs/buildguide_3DP.md#haptic-feedback-optional)
 - [ ] Cirque trackpad support. I included a jack for the beekeeb pinout, but never got it to work. More details in build log.
 - [ ] Automatic 'handedness'. There are no free spots in the matrix to use the matrix designation, and pulling one of the free pins  high/low would requires a 4.7k resistor, and I would rather not complicate the build with additional parts for something that will only get used once. (By 'once', i mean the alternative is to flash left/right hands seperately. Presumably after the initial flash, all changes/updates would be done using VIA).
 
