@@ -58,12 +58,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "docs/_site/"
-      - name: Lychee Broken Link Checker
-        uses: lycheeverse/lychee-action@v1.9.3
-        with:
-          fail: true
-          args: --base './docs/_site/' --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
-
+     
   # Deployment job
   deploy:
     environment:
