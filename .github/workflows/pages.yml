@@ -62,7 +62,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.3
         with:
           fail: true
-          args: --base . --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
+          args: --base './docs/_site/' --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
 
   # Deployment job
   deploy:
