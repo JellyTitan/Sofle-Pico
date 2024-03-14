@@ -67,7 +67,7 @@ plugins:
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/images/logos/sofle-pico-logo-readme-lockup-darkmode.svg"
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "/images/logos/favicon.ico"
+favicon_ico: "/images/favicons/favicon.ico"
 # Aux links for the upper right navigation
 aux_links:
   "Sofle Pico on GitHub":
