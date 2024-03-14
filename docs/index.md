@@ -51,7 +51,7 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 
 ### Key placement comparison between Sofle variants
 
-{% include compare.html %}
+{% include compare.md %}
 
 <hr>
 
