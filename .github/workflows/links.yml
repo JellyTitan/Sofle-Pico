@@ -18,7 +18,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          args: --base 'docs/_site/' --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
+          args: --base https://www.soflepico.com --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
           # --base <BASE> Base URL or website root directory to check relative URLs e.g. https://example.com or `/path/to/public`
 
       - name: Create Issue From File
