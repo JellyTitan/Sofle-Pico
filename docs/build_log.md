@@ -147,7 +147,7 @@ Sent out v3.5 for production 11-13-23.
 	* Updated OLED logo using [image2cpp](https://javl.github.io/image2cpp/):
 		![Sofle Pico OLED logo regeneration instructions](images/build_log_pico/Sofle_Pico_logo_OLED_regen_settings.png)
   * Added QMK/VIA logo to RH to appear on boot:
-	![QMK 128x64 logo]("Design/Pico/QMK logo/qmk_via_OLED_128x64.svg")
+	![QMK 128x64 logo](images/build_log_pico/qmk_via_OLED_128x64.svg)
 ## v3.5.2 12-15-23
   * Found an example of handedness by pin in a [Lotus58](https://github.com/TweetyDaBird/Lotus-Keyboard). The GND and VCC tie directly into those pins - specifically, not using a pull up resistor.
  
