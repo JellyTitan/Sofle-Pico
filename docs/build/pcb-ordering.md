@@ -2,7 +2,7 @@
 layout: page
 title: PCB Ordering
 description: Sofle Pico PCB ordering guide
-parent: build
+parent: Build
 permalink: /build/pico-ordering-guide
 nav_order: 4
 ---
