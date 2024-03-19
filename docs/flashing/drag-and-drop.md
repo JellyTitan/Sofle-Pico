@@ -17,7 +17,7 @@ nav_order: 1
     * **Bootmagic reset** (works after you have flashed once): Hold down the top far corner key while plugging in the keyboard (`~` left half, `-` right half). This will also clear the EEPROM.
 2. Wait for the OS to detect the device.
 3. Copy the .uf2 file to the new USB disk.
-  * The files can be found in this repo at `./Sofle_Pico/Firmware`. Use the default version that includes VIA: `sofle_pico_default_via_LH.uf2` and `ofle_pico_default_via_RH.uf2`.
+  * The `.uf2` files can be found in the Sofle Pico repo at [Sofle_Pico/Firmware](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Firmware). Use the default keymap that includes VIA support: `sofle_pico_default_via_LH.uf2` and `sofle_pico_default_via_RH.uf2`.
   * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix.
   * On Mac after the file is dropped, the 'Keyboard setup assistant' may be triggered. You can ignore and quit the assistant.(@todo add relative path to UF2 files.) 
 4. Unplug the side you just flashed, and repeat the process with the other side.
