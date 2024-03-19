@@ -21,7 +21,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 ## Outstanding Hardware tasks
 - [ ] Add a 'key' notch to the tenting puck footprints and regenerate cases. (Or add a key notch below encoder)?
 - [ ] Validate the PCB case Gerbers
-- [ ] Add dimensions to Acrylic case file names. (Elecrow doesn't autodetect the dimensions).
+- [ ] theWerle has made some excellent improvements during the Choc Variant development. Review notes and fold incorporate those into MX version.
 
 ### Outstanding Documentation tasks
 - [ ] Increase container width on desktop.
@@ -43,6 +43,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Move the Animations into a separate file. (Out of keymap files)
 - [ ] The Jellytitan keymap has better animations - move those to default
 - [ ] Refactor the LH Jellytitan layout, it could be using the space better.
+- [ ] Review OLED rotation config. (May be out of date in relation to current hardware).
 
 ### VIA Outstanding tasks
 - [ ] VIA PR is ready - but there _must_ be a QMK commit in master before a VIA PR will be considered. (It will be auto-deleted!)
