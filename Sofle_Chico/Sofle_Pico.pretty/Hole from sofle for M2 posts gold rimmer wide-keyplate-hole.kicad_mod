@@ -13,6 +13,8 @@
     (stroke (width 0.1) (type default)) (fill none) (layer "User.3") (tstamp c3af2f66-b424-4602-8549-e61ab2564806))
   (fp_circle (center 0 0) (end 2.05 0)
     (stroke (width 0.1) (type default)) (fill none) (layer "User.4") (tstamp 99fdafe5-d7fa-4a93-81c8-9e3e50aa2e1b))
+  (fp_circle (center 0 0) (end 2.2 0)
+    (stroke (width 0.15) (type default)) (fill none) (layer "User.5") (tstamp 378ac6da-532a-4803-89b7-3f1ced5d0fe2))
   (fp_circle (center 0 0) (end 1.1 0)
     (stroke (width 0.1) (type default)) (fill none) (layer "User.6") (tstamp 2996d889-4ade-4020-aa9b-7f0297276a14))
   (fp_circle (center 0 0) (end 1.1 0)
