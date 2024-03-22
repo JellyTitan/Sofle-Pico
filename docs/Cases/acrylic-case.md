@@ -10,6 +10,11 @@ image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 
 # Acrylic case
 
+{: .info}
+>  Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case).
+
+<hr>
+
 <a href="/images/cases/acrylic_case_hero_shot.jpeg"><img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
 <a href="/images/cases/sofle_pico_acrylic_case.jpeg"><img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
 
@@ -21,8 +26,6 @@ These don't retain the switches as tightly as the 3d printed or the PCB cases, b
 
 The production ready files for upload can be found in the "production_ready" folder. They are zipped .dxf files. I recommend 3mm thickness. Some online vendors ask you to manually input the dimensions for pricing. Dimensions can be found in the BOM remarks below.
 
-{: .info}
->  Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case).
 <hr>
 
 ## BOM

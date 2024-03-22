@@ -29,7 +29,6 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Update docs for the troubleshooting section.
 - [ ] Review docs and update images 
-- [ ] Update path to case files from the Main README
 - [ ] Add UF2 files and update relative path in README.
 - [ ] Add a 'releases' page.
 

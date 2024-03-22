@@ -31,7 +31,7 @@ Thank you to [Dane Skalski](https://github.com/daneski13) and the [Junco](https:
 ## Firmware 
 
 Sofle uses [QMK firmware](https://qmk.fm/) (Not yet in main branch) @todo update with link to PR.
-If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware]. Sofle Pico is not yet in the main QMK repository. If you'd like to compile your own firmware, you can use the the [jellytitan/qmk_firmware](https://github.com/JellyTitan/qmk_firmware/tree/sofle_pico) fork. (Be sure to use the `sofle_pico` branch).
+If you want to build your own firmware, Sofle Pico uses [QMK Firmware](https://docs.qmk.fm/). Sofle Pico is not yet in the main QMK repository. If you'd like to compile your own firmware, you can use the the [jellytitan/qmk_firmware](https://github.com/JellyTitan/qmk_firmware/tree/sofle_pico) fork. (Be sure to use the `sofle_pico` branch).
 
 
 The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). Until the VIA PR is merged, you can [make adjustments by uploading the config file manually](https://www.soflepico.com/flashing/via).
