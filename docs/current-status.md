@@ -27,7 +27,6 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Increase container width on desktop.
 - [ ] setup a twitter account
 - [ ] Add a `twitter_username` in `config.yml`
-- [ ] Add an email in `_config.yml`. Can i use the @soflepico.com email? (soflepico@gmail.com already taken)
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Update docs for the troubleshooting section.
 - [ ] Review docs and update images 
