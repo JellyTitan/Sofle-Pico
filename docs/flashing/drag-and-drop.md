@@ -8,6 +8,12 @@ nav_order: 1
 ---
 
 # Flashing Sofle Pico using 'drag-n-drop'
+
+{: .info}
+> The latest `.uf2` files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Firmware).
+
+## First flash
+
 1. Make sure halves are not connected together with TRRS cable.
 1. Connect one half to USB.
 1. Enter the bootloader using any of the following methods. These are dependant on where your RP2040 came from. You may have to remove an OLED to access the `BOOT` button.
@@ -24,10 +30,7 @@ nav_order: 1
 5. Disconnect both halves from USB.
 6. Connect both halves together using the TRRS cable. 
 7. Connect the left half to USB.
-8. Test everything using VIA. (See [details below](#via)).
+8. Test everything using VIA.
 
-### Flashing the second time around
+## Flashing the second time around
 After the fist flash, subsequent flashes are even easier. Sofle Pico uses [Bootmagic lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md). You can enter boot mode by holding down the upper-left-most key while pluggin in the USB cable. (Or upper-right-most, respectively). Once your in boot mode, the Pico appears as a drive, and you can drag and drop the new `.uf2` file.
-
-
-
