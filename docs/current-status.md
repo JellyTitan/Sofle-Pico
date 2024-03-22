@@ -24,7 +24,6 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] theWerle has made some excellent improvements during the Choc Variant development. Review notes and fold incorporate those into MX version.
 
 ### Outstanding Documentation tasks
-- [ ] Increase container width on desktop.
 - [ ] setup a twitter account
 - [ ] Add a `twitter_username` in `config.yml`
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)

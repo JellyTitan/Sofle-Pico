@@ -187,11 +187,17 @@ Saved for last because they are tallest. Insert into the top of the board, and s
 
 <hr>
 
-## Installing key switches and case
+## Installing key switches and case plates
+
 The standoff lengths mentioned assume you are using an acrylic or 3d printed plate. 
+
 <!-- The embedded link works in a github .md, but fails as a jekyll page. The <video> was cribbed from a github rendered markdown page
+<!-- The video in this repo is an older version - the latest version was uploaded to GH:
 https://github.com/JellyTitan/Sofle-Pico/assets/72168556/54e6d6f9-5af3-4b82-98af-0372871ad146 -->
-<video src="https://private-user-images.githubusercontent.com/72168556/293091324-54e6d6f9-5af3-4b82-98af-0372871ad146.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzY0NjAsIm5iZiI6MTcwOTkzNjE2MCwicGF0aCI6Ii83MjE2ODU1Ni8yOTMwOTEzMjQtNTRlNmQ2ZjktNWFmMy00YjgyLTk4YWYtMDM3Mjg3MWFkMTQ2Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIyMTYwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUyYmQ0YzU3MDMxNzVhYWY0YTY1OTVlODY5NjJjOTBjYjFiMGI4ZjY0YmIzZjAwYjk4M2FmZjEyMjkyZDllZjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.g-3H1xybahWs0hkxPjEP5zDhfSZ4E1_V5HLw868MSuY" data-canonical-src="https://private-user-images.githubusercontent.com/72168556/293091324-54e6d6f9-5af3-4b82-98af-0372871ad146.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzY0NjAsIm5iZiI6MTcwOTkzNjE2MCwicGF0aCI6Ii83MjE2ODU1Ni8yOTMwOTEzMjQtNTRlNmQ2ZjktNWFmMy00YjgyLTk4YWYtMDM3Mjg3MWFkMTQ2Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIyMTYwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUyYmQ0YzU3MDMxNzVhYWY0YTY1OTVlODY5NjJjOTBjYjFiMGI4ZjY0YmIzZjAwYjk4M2FmZjEyMjkyZDllZjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.g-3H1xybahWs0hkxPjEP5zDhfSZ4E1_V5HLw868MSuY" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+
+<video width="100%" height="auto" controls>
+  <source src="https://github.com/JellyTitan/Sofle-Pico/assets/72168556/54e6d6f9-5af3-4b82-98af-0372871ad146 " type="video/mp4">
+Your browser does not support the video tag.
 </video>
 
 1. Place the PCB on a flat surface. This will keep the pressure distributed evenly when pressing in the switches.

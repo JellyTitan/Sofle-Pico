@@ -4,7 +4,7 @@ nav_title: Troubleshooting
 title: Troubleshooting
 description: Sofle Pico troubleshooting guide
 permalink: /troubleshooting
-nav_order: 6
+nav_order: 7
 ---
 # Troubleshooting
 {: .no_toc }

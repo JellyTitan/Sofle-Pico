@@ -3,12 +3,18 @@
 
 // prettier-ignore
 $body-font-family: "Roboto", arial, sans-serif;
+
+body {
+  font-size: 18px !important;
+}
+
 // $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
-$root-font-size: 18px !default; // DEPRECATED: previously base font-size for rems
-$body-line-height: 1.8 !default;
-$content-line-height: 1.6 !default;
+$root-font-size: 18px; // DEPRECATED: previously base font-size for rems
+$body-line-height: 1.8;
+$content-line-height: 1.6;
 // $body-heading-line-height: 1.25 !default;
 $link-color: $green-300;
+
 
 // Font size
 // `-sm` suffix is the size at the small (and above) media query
