@@ -37,9 +37,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 
 ### QMK Outstanding tasks
 - [ ] Move the Animations into a separate file. (Out of keymap files)
-- [ ] The Jellytitan keymap has better animations - move those to default
 - [ ] Refactor the LH Jellytitan layout, it could be using the space better.
-- [ ] Review OLED rotation config. (May be out of date in relation to current hardware).
 
 ### VIA Outstanding tasks
 - [ ] VIA PR is ready - but there _must_ be a QMK commit in master before a VIA PR will be considered. (It will be auto-deleted!)
