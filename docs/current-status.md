@@ -36,8 +36,8 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Update PCB & Cases before submitting PR
 
 ### QMK Outstanding tasks
-- [ ] Make it 'DRY'. Move qmk_logo and sofle_pico_logo into a separate file. kb16 has a good example. (Not sure if this is best practice in QMK - it's not addressed in the docs).
-- [ ] Refactor the LH Jellytitan layout, it could be using the space better.
+Open PR in review: 
+[https://github.com/qmk/qmk_firmware/pull/23338](https://github.com/qmk/qmk_firmware/pull/23338)
 
 ### VIA Outstanding tasks
-- [ ] VIA PR is ready - but there _must_ be a QMK commit in master before a VIA PR will be considered. (It will be auto-deleted!)
+- [ ] VIA PR [draft is ready](https://github.com/the-via/keyboards/pull/2207). There _must_ be a QMK commit in master before a VIA PR will be considered or it will be auto-deleted. Submit this draft after QMK PR is approved.
