@@ -36,7 +36,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Update PCB & Cases before submitting PR
 
 ### QMK Outstanding tasks
-- [ ] Move the Animations into a separate file. (Out of keymap files)
+- [ ] Make it 'DRY'. Move qmk_logo and sofle_pico_logo into a separate file. kb16 has a good example. (Not sure if this is best practice in QMK - it's not addressed in the docs).
 - [ ] Refactor the LH Jellytitan layout, it could be using the space better.
 
 ### VIA Outstanding tasks
