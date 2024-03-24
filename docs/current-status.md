@@ -32,8 +32,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Add a 'releases' page.
 
 ### Outstanding tasks before Main Sofle Repo PR submission
-- [ ] Started a sofle doc commit - docs mostly done, needs hero images and build guide decisions. (See @todo) [DRAFT PR HERE](https://github.com/josefadamcik/SofleKeyboard/pull/195)
-- [ ] Update PCB & Cases before submitting PR
+- [ ] PR Submitted: https://github.com/josefadamcik/SofleKeyboard/pull/195
 
 ### QMK Outstanding tasks
 Open PR in review: 
