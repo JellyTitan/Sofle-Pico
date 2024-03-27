@@ -38,5 +38,8 @@ Specifically, QMK & VIA commits, and improving documentation.
 Open PR in review: 
 [https://github.com/qmk/qmk_firmware/pull/23338](https://github.com/qmk/qmk_firmware/pull/23338)
 
+### QMK Userspace
+- [ ] Move legacy & JellyTitan Sofle keymaps into a fork of qmk_userspace. (The updated qmk quidelins only allow for a simple pristine keymap in main qmk). These keymaps are temporarily in the jellytitan qmk_firmware branch `sofle_pico_fancy` while the main `sofle_pico` branch is being updated for main qmk commit. `qmk_userspace` only works with keyboards that are in QMK master - so this will have to wait.
+
 ### VIA Outstanding tasks
 - [ ] VIA PR [draft is ready](https://github.com/the-via/keyboards/pull/2207). There _must_ be a QMK commit in master before a VIA PR will be considered or it will be auto-deleted. Submit this draft after QMK PR is approved.

@@ -10,7 +10,7 @@ image: /images/build_guide_pico/sofle_pico_v3.4_hero.jpeg
 
 {: .new }
 > This hardware is now stable with release [v3.5.4](https://github.com/JellyTitan/Sofle-Pico/releases). 
-> Documentation, Sofle PR, QMK PR, are the bulk of the remaining work. You can see the punch list on the [status](/status) page.
+> The QMK PR is in review. The VIA PR is in draft. The documentation is still in progress. You can see the punch list on the [status](/status) page.
 
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Raspberry Pi Pico MCU. 
 
@@ -91,12 +91,11 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 
 ## Firmware 
 
-Sofle uses [QMK firmware](https://qmk.fm/) (Not yet in main branch) @todo update with link to PR.
+Sofle uses [QMK firmware](https://qmk.fm/). The [QMK PR](https://github.com/qmk/qmk_firmware/pull/23338) is still in progress, and is not yet in the main branch.
 
 The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). 
 
-{: .warning}
-> @todo VIA not yet committed to main branch - via PR is blocked by QMK PR. However - the [via config can be manually uploaded](/flashing/via) to use the web interface.
+The Sofle Pico can't be added to the official VIA repo until it's in the master branch of QMK. Until then, the [via config can be manually uploaded](/flashing/via) using the web interface.
 
 <hr>
 
