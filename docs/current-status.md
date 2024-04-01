@@ -37,6 +37,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 ### QMK Outstanding tasks
 Open PR in review: 
 [https://github.com/qmk/qmk_firmware/pull/23338](https://github.com/qmk/qmk_firmware/pull/23338)
+- [ ] EE_Hands was removed during the PR. Post PR merge, recompile alternate .uf2 files with RH Master set, so that VIA users won't have to compile in QMK https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md#handedness-by-define
 
 ### QMK Userspace
 - [ ] Move legacy & JellyTitan Sofle keymaps into a fork of qmk_userspace. (The updated qmk quidelins only allow for a simple pristine keymap in main qmk). These keymaps are temporarily in the jellytitan qmk_firmware branch `sofle_pico_fancy` while the main `sofle_pico` branch is being updated for main qmk commit. `qmk_userspace` only works with keyboards that are in QMK master - so this will have to wait.
