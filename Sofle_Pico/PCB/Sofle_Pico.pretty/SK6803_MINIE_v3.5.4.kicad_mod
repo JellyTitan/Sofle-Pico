@@ -13,26 +13,10 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp c4ce9e6a-5ca2-40fd-b14d-251876967c65)
   )
-  (fp_line (start -3.510006 -1.3) (end -3.510006 -0.2)
-    (stroke (width 0.25) (type solid)) (layer "B.SilkS") (tstamp fdc3ec3d-b602-4969-a1ea-6716568f8314))
-  (fp_line (start -1.740006 -1.3) (end -3.510006 -1.3)
-    (stroke (width 0.25) (type solid)) (layer "B.SilkS") (tstamp b228fd11-3521-4388-bbec-7b377f801a06))
-  (fp_line (start -1.740006 -0.2) (end -3.510006 -0.2)
-    (stroke (width 0.25) (type solid)) (layer "B.SilkS") (tstamp 6e7961e8-4d4f-4900-9ee0-6ceb5be669cc))
   (fp_circle (center -4.090006 -0.75) (end -4.340006 -0.75)
     (stroke (width 0.25) (type default)) (fill none) (layer "B.SilkS") (tstamp 1098627b-215f-456a-a075-6e390b696a3b))
-  (fp_circle (center -3.260006 -1.072) (end -3.360006 -1.072)
-    (stroke (width 0) (type solid)) (fill solid) (layer "B.SilkS") (tstamp 2033dd26-13be-4b12-96ab-c02197fdd06b))
-  (fp_line (start -3.510006 1.3) (end -3.510006 0.2)
-    (stroke (width 0.25) (type solid)) (layer "F.SilkS") (tstamp ac514159-d2df-4acc-a6de-96bc37f6bfaa))
-  (fp_line (start -1.740006 0.2) (end -3.510006 0.2)
-    (stroke (width 0.25) (type solid)) (layer "F.SilkS") (tstamp 00ed52a6-5f30-495d-b5a8-85bf8f8b6636))
-  (fp_line (start -1.740006 1.3) (end -3.510006 1.3)
-    (stroke (width 0.25) (type solid)) (layer "F.SilkS") (tstamp 9487be39-ef98-4527-9502-651164b0f5d8))
   (fp_circle (center -4.090006 0.75) (end -4.340006 0.75)
     (stroke (width 0.25) (type default)) (fill none) (layer "F.SilkS") (tstamp 603a0c68-3283-42da-974f-8d9bf7fb903d))
-  (fp_circle (center -3.260006 1.072) (end -3.360006 1.072)
-    (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 4a21dfc9-1059-4f16-a6cc-8d486831870a))
   (fp_line (start 0.029988 -0.3) (end 0.029988 0.3)
     (stroke (width 0.1) (type solid)) (layer "Dwgs.User") (tstamp ec5d9e1c-535e-4dd6-83c1-29d59287aed4))
   (fp_line (start 0.329988 0) (end -0.270012 0)
@@ -247,7 +231,6 @@
   (pad "4" thru_hole circle (at -2.559994 1.75) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp 507dfc92-f92e-4e55-a5e7-647ebc5b260b))
   (group "" (id 10a69432-c1d5-4bff-905c-6533181f12ab)
     (members
-      00ed52a6-5f30-495d-b5a8-85bf8f8b6636
       0308e5f3-a043-40cc-9c19-f162ec1f105e
       06f12c29-ff68-4f83-a547-4c69de7a1549
       07ba1dca-09d8-405e-8ef7-e629c18fcff9
@@ -255,26 +238,20 @@
       09083e90-9819-4abd-94c8-7472907f8f66
       0c7a656b-254d-4862-9533-4e59c25374b0
       1098627b-215f-456a-a075-6e390b696a3b
-      2033dd26-13be-4b12-96ab-c02197fdd06b
       30face94-11d9-4d31-869f-d73c5bd72084
       3713c6a7-a43b-450b-98ea-823975e163f4
       44b29b62-d41b-4191-b2b7-5306565944dd
-      4a21dfc9-1059-4f16-a6cc-8d486831870a
       507dfc92-f92e-4e55-a5e7-647ebc5b260b
       603a0c68-3283-42da-974f-8d9bf7fb903d
       6a465962-7b7b-41f4-93a9-a0cf5eed91af
-      6e7961e8-4d4f-4900-9ee0-6ceb5be669cc
       722d84c0-284d-41d5-a9ee-ae5792be6535
       725cffb5-333f-42bc-8a3e-1a02b584cdca
       7614de4a-825d-4494-bfba-0437a44f3141
       8820f771-6db7-4e26-9c0b-cdd6a41fca0b
       8eb6504e-1206-4479-8849-33f4f67c13e8
       92f170f2-bfea-40f2-88c8-d1aa4e002a66
-      9487be39-ef98-4527-9502-651164b0f5d8
       a904e778-ff77-4967-b589-15506ef7ec04
-      ac514159-d2df-4acc-a6de-96bc37f6bfaa
       b0ef7bd0-b893-4e05-8ff8-acaef52a02a3
-      b228fd11-3521-4388-bbec-7b377f801a06
       ba8c33d5-c52a-42b3-af3e-fd81a0b33bc1
       bca8ed3b-7a13-4875-bcc6-9382db32a5b1
       cdb5bd90-59c0-4c5f-b1da-bfd37e742e6e
@@ -284,7 +261,6 @@
       ec5d9e1c-535e-4dd6-83c1-29d59287aed4
       ec8b7d2c-f789-4456-bef0-d07f5afb9cd9
       f6131c96-7638-426f-a8de-cbdfc132a579
-      fdc3ec3d-b602-4969-a1ea-6716568f8314
     )
   )
   (model "${KIPRJMOD}/Sofle_Pico.3dshapes/YS-SK6812MINI-E.step"
