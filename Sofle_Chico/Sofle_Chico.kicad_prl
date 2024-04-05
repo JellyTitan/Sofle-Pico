@@ -73,31 +73,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "Sofle_Chico.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 2576,
-          "size_y": 1416
-        }
-      },
-      {
-        "name": "Sofle_Chico.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": -2473,
-          "pos_y": 180,
-          "size_x": 1485,
-          "size_y": 1056
-        }
-      }
-    ]
+    "files": []
   }
 }
