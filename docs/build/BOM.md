@@ -1,31 +1,26 @@
 ---
 layout: page
 title: BOM
+description: Bill of Materials and sourcing notes
 parent: Build
+permalink: /build/bom
 nav_order: 3
 ---
-# Sofle Pico BOM (aka "Parts list")
+# Bill of Materials (BOM aka "Parts list")
+{: .no_toc }
 
-- [Sofle Pico BOM (aka "Parts list")](#sofle-pico-bom-aka-parts-list)
-  - [Sourcing parts](#sourcing-parts)
-  - [Vendors](#vendors)
-  - [Bill of materials](#bill-of-materials)
-    - [Required Parts](#required-parts)
-    - [Optional Parts](#optional-parts)
-      - [Optional - RGB](#optional---rgb)
-      - [Optional - OLED](#optional---oled)
-      - [Optional - MCU Sockets](#optional---mcu-sockets)
-      - [Optional - Case](#optional---case)
-      - [Optional - low profile header pins](#optional---low-profile-header-pins)
-      - [Optional - Pimoroni trackball - not recommended](#optional---pimoroni-trackball---not-recommended)
-  - [Tools and materials](#tools-and-materials)
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
   
 ## Sourcing parts
 This sourcing guide was heavily influenced by the [legacy sourcing guide](https://josefadamcik.github.io/SofleKeyboard/sourcing_parts.html) written by Josef Adamčík.
 
 Sofle Keyboard is supposed to be simple DIY keyboard so it’s possible to source all the parts yourself starting with PCBs, case plates and ending with every component on the board.
 
-In the case of PCBs and plates it might be more cost effective to buy them through a vendor, but it’s possible to go through manufacturing process as well. There is a guide to help you [place an order with a PCB vendor](pcb-ordering). This can be an interesting process, and I encourage trying it.
+In the case of PCBs and plates it might be more cost effective to buy them through a vendor, but it’s possible to go through manufacturing process as well. There is a guide to help you [place an order with a PCB vendor](/build/pico-ordering-guide). This can be an interesting process, and I encourage trying it.
 
 For the remaining components, most of them can be bought on Ebay on AliExpress, or Amazon. There used to be significant savings found through AliExpress - but that price gap has been closing in the past few years. If the component is similar in price, I would recommend deferring to the more trusted vendor. 
 
@@ -38,17 +33,17 @@ There are not yet vendors selling the Sofle Pico.
 
 | Name | Count | Remarks | Potential Storefront |
 | ---- | ----- | ------- | -------------------- |
-| PCB | 2 | The PCB should be 1.6mm thick. I used JLCPCB's default settings only customizing the PCB color, and selecting 'lead free' if not using a case. | Manufacturers such as JLCPCB, LCSC, and Elecrow. [Price comparison tool](https://pcbshopper.com/) | |
+| PCB | 2 | The PCB should be 1.6mm thick. I used JLCPCB's default settings only customizing the PCB color, and selecting 'lead free' if not using a case. | Manufacturers such as JLCPCB, LCSC, and Elecrow. [Price comparison tool](https://pcbshopper.com/) | 
 | MX Hot-swap Sockets | 58 | The PCB requires sockets. Switches cannot be soldered directly to the board. | [Aliexpress](https://www.aliexpress.us/item/3256803687338432.html) |
 | Diodes | 60 | Surface mount SOD-123 1N4148, or through-hole 1N4148 diode. These are common, any old one should do. Through hole is usually easier to solder. | SMD: [AliExpress](https://www.aliexpress.us/item/2251832663565152.html) [JLCPCB](https://jlcpcb.com/partdetail/3368026-1N4148SOD123/C2972760) Through-hole: [AliExpress](https://www.aliexpress.us/item/2251832473773777.html) |
 | Schottky diodes | 2 | Through-hole 1N5817 diodes. These are common, any old one should do. Since you only need 2, consider getting it as part of diode kit. |  [AliExpress](https://www.aliexpress.us/item/3256805521351480.html) |
 | Raspberry Pi Picos | 2 | PCB is specifically designed with the Official Pico and YD-2040 type clone in mind, however several [other clone types](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo) should be compatible (Waveshare, WeAct, EstarDyn, Tenstar). Although the Pico is designed with a surface mount option, the Sofle Pico is designed assuming the Pico is soldered with [headers](https://www.sparkfun.com/products/17907). The Official Pico uses Micro USB, which has been known to snap off. The USB-C variants are recommended. | [AliExpress: YD-2040](https://www.aliexpress.us/item/3256803909832318.html), [AliExpress: Tenstar](https://www.aliexpress.us/item/3256805868694592.html), [Official Raspberry Pi Resellers](https://www.raspberrypi.com/products/raspberry-pi-pico/)|
 | TRRS Jacks | 2 | PJ-320A | [AliExpress](https://www.aliexpress.us/item/2255800474897706.html) |
 | TRRS  (3.5mm "Headphone" Cable) | 1 | TRRS ("4 pole" required) | |
-| MX Style Switches | 58 | 3-pin or 5-pin will work. If you're not using a keyplate, you'll want 5-pin.| |
+| MX Style Switches | 58 | 3-pin or 5-pin will work. If you're not using a keyplate, you'll want 5-pin.| 
 | Key Caps | 58 | | |
 | Rotary Encoders and Caps | 2 | EC-11 Rotary Encoder. 20mm stem is the most common. Make sure the knob matches the encoder's shaft diameter, depth and shape. SA keycaps can be quite tall, so you may want to use tall knobs as well.| [AliExpress 20mm](https://www.aliexpress.us/item/2261799870168498.html) |
-| Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. | | 
+| Micro USB Cable or USB-C Cable | 1 | USB cable for connecting the keyboard to your computer, dependent on what the Pico you chose uses. Some inexpensive USB-C cables are not built to spec, and [may not be reversible](/troubleshooting#plug-in-the-usb-cable-and-nothing-happens). | 
 
 <hr>
 
@@ -60,7 +55,7 @@ These parts are necessary for the RGB lighting.
 
 | Name | Count | Remarks | Potential Storefront |
 | ---- | ----- | ------- | -------------------- |
-| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Optional - but not technically required. The Pico runs at 3.3V while the LEDs require 5V logic. If you omit this level shifter, the first LED in the circuit acts as a level shifter. In [casual tests](build_log#thermal-imaging-led-test-conclusion.), omitting the level shifter makes the board run about 6°C hotter, which is still in the acceptable Pico operating range. I'm not sure if this will eventually burn out the LEDs prematurely. | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
+| 74AHCT1G125 Voltage Level Shifter/ Bus Buffer | 2 | SOT23-5 Footprint <br/> <br/> Optional - but not technically required. The Pico runs at 3.3V while the LEDs require 5V logic. If you omit this level shifter, the first LED in the circuit acts as a level shifter. In [casual tests](/build-log#thermal-imaging-led-test-conclusion), omitting the level shifter makes the board run about 6°C hotter, which is still in the acceptable Pico operating range. I'm not sure if this will eventually burn out the LEDs prematurely. | [AliExpress](https://www.aliexpress.us/item/3256803831434811.html) [JLCPCB](https://jlcpcb.com/partdetail/TexasInstruments-SN74AHCT1G125DBVR/C7484)|
 | RGB SMD LEDs SK6803MINI-E | 74 | The 3MA SK6803MINI-E must be used instead of the traditional 12MA SK6812MINI-E. The SK6803MINIE-E has a smaller current draw, allowing the LEDs to be very bright at manageable wattage. | [AliExpress](https://www.aliexpress.us/item/3256803450292556.html) [JLCPCB](https://jlcpcb.com/partdetail/Normand-SK6803MINIE/C5184589)|
 
 <hr>
@@ -104,7 +99,7 @@ If you've chosen not to socket the MCU, these are nicer than the header pins tha
 <hr>
 
 #### Optional - Pimoroni trackball - not recommended
-Electrically, this works, but it's not a great experience. The footprint is there if you want to continue development. See [Pimaroni.md](pimoroni.md) for more details.
+Electrically, this works, but it's not a great experience. The footprint is there if you want to continue development. See [Pimoroni Support](pimoroni.md) for more details.
 
 <hr>
 

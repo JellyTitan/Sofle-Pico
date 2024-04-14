@@ -18,23 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sofle Pico
-email: your-email@example.com
+title: Sofle Pico Split Keyboard
+# email: your-email@example.com // Email intentionally left out. Users should request help through GitHub.
 description: >- # this means to ignore newlines until "baseurl:"
   Sofle Pico is a split ortholinear keyboard based on Sofle V2 that uses RP2040 
   Pico MCU, 128x64 OLEDs, RGB lighting, rotary encoders, and supports a 
   tenting puck.
 domain: jellytitan.github.io
 # baseurl: /docs # the subpath of your site, e.g. /blog
-url: "https://soflepico.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.soflepico.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  JellyTitan
+# For the SEO plugin
+author:
+  name: Ryan Neff
+  url: https://github.com/JellyTitan/
+tagline: Sofle Pico build guide and documentation
 
 # Build settings
 theme: just-the-docs
 plugins:
   - jekyll-feed
-
+  - jekyll-sitemap
+  - jekyll-loading-lazy
+  - jekyll-target-blank
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,7 +67,7 @@ plugins:
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/images/logos/sofle-pico-logo-readme-lockup-darkmode.svg"
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "/images/logos/favicon.ico"
+favicon_ico: "/images/favicons/favicon.ico"
 # Aux links for the upper right navigation
 aux_links:
   "Sofle Pico on GitHub":
@@ -72,7 +80,8 @@ aux_links_new_tab: true
 # Supports true (default) or false
 heading_anchors: true
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+# color_scheme: dark
+color_scheme: pico
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 ga_tracking: G-JFRQQ42MCT

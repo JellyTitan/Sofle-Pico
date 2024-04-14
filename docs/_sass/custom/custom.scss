@@ -1,0 +1,35 @@
+.site-header {
+  background-color: #C51A4A;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+// Hamburger button on magenta bg.
+#menu-button .icon {
+  color: white;
+}
+
+// Github aux nav button.
+  .aux-nav-list-item .btn {
+    margin: .8rem;
+    font-size: 1rem;
+    svg {
+      vertical-align: text-top;
+    }
+  }
+
+
+
+#site-nav {
+  .nav-list .nav-list-item {
+    font-size: $font-size-5 !important;
+  }
+}
+tr:nth-child(even) td {
+  background-color: $grey-lt-100;
+}
+thead th {
+  background-color: $grey-lt-300;
+}
+

@@ -2,28 +2,31 @@
 layout: page
 nav_title: Troubleshooting
 title: Troubleshooting
+description: Sofle Pico troubleshooting guide
 permalink: /troubleshooting
-nav_order: 5
+nav_order: 7
 ---
-
-This troubleshooting guide has been compiled from prior Sofle generations, the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.
+# Troubleshooting
+{: .no_toc }
 
 {: .warning}
 > This is still a work in progress!
 > @todo - write this. Lean on Junco and Sofle for a structure.
 
-[Troubleshooting](#troubleshooting)
-- [LED's](#leds)
-  - [No LEDs are working](#no-leds-are-working)
-  - [Some LED's are not working](#some-leds-are-not-working)
-- [Switches](#switches)
-  - [An entire row or column of keys is not working](#an-entire-row-or-column-of-keys-is-not-working)
-- [VIA](#via)
-  - [VIA error 'failed to open device' or 'Received invalid protocol from device'](#via-error-failed-to-open-device-or-received-invalid-protocol-from-device)
-- [QMK](#qmk)
-- [Miscellaneous](#miscellaneous)
-  - [Plug in the USB cable and nothing happens](#plug-in-the-usb-cable-and-nothing-happens)
-- [Footnotes](#footnotes)
+This troubleshooting guide has been compiled from prior Sofle generations, the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.
+
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+## Where to get help
+
+* You can open an issue on Github [https://github.com/JellyTitan/Sofle-Pico/issues](https://github.com/JellyTitan/Sofle-Pico/issues)
+* You can start a larger discussion in the [Sofle Pico Github discussions page](https://github.com/JellyTitan/Sofle-Pico/discussions).
+* Not directly related to Sofle Pico, but there are many helpful folks on the [r/olkb](https://www.reddit.com/r/olkb/), [r/mechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/), [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/) and for all things QMK related, the [QMK Discord](https://discord.com/invite/fBGYurv). 
 
 <hr>
 

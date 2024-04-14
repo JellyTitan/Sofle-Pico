@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Default keymap
-# permalink: /pcb-ordering
+description: Default keymap for the Sofle Pico, derived from the Sofle V1
+permalink: flashing/drag-and-drop
 parent: Flashing
 nav_order: 5
 ---

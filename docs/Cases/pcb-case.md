@@ -1,7 +1,9 @@
 ---
 layout: page
 title: PCB
+description: PCB Case for the Sofle Pico
 parent: Cases
+permalink: /cases/pcb-case
 nav_order: 3
 ---
 
@@ -13,8 +15,9 @@ nav_order: 3
 {: .info}
 > Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/PCB_case).
 
+<hr>
 
-<br><img src="/images/cases/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="/images/cases/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
+<br><a href="/images/cases/sofle_pico_bottom_RH.png"><img src="/images/cases/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"></a> <a href="/images/cases/sofle_pico_bottom_LH.png"><img src="/images/cases/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%"></a>
 
 <hr>
 
@@ -33,7 +36,7 @@ PCB vendors may add an additional charge for 'extra holes' when ordering the fro
 
 | Name | Count | Remarks | Potential Storefront | 
 |:-----|:------|:--------|:---------------------|
-| keyplates | 2 | | Elecrow or JLC |
+| keyplates | 2 | 1.6mm thick pcb. Use the same ordering process as the main pcb. | Elecrow or JLC |
 | backplates | 2 | Can be substituted with Acrylic or 3d printed. | Elecrow or JLC |
 | OLED plates | 2 | These should be made with Acrylic. The file can be found in the Acrylic case folder. `sofle_pico_OLED_v3.4.dxf.zip`  | Elecrow |
 | M2 5mm screws | 32 | Any old M2 will do. I prefer hex cap for aesthetics. 6mm or 4mm works just fine too. |[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)<br>[AliExpress](https://www.aliexpress.us/item/3256805706765925.html) |
