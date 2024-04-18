@@ -65,7 +65,7 @@
       39,
       40
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "871d030_80000001",
     "zone_display_mode": 0
   },
   "meta": {
@@ -79,21 +79,21 @@
         "open": false,
         "window": {
           "display": 1,
-          "maximized": false,
-          "pos_x": 436,
-          "pos_y": 127,
-          "size_x": 1445,
-          "size_y": 908
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 2576,
+          "size_y": 1416
         }
       },
       {
         "name": "Sofle_Chico.kicad_sch",
         "open": false,
         "window": {
-          "display": 2,
+          "display": 0,
           "maximized": false,
-          "pos_x": 1715,
-          "pos_y": 64,
+          "pos_x": -2134,
+          "pos_y": 301,
           "size_x": 1936,
           "size_y": 1056
         }
