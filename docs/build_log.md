@@ -3,6 +3,7 @@ layout: page
 nav_title: Build Log
 title: Build Log
 permalink: /build-log
+nav_order: 8
 ---
 
 # Sofle Pico Build log
@@ -31,7 +32,8 @@ These notes were made in KiCad during the design & build process. There were ult
 	 level shifter bypass. (THis doesn't work - they overheat the boards)
 * DONE: Consider removing volt shifter. Really hard to solder, may not be necessary. 
 	(Testing shifter bypass to asses SK6812 instead of SK6803) (DONT DO THIS! THE BOARD OVERHEATS)
-* * Lessons learned/TODO 5-22-23:
+
+* Lessons learned 5-22-23:
 * DONE: Remove OLED pin markings after prototype validation
 * DONE: The 4 holes in the keyplate need to be smaller, otherwise the posts go through, and that sucks.
 * DONE: Make a hole in the bottom plate for the tenting puck to recess into.
@@ -145,7 +147,7 @@ Sent out v3.5 for production 11-13-23.
 	* Updated OLED logo using [image2cpp](https://javl.github.io/image2cpp/):
 		![Sofle Pico OLED logo regeneration instructions](images/build_log_pico/Sofle_Pico_logo_OLED_regen_settings.png)
   * Added QMK/VIA logo to RH to appear on boot:
-	![QMK 128x64 logo]("Design/Pico/QMK logo/qmk_via_OLED_128x64.svg")
+	![QMK 128x64 logo](images/build_log_pico/qmk_via_OLED_128x64.svg)
 ## v3.5.2 12-15-23
   * Found an example of handedness by pin in a [Lotus58](https://github.com/TweetyDaBird/Lotus-Keyboard). The GND and VCC tie directly into those pins - specifically, not using a pull up resistor.
  
@@ -192,7 +194,8 @@ A redditor suggested that the level shifter could be omitted, because the first 
 | SK6803 MINI-E | Y | ~120°F / 48°C |![SK6803 MINI-E with bypass jumper](images/build_log_pico/IR_00014.JPG) |
 | SK6803 MINI-E | N | ~130°F / 54°C | ![SK6803 MINI-E without bypass jumper](images/build_log_pico/IR_00013.JPG) |
 | SK6812 MINI-E | N | ~230°F / 110°C | ![SK6812 MINI-E without bypass jumper](images/build_log_pico/IR_00011.JPG) |
-* **Thermal imaging LED test conclusion.**
+
+### Thermal imaging LED test conclusion
 The SK6812 ran too hot. It overheated and shut down a few times. The SK6812Mini-e should not be used. 
 The average run temp for the SK6803 Mini-e was about 6°C difference with/without the level shifter. The Picos operating range is -20°C to 85°C, so even running without a level shifter puts us at 54°C, well within the acceptable range. Updating the build guide with level shifter as 'recommended, but not required'. 
 * Reduced default QMK max brightness: In QMK `info.json`, reducing `rgb_matrix.max_brightness: 127` down from `255` reduced the operating temp of the level-shifter SK6803MINI-E down to ~100°F. This seems like a much better default. Didn't try it with the bypass jumper variant though. 

@@ -2,13 +2,21 @@
 layout: page
 title: Acrylic
 parent: Cases
+permalink: /cases/acrylic-case
+description: Acrylic case files and ordering instructions
 nav_order: 1
+image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 ---
 
 # Acrylic case
 
-<img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%">
-<img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%">
+{: .info}
+>  Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case).
+
+<hr>
+
+<a href="/images/cases/acrylic_case_hero_shot.jpeg"><img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
+<a href="/images/cases/sofle_pico_acrylic_case.jpeg"><img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
 
 <hr>
 
@@ -16,19 +24,17 @@ nav_order: 1
 
 These don't retain the switches as tightly as the 3d printed or the PCB cases, but they look fantastic. You can use rubber bump feet between the front plate and the PCB to improve switch retention. (See note in bom).
 
-The production ready files for upload can be found in the "production_ready" folder. They are zipped .dxf files. I recommend 3mm thickness.
+The production ready files for upload can be found in the "production_ready" folder. They are zipped .dxf files. I recommend 3mm thickness. Some online vendors ask you to manually input the dimensions for pricing. Dimensions can be found in the BOM remarks below.
 
-{: .info}
->  Files are in the Github Repo [here](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case).
 <hr>
 
 ## BOM
 
  | Name | Count | Remarks | Potential Storefront |
 |-|-|-|-|
-| keyplates   | 2 | Use the same file for both sides: `sofle_pico_key_plate_v3.5.5.dxf.zip` |[Elecrow](https://www.elecrow.com/)|
-| backplates  | 2 | Use the same file for both sides: `sofle_pico_backplate_v3.4.dxf.zip` |[Elecrow](https://www.elecrow.com/)|
-| OLED plates | 2 | Use the same file for both sides: `sofle_pico_OLED_v3.4.dxf.zip`|[Elecrow](https://www.elecrow.com/)|
+| keyplates   | 2 | Use the same file for both sides: `sofle_pico_key_plate_v3.5.5.dxf.zip`<br> Dimensions: `146mm x 117mm` |[Elecrow](https://www.elecrow.com/)|
+| backplates  | 2 | Use the same file for both sides: `sofle_pico_backplate_v3.4.dxf.zip`<br> Dimensions: `146mm x 117mm` |[Elecrow](https://www.elecrow.com/)|
+| OLED plates | 2 | Use the same file for both sides: `sofle_pico_OLED_v3.4.dxf.zip`<br> Dimensions: `34mm x 72mm` |[Elecrow](https://www.elecrow.com/)|
 |M2 5mm screws|32| Any old M2 will do. I prefer 'button head' for aesthetics. 4mm or 6mm works too, but 6mm may bottom out. |[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)<br>[AliExpress](https://www.aliexpress.us/item/3256805706765925.html)|
 | M2 6mm female-female standoffs | 10 | Connects the front plate to the back plate, runs _through_ the pcb. Aluminum versions are available, but I've found they tend to arrive 'greasy', so I recommend the brass versions.|[Amazon](https://www.amazon.com/gp/product/B07B9X1KY6)<br>[AliExpress](https://www.aliexpress.us/item/3256804317893173.html)|
 | M2 18mm female-female standoffs | 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate. These can be harder to find in small quantities. You can use an assortment kit to make these. |[Amazon](https://www.amazon.com/gp/product/B07B9X1KY6)<br>[AliExpress](https://www.aliexpress.us/item/3256804317893173.html)|

@@ -6668,6 +6668,11 @@
     (pin "3" (uuid 3e1c9622-13ea-4d49-9639-6cbb028579f8))
     (pin "4" (uuid 3d089292-8c3e-49fa-8f8e-a5665c164fe1))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED3") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED3") (unit 1)
@@ -6750,6 +6755,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "H2") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/64d4cd32-93b0-46d2-8270-bf3dd0c56250"
           (reference "H2") (unit 1)
@@ -7026,6 +7036,11 @@
     (pin "4" (uuid 3fc5e304-4e0b-4f88-b4e2-92b72d5ace6a))
     (pin "5" (uuid c3760e66-8f26-49ae-9788-4f976cd7806f))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "J6") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "J6") (unit 1)
@@ -8565,6 +8580,11 @@
     (pin "3" (uuid 78197a1d-248f-4b93-86cc-aea56e1e2e45))
     (pin "4" (uuid 627d34cf-3529-4e52-8ab7-4f865a5457d0))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED7") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED7") (unit 1)
@@ -8789,6 +8809,11 @@
     (pin "3" (uuid 7f33463b-efc9-4908-a573-1a04631fc35e))
     (pin "4" (uuid 51c6e409-e088-4952-b558-bb8dea1afba8))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED2") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED2") (unit 1)
@@ -9167,6 +9192,11 @@
     (pin "4" (uuid 576e0b8c-9c9b-4f87-8d7c-3007000aa1e4))
     (pin "5" (uuid 0211486d-6179-4e57-ad44-c6aee8e6b89f))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "J5") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "J5") (unit 1)
@@ -9246,6 +9276,11 @@
     (pin "3" (uuid 759c1e99-d53a-4c90-b14a-1268a38e3d94))
     (pin "4" (uuid 2782f053-0703-45cf-9fae-69c2921cdde0))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED11") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED11") (unit 1)
@@ -9396,6 +9431,11 @@
     (pin "3" (uuid 38452a54-1df5-46d8-9e9d-4b3ac3a283e5))
     (pin "4" (uuid c4771848-c8b7-49d3-bf5b-2f0888398b46))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED9") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED9") (unit 1)
@@ -9475,6 +9515,11 @@
     (pin "3" (uuid 3fa0ed56-aff7-4b15-b7d4-efd00267b75a))
     (pin "4" (uuid fb88d72e-8b08-4262-996d-108e17f10f46))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED1") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED1") (unit 1)
@@ -10149,6 +10194,11 @@
     (pin "3" (uuid 66a9de78-841c-4fad-a6e1-77e8d78db737))
     (pin "4" (uuid 54a7d28c-f3ce-46c7-8e4a-fc7592ca8926))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED10") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED10") (unit 1)
@@ -10544,6 +10594,11 @@
     (pin "3" (uuid 1951a0df-4922-46f7-9443-cf8d3b091e47))
     (pin "4" (uuid 966097ef-e93c-4275-8592-c0c211ad7217))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED5") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED5") (unit 1)
@@ -10764,6 +10819,11 @@
     (pin "3" (uuid 03987990-425c-4bc1-ad3b-dcaeb7350841))
     (pin "4" (uuid b72f8a8e-26fa-409c-a88e-2b4abd8a12c3))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED4") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED4") (unit 1)
@@ -10841,6 +10901,11 @@
     (pin "3" (uuid 415f7b5d-5557-46cf-ab39-1b25fffc01b4))
     (pin "4" (uuid 58371a2a-f0b9-442f-91ec-50459f37b159))
     (instances
+      (project "Sofle_Chico"
+        (path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+          (reference "LED8") (unit 1)
+        )
+      )
       (project "Sofle_Chico_Panel"
         (path "/21b17b23-a59f-4931-b84d-3d9b0f18ccb9/5af8c640-4168-4e01-8c31-1ddf9eb1f2f9"
           (reference "LED8") (unit 1)
