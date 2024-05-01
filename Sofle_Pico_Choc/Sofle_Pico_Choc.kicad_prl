@@ -81,20 +81,8 @@
   "project": {
     "files": [
       {
-        "name": "Sofle_Pico_Choc.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": -1439,
-          "pos_y": 55,
-          "size_x": 1399,
-          "size_y": 1006
-        }
-      },
-      {
         "name": "Sofle_Pico_Choc.kicad_pcb",
-        "open": false,
+        "open": true,
         "window": {
           "display": 2,
           "maximized": true,
