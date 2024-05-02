@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -82,7 +82,7 @@
     "files": [
       {
         "name": "Sofle_Pico_Choc.kicad_pcb",
-        "open": true,
+        "open": false,
         "window": {
           "display": 2,
           "maximized": true,
@@ -90,6 +90,18 @@
           "pos_y": -8,
           "size_x": 1936,
           "size_y": 1056
+        }
+      },
+      {
+        "name": "Sofle_Pico_Choc.kicad_sch",
+        "open": false,
+        "window": {
+          "display": 0,
+          "maximized": false,
+          "pos_x": -1687,
+          "pos_y": 55,
+          "size_x": 1694,
+          "size_y": 1006
         }
       }
     ]
