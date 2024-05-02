@@ -79,12 +79,10 @@ Switch sockets installed on the back of the PCB facing up towards the front of t
 
 <hr>
 
-## Level shifter
-The level shifter is tiny & squirrley. It's the same size as an SMD, but with 5 pins. There is only one footprint for this component - so it will be on the front on the left hand, and on the back on the right hand. Tack one corner down, and then "[drag soldering](https://www.youtube.com/watch?v=wUyetZ5RtPs)" the remaining pins. 
-![level shifter](/images/build_guide_pico/sofle_pico_level_shifter_placement.png)
-Alternately, if you've decided to omit the level shifter, be sure to bridge the level shifter bypass jumper. It's next to the level shifter footprint. You can drag solder across it, or bend a diode leg and solder it through the holes.<br><a href="/images/build_guide_pico/sloppy_bypass_jumper.png"><img src="/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="32%" /></a>
+## Level shifter Bypass
+Sofle Pico versions 3.5.4 and earlier have a footprint for a level shifter component. This part was unnecessary, as the first LED in the chain acts as a level shifter. The level shifter footprint is in the LED power chain, so the level shifter bypass jumper needs to be bridged so that power makes it to the LEDs.<br><a href="/images/build_guide_pico/sofle_pico_level_shifter_placement.png"><img src="/images/build_guide_pico/sofle_pico_level_shifter_placement.png" alt="Sofle Pico level shifter" width="49%" /></a> <a href="/images/build_guide_pico/sloppy_bypass_jumper.png"><img src="/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" width="49%" /></a>
 
-Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. There'You'll need to do this for both hands.
+You can [drag solder](https://www.youtube.com/watch?v=wUyetZ5RtPs) across the jumper, or bend a diode leg and solder it through the holes. Modern flux core solder can make drag bridging difficult - i recommend the jumper leg method. The right-most hole on the bending jig is for this. Do this for both hands.
 
 <a href="/images/build_guide_pico/jumper_jig.jpeg"><img src="/images/build_guide_pico/jumper_jig.jpeg" alt="Sofle Pico jumper bender location" width="32%" /></a> <a href="/images/build_guide_pico/jumper_bender_in_use.jpeg"><img src="/images/build_guide_pico/jumper_bender_in_use.jpeg" alt="Sofle Pico jumper bender in use" width="32%" /></a> <a href="/images/build_guide_pico/level_shifter_bypass_jumper.jpeg"><img src="/images/build_guide_pico/level_shifter_bypass_jumper.jpeg" alt="Sofle Pico jumper bender in use" width="32%" /></a>
 

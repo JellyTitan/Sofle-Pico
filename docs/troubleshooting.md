@@ -33,8 +33,8 @@ This troubleshooting guide has been compiled from prior Sofle generations and gu
 
 ### No LEDs are working
 * Verify that the Pico is getting power.
-* Ensure the level shifter is properly soldered onto the PCB, re-solder as needed. If no level shifter was used, ensure the bypass jumper was soldered correctly.
-* Verify that LED_1 is oriented correctly and all the legs are soldered.
+* Verify that LED1 is oriented correctly and all the legs are soldered.
+* Sofle Pico versions 3.5.4 and earlier have a footprint for a level shifter component. This part was unnecessary, as the first LED in the chain acts as a level shifter. The level shifter footprint is in the LED power chain, so the level shifter bypass jumper needs to be bridged so that power makes it to the LEDs. Verify that the level-shifter bypass jumper has been bridged. If your board has the footprint/bridge, it will be located above LED1. <br><a href="/images/build_guide_pico/sloppy_bypass_jumper.png"><img src="/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" /></a>
 
 ### Some LED's are not working or are flickering.
 1. Check that the LED not turning on is in the correct orientation. (The leg with the notch should be aligned with the marked pad).
@@ -50,13 +50,13 @@ This troubleshooting guide has been compiled from prior Sofle generations and gu
 1. Check switch socket soldering. Are there any visible gaps or 'wiggle'?
 1. Check for excess solder possibly bridging a nearby trace. [Use solder wick](https://www.youtube.com/watch?v=Vou2xlJkuoU) to remove some solder. 
 1. Check the diodes near the switch are soldered and in the correct orientation. For surface mount diodes, the white band should be closer to the outlined pad. For through-hole diodes, the black stripe should be closer to the outlined pad.
-2. Try shorting the pads with a pair of tweezers. If a key press is registered, then the problem is with the switch, socket, or diode. If no key press is registered when shorting, the problem is elsewhere.
+2. Try shorting the switch socket pads with a pair of tweezers or a paperclip. If a key press is registered, then the problem is with the switch, socket, or diode. If no key press is registered when shorting, the problem is elsewhere.
 
 ### An entire row or column of keys is not working
 1. Likely a problem with the PCB's connection to the Pico.
 1. Check that all diodes in the row or column have the correct orientation and good solder joints.
-1.
- 
+1. 
+
 <hr>
 
 ## VIA
