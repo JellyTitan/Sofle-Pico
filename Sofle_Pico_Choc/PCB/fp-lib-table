@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Sofle_Pico")(type "KiCad")(uri "${KIPRJMOD}/Sofle_Pico.pretty")(options "")(descr ""))
+)
