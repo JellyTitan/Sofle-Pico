@@ -241,6 +241,7 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 Since the main PCB is stable, focusing on case and documentation.
 - Reviewed the backplate branding for legacy sofles, decided to go more minimalist and de-emphasize the text.<br>
 <img src="images/build_log_pico/bottom_sofle_RGB.png" alt="Back plate of the Sofle RGB" width="32%"> <img src="images/build_log_pico/bottom_sofle_v1.png" alt="Back plate of the Sofle v1" width="32%"> <img src="images/build_log_pico/bottom_sofle_v2.png" alt="Back plate of the Sofle v2" width="32%"><br>Here's what i went with instead:<br><img src="images/build_log_pico/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="images/build_log_pico/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
+- @todo Remove logo on one side below MCU, and move attribution there, to free up space. @theWerle may have already taken care of this as part of the [Sofle Pico Choc](https://github.com/JellyTitan/Sofle-Pico/discussions/29).
 
 ## Future Feature Wish list
 - [ ] Color displays.
