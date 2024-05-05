@@ -5654,7 +5654,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 132.08) (xy 124.46 132.08)
+			(xy 115.57 132.08) (xy 120.65 132.08)
 		)
 		(stroke
 			(width 0)
@@ -18142,7 +18142,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 124.46 132.08 0)
+		(at 120.65 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18151,7 +18151,7 @@
 		(fields_autoplaced yes)
 		(uuid "59709622-570a-42ca-a673-4857166b9536")
 		(property "Reference" "#PWR06"
-			(at 124.46 135.89 0)
+			(at 120.65 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18160,7 +18160,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 127 130.81 0)
+			(at 123.19 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18168,7 +18168,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 132.08 0)
+			(at 120.65 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18177,7 +18177,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 132.08 0)
+			(at 120.65 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18186,7 +18186,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 132.08 0)
+			(at 120.65 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23495,7 +23495,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ea3b0966-2681-4465-ab94-d4bc089c96e5")
 		(property "Reference" "#PWR028"
 			(at 115.57 143.51 0)
@@ -23507,7 +23506,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 115.57 134.62 0)
+			(at 119.126 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
