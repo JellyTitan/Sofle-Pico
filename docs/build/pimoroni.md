@@ -4,7 +4,7 @@ title: Pimoroni Support
 description: Pimaroni implementation notes
 parent: Build
 permalink: /build/pimarnoi
-nav_order: 6
+nav_order: 7
 image: /images/pimoroni/pimoroni_model.png
 ---
 
