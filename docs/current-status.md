@@ -28,6 +28,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 - [ ] Add a `twitter_username` in `config.yml`
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
 - [ ] Update docs for the troubleshooting section.
+- [ ] Convert this spreadsheet for MCU's to a markdown table https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo/edit#gid=0
 - [ ] Review docs and update images 
 - [ ] Add a 'releases' page.
 
