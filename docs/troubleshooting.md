@@ -10,10 +10,9 @@ nav_order: 7
 {: .no_toc }
 
 {: .warning}
-> This is still a work in progress!
-> @todo - write this. Lean on Junco and Sofle Choc for a structure.
+> This is still a work in progress! If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.
 
-This troubleshooting guide has been heavily influenced by prior Sofle generations and guides, such as the [Sofle Choc troubleshooting guide](https://brianlow.notion.site/Troubleshooting-3633bac9a74b4f0298151b437c992e53), the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.
+This troubleshooting guide has been heavily influenced by prior Sofle generations and guides, such as the [Sofle Choc troubleshooting guide](https://brianlow.notion.site/Troubleshooting-3633bac9a74b4f0298151b437c992e53), the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). 
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -86,6 +85,7 @@ I recommend testing with just one half connected. If you have used unique firmwa
 <hr>
 
 ## QMK
+As of May 5th 2024, there is a QMK PR open to add the Sofle Pico. See the <a href="flashing/qmk">flashing help page</a> for more details. 
 
 <hr>
 
