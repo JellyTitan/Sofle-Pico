@@ -4873,7 +4873,7 @@
 		(uuid "01ce4365-7baa-435f-a4b8-6431d7d227f6")
 	)
 	(junction
-		(at 116.84 59.055)
+		(at 119.38 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "094a85a7-1acb-43cb-8331-5157dcf1c376")
@@ -4883,6 +4883,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d866719-acfe-46b3-b9e7-bbad8b4c38cc")
+	)
+	(junction
+		(at 99.06 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f35e1d9-0ddb-4413-942d-eb57428c97d8")
 	)
 	(junction
 		(at 204.47 123.19)
@@ -4957,12 +4963,6 @@
 		(uuid "484b55c8-6601-4102-adff-8cbdaabf96ab")
 	)
 	(junction
-		(at 95.885 59.055)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48aebd9d-aef1-405c-98ca-0fff39b06920")
-	)
-	(junction
 		(at 179.07 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5011,7 +5011,7 @@
 		(uuid "5577494a-5abf-43f9-8b39-8c9c178c3283")
 	)
 	(junction
-		(at 106.68 51.435)
+		(at 109.22 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55a74908-783c-4c34-8b9a-b1d250a9df0d")
@@ -5041,7 +5041,7 @@
 		(uuid "6605a3d3-41bf-4e9f-9a27-f0e1a0bb570b")
 	)
 	(junction
-		(at 85.725 51.435)
+		(at 88.265 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6900edc1-09b8-4b20-bebd-51465c82a8d4")
@@ -5089,7 +5089,7 @@
 		(uuid "85c0c6ae-8edd-4dde-a5e8-e4bebed699f2")
 	)
 	(junction
-		(at 106.68 59.055)
+		(at 109.22 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8834b89a-7bc7-4e2d-938f-11924c1b87c5")
@@ -5191,12 +5191,6 @@
 		(uuid "ab4b6cc2-555a-4ac9-adca-804f4e445b8e")
 	)
 	(junction
-		(at 95.885 51.435)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1c2c1e7-ef8c-4bb5-b1ba-5c58f3f36619")
-	)
-	(junction
 		(at 115.57 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5291,6 +5285,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9eb3f95-1e32-4e9a-9a47-90048823934b")
+	)
+	(junction
+		(at 99.06 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eca03ecb-26f6-46f0-bdf8-7607ebd7b666")
 	)
 	(junction
 		(at 245.11 139.7)
@@ -5534,7 +5534,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 51.435) (xy 116.84 51.435)
+			(xy 109.22 52.07) (xy 119.38 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5694,6 +5694,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 59.69) (xy 109.22 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ba242f8-824b-4ffc-8d21-4f59787c01f3")
+	)
+	(wire
+		(pts
 			(xy 48.26 134.62) (xy 50.8 134.62)
 		)
 		(stroke
@@ -5734,7 +5744,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.885 51.435) (xy 106.68 51.435)
+			(xy 88.265 52.07) (xy 99.06 52.07)
 		)
 		(stroke
 			(width 0)
@@ -6394,7 +6404,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 59.055) (xy 116.84 59.055)
+			(xy 109.22 59.69) (xy 119.38 59.69)
 		)
 		(stroke
 			(width 0)
@@ -6714,6 +6724,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 52.07) (xy 109.22 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94e328ab-f233-45e8-a9b9-25a00533c47b")
+	)
+	(wire
+		(pts
 			(xy 219.71 130.81) (xy 240.03 130.81)
 		)
 		(stroke
@@ -6994,16 +7014,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.885 59.055) (xy 106.68 59.055)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b470940d-48c6-4cb7-9620-2270c12932e7")
-	)
-	(wire
-		(pts
 			(xy 97.79 132.08) (xy 102.87 132.08)
 		)
 		(stroke
@@ -7034,7 +7044,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.725 59.055) (xy 95.885 59.055)
+			(xy 88.265 59.69) (xy 99.06 59.69)
 		)
 		(stroke
 			(width 0)
@@ -7211,16 +7221,6 @@
 			(type default)
 		)
 		(uuid "ca8462ed-f4d2-4347-9d7e-46f5071c777b")
-	)
-	(wire
-		(pts
-			(xy 85.725 51.435) (xy 95.885 51.435)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cad370a8-34d5-4530-b04e-169b405b47ea")
 	)
 	(wire
 		(pts
@@ -7898,9 +7898,9 @@
 		)
 		(uuid "31fa9d2b-5bb9-4bc3-9a02-29136e10c413")
 	)
-	(text "D31 is not required for RPI Pico SCH compliant \nboards that have an onboard Schottky Diode.\nRefer to Sofle-Pico build guide \nand your RPI Module Datasheet/SCH. \n\nVSYS is variable depending on diode used! \nUser MUST know/verify whether or not their \nMCU Module is pin compliant with RPI Pico. \nRead RPI Pico datasheet Chapter 4.5-4.6\n\nVSYS≈4.9-5.0V w/ USB Power\nVSYS≈4.7-4.9V w/ TRRS Power"
+	(text "D31 is NOT REQUIRED for RPI Pico SCH compliant boards that have \na reverse-polarity protection diode between VBUS and VSYS.\n\nVSYS voltage varies depending on protection diode voltage drop. User must verify \nwhether their chosen MCU Module is 1:1 pin compliant with RPI Pico\n\nVSYS ≈ 4.9-5.0V with USB Power \nVSYS ≈ 4.7-4.9V with TRRS Power\n\nRefer to Sofle-Pico build guide and your RPI Module Datasheet/SCH.\nRead RPI Pico datasheet Chapter 4.5-4.6 for power schematics and references."
 		(exclude_from_sim no)
-		(at 84.582 43.688 0)
+		(at 86.106 38.608 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7953,9 +7953,9 @@
 		)
 		(uuid "c5c1bab3-e3f7-4e87-a74d-64e78dabfb3b")
 	)
-	(text "OPTIONAL decoupling 0805\n"
+	(text "OPTIONAL 0805 surface mount capacitors for power smoothing / decoupling\n\n"
 		(exclude_from_sim no)
-		(at 88.265 50.165 0)
+		(at 86.106 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15078,6 +15078,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 99.06 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "047fdf68-ad18-4cf0-b676-1b08f9333cb4")
+		(property "Reference" "C2"
+			(at 102.87 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 102.87 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 100.0252 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG PN" "CL21B105KBFNNNE "
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Samsung"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance (%)" "10"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_PN" "C28323"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2b5be8e-384d-4622-a945-5614c499fe5e")
+		)
+		(pin "1"
+			(uuid "07692610-f268-485b-800c-e2b535bbf2b0")
+		)
+		(instances
+			(project "Sofle_Pico_Choc"
+				(path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDC")
 		(at 44.45 155.575 0)
 		(unit 1)
@@ -15219,130 +15343,6 @@
 			(project "Sofle_Pico_Choc"
 				(path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 95.885 55.245 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "0bd0e9dc-5047-49f7-b267-32d1138fb0e3")
-		(property "Reference" "C2"
-			(at 99.695 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 99.695 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 96.8502 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG PN" "CC0805KRX7R9BB104"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "YAGEO"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance (%)" "10"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "50V"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_PN" "C49678"
-			(at 95.885 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0a7bea05-ba90-4c3d-9fe3-9d0dfc601666")
-		)
-		(pin "1"
-			(uuid "7e9d6e48-9b4d-49df-8fc9-6edf326ceafa")
-		)
-		(instances
-			(project "Sofle_Pico_Choc"
-				(path "/06057b3a-55ab-4f4e-913e-2aeec5ff3587"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -16189,7 +16189,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 116.84 55.245 0)
+		(at 119.38 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -16198,7 +16198,7 @@
 		(fields_autoplaced yes)
 		(uuid "2027cb18-1414-47d4-8056-344967ad647f")
 		(property "Reference" "C4"
-			(at 120.65 53.975 0)
+			(at 123.19 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16207,7 +16207,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 120.65 56.515 0)
+			(at 123.19 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16216,7 +16216,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 117.8052 59.055 0)
+			(at 120.3452 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16225,7 +16225,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16234,7 +16234,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16243,7 +16243,7 @@
 			)
 		)
 		(property "MFG PN" "CC0805KRX7R9BB104"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16252,7 +16252,7 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16261,7 +16261,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16270,7 +16270,7 @@
 			)
 		)
 		(property "Tolerance (%)" "10"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16279,7 +16279,7 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16288,7 +16288,7 @@
 			)
 		)
 		(property "JLCPCB_PN" "C49678"
-			(at 116.84 55.245 0)
+			(at 119.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19498,7 +19498,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 106.68 55.245 0)
+		(at 109.22 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -19507,7 +19507,7 @@
 		(fields_autoplaced yes)
 		(uuid "74b8ad94-b8f2-4fde-af96-fa37910ea053")
 		(property "Reference" "C3"
-			(at 110.49 53.975 0)
+			(at 113.03 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19516,7 +19516,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 110.49 56.515 0)
+			(at 113.03 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19525,7 +19525,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 107.6452 59.055 0)
+			(at 110.1852 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19534,7 +19534,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19543,7 +19543,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19552,7 +19552,7 @@
 			)
 		)
 		(property "MFG PN" "CC0805KRX7R9BB104"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19561,7 +19561,7 @@
 			)
 		)
 		(property "MFG" "YAGEO"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19570,7 +19570,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19579,7 +19579,7 @@
 			)
 		)
 		(property "Tolerance (%)" "10"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19588,7 +19588,7 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19597,7 +19597,7 @@
 			)
 		)
 		(property "JLCPCB_PN" "C49678"
-			(at 106.68 55.245 0)
+			(at 109.22 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19843,7 +19843,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 59.055 0)
+		(at 119.38 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19851,7 +19851,7 @@
 		(dnp no)
 		(uuid "7815c90e-6e65-4c44-9c32-c4ec186787d7")
 		(property "Reference" "#PWR015"
-			(at 116.84 65.405 0)
+			(at 119.38 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19860,7 +19860,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 60.96 0)
+			(at 123.19 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19868,7 +19868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 59.055 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19877,7 +19877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 59.055 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19886,7 +19886,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 59.055 0)
+			(at 119.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21052,7 +21052,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 85.725 55.245 0)
+		(at 88.265 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -21061,7 +21061,7 @@
 		(fields_autoplaced yes)
 		(uuid "a60793bd-afdc-4769-a2fb-11f2299bc675")
 		(property "Reference" "C1"
-			(at 89.535 53.975 0)
+			(at 92.075 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21070,7 +21070,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 89.535 56.515 0)
+			(at 92.075 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21079,7 +21079,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 86.6902 59.055 0)
+			(at 89.2302 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21088,7 +21088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21097,7 +21097,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21106,7 +21106,7 @@
 			)
 		)
 		(property "MFG PN" "CL21B105KBFNNNE "
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21115,7 +21115,7 @@
 			)
 		)
 		(property "MFG" "Samsung"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21124,7 +21124,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21133,7 +21133,7 @@
 			)
 		)
 		(property "Tolerance (%)" "10"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21142,7 +21142,7 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21151,7 +21151,7 @@
 			)
 		)
 		(property "JLCPCB_PN" "C28323"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23424,7 +23424,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 85.725 51.435 0)
+		(at 88.265 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23432,7 +23432,7 @@
 		(dnp no)
 		(uuid "e5135703-84ba-4014-8815-9611819b3c2a")
 		(property "Reference" "#PWR04"
-			(at 85.725 55.245 0)
+			(at 88.265 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23441,7 +23441,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 85.725 47.625 0)
+			(at 88.265 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23449,7 +23449,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.725 51.435 0)
+			(at 88.265 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23458,7 +23458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.725 51.435 0)
+			(at 88.265 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23467,7 +23467,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.725 51.435 0)
+			(at 88.265 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
