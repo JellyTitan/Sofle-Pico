@@ -9530,7 +9530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 152.4 83.82 0)
 			(effects
 				(font
@@ -9710,7 +9710,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 172.72 83.82 0)
 			(effects
 				(font
@@ -9890,7 +9890,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 193.04 83.82 0)
 			(effects
 				(font
@@ -10070,7 +10070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 213.36 83.82 0)
 			(effects
 				(font
@@ -10250,7 +10250,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 233.68 83.82 0)
 			(effects
 				(font
@@ -10430,7 +10430,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 254 83.82 0)
 			(effects
 				(font
@@ -10610,7 +10610,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 172.72 100.33 0)
 			(effects
 				(font
@@ -10685,7 +10685,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 193.04 100.33 0)
 			(effects
 				(font
@@ -10760,7 +10760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 213.36 100.33 0)
 			(effects
 				(font
@@ -10835,7 +10835,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 233.68 100.33 0)
 			(effects
 				(font
@@ -10910,7 +10910,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 254 100.33 0)
 			(effects
 				(font
@@ -10985,7 +10985,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 152.4 100.33 0)
 			(effects
 				(font
@@ -11690,7 +11690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 152.4 116.84 0)
 			(effects
 				(font
@@ -11765,7 +11765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 172.72 116.84 0)
 			(effects
 				(font
@@ -11840,7 +11840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 193.04 116.84 0)
 			(effects
 				(font
@@ -11915,7 +11915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 213.36 116.84 0)
 			(effects
 				(font
@@ -11990,7 +11990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 233.68 116.84 0)
 			(effects
 				(font
@@ -12065,7 +12065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 254 116.84 0)
 			(effects
 				(font
@@ -12770,7 +12770,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 152.4 133.35 0)
 			(effects
 				(font
@@ -15841,7 +15841,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 170.18 149.86 0)
 			(effects
 				(font
@@ -15916,7 +15916,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 233.68 149.86 0)
 			(effects
 				(font
@@ -16493,7 +16493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 172.72 133.35 0)
 			(effects
 				(font
@@ -17185,7 +17185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 233.68 133.35 0)
 			(effects
 				(font
@@ -18889,7 +18889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 254 149.86 0)
 			(effects
 				(font
@@ -19046,7 +19046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 193.04 133.35 0)
 			(effects
 				(font
@@ -20080,7 +20080,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 254 133.35 0)
 			(effects
 				(font
@@ -21199,7 +21199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 213.36 133.35 0)
 			(effects
 				(font
@@ -23810,7 +23810,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 213.36 149.86 0)
 			(effects
 				(font
@@ -23950,7 +23950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sofle_Pico:SW_MX_HS_DS_1u"
+		(property "Footprint" "Sofle_Pico:Cherry_MX_DS_Hotswap_v3.5.4"
 			(at 193.04 149.86 0)
 			(effects
 				(font
