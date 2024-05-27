@@ -10,10 +10,9 @@ nav_order: 7
 {: .no_toc }
 
 {: .warning}
-> This is still a work in progress!
-> @todo - write this. Lean on Junco and Sofle for a structure.
+> This is still a work in progress! If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.
 
-This troubleshooting guide has been compiled from prior Sofle generations and guides, such as the [Sofle Choc troubleshooting guide](https://brianlow.notion.site/Troubleshooting-3633bac9a74b4f0298151b437c992e53), the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). If you find a problem & solution not listed here, please add it using the 'edit on github' link at the bottom of this page.
+This troubleshooting guide has been heavily influenced by prior Sofle generations and guides, such as the [Sofle Choc troubleshooting guide](https://brianlow.notion.site/Troubleshooting-3633bac9a74b4f0298151b437c992e53), the [Junco build guide](https://github.com/daneski13/Junco?tab=readme-ov-file#troubleshooting), as well as the [Sofle Pico Github issues](https://github.com/JellyTitan/Sofle-Pico/issues). 
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -48,14 +47,33 @@ This troubleshooting guide has been compiled from prior Sofle generations and gu
 
 ### A single key is not working
 1. Check switch socket soldering. Are there any visible gaps or 'wiggle'?
-1. Check for excess solder possibly bridging a nearby trace. [Use solder wick](https://www.youtube.com/watch?v=Vou2xlJkuoU) to remove some solder. 
+1. Check for excess solder possibly bridging a nearby trace. [Use solder wick](https://www.youtube.com/watch?v=Vou2xlJkuoU) to remove excess solder. 
 1. Check the diodes near the switch are soldered and in the correct orientation. For surface mount diodes, the white band should be closer to the outlined pad. For through-hole diodes, the black stripe should be closer to the outlined pad.
 2. Try shorting the switch socket pads with a pair of tweezers or a paperclip. If a key press is registered, then the problem is with the switch, socket, or diode. If no key press is registered when shorting, the problem is elsewhere.
 
 ### An entire row or column of keys is not working
 1. Likely a problem with the PCB's connection to the Pico.
 1. Check that all diodes in the row or column have the correct orientation and good solder joints.
-1. 
+
+### Shorting pins to simulate a key press.
+
+Click to zoom:
+
+<a href="/images/troubleshooting/pinout_troubleshooting_diagram_lh.png"><img src="images/troubleshooting/pinout_troubleshooting_diagram_lh.png" alt="Sofle Pico left hand backside key intersection diagram" width="49%"></a> <a href="/images/troubleshooting/pinout_troubleshooting_diagram_rh.png"><img src="/images/troubleshooting/pinout_troubleshooting_diagram_rh.png" alt="Sofle Pico right hand backside key intersection diagram" width="49%"></a>
+
+Manually trigger a key press by using a piece of wire  or paperclip to connect a `Row` pin with a `Column` pin. This is called shorting pins. Shorting pins bypasses components on the PCB letting you isolate the problem. The right and left hands have Pico pins in different locations, as indicated in the diagrams above. Note that the column and row count numbering begins with `0`.
+
+
+For example:
+
+- to trigger the LH `B` key or RH `N` key, short `Row 3` and `Col 5` pins.
+- to trigger the LH `Q` key or RH `P` , short `Row 1` and `Col 1` pins.
+- to trigger the encoder button, short `Row 4` and `Col 5` pins.
+
+{: .danger }
+> Avoid shorting the `VCC` pin and LEDs. This can burn out other pins on the Pico. 
+
+I recommend testing with just one half connected. If you have used unique firmware for each hand, then each hand will be recognized correctly when plugged in seperately. If you used the same firmware for both hands, then plugging in only one side will cause the single side to be recognized as the left side. 
 
 <hr>
 
@@ -67,6 +85,7 @@ This troubleshooting guide has been compiled from prior Sofle generations and gu
 <hr>
 
 ## QMK
+As of May 5th 2024, there is a QMK PR open to add the Sofle Pico. See the <a href="flashing/qmk">flashing help page</a> for more details. 
 
 <hr>
 

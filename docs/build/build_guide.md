@@ -120,11 +120,10 @@ You can permanently install the Pico using the 20-pin male-male headers that cam
 1. insert the headers into the board and the Pico both before soldering. (The header pin rows can tilt a little if it's not inserted into both the board and the Pico.) The header pins may have one longer side. Install the longer side on the PCB, because you'll need to trim these, and the trimmed pins look better on the underside of the board. Use a piece of kapton tape to attach the Pico to the PCB while soldering.
 
 1. Flip the board over. The pins on the back of the board that you will be soldering should _not_ be in the outline. Soldering 1 of the outermost pins on each pin header on the PCB. Hold the board up to make sure the pin header is sitting flush with the pcb. If it's not, you can reheat that joint until it is flush. 
-*@todo - this pick is gross - grab another without smudges and cathair.*
-![Pico MCU](/images/build_guide_pico/sofle_pico_starter_pins.png) 
+![Pico MCU](/images/build_guide_pico/sofle_pico_starter_pins.jpeg) 
 1. Solder the remaining pcb/pin header joints on the back.
-1. Flip the board over. With the Pico, repeat the process of soldering & checking 1 pin with the pin header and the Pico. 
-1. Solder all the remaining Pico/pin header pins.
+2. Flip the board over. With the Pico, repeat the process of soldering & checking 1 pin with the pin header and the Pico. 
+3. Solder all the remaining Pico/pin header pins.
 
 ### Pico MCU installed with sockets
 Previous versions of the Sofle used diode legs. This guide does not - instead we'll use "needle pins", which are now readily available, inexpensive, and less fussy then diode legs, but they add more height than diode legs would, which works well to support the OLEDs.
@@ -154,7 +153,6 @@ The leftmost hole on the diode jig is for these.
 <hr>
 
 ## OLED
-@todo add updated images when v3.4 prototype comes in.
 
 There are two common variants of the SSD1306 OLED. They are easily distinguishable by the corner holes. There is a separate socket for each of these, because they switch the GND/VCC pins. This pins are usually labeled on the OLEDs themselves. 
 
@@ -165,11 +163,11 @@ There are two common variants of the SSD1306 OLED. They are easily distinguishab
 
 We will be installing the OLED so it overhangs the Pro Micro. 
 1. Determine which socket your model of OLED will use.
-1. Add a strip of electrician's tape to the bottom of the OLED module where it might contact the Pico. (Or a sticker)!
-1. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use kapton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
-1. Solder the remaining socket pins.
-1. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
-1. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.<br>
+2. Add a strip of electrician's tape to the bottom of the OLED module where it might contact the Pico. (Or a sticker)!
+3. Insert the 4 pin, half height female header into the appropriate outlined footprint on the top of the PCB. On both the right and left hands, this will be to the right of the Pico. Use kapton tape to hold the socket in place while you solder the first pin. Check that the socket is perpendicular to the pcb. If it's not, reheat that solder joint and adjust.
+4. Solder the remaining socket pins.
+5. Push the OLED pins into the socket. You may need to trim the OLED pins so the insulation on the female and male headers mate and the OLED sits just above the Pro Micro. The downside to socketing is the OLED isn't as secure in the half height socket. When turning the keyboard upside down I find the OLED will lever away from the Pro Micro somewhat.
+6. If you chose to solder the Pico without sockets, there may be a gap between the OLED and the Pico. You can add an [adhesive bumper pad](https://www.amazon.com/gp/product/B074C2XKXH/?th=1) to ensure it rests level. A rolled up piece of electrical tape will also work.<br>
 <a href="/images/build_guide_pico/sofle_pico_OLED_bumper.png"><img src="/images/build_guide_pico/sofle_pico_OLED_bumper.png" alt="OLED bumper" width="100%" /></a><br>If you installed MCU sockets, the OLED may not seat all the way down. This is ugly, and I hate it. YMMV.<br><a href="/images/build_guide_pico/socket_gap.jpeg"><img src="/images/build_guide_pico/socket_gap.jpeg" alt="gap between OLED and OLED socket" width="100%" /></a>
 
 <hr>

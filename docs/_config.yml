@@ -89,14 +89,15 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 
 # Adds support for callouts, a.k.a. 'alerts'
 callouts:
-  warning:
-    title: Warning
+  danger:
+    title: Danger
     color: red
   new:
     color: green
   info:
     color: blue
   warning:
+    title: Warning
     color: yellow
 
 

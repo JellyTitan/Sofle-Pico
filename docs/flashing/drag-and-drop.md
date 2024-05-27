@@ -24,8 +24,8 @@ nav_order: 1
 2. Wait for the OS to detect the device.
 3. Copy the .uf2 file to the new USB disk.
   * The `.uf2` files can be found in the Sofle Pico repo at [Sofle_Pico/Firmware](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Firmware). Use the default keymap that includes VIA support: `sofle_pico_default_via_LH.uf2` and `sofle_pico_default_via_RH.uf2`.
-  * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix.
-  * On Mac after the file is dropped, the 'Keyboard setup assistant' may be triggered. You can ignore and quit the assistant.(@todo add relative path to UF2 files.) 
+  * There is a different file for right hand and left hand, as denoted by a `_RH` or `_LH` suffix. 
+  * On Mac after the file is dropped, the 'Keyboard setup assistant' may be triggered. You can ignore and quit the assistant.
 4. Unplug the side you just flashed, and repeat the process with the other side.
 5. Disconnect both halves from USB.
 6. Connect both halves together using the TRRS cable. 
