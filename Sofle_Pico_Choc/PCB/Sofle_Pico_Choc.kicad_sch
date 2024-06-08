@@ -7942,7 +7942,7 @@
 		)
 		(uuid "b387cbca-836a-4db5-8fd0-362450953835")
 	)
-	(text "OPTIONAL:\nSplit Hand Designation\n3.3V = LEFT\nGND = RIGHT"
+	(text "OPTIONAL:\nSplit Master Assignment\nInstall Resistor value ~2.2-10k\nR4 3.3V = LEFT\nR3 GND = RIGHT"
 		(exclude_from_sim no)
 		(at 102.87 74.93 0)
 		(effects

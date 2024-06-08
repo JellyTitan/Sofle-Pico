@@ -7909,6 +7909,17 @@
 		)
 		(uuid "3ec4dfc2-12b7-4722-b5a4-374167c1cdeb")
 	)
+	(text "OPTIONAL:\nSplit Master Assignment\nInstall Resistor value ~2.2-10k\nR4 3.3V = LEFT\nR3 GND = RIGHT"
+		(exclude_from_sim no)
+		(at 105.156 76.708 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "455ae506-c343-4d86-b31e-cda375455388")
+	)
 	(text "OLEDs(Optional)\n"
 		(exclude_from_sim no)
 		(at 15.24 88.9 0)
@@ -7941,17 +7952,6 @@
 			(justify left bottom)
 		)
 		(uuid "b387cbca-836a-4db5-8fd0-362450953835")
-	)
-	(text "OPTIONAL:\nSplit Hand Designation\n3.3V = LEFT\nGND = RIGHT"
-		(exclude_from_sim no)
-		(at 102.87 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c5c1bab3-e3f7-4e87-a74d-64e78dabfb3b")
 	)
 	(text "OPTIONAL decoupling 0805\n"
 		(exclude_from_sim no)
