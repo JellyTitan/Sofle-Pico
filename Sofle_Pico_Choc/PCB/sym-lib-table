@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Sofle_Chico-cache")(type "Legacy")(uri "${KIPRJMOD}/Sofle_Chico-cache.lib")(options "")(descr ""))
+  (lib (name "Sofle_Chico-rescue")(type "Legacy")(uri "${KIPRJMOD}/Sofle_Chico-rescue.lib")(options "")(descr ""))
+  (lib (name "SofleKeyboard")(type "Legacy")(uri "${KIPRJMOD}/SofleKeyboard.lib")(options "")(descr ""))
+)
