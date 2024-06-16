@@ -80,6 +80,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -896,11 +897,11 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../Gerbers/",
+      "plot": "../../Gerbers/sofle_pico_latest/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Case/3D Print/Sofle_Chico_PCB.step",
-      "svg": "",
+      "svg": "../../../SofleKeyboard/Comparison/",
       "vrml": ""
     },
     "page_layout_descr_file": ""
