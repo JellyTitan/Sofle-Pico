@@ -13,8 +13,8 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
 
 | Name | Switch | Hotswop | RGB   | Notes | Status |
 |-----:|-------:| :-----: | :---: |:-----|:----|
-|Sofle Pico| MX | Y | Y |Stable release | Done-ish. |
-| Sofle Pico Choc | Choc V1 | Y | Y |In progress | user @TheWerle is working on this. Plenty of electrical improvements that can apply to all models. |
+|Sofle Pico| MX | Y | Y |Stable release v3.5.4| New features added in v3.5.5 (to be validated) |
+| Sofle Pico Choc | Choc V1 | Y | Y | v3.5.5 alpha release |  @TheWerle submitted v3.5.5 (to be validated) Plenty of electrical improvements that can apply to all models. |
 | Sofle Pico Master Key | MX 3-pin, MX 5-pin, Choc v1 Choc V2 | N | N | Pico version of the Sofle_v2_soldered. Use the Cantor MX sweet combo footprint | Unclaimed |
 | Sofle Pico Done | MX | Y | Y | Single sided 2-up pcb optimized for automated PCBA. Encourages vendor adoption, and lets us use the castelated holes on the Pico.| Unclaimed |
 | Sofle Pico Gateron low profile | Gateron Low profile | N | ?? | Not many boards use these switches - but they are really cheap. Maybe combine with Cherry low profile? | Unclaimed |
