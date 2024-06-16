@@ -10,7 +10,8 @@ nav_order: 2
 {: .no_toc }
 
 While the current hardware iteration is stable and functional, (v.3.5.4) there are some supporting tasks still in progress. 
-Specifically, QMK & VIA commits, and improving documentation.
+Specifically, QMK & VIA commits, and improving documentation. 
+v3.5.5 Choc and MX variants are currently in testing, and will be released when validated. 
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -19,11 +20,12 @@ Specifically, QMK & VIA commits, and improving documentation.
 {:toc}
 
 ## Outstanding Hardware tasks
-- [ ] Add a 'key' notch to the tenting puck footprints and regenerate cases. (Or add a key notch below encoder)?
 - [ ] Validate the PCB case Gerbers
-- [ ] theWerle has made some excellent improvements during the Choc Variant development. Review notes and fold incorporate those into MX version.
+- [ ] theWerle contributed Choc and MX variants have been sent out for production/testing 6-15-24
 
 ### Outstanding Documentation tasks
+- [ ] Add documentation for TheWerle Choc variant
+- [ ] Add documentation for TheWerle additional MX features
 - [ ] setup a twitter account
 - [ ] Add a `twitter_username` in `config.yml`
 - [ ] Refactor README for simplicity and clarity. (Great example: https://github.com/GEIGEIGEIST/KLOR)
@@ -39,6 +41,7 @@ Specifically, QMK & VIA commits, and improving documentation.
 Open PR in review: 
 [https://github.com/qmk/qmk_firmware/pull/23338](https://github.com/qmk/qmk_firmware/pull/23338)
 - [ ] EE_Hands was removed during the PR. Post PR merge, recompile alternate .uf2 files with RH Master set, so that VIA users won't have to compile in QMK https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md#handedness-by-define
+- [ ] TheWerle added handedness by pin. Once v3.5.5 is validated and release, updated QMK PR with the handedness update.
 
 ### QMK Userspace
 - [ ] Move legacy & JellyTitan Sofle keymaps into a fork of qmk_userspace. (The updated qmk quidelins only allow for a simple pristine keymap in main qmk). These keymaps are temporarily in the jellytitan qmk_firmware branch `sofle_pico_fancy` while the main `sofle_pico` branch is being updated for main qmk commit. `qmk_userspace` only works with keyboards that are in QMK master - so this will have to wait.
