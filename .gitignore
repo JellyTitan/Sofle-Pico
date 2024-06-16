@@ -1,5 +1,7 @@
 # Sofle Pico backups
 Sofle_Pico/PCB/Sofle_Pico-backups/*
+Sofle_Pico/PCB/_autosave*
+Sofle_Pico/PCB/~_autosave*
 Sofle_Pico/Case/PCB_case/source/PCBBottom/Sofle_Pico_Bottom_Plate-backups/*
 Sofle_Pico/Case/PCB_case/source/PCBTop/Sofle_Pico_Top_Plate-backups/*
 Sofle_Pico/Case/PCB_case/source/PCBBottom/fp-info-cache
@@ -9,3 +11,5 @@ Sofle_Pico/Case/PCB_case/source/PCBBottom/Sofle_Pico_Bottom_Plate.kicad_prl
 
 # Sofle Pico Choc backups
 Sofle_Pico_Choc/PCB/Sofle_Pico_Choc-backups
+Sofle_Pico_Choc/PCB/_autosave*
+Sofle_Pico_Choc/PCB/~_autosave*
