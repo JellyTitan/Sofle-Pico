@@ -6,8 +6,8 @@
 	(paper "A")
 	(title_block
 		(title "Sofle Pico Choc")
-		(date "2024-04-17")
-		(rev "v3.5.5")
+		(date "2024-07-04")
+		(rev "v3.5.6")
 		(comment 1 "https://github.com/josefadamcik/SofleKeyboard")
 		(comment 2 "Based on the Sofle by Josef Adamcik")
 		(comment 3 "https://www.soflepico.com")
