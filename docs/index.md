@@ -38,7 +38,7 @@ Although there is a QMK option to port the legacy ProMicro config to RP2040 boar
 
 There are many RP2040 boards available in the same form factor as the ProMicro, but they tend to be 4-8 times more costly than the Pico form factor, and there are plenty of inexpensive [Pico clones](https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo/edit#gid=0).
 
-Accommodating the voltage variances between the ProMicro and the Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with ProMicro keyboards require 5v logic. The Pico uses 3.3v logic. A level shifter, along with a lower current LED variant, specifically the SK6803MINI-E, work with the lower voltage. Thank you to Dane Skalski and the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing this excellent 3V logic circuit.
+Accommodating the voltage variances between the ProMicro and the Pico required drastic wiring changes which results in the loss of backward compatibility with Sofle v1/v2 firmware. The SK6812MINI-E LEDs commonly used with ProMicro keyboards require 5v logic. The Pico uses 3.3v logic, so it uses a lower current LED variant, specifically the SK6803MINI-E. Thank you to Dane Skalski and the [Junco](https://github.com/Daneski13/Junco#optional---rgb) for providing this excellent 3V logic circuit.
 
 <hr>
 
