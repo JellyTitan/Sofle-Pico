@@ -5,12 +5,14 @@ description: Raspberry Pi Pico Clone comparison
 permalink: /build/mcu-compare
 nav_order: 8
 parent: Build
+published: false
 
 ---
 
 # Raspberry Pi Pico Clone comparison
 
-This MCU comparison origionated with 
+
+This MCU comparison chart is a work in progressed, and not ready to be published yet.
 
 |                                          | RPico         | Waveshare     | WeAct         | RTrobot      | Tenstar    | YD-RP2040     | SZYTF      | EstarDyn      |
 | ---------------------------------------- | ------------- | ------------- | ------------- | ------------ | ---------- | ------------- | ---------- | ------------- |
