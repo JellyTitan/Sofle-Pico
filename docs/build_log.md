@@ -241,11 +241,22 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 Since the main PCB is stable, focusing on case and documentation.
 - Reviewed the backplate branding for legacy sofles, decided to go more minimalist and de-emphasize the text.<br>
 <img src="images/build_log_pico/bottom_sofle_RGB.png" alt="Back plate of the Sofle RGB" width="32%"> <img src="images/build_log_pico/bottom_sofle_v1.png" alt="Back plate of the Sofle v1" width="32%"> <img src="images/build_log_pico/bottom_sofle_v2.png" alt="Back plate of the Sofle v2" width="32%"><br>Here's what i went with instead:<br><img src="images/build_log_pico/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="images/build_log_pico/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
-- @todo Remove logo on one side below MCU, and move attribution there, to free up space. @theWerle may have already taken care of this as part of the [Sofle Pico Choc](https://github.com/JellyTitan/Sofle-Pico/discussions/29).
+- Simplified LED markings. (Saw this on theWerle's choc variant)<br>![alt text](images/build_log_pico/simplified_led_marking.png)
+- Removed logo on one side below MCU, and move attribution there, to free up space. @theWerle took care of this as part of the [Sofle Pico Choc](https://github.com/JellyTitan/Sofle-Pico/discussions/29).
+- @theWerle added a slew of new features with the Choc variant and a complete rework of the MX version:
+  - split-power protection PFET (Prevents shorts if you accidentally unplug a TRRS cable).
+  - Pull up resistors for the I2C bus. (Improves reliability).
+  - Patch bay improvements
+  - Added more SMD support
+  - Adds support for [split handedness by pin](https://docs.qmk.fm/features/split_keyboard#handedness-by-pin)![handedness by pin](images/build_log_pico/handedness_by_pin.png) Note - the QMK PR is still set to LH master by default - which may be prefered considering the split power protection.
+  - Improved routing
+  - Adds opitional decoupling capacitors for power smoothing. ![decoupling capacitor schematic](images/build_log_pico/decoupling_capacitors.png)
+  - Level shifter removal
 
 ## v3.5.6
 - Added part number placeholders for JLC and PCBWay to both Pico & Pico Choc.
-
+- @todo add lables for handedness by pin to both sides.
+- 
 ## Future Feature Wish list
 - [ ] Color displays.
 - [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
