@@ -38,3 +38,5 @@ By default, all JLC boards have a part number printed on them. Most people won't
 The remainder of the checkout process is standard ecommerce stuff. After you pay for your order, it will be reviewed before going into production. They will let you know if the file has any issues.
 
 JLC has been known to request an additional fee for 'too many holes'. The application of this fee has been inconsistent. YMMV.
+
+Unprompted, JLC may quality check the PCB and flag the [poke-yoke'd](/build/poka-yoke) solder masks that are only on one side as a potential problem. They may offer to add solder masks to both sides of the holes. The PCB is functional with or without this modification. If you do choose to have JLC 'fix' the solder masks, you'll need to pay extra attention during assembly, as it will be easier to assemble things incorrectly. You can read more about it in [this discussion](https://www.soflepico.com/build/poka-yoke). 
