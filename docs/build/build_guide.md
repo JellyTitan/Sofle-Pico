@@ -105,6 +105,12 @@ Revisions v3.5.4 and later will have the LED number directly above the LED to ma
 
 <hr>
 
+## I2C Pull-Ups
+There's two on each side. Insert on the front, in the center of the MCU footprint. Orientation does not matter. Solder on the back. If you've already installed your MCU, you can install these on the back.
+The leftmost hole on the diode jig can be used for these. 
+<a href="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg"><img src="/images/build_guide_pico/I2C_pullup_resistors.jpeg" alt="Sofle Pico I2C pull-up resistors soldered into place" width="100%" /></a>
+
+
 ## Pico MCU
 <a href="/images/build_guide_pico/sofle_pico_MCU_heroshot.png"><img src="/images/build_guide_pico/sofle_pico_MCU_heroshot.png" alt="Sofle Pico MCU with elevated OLED closeup" width="100%" /></a>
 
