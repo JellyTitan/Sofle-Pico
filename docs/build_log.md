@@ -256,7 +256,9 @@ Since the main PCB is stable, focusing on case and documentation.
 ## v3.5.6
 - Added part number placeholders for JLC and PCBWay to both Pico & Pico Choc.
 - @todo add lables for handedness by pin to both sides.
-- 
+- @todo add images of actual component for TRRS short protection.
+- @todo move BOM images into seperate diractory
+  
 ## Future Feature Wish list
 - [ ] Color displays.
 - [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)

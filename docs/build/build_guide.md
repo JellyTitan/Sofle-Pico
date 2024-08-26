@@ -105,11 +105,27 @@ Revisions v3.5.4 and later will have the LED number directly above the LED to ma
 
 <hr>
 
-## I2C Pull-Ups
-There's two on each side. Insert on the front, in the center of the MCU footprint. Orientation does not matter. Solder on the back. If you've already installed your MCU, you can install these on the back.
-The leftmost hole on the diode jig can be used for these. 
+## TRRS Short protection or bypass
+Although TRRS short protection is optional, if not using it, you'll need to bridge the bypass jumpers.
+
+### Short protection
+@todo: Add an image of the actual component here.
+If installing TRRS short protection, the Si2301CDS should be installed on the left hand, and the right hand jumper should be bridged. (The Sofle Pico firmware defaults to left hand master. You could switch this, but you'd need to modify the firmware yourself).<br>
+<a href="/images/build_guide_pico/short_protection_component_LH.jpeg"><img src="/images/build_guide_pico/short_protection_component_LH.jpeg" alt="Surface mount Si2301CDS installed on the left hand for TRRS short protection" width="49%" /></a> <a href="/images/build_guide_pico/short_protection_bridged_RH.jpeg"><img src="/images/build_guide_pico/short_protection_bridged_RH.jpeg" alt="Right hand jumpers bridged for TRRS short protection circuit" width="49%" /></a>
+
+### Short protection bypass
+If not installing TRRS short protection, bridge the jumpers on both the right and left hands.
+<a href="/images/build_guide_pico/short_protection_bridged_LH.jpeg"><img src="/images/build_guide_pico/short_protection_bridged_LH.jpeg" alt="Left hand jumpers bridged to bypass TRRS short protection circuit" width="49%" /></a> <a href="/images/build_guide_pico/short_protection_bridged_RH.jpeg"><img src="/images/build_guide_pico/short_protection_bridged_RH.jpeg" alt="Right hand jumpers bridged to bypass TRRS short protection circuit" width="49%" /></a>
+
+<hr>
+
+## I2C Pull-Up Resistors
+There's two on each side. The leftmost hole on the bending jig can be used to get a clean bend. Insert diodes in the center of the MCU footprint, and solder on the opposite side. Orientation does not matter. 
+If you are going to socket the MCU, insert the  into the front of the board so they will be hidden by the MCU. If you are soldering the MCU directly to the board, there will not be enough clearance under the MCU, so put these on the back of the board. 
+
 <a href="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg"><img src="/images/build_guide_pico/I2C_pullup_resistors.jpeg" alt="Sofle Pico I2C pull-up resistors soldered into place" width="100%" /></a>
 
+<hr>
 
 ## Pico MCU
 <a href="/images/build_guide_pico/sofle_pico_MCU_heroshot.png"><img src="/images/build_guide_pico/sofle_pico_MCU_heroshot.png" alt="Sofle Pico MCU with elevated OLED closeup" width="100%" /></a>

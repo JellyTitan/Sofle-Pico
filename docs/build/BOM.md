@@ -53,6 +53,11 @@ There are not yet vendors selling the Sofle Pico.
 
 ### Optional Parts
 
+#### Optional - TRRS Short protection
+Only available in versions 3.5.5 and later. This prevents shorting out the Pico if the TRRS is disconnected while the keyboard is connected to USB. (This is a common and known issue with split keyboards). For TRRS short protection, a [Si2301CDS mosfet](https://www.digikey.com/en/products/detail/vishay-siliconix/SI2301CDS-T1-GE3/1978728) is added to the power circuit so that power can only flow from the master to the secondary hand. This is a surface mount component and can be tricky to solder. This is a better fit for automated PCBA, as opposed to hand building. 
+The caveat with the TRRS short protections, is that you can't change which hand is the master hand. The Sofle Pico QMK firmware is configured for left hand master by default. You can switch this by installing the mosfet on the opposite hand and then compiling a custom QMK build. <br>
+<a href="/images/BOM/TRRS_circuit.png"><img src="/images/BOM/TRRS_circuit.png" alt="TRRS short protection circuit" width="49%" /></a>
+
 #### Optional - MCU Sockets
 
 The [official Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) uses [Micro USB](https://en.wikipedia.org/wiki/USB_hardware#Micro_connectors) which can snap off. The MCU sockets are strongly recommended if you choose those. There are many Pico clones available that offer USB-C, which is known to be less fragile. (These are my preference).
