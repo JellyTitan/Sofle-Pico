@@ -51,6 +51,7 @@ Open PR in review:
 ### VIA Outstanding tasks
 - [ ] Refactor VIA PR to match the new simplified QMK base keymap
 - [ ] VIA PR [draft is ready](https://github.com/the-via/keyboards/pull/2207). There _must_ be a QMK commit in master before a VIA PR will be considered or it will be auto-deleted. Submit this draft after QMK PR is approved.
+- [ ] [QMK has removed VIA enabled keyboards from the main repo](https://github.com/qmk/qmk_firmware/pull/23338#issuecomment-2309897287). The VIA keymap was removed from QMK. Post QMK merge, look into updating the existing VIA PR, or figure out what the new process is for adding keymaps to via. 
 
 ### VIAL Outstanding tasks
 - [ ] Port to VIAL post VIA/QMK merge. (With recent VIA feature enhancements - is VIAL still helpful)?
