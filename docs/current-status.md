@@ -34,6 +34,7 @@ v3.5.5 Choc and MX variants are currently in testing, and will be released when 
 - [ ] Convert this spreadsheet for MCU's to a markdown table https://docs.google.com/spreadsheets/d/1LPjy6F5lHfUkmsrM5zlZmc5auYy5YBakW8Awe6hYFWo/edit#gid=0
 - [ ] Review docs and update images 
 - [ ] Add a 'releases' page.
+- [ ] Run `mogrify -strip` against images before final publishing.
 
 ### Outstanding tasks before Main Sofle Repo PR submission
 - [ ] PR Submitted: https://github.com/josefadamcik/SofleKeyboard/pull/195
