@@ -84,10 +84,6 @@ I recommend testing with just one half connected. If you have used unique firmwa
 
 <hr>
 
-## QMK
-As of May 5th 2024, there is a QMK PR open to add the Sofle Pico. See the <a href="flashing/qmk">flashing help page</a> for more details. 
-
-<hr>
 
 ## Miscellaneous
 
