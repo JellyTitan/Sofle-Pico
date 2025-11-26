@@ -13,14 +13,15 @@ While the current hardware iteration is stable and functional, (v.3.5.4) there a
 Specifically, VIA commits, and improving documentation. 
 v3.5.5 Choc and MX variants are currently in testing, and will be released when validated. 
 
-## Update November 2025
-User [@suboworx](https://github.com/subworx) [reports](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807560779539.html). 
-
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+## Update November 2025
+User [@suboworx](https://github.com/subworx) [reports](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807560779539.html). 
+
 
 ## Outstanding Hardware tasks
 - [ ] Validate the PCB case Gerbers
