@@ -13,6 +13,9 @@ While the current hardware iteration is stable and functional, (v.3.5.4) there a
 Specifically, VIA commits, and improving documentation. 
 v3.5.5 Choc and MX variants are currently in testing, and will be released when validated. 
 
+## Update November 2025
+User [@suboworx](https://github.com/subworx) [reports](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807560779539.html). 
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -53,4 +56,4 @@ v3.5.5 Choc and MX variants are currently in testing, and will be released when 
 - [ ] [QMK has removed VIA enabled keyboards from the main repo](https://github.com/qmk/qmk_firmware/pull/23338#issuecomment-2309897287). The VIA keymap was removed from QMK. Look into updating the existing VIA PR, or figure out what the new process is for adding keymaps to via. 
 
 ### VIAL Outstanding tasks
-- [ ] Port to VIAL post VIA/QMK merge. (With recent VIA feature enhancements - is VIAL still helpful)?
+- [ ] Port to VIAL post VIA/QMK merge. UPDATE! User [@zakki](https://github.com/zakki) has created a [VIAL port for the Sofle Pico](https://github.com/JellyTitan/Sofle-Pico/issues/59). A PR for the VIAL repo has yet to be created.
