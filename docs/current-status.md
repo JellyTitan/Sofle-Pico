@@ -44,3 +44,6 @@ User [@suboworx](https://github.com/subworx) [reports](https://github.com/JellyT
 ### QMK Userspace
 - [ ] Move legacy & JellyTitan Sofle keymaps into a fork of qmk_userspace. (The updated qmk guidelines only allow for a simple pristine keymap in main qmk). These keymaps are temporarily in the jellytitan qmk_firmware branch `sofle_pico_fancy` while the main `sofle_pico` branch is being updated for main qmk commit. `qmk_userspace` only works with keyboards that are in QMK master - so this will have to wait.
 - [ ] Revisit the sofle_classic layout on qmk_userspace. The QMK firmware sofle classic layout has been updated since I split out the keymap in the userspace
+
+### VIAL Documentation
+- [ ] Thanks to [@zaki](https://github.com/zakki) [VIAL now supports Sofle Pico](https://github.com/vial-kb/vial-qmk/pull/972). I built a stub page for the docs - but it needs to be fleshed out. (I've not used VIAL before, so any doc help would be appreciated).
