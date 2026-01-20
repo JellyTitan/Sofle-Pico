@@ -20,7 +20,7 @@ Work on v3.5.5 Choc and MX variants had started, but the development on those ha
 {:toc}
 
 ## Update November 2025
-User [@suboworx](https://github.com/subworx) [reports](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807560779539.html). 
+User [@suboworx](https://github.com/subworx) [reports](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807417919453.html). 
 
 ## Outstanding Hardware tasks
 - [ ] theWerle contributed Choc and MX variants v.3.5.4 have been sent out for production/testing 6-15-24
