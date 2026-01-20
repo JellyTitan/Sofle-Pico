@@ -16,11 +16,18 @@ nav_order: 4
 
 <a href="/images/cases/plate_foam_2_sets.jpeg"><img src="/images/cases/plate_foam_2_sets.jpeg" alt="Two sets of plate foam for the Sofle Pico" width="100%"></a>
 
+<a href="/images/cases/backplate_foam.jpeg"><img src="/images/cases/backplate_foam.jpeg" alt="Two sets of backplate foam for the Sofle Pico" width="100%"></a>
+
+<a href="/images/cases/backplate_foam.jpeg"><img src="/images/cases/backplate_foam_on_pcb.jpeg" alt="Two sets of backplate foam for the Sofle Pico" width="100%"></a>
+
 <hr>
 
 ## Details
 
-A Cricut can be used to cut plate foam. 2mm PVA craft foam is used with the FDM & the acrylic case to fill the 2mm gap between the plate and the PCB.
+A Cricut or laser cutter can be used to cut plate foam. 2mm PVA craft foam is used with the FDM & the acrylic case to fill the 3mm gap between the plate and the PCB. Backplate foam has right and left hand versions due to the orientation of the hotswap key sockets. When using a laser cutter be sure to select foam safe for laser cutting and consult the manual for the specific machine for proper power settings.
+
+When making case foam for use with PCB plates use 3mm craft foam with 8mm M2 standoffs for proper spacing between the key plate and PCB for key switches. Longer standoffs and thicker foam is needed for PCB plates since they are thinner than the FDM & acrylic cases.
+
 
 ## BOM
 
