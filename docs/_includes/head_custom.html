@@ -11,3 +11,6 @@
 <meta name="msapplication-TileColor" content="#6cc04a">
 <meta name="msapplication-config" content="{{ 'browserconfig.xml' | prepend: '/images/favicons/' | relative_url }}">
 <meta name="theme-color" content="#6cc04a">
+
+<!-- Set 24 hour cache. Github pages doesn't allow explicity setting cache control headers. This is as good as it's gonna get without bringing in CloudFlare. -->
+<meta http-equiv="Cache-Control" content="max-age=86400">
