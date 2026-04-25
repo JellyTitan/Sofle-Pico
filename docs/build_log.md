@@ -61,8 +61,9 @@ Improvements made while building prototype 3.02, included in version3.03
 * Modified OLED footprint to support both types of 128x64. (GND & VCC are switched)
 * Added help text for OLEDs
 * Center oled plate holes for round outline
-![Sofle Pico](images/build_log_pico/sofle_pico_v3.3.png)
-# 3.7795 is the keyplate multiplier when creating Fusion 360 imports
+![Sofle Pico v3.3 PCB rendering](images/build_log_pico/sofle_pico_v3.3.png)
+
+_Note: 3.7795 is the keyplate multiplier when creating Fusion 360 imports_
 
 ## 3.3 -> 3.4
 Improvements made while building prototype 3.03, included in version3.04
@@ -72,27 +73,27 @@ Improvements made while building prototype 3.03, included in version3.04
 * Removed Solenoid (Left it in blueprint to install on a backplate)
 * Updated branding 
 * Explored moving the rotary encoder farther from thumb cluster to allow for 'low profile' encoder knobs on EC12's. There is not enough room. (That particular encoder knob is 29mm). Added this feature to the list for Pico Zero features.
-![Sofle Pico](images/build_log_pico/low_profile_encoder_test.png)
+![Low profile encoder footprint size test on the Sofle Pico PCB](images/build_log_pico/low_profile_encoder_test.png)
 * Considered collapsing the 4 separate footprints for the two types of OLEDs into a set of 2 footprints, and then OLED type is set with a jumper - OR - dropping one OLED type for a single type with single footprint with handedness set by jumpers like the legacy Sofles. Decided against this, as it increases build complexity for the end user. The downside, is it complicates the case options because there is a 3mm placement difference between left and right OLEDs. If the acrylic OLED cover is used, this should not be noticeable. If 3d printing a case, the right/left sides will have minor differences to account for this gap.
-![Sofle Pico](images/build_log_pico/sofle_pico_oled_jumper_study.png)
+![OLED jumper design study for Sofle Pico](images/build_log_pico/sofle_pico_oled_jumper_study.png)
 * Considered pushing the Pico footprints farther apart, allowing for a headerless drag solder install & automated PCB manufacture. Decided against it due to increased manufacturing costs of the larger board. The increase in board size is not much, maybe 3mm-5mm, but having those pads close together may make hand drag soldering difficult? Also not sure if omitting the bottom through holes would be acceptable for automated assembly.
 
-![Sofle Pico](images/build_log_pico/sofle_pico_drag_solder_vs_header.png)
+![Comparison of drag solder vs header socket MCU installation on Sofle Pico](images/build_log_pico/sofle_pico_drag_solder_vs_header.png)
 * Considered adding a USB C jack in addition to TRRS. (Example can be seen in the [Stront](https://github.com/zzeneg/stront)). This would allow for automated pcb assembly, and much cooler cables than can be found with TRRS. There's not enough room - unless the patch bay is omitted. I like the patch bay. Added this feature to the 'nice to have list'.
 
-![Sofle Pico](images/build_log_pico/stront_jack.png)
+![Stront keyboard USB-C and TRRS jack layout](images/build_log_pico/stront_jack.png)
 * Considered adding horizontal rotary encoder/ec12 encoder combo as seen on the Stront. The horizontal encoder requires a notched edge cutout.which would require drastic re-routing, and may increase production cost. Added to the 'nice to have list'.
 
-![Sofle Pico](images/build_log_pico/horizontal_rotary_encoders.png)
+![Horizontal rotary encoder design study for Sofle Pico](images/build_log_pico/horizontal_rotary_encoders.png)
 
 * Agonizing over attribution placement. 
 
-![Sofle Pico](images/build_log_pico/Sofle_attribution_study.png)
+![Sofle Pico attribution placement study](images/build_log_pico/Sofle_attribution_study.png)
 
 * Spent far too much time dialing in the logo lockup. I'm stubborn and don't want to pay an Adobe subscription, so I did the text lockup in KiCad. Looking at other split keyboards. I really want a vertical lockup because of the visible logo in the coppers - but horizontal supports the attribution blurb better.
 
 ![Split keyboard branding study](images/build_log_pico/split_kb_branding_study.png)
-![Split keyboard branding study](images/build_log_pico/sofle_logo_lockup_screencap.png)
+![Sofle Pico logo lockup in KiCad](images/build_log_pico/sofle_logo_lockup_screencap.png)
 
 * Submitted a [github issue](https://github.com/josefadamcik/SofleKeyboard/issues/188) requesting input from the Sofle main contributors. 
 In response to the question: 
@@ -163,19 +164,19 @@ Sent out v3.5 for production 11-13-23.
 	
 	  Before:
 	
-	  ![acid trap 1](images/build_log_pico/acid_trap1.png)
+	  ![PCB acid trap between diode and switch pad](images/build_log_pico/acid_trap1.png)
 	
 	  Unsuccessfully tried adding extra pad to the switch:
 
-	  ![acid trap 1](images/build_log_pico/acid_trap2.png)
+	  ![Attempted fix adding extra pad to the switch](images/build_log_pico/acid_trap2.png)
 	  
 		Added extra pad to the diode:
 
-	  ![acid trap 1](images/build_log_pico/acid_trap_fixed.png)
+	  ![Acid trap resolved by adding extra pad to the diode](images/build_log_pico/acid_trap_fixed.png)
 	* Started a [reddit thread](https://www.reddit.com/r/olkb/comments/18kwwka/pimoroni_it_works_but_its_jenky_is_that_expected/) to figure out if the Pimoroni is just janky, or if i'm doing it wrong. It looks like the Pimoroni is just janky. I'm abandoning support, but making notes in the repo so that someone else can fix it if they want to. There are [other](https://www.reddit.com/r/olkb/comments/szm2w4/pimoroni_trackball_usability/) threads complaining about this issue.
 	* Moved the patch bay up by 2mm to make room for the Pimoroni.
 
-	  ![Alt text](images/build_log_pico/pimoroni_model.png)
+	  ![3D model of Pimoroni trackball positioned above the Sofle Pico patch bay](images/build_log_pico/pimoroni_model.png)
 	
 	* Looked into Cirque trackpad - it looks viable, and easy? [Beekeeb sells a breakout board](https://shop.beekeeb.com/products/23mm-cirque-glidepoint-circle-trackpad-module) that plugs right into the I2C Oled holes for Sofle. I ordered one to try it out. (12-18-23). I did poke-yoke the OLED holes by removing the masking on one side - that might cause issues with the breakout board orientation - but I don't think so, based on how the Sofle V2 jumpers are oriented. 
 
@@ -202,11 +203,11 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 ![pico vsys internal diode](images/build_log_pico/rp2040_docs.png) pico_internal_diode_vbus_vsys.png
 
 ![pico vsys internal diode](images/build_log_pico/pico_internal_diode_vbus_vsys.png)
-- [x] Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.3_12-27-23.zip`
+- Submitted new file for production 12-28-23. `Sofle_Pico_v3.5.3_12-27-23.zip`
 
 ## v3.5.4
-- [x] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?). After testing v3.5.2, it was determined the diode is required for some clones, but can be omitted if using an 'offical' Pico. Dane had decided against using a Schottky there to simplify the circuit. 
-- [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will reach the diodes or the other hand.
+- [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?). After testing v3.5.2, it was determined the diode is required for some clones, but can be omitted if using an 'offical' Pico. Dane had decided against using a Schottky there to simplify the circuit. 
+- Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will reach the diodes or the other hand.
 
 <img alt="Shimming in a diode gets the power working" src="images/build_log_pico/v3.5.2_working_power_diode.JPG" width="300">
 <img alt="No extra diode required" src="images/build_log_pico/v3.5.2_clone_sans_power_diode.JPG" width="300">
@@ -216,12 +217,12 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 
 | Level Shifter | Power Circuit Diode | Brightness % | Hight Temp | Image |
 |    ----:      |        :----:       |    :----:    |     :----: | :---: |
-| Yes           | 1N4148              | 50%          | 98°F       | ![pico vsys internal diode](images/build_log_pico/level_shifter_1n4148_half_bright.JPG)  |
-| Yes           | 1N4148              | 100%          | 140°F       | ![pico vsys internal diode](images/build_log_pico/level_shifter_1n4148_full_bright.JPG)  |
-| Yes           | 1N5817              | 50%          | 91°F       | ![pico vsys internal diode](images/build_log_pico/level_shifter_1n5817_half_bright.JPG)  |
-| Yes           | 1N5817              | 100%         | 108°F       | ![pico vsys internal diode](images/build_log_pico/level_shifter_1n5817_full_bright.JPG)  |
-| No            | 1N5817              | 50%          | 91°F       | ![pico vsys internal diode](images/build_log_pico/no_level_shifter_1n5817_half_bright.JPG)  |
-| No           | 1N5817              | 100%         | 110°F       | ![pico vsys internal diode](images/build_log_pico/no_level_shifter_1n5817_full_bright.JPG)  |
+| Yes           | 1N4148              | 50%          | 98°F       | ![Thermal image: level shifter, 1N4148 diode, 50% brightness, 98°F](images/build_log_pico/level_shifter_1n4148_half_bright.JPG)  |
+| Yes           | 1N4148              | 100%          | 140°F       | ![Thermal image: level shifter, 1N4148 diode, 100% brightness, 140°F](images/build_log_pico/level_shifter_1n4148_full_bright.JPG)  |
+| Yes           | 1N5817              | 50%          | 91°F       | ![Thermal image: level shifter, 1N5817 diode, 50% brightness, 91°F](images/build_log_pico/level_shifter_1n5817_half_bright.JPG)  |
+| Yes           | 1N5817              | 100%         | 108°F       | ![Thermal image: level shifter, 1N5817 diode, 100% brightness, 108°F](images/build_log_pico/level_shifter_1n5817_full_bright.JPG)  |
+| No            | 1N5817              | 50%          | 91°F       | ![Thermal image: no level shifter, 1N5817 diode, 50% brightness, 91°F](images/build_log_pico/no_level_shifter_1n5817_half_bright.JPG)  |
+| No           | 1N5817              | 100%         | 110°F       | ![Thermal image: no level shifter, 1N5817 diode, 100% brightness, 110°F](images/build_log_pico/no_level_shifter_1n5817_full_bright.JPG)  |
 
 - Tried to get the 23mm Circque trackpad working. It doesn't work - but I want the option to continue development in the future, so i added a footprint specifically for the trackpad.
 - Via Support added!
@@ -240,7 +241,7 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 Since the main PCB is stable, focusing on case and documentation.
 - Reviewed the backplate branding for legacy sofles, decided to go more minimalist and de-emphasize the text.<br>
 <img src="images/build_log_pico/bottom_sofle_RGB.png" alt="Back plate of the Sofle RGB" width="32%"> <img src="images/build_log_pico/bottom_sofle_v1.png" alt="Back plate of the Sofle v1" width="32%"> <img src="images/build_log_pico/bottom_sofle_v2.png" alt="Back plate of the Sofle v2" width="32%"><br>Here's what i went with instead:<br><img src="images/build_log_pico/sofle_pico_bottom_RH.png" alt="Back plate of the Sofle Pico right hand" width="49%"> <img src="images/build_log_pico/sofle_pico_bottom_LH.png" alt="Back plate of the Sofle Pico Left hand" width="49%">
-- Simplified LED markings. (Saw this on theWerle's choc variant)<br>![alt text](images/build_log_pico/simplified_led_marking.png)
+- Simplified LED markings. (Saw this on theWerle's choc variant)<br>![Simplified LED marking design on Sofle Pico PCB](images/build_log_pico/simplified_led_marking.png)
 - Removed logo on one side below MCU, and move attribution there, to free up space. @theWerle took care of this as part of the [Sofle Pico Choc](https://github.com/JellyTitan/Sofle-Pico/discussions/29).
 - @theWerle added a slew of new features with the Choc variant and a complete rework of the MX version:
   - split-power protection PFET (Prevents shorts if you accidentally unplug a TRRS cable).
@@ -257,14 +258,14 @@ Since the main PCB is stable, focusing on case and documentation.
 - @todo add labels for handedness by pin to both sides.
 - 
 ## Future Feature Wish list
-- [ ] Color displays.
-- [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
-- [ ] Solenoid backplate (Would need rp2040 zero for 5v)
-- [ ] Piezo speaker (QMK doesn't support this for ARM boards yet)?
-- [ ] Horizontal encoder/ec12 encoder combo. (The horizontal encoder needs additional cutouts - there isn't room for those with the base Pico)
-- [ ] Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
-- [ ] Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
-- [ ] Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
-- [ ] Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
-- [ ] Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/images/buildguide/haptic_solder.jpg)
-- [ ] To prevent pin shorts caused by TRRS cable unexpected removal, maybe add an RJ45 jack footprint? There isn't room on the current Sofle Pico, but maybe a RP2040 Zero based variant could support it? https://github.com/JellyTitan/Sofle-Pico/discussions/13
+- Color displays.
+- USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
+- Solenoid backplate (Would need rp2040 zero for 5v)
+- Piezo speaker (QMK doesn't support this for ARM boards yet)?
+- Horizontal encoder/ec12 encoder combo. (The horizontal encoder needs additional cutouts - there isn't room for those with the base Pico)
+- Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
+- Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
+- Put a GND plane on both sides, wire VCC directly. (with big fat traces)!
+- Round bottom screw mount of OLED plate. (With the current component layout, this would obscure the patch bay.)
+- Haptic buzzer? (https://github.com/GEIGEIGEIST/KLOR/blob/main/images/buildguide/haptic_solder.jpg)
+- To prevent pin shorts caused by TRRS cable unexpected removal, maybe add an RJ45 jack footprint? There isn't room on the current Sofle Pico, but maybe a RP2040 Zero based variant could support it? https://github.com/JellyTitan/Sofle-Pico/discussions/13

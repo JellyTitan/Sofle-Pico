@@ -17,9 +17,9 @@ image: /images/cases/sofle_pico_3d_printed_case_green_glow.jpeg
 <hr>
 
 
-<a href="/images/cases/sofle_pico_3d_printable_case.jpeg"><img src="/images/cases/sofle_pico_3d_printable_case.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%"></a>
-<a href="/images/cases/sofle_pico_3d_printed_case_backside.jpeg"><img src="/images/cases/sofle_pico_3d_printed_case_backside.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="49%"></a>
-<a href="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg"><img src="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg" alt="3d render of the Sofle Pico 3d printable case" width="32%"></a>
+<a href="/images/cases/sofle_pico_3d_printable_case.jpeg"><img src="/images/cases/sofle_pico_3d_printable_case.jpeg" alt="Sofle Pico with 3d printed case overhead view" width="49%"></a>
+<a href="/images/cases/sofle_pico_3d_printed_case_backside.jpeg"><img src="/images/cases/sofle_pico_3d_printed_case_backside.jpeg" alt="Backside of Sofle Pico with 3d printed case" width="49%"></a>
+<a href="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg"><img src="/images/cases/sofle_pico_3d_printed_case_green_glow.jpeg" alt="Sofle Pico with 3d printed case lit up with green LEDs" width="32%"></a>
  <a href="/images/cases/full_plate_set.jpeg"><img src="/images/cases/full_plate_set.jpeg" alt="Sofle Pico 3d printed full set of case plates" width="32%"></a> <a href="/images/cases/back_plate_with_helper_discs.jpeg"><img src="/images/cases/back_plate_with_helper_discs.jpeg" alt="Sofle Pico back plate with 'helper discs' attached to the corners" width="32%"></a>
 
 <hr>
@@ -33,7 +33,7 @@ The latest version of the key plates have notches that the switches slot into. T
 
 There are two variants for the OLED covers due to the two types of OLEDs that can be used. 
 
-<a href="/images/cases/sofle_pico_oled_window_variants.png"><img src="/images/cases/sofle_pico_oled_window_variants.png" alt="Kailh switch data sheet excerpt showing the switch retention nubs" ></a>
+<a href="/images/cases/sofle_pico_oled_window_variants.png"><img src="/images/cases/sofle_pico_oled_window_variants.png" alt="Sofle Pico OLED cover plate variants for round and oval corner OLEDs" ></a>
 
 <hr>
 

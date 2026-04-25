@@ -80,7 +80,7 @@ I recommend testing with just one half connected. If you have used unique firmwa
 ## VIA
 
 ### VIA error 'failed to open device' or 'Received invalid protocol from device'
-<img src="images/build_guide_pico/via_problems_undiagnosed.png" alt="via errors" width="25%"><br>This can happen when trying to connect to VIA. Not sure what the root cause is. Users report it can be fixed by re-flashing the Pico's.[^2] Be sure you're using the VIA specific uf2 files: `sofle_pico_via_RH.uf2` & `sofle_pico_via_LH.uf2`.
+<img src="images/build_guide_pico/via_problems_undiagnosed.png" alt="VIA application showing 'failed to open device' and 'received invalid protocol from device' error messages" width="25%"><br>This can happen when trying to connect to VIA. Not sure what the root cause is. Users report it can be fixed by re-flashing the Pico's.[^2] Be sure you're using the VIA specific uf2 files: `sofle_pico_via_RH.uf2` & `sofle_pico_via_LH.uf2`.
 
 <hr>
 

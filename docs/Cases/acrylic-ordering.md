@@ -30,4 +30,4 @@ Elecrow requests zipped `.dxf` files and a `.pdf`. You can ignore the request fo
 5. Select 3mm for the acrylic.
 6. The remainder of the checkout process is standard ecommerce stuff. 
    
-<img src="/images/acrylic_ordering_guide/acrylic_ordering_guide.png" alt="elecrow acylic order page" style="border: 2px solid lightgray" >
+<img src="/images/acrylic_ordering_guide/acrylic_ordering_guide.png" alt="Elecrow acrylic order page" style="border: 2px solid lightgray" >

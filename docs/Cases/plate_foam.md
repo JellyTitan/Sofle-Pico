@@ -16,9 +16,9 @@ nav_order: 4
 
 <a href="/images/cases/plate_foam_2_sets.jpeg"><img src="/images/cases/plate_foam_2_sets.jpeg" alt="Two sets of plate foam for the Sofle Pico" width="100%"></a>
 
-<a href="/images/cases/backplate_foam.jpeg"><img src="/images/cases/backplate_foam.jpeg" alt="Two sets of backplate foam for the Sofle Pico" width="100%"></a>
+<a href="/images/cases/backplate_foam.jpeg"><img src="/images/cases/backplate_foam.jpeg" alt="Sets of foam backplates for the Sofle Pico" width="100%"></a>
 
-<a href="/images/cases/backplate_foam.jpeg"><img src="/images/cases/backplate_foam_on_pcb.jpeg" alt="Two sets of backplate foam for the Sofle Pico" width="100%"></a>
+<a href="/images/cases/backplate_foam.jpeg"><img src="/images/cases/backplate_foam_on_pcb.jpeg" alt="Backplate foam pieces placed on the Sofle Pico PCB" width="100%"></a>
 
 <hr>
 
@@ -46,7 +46,7 @@ This are the Cricut recommended tools and materials for cutting foam. Starting w
 ## Cutting the foam plates with Cricut Design Space
 1. Import the svg into the Cricut Design Space. The svg can be found [here](https://github.com/JellyTitan/Sofle-Pico/blob/main/Sofle_Pico/Case/Plate_foam/Sofle_Pico_foam_outline.svg). 
 2. Duplicate and mirror as necessary to optimize the use of space on your material.
-3. Browse materials:<br><a href="/images/cases/1_browse-all-materials.png"><img src="/images/cases/1_browse-all-materials.png" alt="Browsing materiels in the Cricut Design Space" width="100%"></a>
+3. Browse materials:<br><a href="/images/cases/1_browse-all-materials.png"><img src="/images/cases/1_browse-all-materials.png" alt="Browsing materials in the Cricut Design Space" width="100%"></a>
 4. <a href="/images/cases/2_select-foam.png"><img src="/images/cases/2_select-foam.png" alt="Selecting the material 'foam' in the Cricut Design Space" width="100%"></a>
 5. <a href="/images/cases/3_select-craft-foam.png"><img src="/images/cases/3_select-craft-foam.png" alt="Selecting the subset from material 'foam' in the Cricut Design Space" width="100%"></a>
 6. <a href="/images/cases/4_deep-point-blade.png"><img src="/images/cases/4_deep-point-blade.png" alt="Selecting the blade to be used with the 'foam' setting in the Cricut Design Space" width="100%"></a>

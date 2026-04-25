@@ -49,7 +49,7 @@ There is 1 diode per key, 1 diode on the rotary encoder.
 
 Diodes _must_ be oriented with the white band in the direction of the "arrow" symbol on the PCB.
 
-<a href="/images/build_guide_pico/smd_diode_orientation_1.jpeg"><img src="/images/build_guide_pico/smd_diode_orientation_1.jpeg" width="49%" alt="SMD orientation marking example" /></a> <a href="/images/build_guide_pico/smd_diode_orientation_2.jpeg"><img src="/images/build_guide_pico/smd_diode_orientation_2.jpeg" width="49%" alt="SMD orientation example closeup" /></a>
+<a href="/images/build_guide_pico/smd_diode_orientation_1.jpeg"><img src="/images/build_guide_pico/smd_diode_orientation_1.jpeg" width="49%" alt="SMD orientation marking example" /></a> <a href="/images/build_guide_pico/smd_diode_orientation_2.jpeg"><img src="/images/build_guide_pico/smd_diode_orientation_2.jpeg" width="49%" alt="SMD orientation marking example with diode placed" /></a>
 
 Diodes, surface mount or through-hole, can be installed on either the front or the back. The back is preferred for a cleaner look. If you are hand soldering, through hole diodes are recommended because they are easier. If you damage a pad on one side, feel free to move that diode to the other side.
 
@@ -75,7 +75,7 @@ Switch sockets installed on the back of the PCB facing up towards the front of t
 1. Give the board a few good taps to make sure there are no loose sockets.
 1. Rotate the board 180 degrees and solder the remaining sides.
 
-<a href="/images/build_guide_pico/sofle_pico_sockets_1.jpeg"><img src="/images/build_guide_pico/sofle_pico_sockets_1.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a tilted angle" width="49%" /></a> <a href="/images/build_guide_pico/sofle_pico_sockets_2.jpeg"><img src="/images/build_guide_pico/sofle_pico_sockets_2.jpeg" alt="Left hand backside of solfe pico with switch sockets in place viewed from a above" width="49%" /></a>
+<a href="/images/build_guide_pico/sofle_pico_sockets_1.jpeg"><img src="/images/build_guide_pico/sofle_pico_sockets_1.jpeg" alt="Left hand backside of Sofle Pico with switch sockets in place viewed from a tilted angle" width="49%" /></a> <a href="/images/build_guide_pico/sofle_pico_sockets_2.jpeg"><img src="/images/build_guide_pico/sofle_pico_sockets_2.jpeg" alt="Left hand backside of Sofle Pico with switch sockets in place viewed from above" width="49%" /></a>
 
 <hr>
 
@@ -90,7 +90,7 @@ You can [drag solder](https://www.youtube.com/watch?v=wUyetZ5RtPs) across the ju
 
 ## LEDs
 
-![LED](/images/build_guide_pico/sofle_pico_led_orientation.png)
+![SK6803MINI-E LED orientation diagram for the Sofle Pico PCB](/images/build_guide_pico/sofle_pico_led_orientation.png)
 
 LEDs are placed on the back of the PCB. The lens should point up through the PCB so they shine into the bottom of the switch. One leg will have a diagonal cut. This cut leg should be aligned with the mark on the PCB.
 
@@ -101,7 +101,7 @@ Alternately, you can use a rework station heat gun and solder paste. I prefer th
 The LEDs are wired in one long chain. If a LED is not working, replace the LED and the LED preceding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board. 
 <a href="/images/build_guide_pico/sofle_pico_led_wiring_chain.png"><img src="/images/build_guide_pico/sofle_pico_led_wiring_chain.png" alt="Sofle Pico LED circuit sequence." width="100%" /></a>
 <br>
-Revisions v3.5.4 and later will have the LED number directly above the LED to make troubleshooting the LED chain easier.<br><a href="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg"><img src="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg" alt="Sofle Pico LED sequence markings." width="32%" /></a>
+Revisions v3.5.4 and later will have the LED number directly above the LED to make troubleshooting the LED chain easier.<br><a href="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg"><img src="/images/build_guide_pico/sofle_pico_led_chain_markings.jpeg" alt="Sofle Pico LED footprint marking numbering example" width="32%" /></a>
 
 <hr>
 
@@ -120,22 +120,22 @@ You can permanently install the Pico using the 20-pin male-male headers that cam
 1. insert the headers into the board and the Pico both before soldering. (The header pin rows can tilt a little if it's not inserted into both the board and the Pico.) The header pins may have one longer side. Install the longer side on the PCB, because you'll need to trim these, and the trimmed pins look better on the underside of the board. Use a piece of kapton tape to attach the Pico to the PCB while soldering.
 
 1. Flip the board over. The pins on the back of the board that you will be soldering should _not_ be in the outline. Soldering 1 of the outermost pins on each pin header on the PCB. Hold the board up to make sure the pin header is sitting flush with the pcb. If it's not, you can reheat that joint until it is flush. 
-![Pico MCU](/images/build_guide_pico/sofle_pico_starter_pins.jpeg) 
+![Raspberry Pi Pico with starter pins partially soldered to the PCB](/images/build_guide_pico/sofle_pico_starter_pins.jpeg) 
 1. Solder the remaining pcb/pin header joints on the back.
 2. Flip the board over. With the Pico, repeat the process of soldering & checking 1 pin with the pin header and the Pico. 
 3. Solder all the remaining Pico/pin header pins.
 
 ### Pico MCU installed with sockets
 Previous versions of the Sofle used diode legs. This guide does not - instead we'll use "needle pins", which are now readily available, inexpensive, and less fussy then diode legs, but they add more height than diode legs would, which works well to support the OLEDs.
-![Pico socketed MCU](/images/build_guide_pico/sofle_pico_sockets_add_height.png)
+![Socketed Pico MCU showing added height for OLED support](/images/build_guide_pico/sofle_pico_sockets_add_height.png)
 
 To install a socketed Pico using the diode leg approach [from splitkb.com][ProMicrosocketing]:
 
-1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of kapton tape to hold everything in place can be helpful. 
+1. Insert the needle pins into the female sockets, and then insert the female sockets into the PCB and the Pico. Assembling the sockets/Pico/PCB before soldering ensures an excellent alignment. Be sure that the Pico is face up, and that the socket pins are inserted into the square outline on the front of the board. Applying a piece of kapton tape to hold everything in place can be helpful.<br>
 <a href="/images/build_guide_pico/needle_pin_inserts.jpeg"><img src="/images/build_guide_pico/needle_pin_inserts.jpeg" alt="Sofle Pico with needle pins to be socketed" width="50%" /></a>
 
-1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).<br><a href="/images/build_guide_pico/wonky_MCU.jpeg"><img src="/images/build_guide_pico/wonky_MCU.jpeg" alt="Tilted MCU" width="47%" /></a> <a href="/images/build_guide_pico/wonky_fixed_MCU.jpeg"><img src="/images/build_guide_pico/wonky_fixed_MCU.jpeg" alt="Tilted MCU corrected" width="47%" /></a>
-1. Solder the remaining pins on the back of the pcb.<br><a href="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg"><img src="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg" alt="Tilted MCU corrected" width="47%" /></a>
+1. Flip the board over. On the back of the PCB, solder one pin on each side, pushing down on the PCB to ensure the headers are perpendicular and fully seated. Pick up the board and inspect to insure that everything is seated flush. If it's not flush, reheat the joint and push the socket down until it's flush. (Be sure you're not touching the pin your heating when you push it down).<br><a href="/images/build_guide_pico/wonky_MCU.jpeg"><img src="/images/build_guide_pico/wonky_MCU.jpeg" alt="Tilted MCU" width="47%" /></a> <a href="/images/build_guide_pico/wonky_fixed_MCU.jpeg"><img src="/images/build_guide_pico/wonky_fixed_MCU.jpeg" alt="MCU demonstrating correct vertical orientation" width="47%" /></a>
+1. Solder the remaining pins on the back of the pcb.<br><a href="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg"><img src="/images/build_guide_pico/backside_MCU_pins_soldered.jpeg" alt="Sofle Pico backside MCU socket pins soldered" width="47%" /></a>
 1. Flip over the board. On the front, solder 1 pin on each side to the Pico. Again check that everything is flush before soldering the remaining pins.
 <br><a href="/images/build_guide_pico/MCU_solder_1_pin.jpeg"><img src="/images/build_guide_pico/MCU_solder_1_pin.jpeg" alt="One pin on the MCU soldered" width="47%" /></a> <a href="/images/build_guide_pico/MCU_solder_all_pins.jpeg"><img src="/images/build_guide_pico/MCU_solder_all_pins.jpeg" alt="All pins on the MCU soldered - quite badly" width="47%" /></a>
 

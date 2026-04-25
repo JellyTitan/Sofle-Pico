@@ -15,8 +15,8 @@ image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 
 <hr>
 
-<a href="/images/cases/acrylic_case_hero_shot.jpeg"><img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
-<a href="/images/cases/sofle_pico_acrylic_case.jpeg"><img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Acrylic sofle pico case" width="49%"></a>
+<a href="/images/cases/acrylic_case_hero_shot.jpeg"><img src="/images/cases/acrylic_case_hero_shot.jpeg" alt="Sofle Pico with assembled acrylic case, stacked haphazardly." width="49%"></a>
+<a href="/images/cases/sofle_pico_acrylic_case.jpeg"><img src="/images/cases/sofle_pico_acrylic_case.jpeg" alt="Sofle Pico acrylic case plates only, three-quarter rendered illustration" width="49%"></a>
 
 <hr>
 

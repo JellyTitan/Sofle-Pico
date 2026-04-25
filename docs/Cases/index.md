@@ -11,7 +11,7 @@ image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
 # Sofle Pico Cases
 
 
-<a href="/images/build_guide_pico/acrylic_case_hero_shot.jpeg"><img src="/images/build_guide_pico/acrylic_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="32%"></a> <a href="/images/build_guide_pico/fdm_case_hero_shot.jpeg"><img src="/images/build_guide_pico/fdm_case_hero_shot.jpeg" alt="Acrylic sofle pico case" width="32%"></a>
+<a href="/images/build_guide_pico/acrylic_case_hero_shot.jpeg"><img src="/images/build_guide_pico/acrylic_case_hero_shot.jpeg" alt="Assembled Sofle Pico with acrylic case" width="32%"></a> <a href="/images/build_guide_pico/fdm_case_hero_shot.jpeg"><img src="/images/build_guide_pico/fdm_case_hero_shot.jpeg" alt="Assembled Sofle Pico with FDM 3d printed case" width="32%"></a>
 
 - The case plates from Sofle v1, v2, RGB and Choc versions are _not_ compatible.
  - Key plates are strongly recommended, but not technically required. If you use 3 pin MX keys, the thumb keys tend to fall out if you don't use a key plate.
@@ -20,7 +20,7 @@ image: /images/build_guide_pico/acrylic_case_hero_shot.jpeg
  - The OLEDs are taller than the switch plate, which is why they have their own separate taller plates. Acrylic is recommended for the OLED plates because the two types of OLEDs can be installed higher/lower.
  - Plates can be made from acrylic, pcb, or 3d printed.
  - Having a standoff kit is helpful when assembling the keyplates. [M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)
- - Acrylic key plates should be 3mm thick, and PCBs should be 1.6mm thick. The switches fit better in the PCBs because most switches have 'retention nubs' designed for PCBs.<br><img src="/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="switch retention nubs" width="20%">
+ - Acrylic key plates should be 3mm thick, and PCBs should be 1.6mm thick. The switches fit better in the PCBs because most switches have 'retention nubs' designed for PCBs.<br><img src="/images/build_guide_pico/sofle_pico_retention_nubs.png" alt="Sofle Pico keyplate showing switch retention nubs" width="20%">
 
 All the cases are assembled with the same method. Standoff lengths for the PCB plates will be different than the acrylic & FDM plates:
 
