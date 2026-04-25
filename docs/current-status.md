@@ -23,7 +23,7 @@ Work on v3.5.5 Choc and MX variants had started, but the development on those ha
 User [@suboworx](https://github.com/subworx) [reported in discussion #51](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) that a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807417919453.html). 
 
 ## Outstanding Hardware Tasks
-- theWerle contributed Choc and MX variants v.3.5.4 have been sent out for production/testing 6-15-24
+- TheWerle's contributed Choc and MX variants (v.3.5.4) have been sent out for production/testing 6-15-24
 - JLC & PCBWay part number placeholders have been added to v3.5.6. Post validation of 3.5.5, regen the Gerbers before releasing. (The docs refer to using these part number placeholders).
 
 ## Outstanding Documentation Tasks

@@ -69,7 +69,7 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 <hr>
 
 ### Notable changes
-* Improved labeling and footprint masking to poke-yoke the build process.
+* Improved labeling and footprint masking to poka-yoke the build process.
 * 3 degree rotation of the innermost thumb key. 
 * Sofle V1 & V2 firmware is not compatible due to the complete rewire for the Pico.
 * MCU footprints side-by-side to reduce potential shorts.
@@ -80,7 +80,7 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 * Diode placement & labeling improved for easier troubleshooting.
 * Diodes can be installed on the front or back, making for lower cost PCBA.
 * Reset button removed. It is no longer needed, as the Pico has a physical rest button.
-* The MCU is now facing upward. There are many PiPico board variants with buttons placed differently. Facing the MCU upward ensures accessability.
+* The MCU is now facing upward. There are many PiPico board variants with buttons placed differently. Facing the MCU upward ensures accessibility.
 
 * Tenting puck mounting holes added. [SplitKB](https://splitkb.com/products/tenting-puck) or 3d print your own: design by [
 Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-tripod-mount/comments/943096).

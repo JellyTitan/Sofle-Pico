@@ -35,11 +35,11 @@ This troubleshooting guide has been heavily influenced by prior Sofle generation
 * Verify that LED1 is oriented correctly and all the legs are soldered.
 * Sofle Pico versions 3.5.4 and earlier have a footprint for a level shifter component. This part was unnecessary, as the first LED in the chain acts as a level shifter. The level shifter footprint is in the LED power chain, so the level shifter bypass jumper needs to be bridged so that power makes it to the LEDs. Verify that the level-shifter bypass jumper has been bridged. If your board has the footprint/bridge, it will be located above LED1. <br><a href="/images/build_guide_pico/sloppy_bypass_jumper.png"><img src="/images/build_guide_pico/sloppy_bypass_jumper.png" alt="Sofle Pico jumper bridged with solder" /></a>
 
-### Some LED's are not working or are flickering.
+### Some LEDs are not working or are flickering.
 1. Check that the LED not turning on is in the correct orientation. (The leg with the notch should be aligned with the marked pad).
 1. Check that the pads of LED not turning on and its previous are soldered correctly, re-solder for a better connection as needed.
 1. If the soldering looks good and the orientation is correct, try re-soldering all the pads any way for good measure.
-1. If re-soldering didn't work than the LED is likely dead or damaged in which case replace it. 
+1. If re-soldering didn't work, then the LED is likely dead or damaged, in which case replace it.
 
 <hr>
 
@@ -73,7 +73,7 @@ For example:
 {: .danger }
 > Avoid shorting the `VCC` pin and LEDs. This can burn out other pins on the Pico. 
 
-I recommend testing with just one half connected. If you have used unique firmware for each hand, then each hand will be recognized correctly when plugged in seperately. If you used the same firmware for both hands, then plugging in only one side will cause the single side to be recognized as the left side. 
+I recommend testing with just one half connected. If you have used unique firmware for each hand, then each hand will be recognized correctly when plugged in separately. If you used the same firmware for both hands, then plugging in only one side will cause the single side to be recognized as the left side. 
 
 <hr>
 

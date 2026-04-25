@@ -52,6 +52,6 @@ There are two variants for the OLED covers due to the two types of OLEDs that ca
 <hr>
 
 ## About these plates
-These plates were created by exporting svg layers directly from KiCad. The Svg's were imported into Fusion360 with a 3.7795% scale. (Not sure why the KiCad exports are so small - but that multiplier seems to get them where they need to go). The svg sketches were fixed up, then extruded to 3mm.
+These plates were created by exporting svg layers directly from KiCad. The SVGs were imported into Fusion360 with a 3.7795% scale. (Not sure why the KiCad exports are so small - but that multiplier seems to get them where they need to go). The svg sketches were fixed up, then extruded to 3mm.
 
 The fusion 360 export is included in the 'source' folder. Feel free to get fancy with it!

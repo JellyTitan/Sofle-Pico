@@ -21,7 +21,7 @@ Most custom fabrication vendors have a similar ordering process. For acrylic I u
 
 <small>*If the download links aren't working, check [the repo](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case) for the latest version*</small>
 
-Elecrow requests zipped `.dxf` files and a .`pdf`. You can ignore the request for `pdf`. 
+Elecrow requests zipped `.dxf` files and a `.pdf`. You can ignore the request for `pdf`. 
 
 1. Download the acrylic case zipped `.dxf` files from the links above or directly from [the repo](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case).
 2. Start at the [elecrow acrylic ordering page](https://www.elecrow.com/acrylic-cutting.html), and upload or drag and drop the `dxf.zip` file. (You'll have to add each plate to the order separately, there is no bulk upload option.)

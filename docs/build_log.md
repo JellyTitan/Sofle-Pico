@@ -11,14 +11,14 @@ These notes were made in KiCad during the design & build process. There were ult
 
 ## First Draft, V3.1
 
-* NOT RELEVENT: (REPLACE WITH DIFFERNT OLED) Increased annular ring size for 32x128 stacked oled. (This footprint will be replaced by a 64x128)
+* NOT RELEVANT: (REPLACE WITH DIFFERENT OLED) Increased annular ring size for 32x128 stacked oled. (This footprint will be replaced by a 64x128)
 * DONE: Swap in the correct oled
 * DONE: Removed pico pads & rebuilt teardrops
-* WONT DO: Update communication from serial to TX/RX. Maybe add the optional I2C back in, with better jumpers nad markings? (ARM spli boards do not support I2C. Half duplex/Serial comm is recommended. Left a pin open to expand to TX/RX in the future)
-* DONE: (Mostly) TRRS/TRS jack is all loosey goosey. Go back to TRRS jack that is asymetrical for stability.
-* WONT DO: Move components out from under the Pico so it can be drag soldered (The off-brand Picos don't support this, plus we want the picos all facing down)
+* WONT DO: Update communication from serial to TX/RX. Maybe add the optional I2C back in, with better jumpers and markings? (ARM spli boards do not support I2C. Half duplex/Serial comm is recommended. Left a pin open to expand to TX/RX in the future)
+* DONE: (Mostly) TRRS/TRS jack is all loosey goosey. Go back to TRRS jack that is asymmetrical for stability.
+* WONT DO: Move components out from under the Pico so it can be drag soldered. (The off-brand Picos don't support this, plus we want the picos all facing down)
 * DONE: Modify pico holes to account for off-brand Picos. 
-* DONE: What to do about pico led? Maybe split out to double footprint again? (Added double footrpint so the LED always faces down)
+* DONE: What to do about pico led? Maybe split out to double footprint again? (Added double footprint so the LED always faces down)
 * DONE: The RH Oled is under the pico. Respect the board outlines (Moving to new OLED style fixes this)
 * DONE: Add puck footprint
 * DONE: Add level shifter bypass
@@ -27,9 +27,9 @@ These notes were made in KiCad during the design & build process. There were ult
 * DONE: The hotswop sockets and LEDs are in a single combo footprint. This is great for design, but a PITA for automated production. Need to create a placebo to generate proper PNP/BOM files. (Used a "dummy" footprint). The sk6812mini-e's require 'standard' assembly, which is a large upcharge. 
 
 ## V3.1 -> 3.2
-* Notes to self: The Pico variants are pretty fat. The pico outline is flush with the double sided OLED footprint. The double sided oled footprint sides can be seperated a bit if need be.
+* Notes to self: The Pico variants are pretty fat. The pico outline is flush with the double sided OLED footprint. The double sided oled footprint sides can be separated a bit if need be.
 * DONE: Validate that the first sk6812 acts as a level shifter, then remove the
-	 level shifter bypass. (THis doesn't work - they overheat the boards)
+	 level shifter bypass. (This doesn't work - they overheat the boards)
 * DONE: Consider removing volt shifter. Really hard to solder, may not be necessary. 
 	(Testing shifter bypass to asses SK6812 instead of SK6803) (DONT DO THIS! THE BOARD OVERHEATS)
 
@@ -38,19 +38,19 @@ These notes were made in KiCad during the design & build process. There were ult
 * DONE: The 4 holes in the keyplate need to be smaller, otherwise the posts go through, and that sucks.
 * DONE: Make a hole in the bottom plate for the tenting puck to recess into.
 * DONE: Adding the unused pins to breakouts next to thumb.
-* WONT DO: Moving LED junk where pimaronit tie in is now.
+* WONT DO: Moving LED junk where Pimoroni tie in is now.
 * DONE: When preparing keyplate pcbs, add the gold rimmed footprint. Currently its an extra big hole on the keyplate layer for the spacer to pass through.
 
-* WONT DO: Enlarge plate below thumb to accomodate space bars in plank layouts
+* WONT DO: Enlarge plate below thumb to accommodate space bars in plank layouts
 * DONE: Tweak keyplate holes for OLEDs as they moved a bit between v3.02 and v3.03
-* DONE: when writing FAQ link to tenting punk on printables.ocm
+* DONE: when writing FAQ link to tenting puck on printables.com
 
 ## V3.2 -> 3.3
 Improvements made while building prototype 3.02, included in version3.03
 * OLEDs incorrectly wired. GP6 went to SCL, and GP7 went to SDA, when those two should have been switched. Fixed, 
 * OLED jack moved -y 2.54*1.5 for visual balance.
 * Pico footprint made through-holes for buttons wider and moved bottom hole down
-* Pico flipped footprint so now pico jack faces board. THen flipped it back, so reset button is always accessible.
+* Pico flipped footprint so now pico jack faces board. Then flipped it back, so reset button is always accessible.
 * Pico - fixed rectangular gnd pads (now square)
 * Added more visible markings to LED ground (Outline marking was obscured by solder/pad
 * Reduced LED tweezer placement hole size from 1.5mm to 1mm
@@ -96,7 +96,7 @@ Improvements made while building prototype 3.03, included in version3.04
 
 * Submitted a [github issue](https://github.com/josefadamcik/SofleKeyboard/issues/188) requesting input from the Sofle main contributors. 
 In response to the question: 
-> "should the LEDs be omitted in favor of combo MX/choc footprints like the Sofle V1? The drag soldering required for the level shifter & and the non-standard SK6803 makes the build more difficult."
+> "should the LEDs be omitted in favor of combo MX/choc footprints like the Sofle V1? The drag soldering required for the level shifter and the non-standard SK6803 makes the build more difficult."
 
 [Josef Adamcik replies](https://github.com/josefadamcik/SofleKeyboard/issues/188#issuecomment-1782947352):
 > Oh, and the last question: I have personally never built nor used a keyboard with RGB lighting. I am just not interested in it. So if it was just about me, I would drop the RGB support.That said, it was the most common change request for Sofle V1/V2 and the main reason for Sofle RGB made by Dane Evans. But it is indeed a conundrum because the Choc version was the second most common request for Sofle V2 and that's why we have the version from Brain Low.
@@ -157,8 +157,7 @@ Sent out v3.5 for production 11-13-23.
 	![Lotus 58 handedness schematic vcc](images/build_log_pico/handed_by_pin_vcc.png)
   * Since the drilled LED holes don't circumvent the 'too many holes' fee, I refactored the led footprint and pulled them out.
 
-	![updated LED footprint](images/build_log_pico/v3.5.2_LED_footprint.png
-	)
+	![updated LED footprint](images/build_log_pico/v3.5.2_LED_footprint.png)
 
 	* Using automatic teardrop generation created acid traps between the diode and the switch pad. Revised the diode footprint to add a through hole below the switch pad.
 	
@@ -173,7 +172,7 @@ Sent out v3.5 for production 11-13-23.
 		Added extra pad to the diode:
 
 	  ![acid trap 1](images/build_log_pico/acid_trap_fixed.png)
-	* Started a [reddit thread](https://www.reddit.com/r/olkb/comments/18kwwka/pimoroni_it_works_but_its_jenky_is_that_expected/) to figure out if the  pimaroni is just jenky, or if i'm doing it wrong. It looks like the Pimoroni is just jenky. I'm abandoning support, but making notes in the repo so that someone else can fix it if they want to. There are [other](https://www.reddit.com/r/olkb/comments/szm2w4/pimoroni_trackball_usability/) threads complaining about this issue.
+	* Started a [reddit thread](https://www.reddit.com/r/olkb/comments/18kwwka/pimoroni_it_works_but_its_jenky_is_that_expected/) to figure out if the Pimoroni is just janky, or if i'm doing it wrong. It looks like the Pimoroni is just janky. I'm abandoning support, but making notes in the repo so that someone else can fix it if they want to. There are [other](https://www.reddit.com/r/olkb/comments/szm2w4/pimoroni_trackball_usability/) threads complaining about this issue.
 	* Moved the patch bay up by 2mm to make room for the Pimoroni.
 
 	  ![Alt text](images/build_log_pico/pimoroni_model.png)
@@ -207,12 +206,12 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 
 ## v3.5.4
 - [x] [Discuss VBUS->VSYS diode removal with Dane](https://github.com/daneski13/Junco/issues). (It's possible that the diode is required for Pico clone flavors?). After testing v3.5.2, it was determined the diode is required for some clones, but can be omitted if using an 'offical' Pico. Dane had decided against using a Schottky there to simplify the circuit. 
-- [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will make it to the diodes or other hand. 
+- [x] Validate the circuit revisions and thermal profile for v3.5.2. NOT WORKING! While there is a schottky diode between VBUS and VSYS on the official Pico - some clones _do not_ have the diode. No power will reach the diodes or the other hand.
 
 <img alt="Shimming in a diode gets the power working" src="images/build_log_pico/v3.5.2_working_power_diode.JPG" width="300">
 <img alt="No extra diode required" src="images/build_log_pico/v3.5.2_clone_sans_power_diode.JPG" width="300">
 - Added a power diode back in. (SChottky this time). Hoping that the updgrade to IN5817 from a standard 1N4148 will improve the thermal profile.
-- I didn't want to wait for a new board to validate the power circuit revisions - so I pulled the 1N4148 diodes off of a working v3.5.0 board and measured the heat. It looks like the IN5817's are a vast improvement. I updated the docs to include these.
+- I didn't want to wait for a new board to validate the power circuit revisions, so I pulled the 1N4148 diodes off of a working v3.5.0 board and measured the heat. It looks like the IN5817's are a vast improvement. I updated the docs to include these.
 It's noteworthy that the level shifter made almost no difference on the heat - except the hotspots are now on the outermost LED's and not the MCU.
 
 | Level Shifter | Power Circuit Diode | Brightness % | Hight Temp | Image |
@@ -227,15 +226,15 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 - Tried to get the 23mm Circque trackpad working. It doesn't work - but I want the option to continue development in the future, so i added a footprint specifically for the trackpad.
 - Via Support added!
 - The weAct variant moves pin 28, so handed pin detection won't work. Moved the handedness pin to GP18. 
-- Considered adding an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in. The 5v VBUS input is pretty well isolated in the upper left. It would take a fiar bit of work to implement. Not gonna do it - it's not fun anymore! :C
+- Considered adding an additional breakout for 5V, control, & GND to allow for Solenoid backplate tie in. The 5v VBUS input is pretty well isolated in the upper left. It would take a fair bit of work to implement. Not gonna do it - it's not fun anymore! :C
 - While conducting thermal tests I connected USB cables to both sides at the same time. I burnt out the VBUS input on the lefthand board. :C This makes me think adding a patchbay tie in for VBUS is probably a dangerous idea. Not gonna implement it.
--  Made switch numbering the same sequence as the LED connections to make debugging easier. This required a big schematic/pcb revision - splitting the Switch/LED footprint combos out into seperate footprints.
+-  Made switch numbering the same sequence as the LED connections to make debugging easier. This required a big schematic/pcb revision - splitting the Switch/LED footprint combos out into separate footprints.
 - Added tie in's for cirque trackpad breakout boards. Even though i couldn't get the cirque to work.
-- Revised keyplate outline to accomodate the Cirque breakout board risers.
-- Removed handedness pin from GP28. It would need a pull-up resistor, and I chose to omit that in lieu of flashing both hands seperately initially.
+- Revised keyplate outline to accommodate the Cirque breakout board risers.
+- Removed handedness pin from GP28. It would need a pull-up resistor, and I chose to omit that in lieu of flashing both hands separately initially.
 - Added GND plane stitching.
 - Submitted new file for production 1-13-24. `Sofle_Pico_v3.5.4_1-13-24.zip`
-- Tested the prototype - it works! I'm calling tis the first stable release.
+- Tested the prototype - it works! I'm calling this the first stable release.
 
 ## v3.5.5
 Since the main PCB is stable, focusing on case and documentation.
@@ -250,19 +249,19 @@ Since the main PCB is stable, focusing on case and documentation.
   - Added more SMD support
   - Adds support for [split handedness by pin](https://docs.qmk.fm/features/split_keyboard#handedness-by-pin)![handedness by pin](images/build_log_pico/handedness_by_pin.png) Note - the QMK PR is still set to LH master by default - which may be prefered considering the split power protection.
   - Improved routing
-  - Adds opitional decoupling capacitors for power smoothing. ![decoupling capacitor schematic](images/build_log_pico/decoupling_capacitors.png)
+  - Adds optional decoupling capacitors for power smoothing. ![decoupling capacitor schematic](images/build_log_pico/decoupling_capacitors.png)
   - Level shifter removal
 
 ## v3.5.6
 - Added part number placeholders for JLC and PCBWay to both Pico & Pico Choc.
-- @todo add lables for handedness by pin to both sides.
+- @todo add labels for handedness by pin to both sides.
 - 
 ## Future Feature Wish list
 - [ ] Color displays.
 - [ ] USB-C in addition to TRRS (Maybe a 'low-cost' version with solder only switches & [RP2040 Zero](https://www.aliexpress.us/item/3256804095235134.html?spm=a2g0o.order_list.order_list_main.16.60e51802e6Bxwl&gatewayAdapt=glo2usa)?)
 - [ ] Solenoid backplate (Would need rp2040 zero for 5v)
 - [ ] Piezo speaker (QMK doesn't support this for ARM boards yet)?
-- [ ] Horizontal encoder/ec12 encoder combo. (The horiontal encoder needs additional cutouts - there isn't room for those with the base Pico)
+- [ ] Horizontal encoder/ec12 encoder combo. (The horizontal encoder needs additional cutouts - there isn't room for those with the base Pico)
 - [ ] Move ec12 encoder out a bit to allow for 30mm low-profile knobs.
 - [ ] Add a 'handedness pin' for qmk auto-detection. (Can't do via current matrix - matrix is full on both sides).
 - [ ] Put a GND plane on both sides, wire VCC directly. (with big fat traces)!

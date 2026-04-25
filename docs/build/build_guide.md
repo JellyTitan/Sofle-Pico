@@ -59,7 +59,7 @@ For through-hole diodes, there is a bending jig on the upper right corner of the
 
 If you've got a 3d printer handy, a printed diode [bending jig](https://www.printables.com/model/734696-diode-bending-jig-8mm) can be used to make quick uniform bends. Alternately, a carpenters pencil is roughly the right size. (The diode holes are 8mm apart, wooden pencils are often 7mm - 8mm).<br><a href="/images/build_guide_pico/diode_jig_fold.jpeg"><img src="/images/build_guide_pico/diode_jig_fold.jpeg" width="32%" alt="Using a bending jig" /></a> <a href="/images/build_guide_pico/diode_jig_cut.jpeg"><img src="/images/build_guide_pico/diode_jig_cut.jpeg" width="32%" alt="Diodes on tape that were bent with a bending jig" /></a> <a href="/images/build_guide_pico/carpenter_pencil.JPG"><img src="/images/build_guide_pico/carpenter_pencil.JPG" width="32%" alt="Using a carpenters pencil as a bending jig" /></a>
 
-With the PCB eleveated via workholding, insert the bent diodes into the holes on the back of the board. 
+With the PCB elevated via workholding, insert the bent diodes into the holes on the back of the board. 
 Diodes _must_ be oriented with the black band in the direction of the "arrow" symbol on the PCB. There is also a black outline around the pad to make it easy to check the diode orientation is correct after the diode has been soldered in place.<br><a href="/images/build_guide_pico/diode_orientation.jpeg"><img src="/images/build_guide_pico/diode_orientation.jpeg" alt="Through hole diode orientation" width="100%" /></a>
 
 Solder the legs in place. flip over the board, and trim the legs. When you trim off the diode legs, save 2 for use as bypass jumpers.<br>
