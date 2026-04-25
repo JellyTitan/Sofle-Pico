@@ -64,7 +64,7 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 * Added through-hole/smd hybrid footprints for the per-switch diodes. (Making for easy manual assembly or automated assembly).
 * Added a 'breakout' section for the unused Pico pins to allow for easy tinkering.
 * The default communication protocol is full duplex TX/RX.
-* Should be able to support [Cirque trackpads](https://shop.beekeeb.com/product/40mm-cirque-glidepoint-circle-trackpad-module-diy-kit-for-split-mechanical-keyboard/) that use a breakout board to tie into the i2C bus. (I haven't tried this yet - please submit a PR if you can validate).
+* Should be able to support [Cirque trackpads](https://shop.beekeeb.com/products/40mm-cirque-glidepoint-circle-trackpad-module-diy-kit-for-split-mechanical-keyboard) that use a breakout board to tie into the i2C bus. (I haven't tried this yet - please submit a PR if you can validate).
 
 <hr>
 

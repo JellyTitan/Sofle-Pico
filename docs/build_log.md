@@ -177,7 +177,7 @@ Sent out v3.5 for production 11-13-23.
 
 	  ![Alt text](images/build_log_pico/pimoroni_model.png)
 	
-	* Looked into Cirque trackpad - it looks viable, and easy? [Beekeeb sells a breakout board](https://shop.beekeeb.com/product/23mm-cirque-glidepoint-circle-trackpad-module/?attribute_mounting-case=Sofle+v2&attribute_side=Right) that plugs right into the I2C Oled holes for Sofle. I ordered one to try it out. (12-18-23). I did poke-yoke the OLED holes by removing the masking on one side - that might cause issues with the breakout board orientation - but I don't think so, based on how the Sofle V2 jumpers are oriented. 
+	* Looked into Cirque trackpad - it looks viable, and easy? [Beekeeb sells a breakout board](https://shop.beekeeb.com/products/23mm-cirque-glidepoint-circle-trackpad-module) that plugs right into the I2C Oled holes for Sofle. I ordered one to try it out. (12-18-23). I did poke-yoke the OLED holes by removing the masking on one side - that might cause issues with the breakout board orientation - but I don't think so, based on how the Sofle V2 jumpers are oriented. 
 
 	  ![beekeeb trackpad](images/build_log_pico/beekeeb1.png) ![beekeeb trackpad](images/build_log_pico/beekeeb2.png)![beekeeb trackpad](images/build_log_pico/beekeeb3.png)
 	* Found and removed dummy placeholder footprints for LED PCBA that were breaking the .step export. (Probably inherited from Sofle Choc?)

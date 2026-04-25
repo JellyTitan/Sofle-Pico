@@ -33,4 +33,4 @@ nav_order: 1
 8. Test everything using VIA.
 
 ## Flashing the second time around
-After the first flash, subsequent flashes are even easier. Sofle Pico uses [Bootmagic lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md). You can enter boot mode by holding down the upper-left-most key while plugging in the USB cable. (Or upper-right-most, respectively). Once you're in boot mode, the Pico appears as a drive, and you can drag and drop the new `.uf2` file.
+After the first flash, subsequent flashes are even easier. Sofle Pico uses [Bootmagic lite](https://docs.qmk.fm/features/bootmagic). You can enter boot mode by holding down the upper-left-most key while plugging in the USB cable. (Or upper-right-most, respectively). Once you're in boot mode, the Pico appears as a drive, and you can drag and drop the new `.uf2` file.

@@ -37,7 +37,7 @@ User [@suboworx](https://github.com/subworx) [reported in discussion #51](https:
 - Run `mogrify -strip` against images before final publishing.
 
 ## Outstanding QMK Tasks
-- EE_Hands was removed during the PR. Recompile alternate .uf2 files with RH Master set, so that VIA users won't have to compile in QMK. See [QMK handedness-by-define docs](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md#handedness-by-define).
+- EE_Hands was removed during the PR. Recompile alternate .uf2 files with RH Master set, so that VIA users won't have to compile in QMK. See [QMK handedness-by-define docs](https://docs.qmk.fm/features/split_keyboard#handedness-by-define).
 - TheWerle added handedness by pin. Once v3.5.5 is validated and released, update the QMK PR with the handedness update.
 
 ### QMK Userspace
