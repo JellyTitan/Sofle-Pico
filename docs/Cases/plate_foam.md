@@ -38,27 +38,27 @@ This are the Cricut recommended tools and materials for cutting foam. Starting w
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Name</th>
-      <th style="text-align: left">Count</th>
-      <th style="text-align: left">Remarks</th>
-      <th style="text-align: left">Potential Storefront</th>
+      <th style="text-align: left" scope="col">Name</th>
+      <th style="text-align: left" scope="col">Count</th>
+      <th style="text-align: left" scope="col">Remarks</th>
+      <th style="text-align: left" scope="col">Potential Storefront</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">Cricut Maker 3 Deep Cut Blade</td>
+      <th scope="row">Cricut Maker 3 Deep Cut Blade</th>
       <td style="text-align: left">1</td>
       <td style="text-align: left"></td>
       <td style="text-align: left"><a href="https://www.amazon.com/Explore-Venture-Metallic-Aluminum-Magnetic/dp/B0CQPD6GRX">Amazon</a></td>
     </tr>
     <tr>
-      <td style="text-align: left">Cricut Strong grip mat</td>
+      <th scope="row">Cricut Strong grip mat</th>
       <td style="text-align: left">1</td>
       <td style="text-align: left">12x12 or 12x24</td>
       <td style="text-align: left"><a href="https://www.amazon.com/Cricut-12x24-StrongGrip-Cutting-Mat/dp/B01M35TL5W">Amazon</a></td>
     </tr>
     <tr>
-      <td style="text-align: left">2mm Craft foam</td>
+      <th scope="row">2mm Craft foam</th>
       <td style="text-align: left">1</td>
       <td style="text-align: left">I've only tried the 'Silly Winks' brand because that's what my local store carried. If there's a better foam, please submit a PR.</td>
       <td style="text-align: left"><a href="https://www.amazon.com/Sheets-Colors-Handicraft-Crafts-ACTIVITYya/dp/B0BD629SWP">Amazon</a></td>

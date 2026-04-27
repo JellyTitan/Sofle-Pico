@@ -118,64 +118,64 @@ In response to the question:
 <table>
   <thead>
     <tr>
-      <th style="text-align: right">Board</th>
-      <th style="text-align: center">Hole Width (mm)</th>
-      <th style="text-align: center">Via dia (mm)</th>
+      <th style="text-align: right" scope="col">Board</th>
+      <th style="text-align: center" scope="col">Hole Width (mm)</th>
+      <th style="text-align: center" scope="col">Via dia (mm)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: right">Sofle V1</td>
+      <th scope="row">Sofle V1</th>
       <td style="text-align: center">.3</td>
       <td style="text-align: center">.4</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle V2</td>
+      <th scope="row">Sofle V2</th>
       <td style="text-align: center">.3</td>
       <td style="text-align: center">.4</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle RGB</td>
+      <th scope="row">Sofle RGB</th>
       <td style="text-align: center">.3</td>
       <td style="text-align: center">.4</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Choc</td>
+      <th scope="row">Sofle Choc</th>
       <td style="text-align: center">.3</td>
       <td style="text-align: center">.4</td>
     </tr>
     <tr>
-      <td style="text-align: right">Corne Classic</td>
+      <th scope="row">Corne Classic</th>
       <td style="text-align: center">.4</td>
       <td style="text-align: center">.6</td>
     </tr>
     <tr>
-      <td style="text-align: right">Corne Choc</td>
+      <th scope="row">Corne Choc</th>
       <td style="text-align: center">.4</td>
       <td style="text-align: center">.6</td>
     </tr>
     <tr>
-      <td style="text-align: right">Helix</td>
+      <th scope="row">Helix</th>
       <td style="text-align: center">.4</td>
       <td style="text-align: center">.6</td>
     </tr>
     <tr>
-      <td style="text-align: right">Lily 58</td>
+      <th scope="row">Lily 58</th>
       <td style="text-align: center">.4</td>
       <td style="text-align: center">.6</td>
     </tr>
     <tr>
-      <td style="text-align: right">Stront</td>
+      <th scope="row">Stront</th>
       <td style="text-align: center">.4</td>
       <td style="text-align: center">.8</td>
     </tr>
     <tr>
-      <td style="text-align: right">Piantor</td>
+      <th scope="row">Piantor</th>
       <td style="text-align: center">.3</td>
       <td style="text-align: center">.6</td>
     </tr>
     <tr>
-      <td style="text-align: right">Chunky</td>
+      <th scope="row">Chunky</th>
       <td style="text-align: center">.3</td>
       <td style="text-align: center">.6</td>
     </tr>
@@ -245,10 +245,10 @@ A redditor suggested that the level shifter could be omitted, because the first 
 <table>
   <thead>
     <tr>
-      <th>LED</th>
-      <th>level shifter</th>
-      <th>Average operating temp</th>
-      <th>image</th>
+      <th scope="col">LED</th>
+      <th scope="col">level shifter</th>
+      <th scope="col">Average operating temp</th>
+      <th scope="col">image</th>
     </tr>
   </thead>
   <tbody>
@@ -296,11 +296,11 @@ It's noteworthy that the level shifter made almost no difference on the heat - e
 <table>
   <thead>
     <tr>
-      <th style="text-align: right">Level Shifter</th>
-      <th style="text-align: center">Power Circuit Diode</th>
-      <th style="text-align: center">Brightness %</th>
-      <th style="text-align: center">Hight Temp</th>
-      <th style="text-align: center">Image</th>
+      <th style="text-align: right" scope="col">Level Shifter</th>
+      <th style="text-align: center" scope="col">Power Circuit Diode</th>
+      <th style="text-align: center" scope="col">Brightness %</th>
+      <th style="text-align: center" scope="col">High Temp</th>
+      <th style="text-align: center" scope="col">Image</th>
     </tr>
   </thead>
   <tbody>

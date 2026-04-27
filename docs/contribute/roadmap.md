@@ -14,17 +14,17 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
 <table>
   <thead>
     <tr>
-      <th style="text-align: right">Name</th>
-      <th style="text-align: right">Switch</th>
-      <th style="text-align: center">Hotswop</th>
-      <th style="text-align: center">RGB</th>
-      <th style="text-align: left">Notes</th>
-      <th style="text-align: left">Status</th>
+      <th style="text-align: right" scope="col">Name</th>
+      <th style="text-align: right" scope="col">Switch</th>
+      <th style="text-align: center" scope="col">Hotswap</th>
+      <th style="text-align: center" scope="col">RGB</th>
+      <th style="text-align: left" scope="col">Notes</th>
+      <th style="text-align: left" scope="col">Status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: right">Sofle Pico</td>
+      <th scope="row">Sofle Pico</th>
       <td style="text-align: right">MX</td>
       <td style="text-align: center">Y</td>
       <td style="text-align: center">Y</td>
@@ -32,7 +32,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">New features added in v3.5.5 (to be validated)</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Choc</td>
+      <th scope="row">Sofle Pico Choc</th>
       <td style="text-align: right">Choc V1</td>
       <td style="text-align: center">Y</td>
       <td style="text-align: center">Y</td>
@@ -40,7 +40,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">@TheWerle submitted v3.5.5 (to be validated) Plenty of electrical improvements that can apply to all models.</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Master Key</td>
+      <th scope="row">Sofle Pico Master Key</th>
       <td style="text-align: right">MX 3-pin, MX 5-pin, Choc v1 Choc V2</td>
       <td style="text-align: center">N</td>
       <td style="text-align: center">N</td>
@@ -48,7 +48,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">Unclaimed</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Done</td>
+      <th scope="row">Sofle Pico Done</th>
       <td style="text-align: right">MX</td>
       <td style="text-align: center">Y</td>
       <td style="text-align: center">Y</td>
@@ -56,7 +56,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">Unclaimed</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Gateron low profile</td>
+      <th scope="row">Sofle Pico Gateron low profile</th>
       <td style="text-align: right">Gateron Low profile</td>
       <td style="text-align: center">N</td>
       <td style="text-align: center">??</td>
@@ -64,7 +64,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">Unclaimed</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Zero</td>
+      <th scope="row">Sofle Pico Zero</th>
       <td style="text-align: right">MX</td>
       <td style="text-align: center">Y</td>
       <td style="text-align: center">Y</td>
@@ -72,7 +72,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">Unclaimed</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Optical</td>
+      <th scope="row">Sofle Pico Optical</th>
       <td style="text-align: right">Optical</td>
       <td style="text-align: center">Y (MX)</td>
       <td style="text-align: center">??</td>
@@ -80,7 +80,7 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">Unclaimed</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Magnetic</td>
+      <th scope="row">Sofle Pico Magnetic</th>
       <td style="text-align: right">Magnetic</td>
       <td style="text-align: center">Y (MX)</td>
       <td style="text-align: center">???</td>
@@ -88,11 +88,11 @@ The Sofle Pico was designed to make it easy to swap out footprints. Most of thes
       <td style="text-align: left">Unclaimed</td>
     </tr>
     <tr>
-      <td style="text-align: right">Sofle Pico Master Key Wireless</td>
+      <th scope="row">Sofle Pico Master Key Wireless</th>
       <td style="text-align: right">MX 3-pin, MX 5-pin, Choc v1 Choc V2</td>
       <td style="text-align: center">Y</td>
       <td style="text-align: center">N</td>
-      <td style="text-align: left">Pico version of the Sofle_v2_soldered - but wireless. Use the Cantor MX sweet combo footprint. See discussion of merits and LOE <a href="https://github.com/JellyTitan/Sofle-Pico/discussions/36">here</a>.</td>
+      <td style="text-align: left">Pico version of the Sofle_v2_soldered - but wireless. Use the Cantor MX sweet combo footprint. See discussion of merits and LOE <a href="https://github.com/JellyTitan/Sofle-Pico/discussions/36">wireless variant discussion</a>.</td>
       <td style="text-align: left">Unclaimed</td>
     </tr>
   </tbody>

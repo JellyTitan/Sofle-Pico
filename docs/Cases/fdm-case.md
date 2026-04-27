@@ -42,51 +42,51 @@ There are two variants for the OLED covers due to the two types of OLEDs that ca
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Count</th>
-      <th>Remarks</th>
-      <th>Potential Storefront</th>
+      <th scope="col">Name</th>
+      <th scope="col">Count</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Potential Storefront</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>keyplates</td>
+      <th scope="row">keyplates</th>
       <td>2</td>
       <td><code>sofle_pico_keyplate_notched_LH_v3.5.5.stl</code> <br> and <br> <code>sofle_pico_keyplate_notched_RH_v3.5.5.stl</code></td>
       <td></td>
     </tr>
     <tr>
-      <td>backplates</td>
+      <th scope="row">backplates</th>
       <td>2</td>
       <td><code>sofle_pico_backplate_v3.4.stl</code></td>
       <td></td>
     </tr>
     <tr>
-      <td>OLED plates</td>
+      <th scope="row">OLED plates</th>
       <td>2</td>
       <td>Note there are variants for the different types of OLED's that have higher/lower holes. <code>Sofle_pico_OLED_oval_window_v3.4.stl</code> and <code>Sofle_pico_OLED_circle_window_v3.4.stl</code></td>
       <td></td>
     </tr>
     <tr>
-      <td>M2 5mm screws</td>
+      <th scope="row">M2 5mm screws</th>
       <td>32</td>
       <td>Any old M2 will do. I prefer 'button head' for aesthetics. 4mm or 6mm works too, but 6mm may bottom out.</td>
       <td><a href="https://www.amazon.com/gp/product/B07ZH6GRK2">Amazon</a><br><a href="https://www.aliexpress.us/item/3256805706765925.html">AliExpress</a></td>
     </tr>
     <tr>
-      <td>M2 6mm female-female standoffs</td>
+      <th scope="row">M2 6mm female-female standoffs</th>
       <td>10</td>
       <td>Connects the front plate to the back plate, runs <em>through</em> the pcb. Aluminum versions are available, but I've found they tend to arrive 'greasy', so I recommend the brass versions.</td>
       <td><a href="https://www.amazon.com/gp/product/B07B9X1KY6">Amazon</a><br><a href="https://www.aliexpress.us/item/3256804317893173.html">AliExpress</a></td>
     </tr>
     <tr>
-      <td>M2 18mm female-female standoffs</td>
+      <th scope="row">M2 18mm female-female standoffs</th>
       <td>6</td>
       <td>Connects the OLED plate to the back plate, runs <em>through</em> the pcb and the key plate. These can be harder to find in small quantities. You can use an assortment kit to make these.</td>
       <td><a href="https://www.amazon.com/gp/product/B07B9X1KY6">Amazon</a><br><a href="https://www.aliexpress.us/item/3256804317893173.html">AliExpress</a></td>
     </tr>
     <tr>
-      <td>2mm adhesive Rubber bumper feet.</td>
+      <th scope="row">2mm adhesive Rubber bumper feet.</th>
       <td>10</td>
       <td>Stick on the underside of the bottom keyboard to keep it from sliding around on the desk.</td>
       <td><a href="https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ">amazon</a></td>

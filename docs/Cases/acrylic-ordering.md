@@ -16,27 +16,27 @@ Most custom fabrication vendors have a similar ordering process. For acrylic I u
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">Case part</th>
-      <th style="text-align: center">Width (mm)</th>
-      <th style="text-align: center">Height (mm)</th>
-      <th style="text-align: center">Download</th>
+      <th style="text-align: center" scope="col">Case part</th>
+      <th style="text-align: center" scope="col">Width (mm)</th>
+      <th style="text-align: center" scope="col">Height (mm)</th>
+      <th style="text-align: center" scope="col">Download</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">OLED cover</td>
+      <th scope="row">OLED cover</th>
       <td style="text-align: center">34mm</td>
       <td style="text-align: center">72mm</td>
       <td style="text-align: center"><a href="https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_OLED_v3.4.dxf.zip">sofle_pico_OLED_v3.4.dxf.zip</a></td>
     </tr>
     <tr>
-      <td style="text-align: center">Key plate</td>
+      <th scope="row">Key plate</th>
       <td style="text-align: center">146mm</td>
       <td style="text-align: center">117mm</td>
       <td style="text-align: center"><a href="https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_key_plate_v3.5.5.dxf.zip">sofle_pico_key_plate_v3.5.5.dxf.zip</a></td>
     </tr>
     <tr>
-      <td style="text-align: center">Back plate</td>
+      <th scope="row">Back plate</th>
       <td style="text-align: center">146mm</td>
       <td style="text-align: center">117mm</td>
       <td style="text-align: center"><a href="https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_backplate_v3.4.dxf.zip">sofle_pico_backplate_v3.4.dxf.zip</a></td>
