@@ -14,72 +14,757 @@ published: false
 
 This MCU comparison chart is a work in progressed, and not ready to be published yet.
 
-|                                          | RPico         | Waveshare     | WeAct         | RTrobot      | Tenstar    | YD-RP2040     | SZYTF      | EstarDyn      |
-| ---------------------------------------- | ------------- | ------------- | ------------- | ------------ | ---------- | ------------- | ---------- | ------------- |
-| length f-l pin [mm]                      | 48.26         |               | 48.26         |              |            | 48.26         |            | 48.26         |
-| width f-l pin [mm]                       | 17.78         |               | 17.78         | 22.86 (?)    |            | 17.78         |            | 17.78         |
-| length [mm]                              | 51.00         |               | 53.00         | 56.50        |            | 53.34         | 53.80      |               |
-| width [mm]                               | 21.00         |               | 21.52         | 26.00        |            | 22.86         | 21.00      |               |
-| FLASH [MB]                               | 2             | 4             | 2/4/8/16      | 16           | 2          | 4             | 16         |               |
-| USB                                      | Micro         | USB-C         | USB-C         | USB-C        | USB-C      | USB-C         | USB-C      | USB-C         |
-| Max current [A]                          | 0.3           | 1.8           |               |              |            |               |            |               |
-|                                          |               |               |               |              |            |               |            |               |
-| Pin (white=matches RPico, red=different) |               |               |               |              |            |               |            |               |
-| 1                                        | GP0           | GP0           | GP0           | GND          | GP0        | GP0           | GP0        | GP0           |
-| 2                                        | GP1           | GP1           | GP1           | 3.3V         | GP1        | GP1           | GP1        | GP1           |
-| 3                                        | GND           | GND           | GND           | DP           | GND        | GND           | GP2        | GND           |
-| 4                                        | GP2           | GP2           | GP2           | DM           | GP2        | GP2           | GP3        | GP2           |
-| 5                                        | GP3           | GP3           | GP3           | RUN          | GP3        | GP3           | GP4        | GP3           |
-| 6                                        | GP4           | GP4           | GP4           | GP0          | GP4        | GP4           | GND        | GP4           |
-| 7                                        | GP5           | GP5           | GP5           | GP1          | GP5        | GP5           | GP5        | GP5           |
-| 8                                        | GND           | GND           | GND           | GP2          | GND        | GND           | GP6        | GND           |
-| 9                                        | GP6           | GP6           | GP6           | GP3          | GP6        | GP6           | GP7        | GP6           |
-| 10                                       | GP7           | GP7           | GP7           | GP4          | GP7        | GP7           | GP8        | GP7           |
-| 11                                       | GP8           | GP8           | GP8           | GP5          | GP8        | GP8           | GP9        | GP8           |
-| 12                                       | GP9           | GP9           | GP9           | GP6          | GP9        | GP9           | GP10       | GP9           |
-| 13                                       | GND           | GND           | GND           | GP7          | GND        | GND           | GP11       | GND           |
-| 14                                       | GP10          | GP10          | GP10          | GP8          | GP10       | GP10          | GP12       | GP10          |
-| 15                                       | GP11          | GP11          | GP11          | GP9          | GP11       | GP11          | GND        | GP11          |
-| 16                                       | GP12          | GP12          | GP12          | GP10         | GP12       | GP12          | GP13       | GP12          |
-| 17                                       | GP13          | GP13          | GP13          | GP11         | GP13       | GP13          | GP14       | GP13          |
-| 18                                       | GND           | GND           | GND           | GP12         | GND        | GND           | GP15       | GND           |
-| 19                                       | GP14          | GP14          | GP14          | GP13         | GP14       | GP14          | GP16       | GP14          |
-| 20                                       | GP15          | GP15          | GP15          | GP14         | GP15       | GP15          | GP17       | GP15          |
-| 21                                       | GP16          | GP16          | GP16          | GP15         | GP16       | GP16          | GP18       | GP16          |
-| 22                                       | GP17          | GP17          | GP17          | GP16         | GP17       | GP17          | GP19       | GP17          |
-| 23                                       | GND           | GND           | GND           | GP17         | GND        | GND           | GP20       | GND           |
-| 24                                       | GP18          | GP18          | GP18          | GP18         | GP18       | GP18          | GP21       | GP18          |
-| 25                                       | GP19          | GP19          | GP19          | GP19         | GP19       | GP19          | GP22       | GP19          |
-| 26                                       | GP20          | GP20          | GP20          | GP20         | GP20       | GP20          | GP23       | GP20          |
-| 27                                       | GP21          | GP21          | GP21          | GP21         | GP21       | GP21          | GP24       | GP21          |
-| 28                                       | GND           | GND           | GND           | GP22         | GND        | GND           | GP25       | GND           |
-| 29                                       | GP22          | GP22          | GP22          | GP23         | GP22       | GP22          | GND        | GP22          |
-| 30                                       | RUN           | RUN           | GP26          | GP24         | RUN        | RUN           | GP26       | RUN           |
-| 31                                       | GP26          | GP26          | GP27          | GP25         | GP26       | GP26          | GP27       | GP26          |
-| 32                                       | GP27          | GP27          | GP28          | GP26         | GP27       | GP27          | GP28       | GP27          |
-| 33                                       | GND           | GND           | GND           | GP27         | GND        | GND           | GP29       | GND           |
-| 34                                       | GP28          | GP28          | GP29          | GP28         | GP28       | GP28          | RUN        | GP28          |
-| 35                                       | \- (ADC VREF) | \- (ADC VREF) | \- (ADC VREF) | GP29         | GP29       | GP29          | GND        | \- (ADC VREF) |
-| 36                                       | 3V3_OUT       | 3V3_OUT       | GP24          | MODE         | 3V3_OUT    | 3V3_OUT       | 3V3_OUT    | 3V3_OUT       |
-| 37                                       | 3V3_EN        | 3V3_EN        | 3V3           | VREF         | GP23       | GP23          | 3V3_EN     |               |
-| 38                                       | GND           | GND           | GND           | GND          | GND        | GND           | GND        | GND           |
-| 39                                       | VSYS          | VSYS          | VSYS          | 5V           | VIN        | VIN           | VIN        | VSYS          |
-| 40                                       | VBUS          | VBUS          | VBUS          | GND          | VOUT       | VOUT          | VBUS       | VBUS          |
-| 41                                       | SWCLK         |               | GND           | SWCLK        | 3v3        | 3v3           | 3v3        | SWCLK         |
-| 42                                       | GND           |               | SWDIO         | SWDIO        | SWDIO      | SWDIO         | SWDIO      | GND           |
-| 43                                       | SWDIO         |               | SWCLK         | GND          | SWDCK      | SWDCK         | SWDCK      | SWDIO         |
-| 44                                       |               |               | 3V3           |              | GND        | GND           | GND        |               |
-| 45                                       |               |               |               |              | VREF       | VREF          |            |               |
-| 46                                       |               |               |               |              | GND        | GND           |            |               |
-| TP1                                      | GND           | USB DM        |               | unknown      |            |               |            | no            |
-| TP2                                      | USB DM        | USB DP        |               | unknown      |            |               |            | no            |
-| TP3                                      | USB DP        | BOOT          |               | unknown      |            |               |            | no            |
-| TP4                                      | GP23/SMPS PS  | SWDIO         |               | unknown      |            |               |            | no            |
-| TP5                                      | GP25/LED      | GND           |               |              |            |               |            | no            |
-| TP6                                      | BOOTSEL       | SWCLK         |               |              |            |               |            | no            |
-| LED                                      |               |               | PWR           |              | PWR        | PWR           |            |               |
-| LED                                      | LED - GP25    | LED - GP?     | LED - GP25    | LED - GP25   | LED - GP25 | LED - GP25    | LED - GP25 | LED - GP25    |
-| Btn1                                     | BOOTSEL       | boot          | BOOTSEL       | MODE/bootsel | boot       | boot          | BOOTSEL    |               |
-| Btn2                                     |               | reset         | nrst/RUN      | RUN          | reset      | reset         |            |               |
-| Btn3                                     |               |               | User - GP23   |              | User/GP?   | User - GP24   |            |               |
-| Extras                                   |               |               |               |              | WS2812     | WS2812 - GP23 |            |
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RPico</th>
+      <th>Waveshare</th>
+      <th>WeAct</th>
+      <th>RTrobot</th>
+      <th>Tenstar</th>
+      <th>YD-RP2040</th>
+      <th>SZYTF</th>
+      <th>EstarDyn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>length f-l pin [mm]</td>
+      <td>48.26</td>
+      <td></td>
+      <td>48.26</td>
+      <td></td>
+      <td></td>
+      <td>48.26</td>
+      <td></td>
+      <td>48.26</td>
+    </tr>
+    <tr>
+      <td>width f-l pin [mm]</td>
+      <td>17.78</td>
+      <td></td>
+      <td>17.78</td>
+      <td>22.86 (?)</td>
+      <td></td>
+      <td>17.78</td>
+      <td></td>
+      <td>17.78</td>
+    </tr>
+    <tr>
+      <td>length [mm]</td>
+      <td>51.00</td>
+      <td></td>
+      <td>53.00</td>
+      <td>56.50</td>
+      <td></td>
+      <td>53.34</td>
+      <td>53.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>width [mm]</td>
+      <td>21.00</td>
+      <td></td>
+      <td>21.52</td>
+      <td>26.00</td>
+      <td></td>
+      <td>22.86</td>
+      <td>21.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLASH [MB]</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2/4/8/16</td>
+      <td>16</td>
+      <td>2</td>
+      <td>4</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>USB</td>
+      <td>Micro</td>
+      <td>USB-C</td>
+      <td>USB-C</td>
+      <td>USB-C</td>
+      <td>USB-C</td>
+      <td>USB-C</td>
+      <td>USB-C</td>
+      <td>USB-C</td>
+    </tr>
+    <tr>
+      <td>Max current [A]</td>
+      <td>0.3</td>
+      <td>1.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pin (white=matches RPico, red=different)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>GP0</td>
+      <td>GP0</td>
+      <td>GP0</td>
+      <td>GND</td>
+      <td>GP0</td>
+      <td>GP0</td>
+      <td>GP0</td>
+      <td>GP0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GP1</td>
+      <td>GP1</td>
+      <td>GP1</td>
+      <td>3.3V</td>
+      <td>GP1</td>
+      <td>GP1</td>
+      <td>GP1</td>
+      <td>GP1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>DP</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP2</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>GP2</td>
+      <td>GP2</td>
+      <td>GP2</td>
+      <td>DM</td>
+      <td>GP2</td>
+      <td>GP2</td>
+      <td>GP3</td>
+      <td>GP2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>GP3</td>
+      <td>GP3</td>
+      <td>GP3</td>
+      <td>RUN</td>
+      <td>GP3</td>
+      <td>GP3</td>
+      <td>GP4</td>
+      <td>GP3</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>GP4</td>
+      <td>GP4</td>
+      <td>GP4</td>
+      <td>GP0</td>
+      <td>GP4</td>
+      <td>GP4</td>
+      <td>GND</td>
+      <td>GP4</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>GP5</td>
+      <td>GP5</td>
+      <td>GP5</td>
+      <td>GP1</td>
+      <td>GP5</td>
+      <td>GP5</td>
+      <td>GP5</td>
+      <td>GP5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP2</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP6</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>GP6</td>
+      <td>GP6</td>
+      <td>GP6</td>
+      <td>GP3</td>
+      <td>GP6</td>
+      <td>GP6</td>
+      <td>GP7</td>
+      <td>GP6</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>GP7</td>
+      <td>GP7</td>
+      <td>GP7</td>
+      <td>GP4</td>
+      <td>GP7</td>
+      <td>GP7</td>
+      <td>GP8</td>
+      <td>GP7</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>GP8</td>
+      <td>GP8</td>
+      <td>GP8</td>
+      <td>GP5</td>
+      <td>GP8</td>
+      <td>GP8</td>
+      <td>GP9</td>
+      <td>GP8</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>GP9</td>
+      <td>GP9</td>
+      <td>GP9</td>
+      <td>GP6</td>
+      <td>GP9</td>
+      <td>GP9</td>
+      <td>GP10</td>
+      <td>GP9</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP7</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP11</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>GP10</td>
+      <td>GP10</td>
+      <td>GP10</td>
+      <td>GP8</td>
+      <td>GP10</td>
+      <td>GP10</td>
+      <td>GP12</td>
+      <td>GP10</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>GP11</td>
+      <td>GP11</td>
+      <td>GP11</td>
+      <td>GP9</td>
+      <td>GP11</td>
+      <td>GP11</td>
+      <td>GND</td>
+      <td>GP11</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>GP12</td>
+      <td>GP12</td>
+      <td>GP12</td>
+      <td>GP10</td>
+      <td>GP12</td>
+      <td>GP12</td>
+      <td>GP13</td>
+      <td>GP12</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>GP13</td>
+      <td>GP13</td>
+      <td>GP13</td>
+      <td>GP11</td>
+      <td>GP13</td>
+      <td>GP13</td>
+      <td>GP14</td>
+      <td>GP13</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP12</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP15</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>GP14</td>
+      <td>GP14</td>
+      <td>GP14</td>
+      <td>GP13</td>
+      <td>GP14</td>
+      <td>GP14</td>
+      <td>GP16</td>
+      <td>GP14</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>GP15</td>
+      <td>GP15</td>
+      <td>GP15</td>
+      <td>GP14</td>
+      <td>GP15</td>
+      <td>GP15</td>
+      <td>GP17</td>
+      <td>GP15</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>GP16</td>
+      <td>GP16</td>
+      <td>GP16</td>
+      <td>GP15</td>
+      <td>GP16</td>
+      <td>GP16</td>
+      <td>GP18</td>
+      <td>GP16</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>GP17</td>
+      <td>GP17</td>
+      <td>GP17</td>
+      <td>GP16</td>
+      <td>GP17</td>
+      <td>GP17</td>
+      <td>GP19</td>
+      <td>GP17</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP17</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP20</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>GP18</td>
+      <td>GP18</td>
+      <td>GP18</td>
+      <td>GP18</td>
+      <td>GP18</td>
+      <td>GP18</td>
+      <td>GP21</td>
+      <td>GP18</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>GP19</td>
+      <td>GP19</td>
+      <td>GP19</td>
+      <td>GP19</td>
+      <td>GP19</td>
+      <td>GP19</td>
+      <td>GP22</td>
+      <td>GP19</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>GP20</td>
+      <td>GP20</td>
+      <td>GP20</td>
+      <td>GP20</td>
+      <td>GP20</td>
+      <td>GP20</td>
+      <td>GP23</td>
+      <td>GP20</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>GP21</td>
+      <td>GP21</td>
+      <td>GP21</td>
+      <td>GP21</td>
+      <td>GP21</td>
+      <td>GP21</td>
+      <td>GP24</td>
+      <td>GP21</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP22</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP25</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>GP22</td>
+      <td>GP22</td>
+      <td>GP22</td>
+      <td>GP23</td>
+      <td>GP22</td>
+      <td>GP22</td>
+      <td>GND</td>
+      <td>GP22</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>RUN</td>
+      <td>RUN</td>
+      <td>GP26</td>
+      <td>GP24</td>
+      <td>RUN</td>
+      <td>RUN</td>
+      <td>GP26</td>
+      <td>RUN</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>GP26</td>
+      <td>GP26</td>
+      <td>GP27</td>
+      <td>GP25</td>
+      <td>GP26</td>
+      <td>GP26</td>
+      <td>GP27</td>
+      <td>GP26</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>GP27</td>
+      <td>GP27</td>
+      <td>GP28</td>
+      <td>GP26</td>
+      <td>GP27</td>
+      <td>GP27</td>
+      <td>GP28</td>
+      <td>GP27</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP27</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GP29</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>GP28</td>
+      <td>GP28</td>
+      <td>GP29</td>
+      <td>GP28</td>
+      <td>GP28</td>
+      <td>GP28</td>
+      <td>RUN</td>
+      <td>GP28</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>- (ADC VREF)</td>
+      <td>- (ADC VREF)</td>
+      <td>- (ADC VREF)</td>
+      <td>GP29</td>
+      <td>GP29</td>
+      <td>GP29</td>
+      <td>GND</td>
+      <td>- (ADC VREF)</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>3V3_OUT</td>
+      <td>3V3_OUT</td>
+      <td>GP24</td>
+      <td>MODE</td>
+      <td>3V3_OUT</td>
+      <td>3V3_OUT</td>
+      <td>3V3_OUT</td>
+      <td>3V3_OUT</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>3V3_EN</td>
+      <td>3V3_EN</td>
+      <td>3V3</td>
+      <td>VREF</td>
+      <td>GP23</td>
+      <td>GP23</td>
+      <td>3V3_EN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>VSYS</td>
+      <td>VSYS</td>
+      <td>VSYS</td>
+      <td>5V</td>
+      <td>VIN</td>
+      <td>VIN</td>
+      <td>VIN</td>
+      <td>VSYS</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>VBUS</td>
+      <td>VBUS</td>
+      <td>VBUS</td>
+      <td>GND</td>
+      <td>VOUT</td>
+      <td>VOUT</td>
+      <td>VBUS</td>
+      <td>VBUS</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>SWCLK</td>
+      <td></td>
+      <td>GND</td>
+      <td>SWCLK</td>
+      <td>3v3</td>
+      <td>3v3</td>
+      <td>3v3</td>
+      <td>SWCLK</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>GND</td>
+      <td></td>
+      <td>SWDIO</td>
+      <td>SWDIO</td>
+      <td>SWDIO</td>
+      <td>SWDIO</td>
+      <td>SWDIO</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>SWDIO</td>
+      <td></td>
+      <td>SWCLK</td>
+      <td>GND</td>
+      <td>SWDCK</td>
+      <td>SWDCK</td>
+      <td>SWDCK</td>
+      <td>SWDIO</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td></td>
+      <td></td>
+      <td>3V3</td>
+      <td></td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>VREF</td>
+      <td>VREF</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>GND</td>
+      <td>GND</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TP1</td>
+      <td>GND</td>
+      <td>USB DM</td>
+      <td></td>
+      <td>unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>TP2</td>
+      <td>USB DM</td>
+      <td>USB DP</td>
+      <td></td>
+      <td>unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>TP3</td>
+      <td>USB DP</td>
+      <td>BOOT</td>
+      <td></td>
+      <td>unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>TP4</td>
+      <td>GP23/SMPS PS</td>
+      <td>SWDIO</td>
+      <td></td>
+      <td>unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>TP5</td>
+      <td>GP25/LED</td>
+      <td>GND</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>TP6</td>
+      <td>BOOTSEL</td>
+      <td>SWCLK</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>LED</td>
+      <td></td>
+      <td></td>
+      <td>PWR</td>
+      <td></td>
+      <td>PWR</td>
+      <td>PWR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LED</td>
+      <td>LED - GP25</td>
+      <td>LED - GP?</td>
+      <td>LED - GP25</td>
+      <td>LED - GP25</td>
+      <td>LED - GP25</td>
+      <td>LED - GP25</td>
+      <td>LED - GP25</td>
+      <td>LED - GP25</td>
+    </tr>
+    <tr>
+      <td>Btn1</td>
+      <td>BOOTSEL</td>
+      <td>boot</td>
+      <td>BOOTSEL</td>
+      <td>MODE/bootsel</td>
+      <td>boot</td>
+      <td>boot</td>
+      <td>BOOTSEL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Btn2</td>
+      <td></td>
+      <td>reset</td>
+      <td>nrst/RUN</td>
+      <td>RUN</td>
+      <td>reset</td>
+      <td>reset</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Btn3</td>
+      <td></td>
+      <td></td>
+      <td>User - GP23</td>
+      <td></td>
+      <td>User/GP?</td>
+      <td>User - GP24</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extras</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>WS2812</td>
+      <td>WS2812 - GP23</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

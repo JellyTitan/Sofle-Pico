@@ -115,19 +115,72 @@ In response to the question:
 ![Using through holes to make a square](images/build_log_pico/sofle_pico_LED_MTH_cutout.png)
 * Checked via settings for other popular boards:
 
-| Board    |Hole Width (mm)|Via dia (mm)|
-|    ----: |  :----:       |  :----:    |
-|Sofle V1  |.3             |.4          |
-|Sofle V2  |.3             |.4          |
-|Sofle RGB |.3             |.4          |
-|Sofle Choc|.3             |.4          |
-|Corne Classic|.4          |.6          |
-|Corne Choc|.4             |.6          |
-|Helix     |.4             |.6          |
-|Lily 58   |.4             |.6          |
-|Stront    |.4             |.8          |
-|Piantor   |.3             |.6          |
-|Chunky    |.3             |.6          |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Board</th>
+      <th style="text-align: center">Hole Width (mm)</th>
+      <th style="text-align: center">Via dia (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Sofle V1</td>
+      <td style="text-align: center">.3</td>
+      <td style="text-align: center">.4</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Sofle V2</td>
+      <td style="text-align: center">.3</td>
+      <td style="text-align: center">.4</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Sofle RGB</td>
+      <td style="text-align: center">.3</td>
+      <td style="text-align: center">.4</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Sofle Choc</td>
+      <td style="text-align: center">.3</td>
+      <td style="text-align: center">.4</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Corne Classic</td>
+      <td style="text-align: center">.4</td>
+      <td style="text-align: center">.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Corne Choc</td>
+      <td style="text-align: center">.4</td>
+      <td style="text-align: center">.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Helix</td>
+      <td style="text-align: center">.4</td>
+      <td style="text-align: center">.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Lily 58</td>
+      <td style="text-align: center">.4</td>
+      <td style="text-align: center">.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Stront</td>
+      <td style="text-align: center">.4</td>
+      <td style="text-align: center">.8</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Piantor</td>
+      <td style="text-align: center">.3</td>
+      <td style="text-align: center">.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Chunky</td>
+      <td style="text-align: center">.3</td>
+      <td style="text-align: center">.6</td>
+    </tr>
+  </tbody>
+</table>
 
 It looks like 3/6 is a safe bet. Reworked the led footprint to accommodate. Mode the vias out from between pads to prevent shorts from sloppy soldering.
 Sent out v3.5 for production 11-13-23.
@@ -189,11 +242,36 @@ Sent out v3.5 for production 11-13-23.
 A redditor suggested that the level shifter could be omitted, because the first LED would do the same job.  After consulting the Junco owner, the math says the SK6812 will pull too many amps. The Sk6812 is preferable because it's more common/available, so it's at least worth a try. Using a Fluke TiS50, (resolution 220x165) I compared 3 variants, taking measurements sporadically over three hours.
 
 ![SK6803 MINI-E with bypass jumper](images/build_log_pico/IR_00020.JPG)
-| LED | level shifter | Average operating temp | image |
-| --- | ------------- | ---------------------- | ----- |
-| SK6803 MINI-E | Y | ~120°F / 48°C |![SK6803 MINI-E with bypass jumper](images/build_log_pico/IR_00014.JPG) |
-| SK6803 MINI-E | N | ~130°F / 54°C | ![SK6803 MINI-E without bypass jumper](images/build_log_pico/IR_00013.JPG) |
-| SK6812 MINI-E | N | ~230°F / 110°C | ![SK6812 MINI-E without bypass jumper](images/build_log_pico/IR_00011.JPG) |
+<table>
+  <thead>
+    <tr>
+      <th>LED</th>
+      <th>level shifter</th>
+      <th>Average operating temp</th>
+      <th>image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SK6803 MINI-E</td>
+      <td>Y</td>
+      <td>~120°F / 48°C</td>
+      <td><img src="images/build_log_pico/IR_00014.JPG" alt="SK6803 MINI-E with bypass jumper"></td>
+    </tr>
+    <tr>
+      <td>SK6803 MINI-E</td>
+      <td>N</td>
+      <td>~130°F / 54°C</td>
+      <td><img src="images/build_log_pico/IR_00013.JPG" alt="SK6803 MINI-E without bypass jumper"></td>
+    </tr>
+    <tr>
+      <td>SK6812 MINI-E</td>
+      <td>N</td>
+      <td>~230°F / 110°C</td>
+      <td><img src="images/build_log_pico/IR_00011.JPG" alt="SK6812 MINI-E without bypass jumper"></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Thermal imaging LED test conclusion
 The SK6812 ran too hot. It overheated and shut down a few times. The SK6812Mini-e should not be used. 
@@ -215,14 +293,61 @@ The average run temp for the SK6803 Mini-e was about 6°C difference with/withou
 - I didn't want to wait for a new board to validate the power circuit revisions, so I pulled the 1N4148 diodes off of a working v3.5.0 board and measured the heat. It looks like the IN5817's are a vast improvement. I updated the docs to include these.
 It's noteworthy that the level shifter made almost no difference on the heat - except the hotspots are now on the outermost LED's and not the MCU.
 
-| Level Shifter | Power Circuit Diode | Brightness % | Hight Temp | Image |
-|    ----:      |        :----:       |    :----:    |     :----: | :---: |
-| Yes           | 1N4148              | 50%          | 98°F       | ![Thermal image: level shifter, 1N4148 diode, 50% brightness, 98°F](images/build_log_pico/level_shifter_1n4148_half_bright.JPG)  |
-| Yes           | 1N4148              | 100%          | 140°F       | ![Thermal image: level shifter, 1N4148 diode, 100% brightness, 140°F](images/build_log_pico/level_shifter_1n4148_full_bright.JPG)  |
-| Yes           | 1N5817              | 50%          | 91°F       | ![Thermal image: level shifter, 1N5817 diode, 50% brightness, 91°F](images/build_log_pico/level_shifter_1n5817_half_bright.JPG)  |
-| Yes           | 1N5817              | 100%         | 108°F       | ![Thermal image: level shifter, 1N5817 diode, 100% brightness, 108°F](images/build_log_pico/level_shifter_1n5817_full_bright.JPG)  |
-| No            | 1N5817              | 50%          | 91°F       | ![Thermal image: no level shifter, 1N5817 diode, 50% brightness, 91°F](images/build_log_pico/no_level_shifter_1n5817_half_bright.JPG)  |
-| No           | 1N5817              | 100%         | 110°F       | ![Thermal image: no level shifter, 1N5817 diode, 100% brightness, 110°F](images/build_log_pico/no_level_shifter_1n5817_full_bright.JPG)  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Level Shifter</th>
+      <th style="text-align: center">Power Circuit Diode</th>
+      <th style="text-align: center">Brightness %</th>
+      <th style="text-align: center">Hight Temp</th>
+      <th style="text-align: center">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Yes</td>
+      <td style="text-align: center">1N4148</td>
+      <td style="text-align: center">50%</td>
+      <td style="text-align: center">98°F</td>
+      <td style="text-align: center"><img src="images/build_log_pico/level_shifter_1n4148_half_bright.JPG" alt="Thermal image: level shifter, 1N4148 diode, 50% brightness, 98°F"></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Yes</td>
+      <td style="text-align: center">1N4148</td>
+      <td style="text-align: center">100%</td>
+      <td style="text-align: center">140°F</td>
+      <td style="text-align: center"><img src="images/build_log_pico/level_shifter_1n4148_full_bright.JPG" alt="Thermal image: level shifter, 1N4148 diode, 100% brightness, 140°F"></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Yes</td>
+      <td style="text-align: center">1N5817</td>
+      <td style="text-align: center">50%</td>
+      <td style="text-align: center">91°F</td>
+      <td style="text-align: center"><img src="images/build_log_pico/level_shifter_1n5817_half_bright.JPG" alt="Thermal image: level shifter, 1N5817 diode, 50% brightness, 91°F"></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Yes</td>
+      <td style="text-align: center">1N5817</td>
+      <td style="text-align: center">100%</td>
+      <td style="text-align: center">108°F</td>
+      <td style="text-align: center"><img src="images/build_log_pico/level_shifter_1n5817_full_bright.JPG" alt="Thermal image: level shifter, 1N5817 diode, 100% brightness, 108°F"></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">No</td>
+      <td style="text-align: center">1N5817</td>
+      <td style="text-align: center">50%</td>
+      <td style="text-align: center">91°F</td>
+      <td style="text-align: center"><img src="images/build_log_pico/no_level_shifter_1n5817_half_bright.JPG" alt="Thermal image: no level shifter, 1N5817 diode, 50% brightness, 91°F"></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">No</td>
+      <td style="text-align: center">1N5817</td>
+      <td style="text-align: center">100%</td>
+      <td style="text-align: center">110°F</td>
+      <td style="text-align: center"><img src="images/build_log_pico/no_level_shifter_1n5817_full_bright.JPG" alt="Thermal image: no level shifter, 1N5817 diode, 100% brightness, 110°F"></td>
+    </tr>
+  </tbody>
+</table>
 
 - Tried to get the 23mm Circque trackpad working. It doesn't work - but I want the option to continue development in the future, so i added a footprint specifically for the trackpad.
 - Via Support added!

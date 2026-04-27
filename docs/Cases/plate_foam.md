@@ -35,11 +35,36 @@ When making case foam for use with PCB plates use 3mm craft foam with 8mm M2 sta
 
 This are the Cricut recommended tools and materials for cutting foam. Starting with a fresh knife, my cuts started looking ragged by the second set of plate foam. (The black set in the image above was cut second). 
 
-| Name | Count | Remarks | Potential Storefront | 
-|:-----|:------|:--------|:---------------------|
-| Cricut Maker 3 Deep Cut Blade | 1 |  | [Amazon](https://www.amazon.com/Explore-Venture-Metallic-Aluminum-Magnetic/dp/B0CQPD6GRX) | 
-| Cricut Strong grip mat | 1 | 12x12 or 12x24 | [Amazon](https://www.amazon.com/Cricut-12x24-StrongGrip-Cutting-Mat/dp/B01M35TL5W) | 
-| 2mm Craft foam | 1 | I've only tried the 'Silly Winks' brand because that's what my local store carried. If there's a better foam, please submit a PR. | [Amazon](https://www.amazon.com/Sheets-Colors-Handicraft-Crafts-ACTIVITYya/dp/B0BD629SWP) | 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: left">Count</th>
+      <th style="text-align: left">Remarks</th>
+      <th style="text-align: left">Potential Storefront</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Cricut Maker 3 Deep Cut Blade</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left"></td>
+      <td style="text-align: left"><a href="https://www.amazon.com/Explore-Venture-Metallic-Aluminum-Magnetic/dp/B0CQPD6GRX">Amazon</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Cricut Strong grip mat</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">12x12 or 12x24</td>
+      <td style="text-align: left"><a href="https://www.amazon.com/Cricut-12x24-StrongGrip-Cutting-Mat/dp/B01M35TL5W">Amazon</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2mm Craft foam</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">I've only tried the 'Silly Winks' brand because that's what my local store carried. If there's a better foam, please submit a PR.</td>
+      <td style="text-align: left"><a href="https://www.amazon.com/Sheets-Colors-Handicraft-Crafts-ACTIVITYya/dp/B0BD629SWP">Amazon</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <hr>
 

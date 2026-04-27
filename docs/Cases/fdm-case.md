@@ -39,15 +39,60 @@ There are two variants for the OLED covers due to the two types of OLEDs that ca
 
 ## BOM
 
- | Name | Count | Remarks | Potential Storefront |
-|-|-|-|-|
-| keyplates   | 2 | `sofle_pico_keyplate_notched_LH_v3.5.5.stl` <br> and <br> `sofle_pico_keyplate_notched_RH_v3.5.5.stl` | |
-| backplates  | 2 | `sofle_pico_backplate_v3.4.stl` | |
-| OLED plates | 2 | Note there are variants for the different types of OLED's that have higher/lower holes. `Sofle_pico_OLED_oval_window_v3.4.stl` and `Sofle_pico_OLED_circle_window_v3.4.stl`| |
-|M2 5mm screws|32| Any old M2 will do. I prefer 'button head' for aesthetics. 4mm or 6mm works too, but 6mm may bottom out. |[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)<br>[AliExpress](https://www.aliexpress.us/item/3256805706765925.html)|
-| M2 6mm female-female standoffs | 10 | Connects the front plate to the back plate, runs _through_ the pcb. Aluminum versions are available, but I've found they tend to arrive 'greasy', so I recommend the brass versions.|[Amazon](https://www.amazon.com/gp/product/B07B9X1KY6)<br>[AliExpress](https://www.aliexpress.us/item/3256804317893173.html)|
-| M2 18mm female-female standoffs | 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate. These can be harder to find in small quantities. You can use an assortment kit to make these. |[Amazon](https://www.amazon.com/gp/product/B07B9X1KY6)<br>[AliExpress](https://www.aliexpress.us/item/3256804317893173.html)|
-| 2mm adhesive Rubber bumper feet. | 10| Stick on the underside of the bottom keyboard to keep it from sliding around on the desk. | [amazon](https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ) |
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Count</th>
+      <th>Remarks</th>
+      <th>Potential Storefront</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>keyplates</td>
+      <td>2</td>
+      <td><code>sofle_pico_keyplate_notched_LH_v3.5.5.stl</code> <br> and <br> <code>sofle_pico_keyplate_notched_RH_v3.5.5.stl</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>backplates</td>
+      <td>2</td>
+      <td><code>sofle_pico_backplate_v3.4.stl</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OLED plates</td>
+      <td>2</td>
+      <td>Note there are variants for the different types of OLED's that have higher/lower holes. <code>Sofle_pico_OLED_oval_window_v3.4.stl</code> and <code>Sofle_pico_OLED_circle_window_v3.4.stl</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M2 5mm screws</td>
+      <td>32</td>
+      <td>Any old M2 will do. I prefer 'button head' for aesthetics. 4mm or 6mm works too, but 6mm may bottom out.</td>
+      <td><a href="https://www.amazon.com/gp/product/B07ZH6GRK2">Amazon</a><br><a href="https://www.aliexpress.us/item/3256805706765925.html">AliExpress</a></td>
+    </tr>
+    <tr>
+      <td>M2 6mm female-female standoffs</td>
+      <td>10</td>
+      <td>Connects the front plate to the back plate, runs <em>through</em> the pcb. Aluminum versions are available, but I've found they tend to arrive 'greasy', so I recommend the brass versions.</td>
+      <td><a href="https://www.amazon.com/gp/product/B07B9X1KY6">Amazon</a><br><a href="https://www.aliexpress.us/item/3256804317893173.html">AliExpress</a></td>
+    </tr>
+    <tr>
+      <td>M2 18mm female-female standoffs</td>
+      <td>6</td>
+      <td>Connects the OLED plate to the back plate, runs <em>through</em> the pcb and the key plate. These can be harder to find in small quantities. You can use an assortment kit to make these.</td>
+      <td><a href="https://www.amazon.com/gp/product/B07B9X1KY6">Amazon</a><br><a href="https://www.aliexpress.us/item/3256804317893173.html">AliExpress</a></td>
+    </tr>
+    <tr>
+      <td>2mm adhesive Rubber bumper feet.</td>
+      <td>10</td>
+      <td>Stick on the underside of the bottom keyboard to keep it from sliding around on the desk.</td>
+      <td><a href="https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ">amazon</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <hr>
 

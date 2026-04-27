@@ -34,12 +34,57 @@ PCB vendors may add an additional charge for 'extra holes' when ordering the fro
 
 ## BOM
 
-| Name | Count | Remarks | Potential Storefront | 
-|:-----|:------|:--------|:---------------------|
-| keyplates | 2 | 1.6mm thick pcb. Use the same ordering process as the main pcb. | Elecrow or JLC |
-| backplates | 2 | Can be substituted with Acrylic or 3d printed. | Elecrow or JLC |
-| OLED plates | 2 | These should be made with Acrylic. The file can be found in the Acrylic case folder. `sofle_pico_OLED_v3.4.dxf.zip`  | Elecrow |
-| M2 5mm screws | 32 | Any old M2 will do. I prefer hex cap for aesthetics. 6mm or 4mm works just fine too. |[Amazon](https://www.amazon.com/gp/product/B07ZH6GRK2)<br>[AliExpress](https://www.aliexpress.us/item/3256805706765925.html) |
-| M2 8mm female-female standoffs | 10 | Connects the front plate to the back plate, runs _through_ the pcb. If you are using an acrylic or 3d printed back plate, you'll still want the 8mm standoffs. | [M2 Brass Standoff Kit](https://www.amazon.com/gp/product/B07B9X1KY6)<br>[AliExpress](https://www.aliexpress.us/item/3256804317893173.html) |
-| M2 18mm female-female standoffs | 6 | Connects the OLED plate to the back plate, runs _through_ the pcb and the key plate. These can be harder to find in small quantities. You can use an assortment kit to make these. | [Amazon](https://www.amazon.com/gp/product/B07B9X1KY6)<br>[AliExpress](https://www.aliexpress.us/item/3256804317893173.html) |
-| 2mm adhesive Rubber bumper feet. | 10 | Stick on the underside of the bottom keyboard to keep it from sliding around on the desk. | [amazon](https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: left">Count</th>
+      <th style="text-align: left">Remarks</th>
+      <th style="text-align: left">Potential Storefront</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">keyplates</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">1.6mm thick pcb. Use the same ordering process as the main pcb.</td>
+      <td style="text-align: left">Elecrow or JLC</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">backplates</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">Can be substituted with Acrylic or 3d printed.</td>
+      <td style="text-align: left">Elecrow or JLC</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">OLED plates</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">These should be made with Acrylic. The file can be found in the Acrylic case folder. <code>sofle_pico_OLED_v3.4.dxf.zip</code></td>
+      <td style="text-align: left">Elecrow</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M2 5mm screws</td>
+      <td style="text-align: left">32</td>
+      <td style="text-align: left">Any old M2 will do. I prefer hex cap for aesthetics. 6mm or 4mm works just fine too.</td>
+      <td style="text-align: left"><a href="https://www.amazon.com/gp/product/B07ZH6GRK2">Amazon</a><br><a href="https://www.aliexpress.us/item/3256805706765925.html">AliExpress</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M2 8mm female-female standoffs</td>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">Connects the front plate to the back plate, runs <em>through</em> the pcb. If you are using an acrylic or 3d printed back plate, you'll still want the 8mm standoffs.</td>
+      <td style="text-align: left"><a href="https://www.amazon.com/gp/product/B07B9X1KY6">M2 Brass Standoff Kit</a><br><a href="https://www.aliexpress.us/item/3256804317893173.html">AliExpress</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M2 18mm female-female standoffs</td>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">Connects the OLED plate to the back plate, runs <em>through</em> the pcb and the key plate. These can be harder to find in small quantities. You can use an assortment kit to make these.</td>
+      <td style="text-align: left"><a href="https://www.amazon.com/gp/product/B07B9X1KY6">Amazon</a><br><a href="https://www.aliexpress.us/item/3256804317893173.html">AliExpress</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2mm adhesive Rubber bumper feet.</td>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">Stick on the underside of the bottom keyboard to keep it from sliding around on the desk.</td>
+      <td style="text-align: left"><a href="https://www.amazon.com/ROCHU-Self-Adhesive-Rubber-Bumpons-Furniture/dp/B073SVKFYJ">amazon</a></td>
+    </tr>
+  </tbody>
+</table>

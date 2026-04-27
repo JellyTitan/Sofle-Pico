@@ -13,11 +13,36 @@ How to order a custom cut acrylic case from a vendor. This is helpful info if it
 
 Most custom fabrication vendors have a similar ordering process. For acrylic I use [Elecrow](https://www.elecrow.com/acrylic-cutting.html) because they are usually the most cost effective. The minimum order quantity (MOQ) is 5 pieces. Pricing is based on dimensions. Some vendors will auto-detect the dimensions when you upload a file for production, and some don't. Anything under 100x100mm is often eligible for 'promotional pricing'. This _should_ apply to the OLED covers. Some acrylic colors cost more than others. As of November 2023, it was ~$25 total to get 1 MOQ of each plate. (That's 2.5 Sofle sets). 
 
-| Case part |Width (mm)|Height (mm)| Download |
-|   :----:  |  :----:  |  :----:   | :-----:  |
-|OLED cover |34mm      |72mm       | [sofle_pico_OLED_v3.4.dxf.zip](https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_OLED_v3.4.dxf.zip) |
-|Key plate  |146mm     |117mm      |[sofle_pico_key_plate_v3.5.5.dxf.zip](https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_key_plate_v3.5.5.dxf.zip)|
-|Back plate |146mm     |117mm      |[sofle_pico_backplate_v3.4.dxf.zip](https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_backplate_v3.4.dxf.zip)|
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Case part</th>
+      <th style="text-align: center">Width (mm)</th>
+      <th style="text-align: center">Height (mm)</th>
+      <th style="text-align: center">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">OLED cover</td>
+      <td style="text-align: center">34mm</td>
+      <td style="text-align: center">72mm</td>
+      <td style="text-align: center"><a href="https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_OLED_v3.4.dxf.zip">sofle_pico_OLED_v3.4.dxf.zip</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Key plate</td>
+      <td style="text-align: center">146mm</td>
+      <td style="text-align: center">117mm</td>
+      <td style="text-align: center"><a href="https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_key_plate_v3.5.5.dxf.zip">sofle_pico_key_plate_v3.5.5.dxf.zip</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Back plate</td>
+      <td style="text-align: center">146mm</td>
+      <td style="text-align: center">117mm</td>
+      <td style="text-align: center"><a href="https://github.com/JellyTitan/Sofle-Pico/raw/main/Sofle_Pico/Case/Acrylic_case/production_ready/sofle_pico_backplate_v3.4.dxf.zip">sofle_pico_backplate_v3.4.dxf.zip</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <small>*If the download links aren't working, check [the repo](https://github.com/JellyTitan/Sofle-Pico/tree/main/Sofle_Pico/Case/Acrylic_case) for the latest version*</small>
 
