@@ -10,6 +10,12 @@
 #define SERIAL_USART_RX_PIN GP17  // USART RX pin
 #define SERIAL_USART_PIN_SWAP  // Swap TX and RX pins if keyboard is master halve. (Only available on some MCUs)
 
+// Fix for RP2040 VBUS USB detection power-on bug
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT 3000
+#define SPLIT_USB_TIMEOUT 2500
+#define SPLIT_USB_TIMEOUT_POLL 10
+
 // I2C for OLEDs        
 #define I2C_DRIVER I2CD1
 #define I2C1_SDA_PIN GP6
