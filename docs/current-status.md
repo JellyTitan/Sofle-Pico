@@ -22,6 +22,9 @@ Work on v3.5.5 Choc and MX variants had started, but the development on those ha
 ## Update November 2025
 User [@suboworx](https://github.com/subworx) [reported in discussion #51](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) that a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807417919453.html). 
 
+## Outstanding VIAL Documentation Tasks
+- Thanks to [@zaki](https://github.com/zakki) [VIAL now supports Sofle Pico](https://github.com/vial-kb/vial-qmk/pull/972). I built a stub page for the docs - but it needs to be fleshed out. (I've not used VIAL before, so any doc help would be appreciated).
+
 ## Outstanding Hardware Tasks
 - TheWerle's contributed Choc and MX variants (v.3.5.4) have been sent out for production/testing 6-15-24
 - JLC & PCBWay part number placeholders have been added to v3.5.6. Post validation of 3.5.5, regen the Gerbers before releasing. (The docs refer to using these part number placeholders).
@@ -40,9 +43,4 @@ User [@suboworx](https://github.com/subworx) [reported in discussion #51](https:
 - EE_Hands was removed during the PR. Recompile alternate .uf2 files with RH Master set, so that VIA users won't have to compile in QMK. See [QMK handedness-by-define docs](https://docs.qmk.fm/features/split_keyboard#handedness-by-define).
 - TheWerle added handedness by pin. Once v3.5.5 is validated and released, update the QMK PR with the handedness update.
 
-### QMK Userspace
-- Move legacy & JellyTitan Sofle keymaps into a fork of qmk_userspace. (The updated qmk guidelines only allow for a simple pristine keymap in main qmk). These keymaps are temporarily in the jellytitan qmk_firmware branch `sofle_pico_fancy` while the main `sofle_pico` branch is being updated for main qmk commit. `qmk_userspace` only works with keyboards that are in QMK master - so this will have to wait.
-- Revisit the sofle_classic layout on qmk_userspace. The QMK firmware sofle classic layout has been updated since I split out the keymap in the userspace
 
-## Outstanding VIAL Documentation Tasks
-- Thanks to [@zaki](https://github.com/zakki) [VIAL now supports Sofle Pico](https://github.com/vial-kb/vial-qmk/pull/972). I built a stub page for the docs - but it needs to be fleshed out. (I've not used VIAL before, so any doc help would be appreciated).
