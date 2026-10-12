@@ -10,7 +10,7 @@ image: /images/VIA/via_4.png
 
 ## VIA
 
-{: .info}
+{: .warning}
 > Editing with VIA will only work after you've flashed the Sofle Pico at least once.
 
 1. Visit https://usevia.app/

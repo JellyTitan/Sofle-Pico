@@ -22,9 +22,6 @@ Work on v3.5.5 Choc and MX variants had started, but the development on those ha
 ## Update November 2025
 User [@suboworx](https://github.com/subworx) [reported in discussion #51](https://github.com/JellyTitan/Sofle-Pico/discussions/51#discussioncomment-13701701) that a pre-built version can be purchased on [Aliexpress](https://www.aliexpress.us/item/3256807417919453.html). 
 
-## Outstanding VIAL Documentation Tasks
-- Thanks to [@zaki](https://github.com/zakki) [VIAL now supports Sofle Pico](https://github.com/vial-kb/vial-qmk/pull/972). I built a stub page for the docs - but it needs to be fleshed out. (I've not used VIAL before, so any doc help would be appreciated).
-
 ## Outstanding Hardware Tasks
 - TheWerle's contributed Choc and MX variants (v.3.5.4) have been sent out for production/testing 6-15-24
 - JLC & PCBWay part number placeholders have been added to v3.5.6. Post validation of 3.5.5, regen the Gerbers before releasing. (The docs refer to using these part number placeholders).
