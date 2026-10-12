@@ -8,10 +8,10 @@ has_children: true
 ---
 
 # Sofle Pico Firmware and programming
-The RP2040 supports 'drag and drop' flashing with a UF2 file on Mac or PC. This is the recommended approach if you're not familiar with compiling QMK firmware yourself.
+The RP2040 supports 'drag and drop' flashing with a UF2 file on Mac or PC.
 
-After the first 'drag and drop' flash, you can tweak your keymaps further using VIA.
+After the first 'drag and drop' flash, you can tweak your keymaps further using VIA, VIAL, or the newer [QMK Configurator](https://config.qmk.fm/#/sofle_pico/LAYOUT).
 
-Alternately, you can compile your own firmware using QMK.
+Alternately, you can compile your own firmware using [the source QMK](https://docs.qmk.fm/newbs).
 
 The Sofle Pico is defaults to use the left hand as master. If you want to set right hand as master, you'll need to add the [recompile in QMK](https://docs.qmk.fm/features/split_keyboard#handedness-by-define).

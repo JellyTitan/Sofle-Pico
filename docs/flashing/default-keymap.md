@@ -4,7 +4,7 @@ title: Default keymap
 description: Default keymap for the Sofle Pico, derived from the Sofle V1
 permalink: /flashing/default-keymap
 parent: Flashing
-nav_order: 5
+nav_order: 2
 ---
 
 ## Default keymap

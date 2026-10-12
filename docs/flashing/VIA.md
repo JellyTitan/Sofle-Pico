@@ -4,12 +4,13 @@ title: VIA
 description: Instructions for modifying the Sofle Pico key map using the online VIA configurator
 permalink: flashing/via
 parent: Flashing
-nav_order: 2
+nav_order: 4
 image: /images/VIA/via_4.png
 ---
 
 ## VIA
-> [!IMPORTANT]
+
+{: .info}
 > Editing with VIA will only work after you've flashed the Sofle Pico at least once.
 
 1. Visit https://usevia.app/
