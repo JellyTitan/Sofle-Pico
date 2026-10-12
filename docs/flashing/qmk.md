@@ -7,17 +7,13 @@ parent: Flashing
 nav_order: 3
 ---
 
-### Compile your own firmware with QMK
-If you want to build your own firmware, Sofle Pico uses [QMK Firmware][qmk_firmware].
+# Customize your layout with QMK
 
-https://docs.qmk.fm/#/flashing?id=raspberry-pi-RP2040-uf2
+## Basic
 
-To flash:
-- Clone [https://github.com/qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)
-- Make sure your QMK environment [is setup][qmkintro].
-- Make sure halves are not connected together with TRRS cable.
-- Connect one half to USB, flash the firmware (always follow the current instructions in the QMK documentation! The command might look something like this: `qmk flash -kb sofle_choc -km default`). Use the reset button to reset the keyboard when you are asked to in console. 
-- Connect the second half and flash it in the same way as the previous one.
-- Disconnect the USB cable. Connect both halves together with TRRS cable.
-- Connect USB cable to the **left** side.
-- Enjoy!
+User friendly graphical interfaces, no programming knowledge required.<br>[QMK Configurator](https://config.qmk.fm/#/sofle_pico/LAYOUT)
+
+## Advanced
+
+More powerful, but harder to use. Lets you get _very_ fancy with it.<br> [Use The Source](https://docs.qmk.fm/newbs)
+
