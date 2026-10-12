@@ -9,8 +9,8 @@ image: /images/build_guide_pico/sofle_pico_v3.4_hero.jpeg
 {% include badges.md %}
 
 {: .new }
-> This hardware is now stable with release [v3.5.4](https://github.com/JellyTitan/Sofle-Pico/releases). 
-> The documentation is still in progress. You can see the punch list on the [current project status](/status) page.
+> This hardware is now stable with release [v3.5.4](https://github.com/JellyTitan/Sofle-Pico/releases). Support for QMK, VIA, and VIAL are now complete. Hurray! 
+> There are some minor tasks remaining on the punch list on the [current project status](/status) page.
 
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support, per-key RGB, dual 128x64 OLEDs, and uses the RP2040 based Raspberry Pi Pico MCU. 
 
