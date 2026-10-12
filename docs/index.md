@@ -74,7 +74,6 @@ Accommodating the voltage variances between the ProMicro and the Pico required d
 * Sofle V1 & V2 firmware is not compatible due to the complete rewire for the Pico.
 * MCU footprints side-by-side to reduce potential shorts.
 * Modified thumb cluster outline to accommodate 1.25u thumb keycap.
-* Added teardrops to decrease likelihood of acid traps during manufacture.
 * Added VCC & GND net to simplify routing.
 * Poka-yoke TRRS footprint by removing unnecessary solder masks.
 * Diode placement & labeling improved for easier troubleshooting.
@@ -93,7 +92,7 @@ Bubbleology](https://www.printables.com/model/235433-tenting-puck-for-keyboard-t
 
 Sofle Pico uses [QMK firmware](https://qmk.fm/).
 
-The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/). 
+The Sofle Pico can be flashed using 'drag and drop' .uf2 files, and then the config can be modified using [VIA](https://www.caniusevia.com/) or [VIAL](https://get.vial.today/).
 
 <hr>
 
