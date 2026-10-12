@@ -42,8 +42,9 @@ Build guides for all case can be found at [soflepico.com/cases](https://www.sofl
 
 ## FIRMWARE
 
-Sofle uses [QMK firmware](https://qmk.fm/).
-The graphical configurators [VIA](https://caniusevia.com/) and [VIAL]() are also officially supported.
+Sofle Pico uses [QMK firmware](https://qmk.fm/).
+
+The graphical configurators [QMK Configurator](https://config.qmk.fm/#/sofle_pico/LAYOUT), [VIA](https://caniusevia.com/), and [VIAL](https://get.vial.today/) are also officially supported.
 
 ***
 
